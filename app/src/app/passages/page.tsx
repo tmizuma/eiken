@@ -14,6 +14,7 @@ const TOPIC_COLORS: Record<string, string> = {
   "メディア": "bg-indigo-100 text-indigo-700 border-indigo-200",
   "歴史": "bg-amber-100 text-amber-700 border-amber-200",
   "生物": "bg-teal-100 text-teal-700 border-teal-200",
+  "フリー": "bg-slate-100 text-slate-700 border-slate-200",
 };
 
 const TOPIC_ACTIVE: Record<string, string> = {
@@ -27,6 +28,7 @@ const TOPIC_ACTIVE: Record<string, string> = {
   "メディア": "bg-indigo-600 text-white",
   "歴史": "bg-amber-600 text-white",
   "生物": "bg-teal-600 text-white",
+  "フリー": "bg-slate-600 text-white",
 };
 
 function buildHref(page: number, topic?: string) {
