@@ -70,13 +70,14 @@ export default async function PassagesPage({
 
   const passages = db
     .prepare(
-      `SELECT id, title, topic, created_at FROM passages ${where} ORDER BY id DESC LIMIT ? OFFSET ?`
+      `SELECT id, title, topic, created_at, LENGTH(content) - LENGTH(REPLACE(content, ' ', '')) + 1 as word_count FROM passages ${where} ORDER BY id DESC LIMIT ? OFFSET ?`
     )
     .all(...queryParams, PER_PAGE + 1, offset) as {
     id: number;
     title: string;
     topic: string;
     created_at: string;
+    word_count: number;
   }[];
 
   const hasNext = passages.length > PER_PAGE;
@@ -153,6 +154,7 @@ export default async function PassagesPage({
                         {p.topic}
                       </span>
                     )}
+                    <span>{p.word_count} words</span>
                     <span>{questionCounts.get(p.id) || 0} 問</span>
                     {p.created_at && (
                       <span>{p.created_at.slice(0, 10)}</span>

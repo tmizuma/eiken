@@ -40,6 +40,7 @@ export default function RootLayout({
             <Link href="/passages" className="text-blue-600 hover:underline">
               長文問題
             </Link>
+            <div id="header-timer" className="ml-auto" />
           </nav>
         </header>
         <main className="flex-1 mx-auto max-w-7xl w-full px-4 py-6">

@@ -1,6 +1,7 @@
 "use client";
 
 import { use, useState, useEffect, Fragment } from "react";
+import { createPortal } from "react-dom";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -83,12 +84,23 @@ export default function PassageQuizPage({
   const [data, setData] = useState<PassageData | null>(null);
   const [answers, setAnswers] = useState<Record<number, number>>({});
   const [quizOpen, setQuizOpen] = useState(true);
+  const [elapsed, setElapsed] = useState(0);
+  const [timerEl, setTimerEl] = useState<HTMLElement | null>(null);
+
+  useEffect(() => {
+    setTimerEl(document.getElementById("header-timer"));
+  }, []);
 
   useEffect(() => {
     fetch(`/api/passages/${id}`)
       .then((r) => r.json())
       .then(setData);
   }, [id]);
+
+  useEffect(() => {
+    const timer = setInterval(() => setElapsed((s) => s + 1), 1000);
+    return () => clearInterval(timer);
+  }, []);
 
   if (!data) {
     return (
@@ -117,6 +129,9 @@ export default function PassageQuizPage({
             <div className="prose prose-sm max-w-none text-gray-800 leading-relaxed">
               {renderContent(data.content, data.words)}
             </div>
+            <p className="mt-4 text-xs text-gray-400 text-right">
+              ({data.content.split(/\s+/).filter(Boolean).length} words)
+            </p>
           </div>
 
           <div className={quizOpen ? "lg:w-1/2" : "lg:w-auto"}>
@@ -178,6 +193,14 @@ export default function PassageQuizPage({
           </div>
         </div>
       </div>
+      {timerEl &&
+        createPortal(
+          <span className="text-lg font-mono font-bold text-blue-600 tabular-nums">
+            {String(Math.floor(elapsed / 60)).padStart(2, "0")}:
+            {String(elapsed % 60).padStart(2, "0")}
+          </span>,
+          timerEl
+        )}
     </div>
   );
 }
