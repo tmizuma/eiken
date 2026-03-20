@@ -55,6 +55,7 @@ CREATE TABLE word_antonyms (
 CREATE TABLE passages (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
     title TEXT NOT NULL,                           -- 長文タイトル (一覧表示用)
+    topic TEXT NOT NULL DEFAULT '',                -- トピック (政治/科学/心理/文化 等)
     content TEXT NOT NULL,                         -- 英文本文 (500~800 words)
     content_ja TEXT NOT NULL,                      -- 英文の日本語訳
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
