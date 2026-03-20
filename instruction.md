@@ -46,3 +46,41 @@ Step1: 英単語のデータ
 - 類義語、反語データの作成 (1つの単語に対し、類義語、反語がないかを2000この中からチェックして、あればそれをデータとして登録します。)
 
 長文の作り方は後から指示しますので、まずは、DBのテーブル定義から考えてください。
+
+---
+
+❯ /Users/tamizuma/dev/japan/eiken/seed/ に words_1-50.md ~ words_1951-2000.md の40個のファイルがある。  
+各ファイルには英検1級の単語が50語ずつ入っている（`番号. word: 日本語の意味` の形式）。
+
+これらから、SQLiteのINSERT文を生成してほしい。
+
+出力ファイル: seed/{start}-{end}.sql (例: seed/1-50.sql, seed/51-100.sql, ...)
+
+フォーマット:  
+-- words テーブル INSERT文 (No.{start} ~ No.{end})
+
+INSERT INTO words (word_number, word, meaning, pronunciation, katakana, example1_en, example1_ja, example2_en, example2_ja) VALUES  
+(1, 'lucrative', '利益の大きい、もうかる', '/ˈluːkrətɪv/', 'ルークラティヴ',  
+ 'The company discovered that investing in renewable energy was far more lucrative than they had initially anticipated.',  
+ 'その会社は、再生可能エネルギーへの投資が当初予想していたよりもはるかに利益が大きいことに気づいた。',  
+ 'She abandoned her lucrative career in finance to pursue her passion for marine biology.',  
+ '彼女は海洋生物学への情熱を追求するために、もうかる金融のキャリアを捨てた。'),  
+(2, 'squander', ...),  
+...最後の行はセミコロン;
+
+ルール:
+
+- meaning: 入力ファイルからそのまま取得
+- pronunciation: 正確なIPA発音記号（スラッシュで囲む）
+- katakana: 英語の発音に近いカタカナ読み
+- example1_en/example2_en: 英検1級学習者にふさわしい高度な例文
+- example1_ja/example2_ja: 例文の日本語訳
+- SQLのシングルクォート内のアポストロフィは '' にエスケープ
+- 50語全て漏れなく作成。省略禁止  
+
+
+サブエージェントを5個ずつ並列起動して処理してください。  
+1回目: 1-50, 51-100, 101-150, 151-200, 201-250  
+2回目: 251-300, 301-350, 351-400, 401-450, 451-500  
+...と5個完了するごとに次の5個を起動。全8回で40ファイル完成させてください。  
+各回の完了後、生成された.sqlファイルの行数を表示して確認してから次に進んでください。
