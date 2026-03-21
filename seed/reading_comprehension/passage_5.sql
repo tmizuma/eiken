@@ -1,58 +1,49 @@
--- passage_5: The Microbiome Revolution and Human Health (科学 / word_number 1-600)
+-- Passage 5: 科学 - Microplastics and Human Health
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (
+5,
+'Microplastics: The Invisible Threat to Human Health',
+'科学',
+'In 2004, marine biologist Richard Thompson of the University of Plymouth coined the term "microplastics" to describe the tiny fragments of plastic, less than five millimeters in diameter, that he and his colleagues had found permeating ocean sediments around the coast of Britain. Two decades later, the problem has proved to be far more pervasive than Thompson or anyone else could have envisioned. Microplastics have been detected in the most remote corners of the planet—from the summit of Mount Everest to the depths of the Mariana Trench—and, most alarmingly, inside the human body itself.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(5, 'The Microbiome Revolution and Human Health', '科学',
-'For centuries, the prevailing medical paradigm cast microorganisms as adversaries to be vanquished — agents of disease whose eradication was synonymous with the promotion of health. This adversarial framework, while instrumental in the development of antibiotics and sanitation practices that have saved countless lives, rested on a fundamentally incomplete understanding of the relationship between humans and microbes. The emergence of microbiome science over the past two decades has debunked this simplistic narrative, revealing that the trillions of bacteria, fungi, and viruses inhabiting the human body are not merely passive residents but active participants in physiological processes essential to survival.
+The pathways through which microplastics enter the human body are manifold. We ingest them through contaminated food and water, inhale them from the air, and absorb them through skin contact with synthetic textiles. A 2019 study commissioned by the World Wildlife Fund estimated that the average person could be consuming approximately five grams of microplastic per week—roughly the weight of a credit card. While this figure has been subject to debate, subsequent research has substantiated the broader finding that human exposure to microplastics is ubiquitous and virtually inescapable.
 
-The human gut microbiome, which harbors the densest concentration of microbial life, has emerged as the focal point of this scientific revolution. Researchers have corroborated through meticulously designed studies that gut bacteria play an indispensable role in digestion, nutrient absorption, and the synthesis of vitamins that the human body cannot produce independently. Perhaps more astounding is the mounting evidence that the microbiome exerts a profound influence on the immune system. Far from being a peripheral adjunct to immunity, gut microbes actively calibrate immune responses, training the body to distinguish between harmful pathogens and benign substances. Disruptions to this delicate microbial ecosystem — whether through antibiotic overuse, dietary changes, or environmental exposures — have been implicated in a litany of immune-related disorders, from allergies and autoimmune conditions to chronic inflammatory diseases.
+The health ramifications of this exposure remain an area of intense scientific inquiry. Early studies in animal models have raised troubling concerns. Research published in the journal Environmental Science and Technology demonstrated that microplastics can accumulate in organs including the liver, kidneys, and intestines, where they may trigger inflammatory responses. A 2022 study published in Environment International became one of the first to detect microplastics in human blood, finding particles in nearly eighty percent of participants. More recently, Italian researchers reported finding microplastics in human placentas, a discovery that [BLANK].
 
-The most provocative frontier of microbiome research concerns the so-called gut-brain axis, a bidirectional communication network linking the intestinal microbiota to the central nervous system. Studies in animal models have demonstrated that specific bacterial strains can modulate neurotransmitter production, influencing mood, cognition, and even behavior. While translating these findings to human contexts remains fraught with methodological challenges, preliminary clinical trials have yielded tantalizing results. Patients suffering from treatment-resistant depression who received fecal microbiota transplants showed [BLANK], suggesting that the composition of one''s gut bacteria may be a pertinent factor in mental health — a proposition that would have seemed preposterous to researchers just a generation ago.
+The chemical dimension of the problem adds another layer of complexity. Microplastics are not inert; they often carry toxic additives such as phthalates, bisphenol A, and flame retardants, which are known endocrine disruptors. These chemicals can leach from the plastic particles once inside the body, potentially interfering with hormonal regulation and reproductive health. Furthermore, the surfaces of microplastics act as vectors for other environmental contaminants, including heavy metals and persistent organic pollutants, effectively concentrating hazardous substances and delivering them into biological systems.
 
-The therapeutic implications of microbiome science are potentially momentous but demand rigorous scrutiny before they can be responsibly translated into clinical practice. The burgeoning market for commercial probiotics exemplifies the perils of premature application: consumers spend billions annually on supplements whose efficacy remains largely unsubstantiated by robust clinical evidence. Critics caution that the fervent enthusiasm surrounding microbiome-based therapies risks fostering a new form of medical charlatanism, in which unverified claims are disseminated to a gullible public eager for novel health solutions. The challenge for the scientific community is to harness the genuine therapeutic potential of microbiome manipulation while establishing stringent regulatory frameworks that protect patients from unproven interventions.
+Despite the mounting evidence, regulatory responses have been tepid. The European Union has taken the most assertive stance, adopting restrictions on intentionally added microplastics in products such as cosmetics and detergents in 2023. The United States, by contrast, has been slower to act, with federal legislation largely confined to the Microbead-Free Waters Act of 2015, which banned microbeads in rinse-off cosmetics but left vast categories of microplastic pollution unaddressed. Environmental advocates have decried this piecemeal approach, arguing that the dearth of comprehensive regulation leaves both ecosystems and public health inadequately protected.
 
-Meanwhile, the environmental dimensions of microbiome research have opened equally compelling avenues of inquiry. Scientists have begun to elucidate how urbanization, industrial agriculture, and the ubiquitous use of antimicrobial compounds are systematically diminishing the microbial diversity that humans have coevolved with over millennia. This erosion of microbial heritage, some researchers contend, may represent one of the most inscrutable yet consequential public health crises of the modern era. Restoring microbial diversity — through dietary modifications, reduced antibiotic prescribing, and greater exposure to natural environments — has emerged as a salient public health priority, one that requires not merely individual behavioral change but a fundamental reconceptualization of the relationship between human civilization and the microbial world upon which it depends.',
+The scientific community is now engaged in a concerted effort to fill the knowledge gaps. Large-scale epidemiological studies are underway to determine whether chronic microplastic exposure is linked to specific diseases, including cancer, cardiovascular disorders, and neurodegenerative conditions. Until definitive answers emerge, many researchers advocate for the precautionary principle: given the potential severity of the threat, action should not be delayed simply because the full extent of the harm has not yet been conclusively demonstrated.',
+'2004年、プリマス大学の海洋生物学者リチャード・トンプソンは、英国沿岸の海底堆積物から同僚と共に発見した、直径5ミリメートル未満のプラスチックの微小な断片を表す「マイクロプラスチック」という用語を作り出した。それから20年後、この問題はトンプソンや他の誰もが想定していたよりもはるかに蔓延していることが判明した。マイクロプラスチックは、エベレスト山の頂上からマリアナ海溝の深部まで、地球上の最も辺境に至るまで検出されており、最も憂慮すべきことに、人体の内部からも発見されている。
 
-'何世紀にもわたり、支配的な医学パラダイムは微生物を打ち負かすべき敵——その根絶が健康促進と同義である疾病の媒介者——として捉えてきた。この敵対的枠組みは、無数の命を救った抗生物質と公衆衛生慣行の発展に不可欠であった一方、人間と微生物の関係について根本的に不完全な理解に基づいていた。過去20年間にわたるマイクロバイオーム科学の出現は、この単純な物語の誤りを暴き、人体に生息する数兆の細菌、真菌、ウイルスが単なる受動的な住人ではなく、生存に不可欠な生理学的プロセスへの能動的な参加者であることを明らかにした。
+マイクロプラスチックが人体に入る経路は多岐にわたる。私たちは汚染された食物や水を通じてそれらを摂取し、空気中からそれらを吸入し、合成繊維との皮膚接触を通じてそれらを吸収する。世界自然保護基金が委託した2019年の研究は、平均的な人が週に約5グラムのマイクロプラスチック——クレジットカード1枚分の重さにほぼ等しい——を摂取している可能性があると推計した。この数値は議論の対象となっているものの、その後の研究はマイクロプラスチックへの人間の曝露が遍在し、事実上逃れられないというより広い知見を実証してきた。
 
-微生物の最も密集した集中を擁するヒト腸内マイクロバイオームは、この科学革命の焦点として浮上してきた。研究者たちは細心の注意を払って設計された研究を通じて、腸内細菌が消化、栄養素の吸収、そして人体が独立して産生できないビタミンの合成において不可欠な役割を果たしていることを確証してきた。おそらくさらに驚くべきは、マイクロバイオームが免疫系に深遠な影響を及ぼすという証拠が増大していることである。免疫の周辺的な付属物であるどころか、腸内微生物は免疫応答を能動的に調整し、有害な病原体と無害な物質を区別するよう体を訓練する。この繊細な微生物生態系への混乱——抗生物質の過剰使用、食事の変化、環境への曝露を通じた——は、アレルギーや自己免疫疾患から慢性炎症性疾患に至るまで、免疫関連障害の長い列に関与しているとされてきた。
+この曝露の健康上の影響は、依然として集中的な科学的探究の分野である。動物モデルにおける初期の研究は、懸念すべき結果を示した。Environmental Science and Technology誌に発表された研究は、マイクロプラスチックが肝臓、腎臓、腸を含む臓器に蓄積し、炎症反応を引き起こす可能性があることを示した。2022年にEnvironment International誌に発表された研究は、人間の血液中にマイクロプラスチックを検出した最初の研究の一つとなり、参加者のほぼ80パーセントから粒子を発見した。より最近では、イタリアの研究者たちが人間の胎盤からマイクロプラスチックを発見したと報告しており、この発見は[BLANK]。
 
-マイクロバイオーム研究の最も挑発的な最前線は、いわゆる腸脳軸——腸内微生物叢と中枢神経系を結ぶ双方向の通信ネットワーク——に関するものである。動物モデルでの研究は、特定の細菌株が神経伝達物質の産生を調節し、気分、認知、さらには行動に影響を与え得ることを実証している。これらの知見を人間の文脈に翻訳することは方法論的課題に満ちているが、予備的な臨床試験は魅力的な結果をもたらしている。治療抵抗性うつ病に苦しむ患者で糞便微生物叢移植を受けた者は有意な症状改善を示し、腸内細菌の構成が精神的健康における適切な要因である可能性を示唆している——わずか一世代前の研究者には馬鹿げて思えたであろう命題である。
+問題の化学的側面は、さらなる複雑さの層を加えている。マイクロプラスチックは不活性ではなく、フタル酸エステル、ビスフェノールA、難燃剤など、既知の内分泌撹乱物質である有毒な添加剤を含んでいることが多い。これらの化学物質は体内に入るとプラスチック粒子から溶出し、ホルモン調節や生殖の健康に干渉する可能性がある。さらに、マイクロプラスチックの表面は重金属や残留性有機汚染物質を含む他の環境汚染物質の媒介として機能し、有害物質を効果的に濃縮して生物学的システムに送り込む。
 
-マイクロバイオーム科学の治療上の含意は潜在的に極めて重大であるが、臨床実践に責任を持って翻訳される前に厳格な精査を必要とする。商業的プロバイオティクスの急成長する市場は、時期尚早な応用の危険を例示している。消費者は、その有効性が堅牢な臨床証拠によって大部分裏づけられていないサプリメントに年間数十億ドルを費やしている。批判者は、マイクロバイオームに基づく療法を取り巻く熱心な熱狂が、新しい形の医学的ペテンを助長するリスクがあると警告する。そこでは検証されていない主張が、斬新な健康ソリューションを熱望するだまされやすい大衆に広められる。科学コミュニティにとっての課題は、マイクロバイオーム操作の真の治療可能性を活用しつつ、患者を未証明の介入から保護する厳格な規制枠組みを確立することである。
+証拠が増えているにもかかわらず、規制の対応は熱意のないものにとどまっている。EUは最も積極的な姿勢をとり、2023年に化粧品や洗剤などの製品に意図的に添加されたマイクロプラスチックに対する規制を採択した。対照的に、米国は行動が遅れており、連邦レベルの法律は主に2015年のマイクロビーズフリー水法に限られ、洗い流し型化粧品中のマイクロビーズを禁止したものの、マイクロプラスチック汚染の広大なカテゴリーは未対処のまま放置されている。環境保護活動家はこの断片的なアプローチを非難し、包括的な規制の欠如が生態系と公衆衛生の両方を不十分にしか保護していないと主張している。
 
-一方、マイクロバイオーム研究の環境的側面は、同様に説得力のある研究の道を開いてきた。科学者たちは、都市化、工業的農業、抗菌化合物の偏在する使用が、人類が数千年にわたって共進化してきた微生物の多様性をいかに体系的に減少させているかを解明し始めている。この微生物遺産の浸食は、一部の研究者によれば、現代の最も不可解でありながら重大な公衆衛生危機の一つを表す可能性がある。微生物の多様性の回復——食事の修正、抗生物質の処方削減、自然環境へのより多くの曝露を通じた——は、顕著な公衆衛生上の優先事項として浮上しており、単なる個人の行動変容ではなく、人間文明とそれが依存する微生物世界との関係の根本的な再概念化を必要とするものである。');
+科学界は現在、知識のギャップを埋めるための協調的な努力に従事している。慢性的なマイクロプラスチック曝露ががん、心血管疾患、神経変性疾患を含む特定の疾病と関連しているかどうかを判定するための大規模な疫学研究が進行中である。決定的な答えが出るまで、多くの研究者が予防原則を提唱している。脅威の潜在的な深刻さを考慮すれば、被害の全容がまだ決定的に実証されていないという理由だけで行動を遅らせるべきではないということである。'
+);
 
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(13, 5, 1, 'comprehension',
-'According to the passage, what role do gut microbes play in the immune system?',
-'第2段落で、腸内微生物は「免疫の周辺的な付属物であるどころか」「免疫応答を能動的に調整し、有害な病原体と無害な物質を区別するよう体を訓練する」と述べられている。選択肢2が「免疫応答を能動的に調整し、有害な病原体と無害な物質の区別を体に教える」と正確に対応している。選択肢1は「すべての病原体を直接破壊する」で本文はそう述べていない。選択肢3は「免疫応答を抑制する」で本文と矛盾。選択肢4は「ビタミンを産生するだけ」で免疫系の役割を無視している。',
-2),
-(14, 5, 2, 'comprehension',
-'What concern does the passage raise about the commercial probiotics market?',
-'第4段落で、商業的プロバイオティクス市場が「時期尚早な応用の危険を例示している」と述べられ、消費者が「有効性が堅牢な臨床証拠によって大部分裏づけられていないサプリメント」に年間数十億ドルを費やしていると指摘されている。さらに批判者はマイクロバイオーム療法の熱狂が「新しい形の医学的ペテンを助長するリスク」があると警告している。選択肢1が「消費者が臨床的に十分裏づけられていない製品に巨額を費やしている」と正確に反映している。選択肢2は「規制が厳しすぎる」で本文と逆。選択肢3は「有害な副作用が証明されている」で本文にそのような言及なし。選択肢4は「研究資金を奪っている」で本文の論点ではない。',
-1),
-(15, 5, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落にあり、「治療抵抗性うつ病患者が糞便微生物叢移植を受けた後に[BLANK]を示した」という文脈。続く文で「腸内細菌の構成が精神的健康における適切な要因である可能性を示唆している」とあるので、肯定的な症状改善を示す表現が入る。選択肢4が「有意な症状改善」で最も適切。選択肢1は「完全な寛解」で強すぎる（予備的臨床試験の段階）。選択肢2は「変化なし」で文脈と矛盾。選択肢3は「副作用の増加」で文脈と矛盾。',
-4);
+(13, 5, 1, 'comprehension', 'What does the passage indicate about the regulatory response to microplastic pollution?', '第5段落で、EUは2023年に規制を採択した一方、米国は2015年のマイクロビーズ法以降ほとんど進展がないと述べられ、「tepid」（熱意のない）と評されている。環境保護活動家はこの断片的なアプローチを非難している。選択肢2が最も正確。', 2),
+(14, 5, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK] in paragraph 3?', '第3段落は、マイクロプラスチックが人体の様々な場所から検出されていることを述べている。胎盤からの発見は、胎児が出生前からマイクロプラスチックに曝露される可能性を示唆する重大な発見であり、選択肢1が文脈に最も合う。', 1),
+(15, 5, 3, 'comprehension', 'According to the passage, why are microplastics considered particularly dangerous from a chemical perspective?', '第4段落で、マイクロプラスチックは不活性ではなく有毒な添加剤を含み、それらが体内で溶出して内分泌系に干渉する可能性があること、さらに表面が重金属などの環境汚染物質の媒介として機能することが説明されている。選択肢3がこの化学的危険性を正確に要約している。', 3);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(13, 1, 'They directly destroy all pathogenic organisms that enter the digestive system'),
-(13, 2, 'They actively calibrate immune responses and train the body to differentiate between harmful and harmless substances'),
-(13, 3, 'They suppress immune responses to prevent the body from overreacting to external stimuli'),
-(13, 4, 'Their role is limited to synthesizing vitamins and has no significant connection to immune function'),
-(14, 1, 'Consumers are spending vast sums on products whose effectiveness is largely unsupported by rigorous clinical evidence'),
-(14, 2, 'Regulatory authorities have imposed overly strict controls that prevent beneficial probiotics from reaching the market'),
-(14, 3, 'Clinical trials have conclusively demonstrated that most commercial probiotics cause harmful side effects'),
-(14, 4, 'The commercial market is diverting research funding away from more promising areas of microbiome investigation'),
-(15, 1, 'complete and permanent remission of all depressive symptoms within days of treatment'),
-(15, 2, 'no statistically meaningful change in their psychological condition compared to control groups'),
-(15, 3, 'an increase in adverse side effects that outweighed any potential psychiatric benefits'),
-(15, 4, 'statistically significant improvements in their depressive symptoms');
+(13, 1, 'Governments worldwide have enacted comprehensive bans on all forms of microplastic pollution.'),
+(13, 2, 'While the EU has taken some steps, overall regulatory action has been insufficient and fragmented.'),
+(13, 3, 'The United States has led the world in implementing strict microplastic regulations.'),
+(13, 4, 'International organizations have successfully coordinated a unified global response.'),
+(14, 1, 'raised urgent questions about prenatal exposure and the potential effects on fetal development'),
+(14, 2, 'confirmed that microplastics pose no significant risk to reproductive health'),
+(14, 3, 'proved that microplastics are completely filtered out by the human immune system'),
+(14, 4, 'demonstrated that only certain types of plastic can penetrate biological barriers'),
+(15, 1, 'They dissolve quickly in bodily fluids, releasing nutrients that interfere with digestion.'),
+(15, 2, 'Their molecular structure is identical to naturally occurring hormones in the body.'),
+(15, 3, 'They carry toxic additives and act as vectors for environmental contaminants that can disrupt hormonal and biological systems.'),
+(15, 4, 'They react with stomach acid to produce carcinogenic compounds that directly damage DNA.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 5, id FROM words WHERE word_number IN (21, 26, 43, 51, 59, 69, 70, 166, 316, 354, 359, 360, 401, 541, 550, 577, 593, 594, 596);
+INSERT INTO passage_words (passage_id, word_id) SELECT 5, id FROM words WHERE word_number IN (132, 137, 154, 231, 246, 381, 393, 407, 516, 540, 577, 595);

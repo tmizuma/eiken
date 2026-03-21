@@ -1,58 +1,45 @@
--- passage_23: The Rise and Fragility of International Sanctions (政治 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (23, 'International Sanctions: The Limits of Economic Coercion', '政治',
+'Economic sanctions have become the instrument of choice for Western democracies seeking to influence the behavior of adversarial states without resorting to military force. Since the end of the Cold War, the United States alone has imposed sanctions on dozens of countries, targeting regimes as disparate as Iran, North Korea, Russia, and Venezuela. Proponents tout sanctions as a humane alternative to armed conflict — a way to impose costs on rogue actors while minimizing civilian casualties. Yet a growing body of research suggests that the efficacy of sanctions as a foreign policy tool is far more limited than their advocates claim.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(23, 'The Rise and Fragility of International Sanctions', '政治',
-'Over the past half century, economic sanctions have emerged as one of the most frequently deployed instruments in the arsenal of international diplomacy. When military intervention is deemed too costly or politically untenable, and when diplomatic entreaties alone prove insufficient, nations and multilateral organizations increasingly turn to sanctions — trade embargoes, asset freezes, and financial restrictions — as a means of coercing recalcitrant regimes into altering their behavior. The proliferation of sanctions in recent decades reflects a broader conviction that economic pressure can achieve what persuasion and threats alone cannot. Yet the historical record suggests that the efficacy of sanctions is far more ambivalent than their proponents typically acknowledge.
+The case of Iran illustrates both the potential and the pitfalls of economic coercion. Following Iran''s refusal to halt its nuclear enrichment program, the United States and the European Union imposed increasingly stringent sanctions throughout the 2000s and early 2010s. These measures, which targeted Iran''s oil exports and banking sector, inflicted severe damage on the Iranian economy. Inflation soared, the currency depreciated sharply, and ordinary citizens bore the brunt of the economic hardship. The pressure eventually contributed to Iran''s decision to negotiate the Joint Comprehensive Plan of Action in 2015, which temporarily curtailed the country''s nuclear ambitions in exchange for sanctions relief.
 
-The rationale behind sanctions rests on a seemingly straightforward premise: by imposing severe economic costs on a target nation, the sanctioning powers can compel its leadership to make concessions on contentious issues such as nuclear proliferation, territorial aggression, or human rights abuses. In theory, the pain inflicted on the target''s economy should generate domestic pressure on the ruling elite, creating incentives for compliance. Staunch advocates of this approach point to cases where sanctions have apparently succeeded — most notably, the comprehensive trade embargo against South Africa during the apartheid era, which many scholars credit as a catalyst for political transformation. The South African precedent, however flattering to sanctions proponents, conceals a more complex reality in which internal resistance movements and shifting geopolitical alignments played equally decisive roles.
+However, the Iranian case also reveals the limitations of this approach. Despite years of punishing sanctions, Iran''s government never fully capitulated, and hardline factions within the regime used the economic suffering to stoke nationalist sentiment and consolidate their grip on power. When the United States withdrew from the nuclear deal in 2018 under President Donald Trump and reimposed sanctions, the result was not renewed compliance but rather [BLANK]. This pattern — in which sanctions harden the resolve of targeted regimes rather than compelling concessions — has been observed in numerous other cases, from Cuba to Myanmar.
 
-The limitations of sanctions become starkly apparent when one examines cases of prolonged failure. Decades of American sanctions against Cuba, for instance, failed to dislodge the Castro regime, and critics argue that the embargo inadvertently bolstered the government''s narrative of foreign aggression, thereby consolidating rather than eroding its domestic support. Similarly, comprehensive sanctions imposed on Iraq during the 1990s exacted a devastating toll on the civilian population — contributing to widespread malnutrition and a collapse of public health infrastructure — while leaving the ruling clique largely unscathed. These episodes illustrate a recurrent paradox: sanctions frequently inflict the greatest suffering not on the political elites they are designed to target but on [BLANK].
+Russia''s invasion of Ukraine in February 2022 prompted what many analysts described as the most comprehensive sanctions regime ever assembled. Western nations froze hundreds of billions of dollars in Russian central bank reserves, severed major Russian banks from the SWIFT financial messaging system, and imposed export controls on advanced technology. The immediate impact was dramatic: the ruble plummeted, and predictions of economic collapse proliferated in Western media. Yet the Russian economy proved more resilient than many had anticipated. High energy prices, a pivot toward trade with China and India, and aggressive monetary policy by the Central Bank of Russia helped avert a total economic meltdown.
 
-In response to such criticisms, the international community has increasingly turned to so-called smart sanctions, which aim to concentrate pressure on specific individuals and entities rather than imposing blanket restrictions on entire economies. Asset freezes targeting the personal fortunes of political leaders, travel bans on senior officials, and restrictions on the export of dual-use technologies represent attempts to circumvent the humanitarian costs of broad-based sanctions while maintaining coercive leverage. Proponents contend that smart sanctions are a more calibrated tool, capable of exerting meaningful pressure without wreaking havoc on civilian populations. Skeptics, however, note that targeted regimes have proven adroit at evading such measures, employing clandestine financial networks and front companies to obscure their assets.
+The humanitarian consequences of broad economic sanctions have drawn increasing scrutiny. Studies by organizations such as the United Nations and the International Committee of the Red Cross have documented how sanctions regimes frequently devastate civilian populations while leaving ruling elites largely unscathed. In Iraq during the 1990s, comprehensive sanctions contributed to a humanitarian catastrophe, with UNICEF estimating that child mortality rates doubled during the sanctions period. This grim precedent has led many policymakers to advocate for more targeted measures — so-called "smart sanctions" — that focus on individual leaders and their assets rather than entire economies.
 
-The debate over sanctions is unlikely to be resolved anytime soon, for it touches on fundamental questions about the limits of economic coercion in a world of sovereign states. What is increasingly clear, however, is that sanctions alone rarely achieve their stated objectives without being embedded within a broader diplomatic strategy. The most effective cases tend to involve a combination of economic pressure, credible military deterrents, and sustained diplomatic engagement — a concerted approach that demands patience, flexibility, and a willingness to offer meaningful concessions in return. Nations that resort to sanctions as a blunt instrument of punishment, without attending to the intricate political dynamics within the target country, risk not only policy failure but also the entrenchment of the very adversarial relationships they seek to transform.',
+The debate over sanctions ultimately raises fundamental questions about the tools available to the international community for maintaining global order. In an era when great-power military confrontation carries the risk of nuclear escalation, economic coercion may be an imperfect but indispensable instrument of statecraft. The challenge lies in designing sanctions that are precise enough to alter the calculus of decision-makers without inflicting disproportionate suffering on innocent populations.',
 
-'過去半世紀にわたり、経済制裁は国際外交の武器庫の中で最も頻繁に展開される手段の一つとして台頭してきた。軍事介入があまりにもコストが高いか政治的に支持できないと見なされ、外交的な懇願だけでは不十分であることが判明した場合、国家や多国間組織は制裁——貿易禁止、資産凍結、金融制限——に頼るようになっている。近年の制裁の急増は、経済的圧力が説得や脅迫だけでは達成できないことを成し遂げられるという、より広い確信を反映している。しかし歴史的記録は、制裁の有効性がその支持者が通常認めるよりもはるかに両義的であることを示唆している。
+'経済制裁は、軍事力に訴えることなく敵対国の行動に影響を与えようとする西側民主主義国にとって、最も好んで用いる手段となっている。冷戦の終結以来、アメリカだけでもイラン、北朝鮮、ロシア、ベネズエラといった全く異なる体制を対象に、数十カ国に制裁を科してきた。支持者は制裁を武力紛争に代わる人道的な選択肢として褒めちぎる——民間人の犠牲を最小限に抑えながら、ならず者国家にコストを課す方法だと。しかし、外交政策ツールとしての制裁の有効性は、その擁護者が主張するよりもはるかに限定的であることを示唆する研究が増えている。
 
-制裁の根拠は、一見単純な前提に基づいている。対象国に深刻な経済的コストを課すことで、制裁を課す側の大国はその指導部に核拡散、領土侵略、人権侵害などの論議を呼ぶ問題について譲歩させることができる。理論上、対象国の経済に与えられる苦痛は支配層エリートに対する国内圧力を生み出し、コンプライアンスのインセンティブを創出するはずである。このアプローチの忠実な支持者は、制裁が明らかに成功した事例を指摘する——最も顕著なのは、アパルトヘイト時代の南アフリカに対する包括的貿易禁止であり、多くの学者はこれを政治的変革の触媒として評価している。しかし、制裁支持者にとっていかに好都合であっても、南アフリカの前例は、内部の抵抗運動と変化する地政学的配置が同様に決定的な役割を果たした、より複雑な現実を覆い隠している。
+イランの事例は、経済的強制の可能性と落とし穴の両方を示している。イランが核濃縮プログラムの停止を拒否した後、アメリカと欧州連合は2000年代から2010年代初頭にかけてますます厳格な制裁を課した。イランの石油輸出と銀行セクターを対象としたこれらの措置は、イラン経済に深刻なダメージを与えた。インフレは急騰し、通貨は急激に下落し、一般市民が経済的困難の矛先を引き受けた。この圧力は最終的に、制裁解除と引き換えに国の核の野心を一時的に制限する2015年の包括的共同行動計画を交渉するイランの決定に貢献した。
 
-制裁の限界は、長期にわたる失敗の事例を検証すると明確に浮かび上がる。例えば、数十年にわたるアメリカのキューバに対する制裁はカストロ政権を排除することに失敗し、批判者は禁輸が意図せず外国の侵略という政府のナラティブを強化し、国内支持を侵食するどころか固めてしまったと主張する。同様に、1990年代にイラクに課された包括的制裁は一般市民に壊滅的な被害をもたらし——広範な栄養失調と公衆衛生インフラの崩壊に寄与した——一方で支配層の派閥はほぼ無傷のまま残った。これらのエピソードは繰り返されるパラドックスを示している。制裁はしばしば、対象とするよう設計された政治エリートにではなく、自国の指導者の政策に対する発言権をほとんど持たない一般市民に最大の苦しみを与える。
+しかし、イランの事例はこのアプローチの限界も明らかにしている。何年にもわたる厳しい制裁にもかかわらず、イラン政府は完全には屈服せず、体制内の強硬派は経済的苦難を利用してナショナリスト感情を煽り、権力の掌握を固めた。2018年にドナルド・トランプ大統領のもとでアメリカが核合意から離脱し制裁を再び課したとき、その結果は新たな順守ではなく、むしろイランの核活動の加速と西側への敵意の深まりであった。制裁が譲歩を強いるのではなく、対象政権の決意を固めるというこのパターンは、キューバからミャンマーまで多くの他のケースで観察されている。
 
-そのような批判に応じて、国際社会はいわゆるスマート制裁にますます目を向けている。これは経済全体に包括的な制限を課すのではなく、特定の個人と団体に圧力を集中させることを目指すものである。政治指導者の個人資産を対象とした資産凍結、高官への渡航禁止、二重使用技術の輸出制限は、広範な制裁の人道的コストを回避しつつ強制的な梃子を維持する試みを表している。支持者はスマート制裁がより精密なツールであり、一般市民に大きな損害を与えることなく意味のある圧力を及ぼすことができると主張する。しかし懐疑論者は、対象となる体制が秘密の金融ネットワークやダミー会社を用いて資産を隠蔽し、そのような措置を巧みに回避してきたと指摘する。
+2022年2月のロシアによるウクライナ侵攻は、多くのアナリストがこれまでに組み上げられた中で最も包括的な制裁体制と表現したものを促した。西側諸国はロシア中央銀行の準備金数千億ドルを凍結し、主要なロシアの銀行をSWIFT金融メッセージングシステムから切り離し、先端技術の輸出規制を課した。即座の影響は劇的であった：ルーブルは急落し、経済崩壊の予測が西側メディアで急増した。しかしロシア経済は、多くが予想していたよりも回復力があることが証明された。高いエネルギー価格、中国やインドとの貿易へのシフト、そしてロシア中央銀行による積極的な金融政策が、完全な経済メルトダウンを回避するのに役立った。
 
-制裁をめぐる議論は当分の間解決されそうにない。なぜならそれは、主権国家の世界における経済的強制の限界に関する根本的な問いに触れるからである。しかしますます明らかになっているのは、制裁だけではより広範な外交戦略に組み込まれない限り、その宣言された目的を達成することはめったにないということである。最も効果的な事例は、経済的圧力、信頼できる軍事的抑止力、持続的な外交的関与の組み合わせ——忍耐、柔軟性、そして見返りに意味のある譲歩を提供する意思を必要とする協調的アプローチ——を含む傾向がある。対象国内の複雑な政治的ダイナミクスに留意することなく制裁を懲罰の鈍器として用いる国家は、政策の失敗だけでなく、変革しようとしているまさにその敵対関係の固定化をも危険に冒す。');
+広範な経済制裁の人道的影響はますます厳しい精査を受けている。国際連合や赤十字国際委員会などの組織による研究は、制裁体制がしばしば民間人を壊滅させる一方で、支配層エリートはほとんど無傷のまま残していることを記録している。1990年代のイラクでは、包括的制裁が人道的惨事に寄与し、ユニセフは制裁期間中に乳幼児死亡率が倍増したと推定している。この厳しい前例は、多くの政策立案者に、経済全体ではなく個々のリーダーとその資産に焦点を当てたより的を絞った措置——いわゆる「スマート制裁」——を提唱させるに至った。
 
--- passage_questions テーブル (3問)
+制裁をめぐる議論は最終的に、グローバル秩序を維持するために国際社会が利用できる手段についての根本的な問いを提起する。大国間の軍事的対立が核のエスカレーションのリスクを伴う時代において、経済的強制は不完全ではあるが不可欠な国政術の手段であるかもしれない。課題は、無実の人々に不均衡な苦しみを与えることなく、意思決定者の判断を変えるのに十分なほど正確な制裁を設計することにある。');
+
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(67, 23, 1, 'comprehension',
-'According to the passage, what limitation of the South African sanctions case does the author highlight?',
-'第2段落で、南アフリカの制裁は政治的変革の触媒として評価されるが、この前例は「内部の抵抗運動と変化する地政学的配置が同様に決定的な役割を果たした、より複雑な現実を覆い隠している」と述べられている。つまり制裁だけが変革の原因ではなかった。選択肢2が「内部の抵抗運動や地政学的変化も同様に重要な役割を果たした」と正確に反映。選択肢1は「制裁が完全に失敗した」で本文と不一致。選択肢3は「経済的被害がなかった」で本文にない。選択肢4は「他国が制裁を模倣した」で本文の論点ではない。',
-2),
-(68, 23, 2, 'comprehension',
-'What does the passage state about "smart sanctions"?',
-'第4段落で、スマート制裁は特定の個人と団体に圧力を集中させ、広範な制裁の人道的コストを回避しつつ強制的な梃子を維持する試みであると説明されている。しかし懐疑論者は「対象となる体制がsuch measuresを巧みに回避してきた（adroit at evading）」と指摘している。選択肢4が「支持者はより精密と見なすが、対象政権は回避する方法を見つけている」と両面を正確に捉えている。選択肢1は「完全に成功している」で一面的。選択肢2は「広範な制裁より被害が大きい」で逆。選択肢3は「国際社会に拒否された」で本文と逆。',
-4),
-(69, 23, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落にあり、「制裁はしばしば対象とするよう設計された政治エリートにではなく[BLANK]に最大の苦しみを与える」という文脈。前文でイラクの事例として一般市民への壊滅的被害と支配層が無傷であったことが述べられている。選択肢1「ordinary citizens who have little voice in the policies of their own leaders」が最も適切。選択肢2は「wealthy business elites」で本文の論点と逆。選択肢3は「neighboring countries」で本文にない。選択肢4は「international organizations」で文脈に合わない。',
-1);
+(67, 23, 1, 'comprehension', 'What does the passage suggest was the ultimate effect of sanctions on Iran''s nuclear program?', '第2段落と第3段落から、制裁はイランを2015年の核合意の交渉テーブルに着かせることに貢献したが、イラン政府を完全に屈服させることはできなかったことが分かる。2018年の制裁再発動後は、むしろイランの核活動が加速した。つまり制裁は一時的な成果をもたらしたが、恒久的な解決には至らなかった。', 2),
+(68, 23, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?', '空所は第3段落にあり、2018年にアメリカが核合意から離脱して制裁を再び課した結果について述べている。直後の文で「制裁が対象政権の決意を固める」パターンが論じられていることから、イランが順守に戻るのではなく核活動を加速させ西側への敵意を深めた、という内容が適切である。', 4),
+(69, 23, 3, 'comprehension', 'What criticism of broad economic sanctions does the passage highlight?', '第5段落で、「制裁体制がしばしば民間人を壊滅させる一方で、支配層エリートはほとんど無傷のまま残している」と述べられている。イラクの例では乳幼児死亡率が倍増した。制裁は一般市民に不均衡な苦しみを与える一方、標的とする政権指導者にはあまり影響を及ぼさないという批判が強調されている。', 3);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(67, 1, 'The sanctions against South Africa were a complete failure with no measurable impact'),
-(67, 2, 'Internal resistance movements and shifting geopolitical alignments played equally decisive roles in the transformation'),
-(67, 3, 'The economic damage caused by the sanctions was negligible compared to other factors'),
-(67, 4, 'Other nations successfully replicated the South African sanctions model in subsequent conflicts'),
-(68, 1, 'They have been completely successful in every case where they have been applied'),
-(68, 2, 'They cause more humanitarian damage than comprehensive sanctions'),
-(68, 3, 'They have been rejected by the international community as ineffective'),
-(68, 4, 'Proponents consider them more precise, but targeted regimes have found ways to evade them'),
-(69, 1, 'ordinary citizens who have little voice in the policies of their own leaders'),
-(69, 2, 'the wealthy business elites who finance the ruling party'),
-(69, 3, 'neighboring countries that depend on trade with the sanctioned nation'),
-(69, 4, 'international organizations that monitor compliance with trade agreements');
+(67, 1, 'Sanctions completely eliminated Iran''s ability to enrich uranium.'),
+(67, 2, 'Sanctions helped bring Iran to negotiations but did not achieve a permanent resolution.'),
+(67, 3, 'Sanctions had no measurable impact on Iran''s nuclear ambitions whatsoever.'),
+(67, 4, 'Sanctions caused Iran to immediately abandon all nuclear research programs.'),
+(68, 1, 'a swift return to the negotiating table and a strengthened agreement'),
+(68, 2, 'widespread domestic protests demanding the government comply with Western demands'),
+(68, 3, 'the complete collapse of Iran''s economy and a change in government'),
+(68, 4, 'an acceleration of Iran''s nuclear activities and a deepening of hostility toward the West'),
+(69, 1, 'They are too expensive for the countries imposing them to sustain over long periods.'),
+(69, 2, 'They inevitably lead to military confrontation between the sanctioning and target nations.'),
+(69, 3, 'They disproportionately harm civilian populations while leaving ruling elites largely unaffected.'),
+(69, 4, 'They violate international law and have been declared illegal by the United Nations.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 23, id FROM words WHERE word_number IN (53, 96, 102, 147, 149, 169, 193, 219, 254, 309, 347, 363, 374, 393, 451, 556, 560, 593);
+INSERT INTO passage_words (passage_id, word_id) SELECT 23, id FROM words WHERE word_number IN (150, 165, 219, 239, 291, 341, 354, 400, 451, 507, 546, 556);

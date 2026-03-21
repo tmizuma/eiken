@@ -1,58 +1,49 @@
--- passage_1: The Politics of Direct Democracy (政治 / word_number 1-600)
+-- Passage 1: 教育 - The Finnish Education Model
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (
+1,
+'The Finnish Education Model: Lessons in Equity and Excellence',
+'教育',
+'For decades, Finland has been held up as a paragon of educational excellence, consistently ranking among the top performers in international assessments such as the Programme for International Student Assessment (PISA). What makes Finland''s approach so remarkable is not the rigor of its testing regime—in fact, the country has largely eschewed standardized testing—but rather its fervent commitment to equity and the holistic development of every child.
 
--- passages テーブル
-INSERT INTO passages (id, title, content, content_ja) VALUES
-(1, 'The Politics of Direct Democracy',
-'In recent decades, a growing number of democratic nations have found themselves grappling with a fundamental question: to what extent should citizens be granted direct participation in legislative decision-making? The traditional model of representative democracy, in which elected officials deliberate on behalf of their constituents, has long been the dominant paradigm. Yet mounting dissatisfaction with political elites has fueled a propensity among voters to demand more immediate mechanisms of influence, most notably through the expanded use of referendums.
+The Finnish model rests on several salient principles. First, all teachers in Finland are required to hold a master''s degree, and admission to teacher training programs is fiercely competitive, with acceptance rates often hovering around ten percent. This ensures that teaching remains a prestigious and lucrative profession, attracting adept candidates who might otherwise pursue careers in law or medicine. The rationale behind this approach is straightforward: investing in the quality of educators yields robust returns in student outcomes.
 
-Proponents of direct democracy argue that the referendum represents a vital corrective to the shortcomings of representative governance. When legislatures become dominated by entrenched factions whose allegiance lies primarily with narrow interest groups rather than the broader electorate, ordinary citizens are effectively shut out of the policymaking process. In such circumstances, the referendum offers a means of bypassing the cliques that monopolize parliamentary debate and restoring decision-making authority to the populace at large. Advocates further contend that direct participation fosters a more politically engaged citizenry, compelling individuals to educate themselves on contentious issues rather than delegating judgment to representatives whose priorities may diverge from their own.
+Second, Finland provides children with considerable latitude in how they learn. Rather than subjecting students to grueling schedules packed with academic drills, Finnish schools emphasize play, creativity, and collaborative problem-solving. Students typically do not begin formal schooling until the age of seven, and homework loads remain minimal throughout primary education. Critics initially lambasted this approach as frivolous, arguing that it would produce mediocre results. Yet the evidence has consistently corroborated the opposite conclusion: Finnish students outperform their peers in nations that impose far more stringent academic demands.
 
-Critics, however, caution that the expansion of direct democracy carries substantial risks. Complex policy questions — involving trade agreements, constitutional amendments, or stringent regulatory frameworks — often require a depth of technical expertise that the average voter cannot reasonably be expected to possess. Opponents warn that referendums reduce multifaceted issues to simplistic binary choices, thereby polarizing public opinion and precluding the kind of nuanced compromise that characterizes effective legislation. Furthermore, they argue that plebiscites are susceptible to manipulation by well-funded campaigns that exploit emotional appeals rather than [BLANK].
+A third pillar of the Finnish system is its commitment to disseminating resources equitably across all schools, regardless of geographic location or socioeconomic composition. Unlike many countries where funding disparities engender stark inequalities, Finland ensures that [BLANK]. Special education services, school meals, and mental health support are universally available, eliminating many of the impediments that disadvantage children in other systems.
 
-The historical record offers ammunition to both sides of this debate. Switzerland, which conducts more referendums than any other nation, is frequently cited as evidence that direct democracy can function effectively within a stable institutional framework. Swiss voters regularly engage with highly technical policy questions and, according to most assessments, do so with a reasonable degree of informed judgment. Conversely, critics point to instances where referendums have produced outcomes that were subsequently regarded as arbitrary or poorly considered — decisions driven by momentary public sentiment rather than deliberate analysis of long-term consequences. The precedent set by such cases, they argue, should give pause to those who advocate an uncritical expansion of plebiscitary mechanisms.
+However, the Finnish model is not without its challenges. In recent years, Finland''s PISA scores have shown a modest decline, prompting educators to delve into potential causes. Some analysts point to the burgeoning influence of digital technology, which may have eroded students'' attention spans and reading habits. Others note that increasing immigration has introduced new linguistic and cultural complexities that the system was not originally designed to address. Despite these concerns, Finland''s educational infrastructure remains remarkably resilient, and policymakers continue to revamp curricula to meet evolving needs.
 
-At this critical juncture in democratic governance, the challenge lies not in choosing categorically between direct and representative models, but in devising hybrid systems that harness the strengths of each. Some scholars have proposed deliberative assemblies — randomly selected panels of citizens who receive expert briefings before voting on specific policy questions — as a means of combining popular participation with informed decision-making. Others advocate for advisory referendums that express the will of the electorate without imposing legally binding obligations on legislatures. What remains clear is that adherents of democratic governance, regardless of their theoretical persuasion, cannot afford to abdicate responsibility for addressing the tacit crisis of legitimacy that afflicts contemporary political institutions. Whether through incremental reform or structural transformation, the task of reconciling popular sovereignty with effective governance demands sustained and imaginative engagement from citizens and leaders alike.',
+The broader lesson from Finland''s experience is that educational excellence need not come at the expense of student well-being. By fostering an environment in which teachers are respected, students are given autonomy, and resources are distributed fairly, Finland has demonstrated that equity and achievement are not mutually exclusive but rather mutually reinforcing.',
+'数十年にわたり、フィンランドは教育の優秀さの模範として称えられ、PISA（国際学力調査）などの国際評価で常に上位にランクインしてきた。フィンランドのアプローチが際立っているのは、テスト制度の厳しさではなく——実際、同国は標準化されたテストをほぼ避けてきた——むしろ、公平性とすべての子どもの全人的発達に対する熱心な取り組みにある。
 
-'近年、民主主義国家の多くが根本的な問いに直面している。すなわち、市民に立法上の意思決定への直接参加をどの程度認めるべきかという問題である。選出された議員が有権者に代わって審議を行う代議制民主主義の伝統的モデルは、長らく支配的なパラダイムであった。しかし、政治エリートへの不満の高まりが、有権者の間に、特に国民投票の拡大利用を通じて、より直接的な影響力の手段を求める傾向を強めている。
+フィンランドモデルはいくつかの顕著な原則に基づいている。第一に、フィンランドのすべての教師は修士号を取得することが求められ、教員養成課程への入学は極めて競争が激しく、合格率はしばしば約10パーセントにとどまる。これにより、教職は名声があり収入の高い職業であり続け、法律や医学の道に進む可能性のある優秀な候補者を引きつけている。このアプローチの根拠は明快で、教育者の質への投資が生徒の成果において力強いリターンをもたらすということである。
 
-直接民主主義の支持者は、国民投票が代議制統治の欠点に対する重要な是正手段であると主張する。議会が、広範な有権者よりもむしろ狭い利益団体への忠誠を第一とする固定化した派閥に支配されるようになると、一般市民は政策決定プロセスから事実上締め出される。そのような状況において、国民投票は議会での議論を独占する派閥を迂回し、意思決定の権限を市民全体に取り戻す手段を提供する。支持者はさらに、直接参加がより政治的に関与する市民を育て、物議を醸す問題について自ら学ぶことを個人に促し、自らの優先事項とは異なるかもしれない代表者に判断を委ねるのではなくなると主張する。
+第二に、フィンランドは子どもたちに学び方において相当な自由を与えている。学業訓練で詰め込まれた厳しいスケジュールを課すのではなく、フィンランドの学校は遊び、創造性、協働的な問題解決を重視している。生徒は通常7歳まで正式な学校教育を始めず、初等教育を通じて宿題の量は最小限にとどまる。批評家たちは当初、このアプローチを軽率だと酷評し、平凡な結果しか生まないと主張した。しかし、証拠は一貫して逆の結論を裏付けてきた。フィンランドの生徒は、はるかに厳格な学業要求を課す国の同級生を上回る成績を収めているのである。
 
-しかし批判者は、直接民主主義の拡大には相当なリスクが伴うと警告する。貿易協定、憲法改正、厳格な規制の枠組みといった複雑な政策問題は、一般の有権者が持つことを合理的に期待できない程度の専門知識を必要とすることが多い。反対派は、国民投票が多面的な問題を単純な二者択一に矮小化し、それによって世論を二極化させ、効果的な立法を特徴づける繊細な妥協を排除すると警告する。さらに、国民投票は、理性的な政策議論を提示するのではなく、感情的な訴えを利用する潤沢な資金を持つキャンペーンによる操作の影響を受けやすいと彼らは主張する。
+フィンランドの制度の第三の柱は、地理的位置や社会経済的構成に関係なく、すべての学校に資源を公平に広める取り組みである。資金格差が著しい不平等を生み出す多くの国とは異なり、フィンランドは[BLANK]を確保している。特別支援教育、学校給食、メンタルヘルスサポートは普遍的に利用可能であり、他の制度で子どもたちを不利にする障害の多くを排除している。
 
-歴史的記録は、この議論の両陣営に材料を提供している。他のどの国よりも多くの国民投票を実施しているスイスは、直接民主主義が安定した制度的枠組みの中で効果的に機能し得ることの証拠として頻繁に引用される。スイスの有権者は非常に技術的な政策問題に定期的に取り組み、ほとんどの評価によれば、合理的な程度の情報に基づいた判断でそうしている。逆に、批判者は国民投票が事後的に恣意的あるいは十分に考慮されていないと見なされる結果を生み出した事例を指摘する。それは長期的な結果の慎重な分析ではなく、一時的な世論の感情によって駆動された決定である。そのような事例が設定した前例は、国民投票の仕組みの無批判な拡大を主張する人々に一考を促すべきだと彼らは論じる。
+しかし、フィンランドモデルに課題がないわけではない。近年、フィンランドのPISAスコアは緩やかな低下を示しており、教育者たちは潜在的な原因を掘り下げている。一部のアナリストは、デジタル技術の急速に発展する影響が生徒の集中力と読書習慣を侵食した可能性を指摘している。他のアナリストは、移民の増加により、制度が当初想定していなかった新たな言語的・文化的複雑さが生じていると指摘している。こうした懸念にもかかわらず、フィンランドの教育インフラは驚くほど強靭であり、政策立案者は変化するニーズに対応するためにカリキュラムを刷新し続けている。
 
-民主的統治におけるこの重大な時期において、課題は直接制と代議制のモデルの間で断定的に選択することではなく、それぞれの長所を活用するハイブリッドシステムを考案することにある。一部の学者は、特定の政策問題に投票する前に専門家のブリーフィングを受ける、無作為に選ばれた市民のパネルである熟議型集会を、市民参加と情報に基づいた意思決定を組み合わせる手段として提案している。その他の人々は、法的拘束力のある義務を立法府に課すことなく有権者の意思を表明する諮問的国民投票を提唱している。明らかなのは、民主的統治の支持者は、その理論的立場にかかわらず、現代の政治制度を悩ませている暗黙の正統性の危機に対処する責任を放棄する余裕はないということである。漸進的な改革であれ構造的な変革であれ、国民主権と効果的な統治を調和させるという課題は、市民と指導者双方からの持続的で想像力豊かな関与を必要とする。');
+フィンランドの経験からの広い教訓は、教育の卓越性は生徒の幸福を犠牲にする必要がないということである。教師が尊敬され、生徒に自律性が与えられ、資源が公正に分配される環境を育むことで、フィンランドは公平性と達成が相互に排他的ではなく、相互に強化し合うことを示してきた。'
+);
 
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(1, 1, 1, 'comprehension',
-'According to the passage, why do proponents of direct democracy support the expanded use of referendums?',
-'第2段落で、支持者は国民投票が代議制統治の欠陥を正す手段であると述べている。具体的には、議会が狭い利益団体に忠誠を誓う固定化した派閥に支配された場合、国民投票によって市民がその派閥を迂回し意思決定権を取り戻せると主張している。選択肢2が「議会内の支配的な集団を迂回して市民に権限を戻す」と正確にパラフレーズしている。選択肢1は「技術的専門知識を置き換える」で批判者側の論点。選択肢3は「政治家の必要性をなくす」で本文はそこまで主張していない。選択肢4は「参加コストを下げる」で本文に言及なし。',
-2),
-(2, 1, 2, 'comprehension',
-'What does the passage suggest about the historical evidence regarding referendums?',
-'第4段落で、歴史的記録は議論の「両陣営に材料を提供している」と明示されている。スイスの成功例と、恣意的な結果を生んだ失敗例の両方が挙げられている。選択肢3が「双方の立場を裏づける事例がある」と正確に反映している。選択肢1は「スイスのモデルが最善と証明」で片側のみ。選択肢2は「大半が否定的」で本文と不一致。選択肢4は「先進国でのみ成功」で本文にそのような限定なし。',
-3),
-(3, 1, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所の前文は「国民投票は、感情的な訴えを利用する潤沢な資金を持つキャンペーンによる操作の影響を受けやすい」と述べ、「rather than [BLANK]」で感情的訴えと対比される内容が入る。批判者の文脈では、国民投票が感情に流されやすく、理性的・実質的な政策議論が欠如するという論点。選択肢1「理性的な政策議論を提示する」が、感情的訴えとの対比として最も自然。選択肢2「有権者の直感を信頼する」は感情的訴えと同方向で対比にならない。選択肢3「投票参加率を上げる」は文脈と無関係。選択肢4「既存法を分析する」は具体的すぎ、議論の論点からずれている。',
-1);
+(1, 1, 1, 'comprehension', 'According to the passage, what is one reason teaching is considered an attractive profession in Finland?', '第2段落で、フィンランドの教師は修士号が必要で、教員養成課程は合格率約10%と極めて競争が激しいこと、そして教職が「prestigious and lucrative profession」（名声があり収入の高い職業）であると述べられている。選択肢2が本文の内容と一致する。', 2),
+(2, 1, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK] in paragraph 4?', '第4段落は、資源の公平な配分について述べている。「Unlike many countries where funding disparities engender stark inequalities」（資金格差が著しい不平等を生み出す多くの国とは異なり）という対比から、フィンランドでは裕福な地域も貧しい地域も同等の質の教育を受けられることが文脈に合う。選択肢3が最も適切。', 3),
+(3, 1, 3, 'comprehension', 'What does the passage suggest about the recent challenges facing Finland''s education system?', '第5段落で、フィンランドのPISAスコアが緩やかに低下しており、デジタル技術の影響や移民増加による言語的・文化的複雑さが原因として挙げられている。しかし「Finland''s educational infrastructure remains remarkably resilient」とも述べられており、選択肢4が最も正確。', 4);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(1, 1, 'They believe referendums can replace the technical expertise that legislators provide'),
-(1, 2, 'They see referendums as a way to circumvent dominant groups in parliament and return authority to citizens'),
-(1, 3, 'They argue that direct voting eliminates the need for professional politicians entirely'),
-(1, 4, 'They contend that referendums reduce the financial cost of political participation for ordinary citizens'),
-(2, 1, 'It conclusively proves that the Swiss model of direct democracy is the most effective system'),
-(2, 2, 'It predominantly demonstrates negative outcomes from the use of referendums'),
-(2, 3, 'It provides supporting cases for both advocates and critics of direct democracy'),
-(2, 4, 'It shows that referendums succeed only in economically advanced nations'),
-(3, 1, 'presenting substantive policy arguments grounded in rational analysis'),
-(3, 2, 'trusting in the intuitive judgment of the voting public'),
-(3, 3, 'focusing on increasing overall voter participation rates'),
-(3, 4, 'conducting thorough examinations of existing legislative frameworks');
+(1, 1, 'Teachers receive extensive training in digital technology and innovation.'),
+(1, 2, 'The profession offers competitive compensation and high social prestige.'),
+(1, 3, 'Teachers are exempt from academic research requirements after graduation.'),
+(1, 4, 'Finland offers teachers shorter working hours than other professions.'),
+(2, 1, 'private institutions supplement public school funding in underperforming areas'),
+(2, 2, 'parents contribute additional fees to maintain high educational standards'),
+(2, 3, 'every school, whether in a wealthy urban district or a remote rural community, receives comparable funding and support'),
+(2, 4, 'international organizations provide grants to schools with the lowest test scores'),
+(3, 1, 'The education system has fundamentally collapsed due to immigration pressures.'),
+(3, 2, 'Standardized testing has been reintroduced to reverse the decline in scores.'),
+(3, 3, 'Finland has abandoned its commitment to equitable resource distribution.'),
+(3, 4, 'While scores have dipped slightly, the system remains strong and continues to adapt.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 1, id FROM words WHERE word_number IN (28, 102, 147, 271, 314, 354, 397, 402, 410, 467, 525, 542, 556, 560, 598);
+INSERT INTO passage_words (passage_id, word_id) SELECT 1, id FROM words WHERE word_number IN (1, 11, 13, 43, 51, 88, 97, 137, 163, 269, 343, 351, 354, 370, 385, 387, 528, 594);

@@ -1,62 +1,44 @@
--- passage_26: The Hidden Cost of Fast Fashion on Water Systems (環境 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (26, 'Urban Heat Islands and the Quest for Cooler Cities', '環境',
+'In the summer of 2023, cities across the globe shattered temperature records. Phoenix, Arizona, endured 31 consecutive days above 43 degrees Celsius, while southern European capitals saw thermometers climb past 45 degrees. Although climate change is the overarching driver of these extremes, a phenomenon known as the urban heat island effect dramatically exacerbates conditions within metropolitan areas. Surfaces such as asphalt, concrete, and dark roofing absorb and re-radiate solar energy far more efficiently than vegetation or soil, causing urban cores to register temperatures two to eight degrees Celsius, depending on the city and time of day, higher than surrounding rural landscapes.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(26, 'The Hidden Cost of Fast Fashion on Water Systems', '環境',
-'The global fashion industry, long celebrated for its creativity and economic clout, has come under increasing scrutiny for its devastating impact on freshwater ecosystems. While consumers are gradually becoming aware of the carbon footprint associated with clothing production, the less visible but equally detrimental effects on water systems remain poorly understood. From the dyeing of textiles to the discharge of microplastics, the fashion supply chain exacts a toll on aquatic environments that demands urgent redress.
+The detrimental effects of extreme urban heat extend well beyond physical discomfort. Epidemiological studies have established that heat waves are among the deadliest natural hazards, disproportionately affecting the elderly, outdoor workers, and communities in low-income neighborhoods where access to air conditioning is meager. In France, the catastrophic heat wave of 2003 killed an estimated 15,000 people, many of them in the densely built city of Paris. Public health researchers have since been fervent in their calls for cities to adopt comprehensive heat-action plans, arguing that [BLANK].
 
-The textile dyeing process stands as one of the most water-intensive and polluting stages in garment manufacturing. An estimated seventeen to twenty percent of global industrial water pollution originates from fabric treatment and dyeing operations, which release a deluge of toxic chemicals — including heavy metals, formaldehyde, and chlorinated solvents — into waterways. In regions where environmental regulations are lax or enforcement is perfunctory, factories routinely discharge untreated effluent directly into rivers and streams. The repercussions for downstream communities are severe: contaminated water sources compromise agricultural irrigation, imperil fisheries, and expose populations to chronic health hazards that may not manifest for years or even decades.
+Urban planners and architects are now deploying an array of strategies to bolster urban resilience against rising temperatures. One of the most robust approaches involves increasing the urban tree canopy. Trees provide shade that lowers surface temperatures and, through the process of evapotranspiration, release moisture that cools the ambient air. A landmark study by the Barcelona Institute for Global Health found that expanding tree cover could prevent hundreds of heat-related deaths in European cities each year. Similarly, the adoption of reflective or "cool" roofing materials — which bounce sunlight back into the atmosphere rather than absorbing it — has garnered significant attention from municipal governments worldwide.
 
-The proliferation of synthetic fabrics has compounded the problem in ways that were scarcely anticipated when polyester and nylon first gained widespread adoption in the mid-twentieth century. Each cycle of washing a synthetic garment releases thousands of microscopic plastic fibers into wastewater streams. Conventional treatment plants, designed to handle organic pollutants, prove largely ineffective at filtering these microplastics, which consequently permeate rivers, lakes, and ultimately oceans. Marine biologists have documented the ingestion of microplastic particles by organisms across multiple trophic levels, from plankton to apex predators, raising the specter of bioaccumulation effects whose full ramifications remain [BLANK].
+Water-based cooling strategies represent another avenue of innovation. Cities such as Seoul, South Korea, have revitalized neglected waterways, most notably the Cheonggyecheon Stream restoration project, which replaced an elevated highway with a five-kilometer urban creek. Studies conducted after the project''s completion showed that temperatures along the restored corridor were three to five degrees lower than in adjacent streets. The initiative also spurred economic development in the surrounding area, demonstrating that ecological restoration and urban revitalization can be mutually reinforcing.
 
-Several initiatives have emerged in recent years to mitigate the fashion industry''s aquatic footprint. Some manufacturers have invested in closed-loop dyeing systems that recycle water and recover chemical agents, substantially reducing both consumption and contamination. Others have embraced plant-based or biodegradable dyes as alternatives to their petrochemical counterparts. Consumer-facing campaigns encouraging the purchase of second-hand clothing and the adoption of capsule wardrobes have likewise gained momentum, though skeptics question whether such measures can meaningfully curtail demand in an industry predicated on the relentless cycle of trend and obsolescence.
+Despite these promising interventions, significant impediments remain. Retrofitting existing buildings with cool roofs or installing green infrastructure requires substantial upfront investment, and municipal budgets are often strained. Moreover, the benefits of urban greening initiatives can be distributed unevenly, raising concerns about environmental equity. Without stringent planning, tree-planting campaigns may disproportionately benefit affluent neighborhoods, inadvertently widening the gap between those who enjoy cooler microclimates and those who do not. Addressing the urban heat island effect therefore demands not only technical ingenuity but also a steadfast commitment to social justice — ensuring that the most vulnerable communities are the first, rather than the last, to receive relief.',
 
-Perhaps the most consequential interventions, however, lie in the domain of regulatory policy. The European Union''s proposed regulations on textile waste and chemical transparency represent a potentially momentous shift in how governments approach fashion''s environmental externalities. By mandating disclosure of chemical inputs and establishing stringent effluent standards, such frameworks could compel manufacturers to internalize costs that have historically been externalized onto vulnerable communities and ecosystems. Critics counter that unilateral regulation risks merely displacing production to jurisdictions with weaker oversight, a phenomenon that has plagued previous attempts at environmental governance.
+'2023年の夏、世界中の都市が気温記録を更新した。アリゾナ州フェニックスは31日連続で摂氏43度を超える日が続き、南欧の首都では気温が45度を超えた。気候変動がこれらの極端な気象の包括的な要因であるものの、ヒートアイランド現象として知られる現象が大都市圏の状況を著しく悪化させている。アスファルト、コンクリート、暗色の屋根材などの表面は、植生や土壌よりもはるかに効率的に太陽エネルギーを吸収・再放射し、都市の中心部では都市や時間帯によって異なるが、周辺の農村部より2～8度（摂氏）高い気温を記録する。
 
-The path forward requires a concerted effort that transcends national boundaries and sectoral interests. International cooperation on harmonized environmental standards, coupled with robust verification mechanisms, offers the most feasible route to systemic change. Without such collaborative action, the fashion industry''s assault on global water systems will continue unabated, leaving an indelible stain on the planet''s most precious resource.',
+都市部の極端な暑さによる有害な影響は、身体的な不快感をはるかに超えている。疫学研究により、熱波は最も致命的な自然災害の一つであり、高齢者、屋外労働者、エアコンへのアクセスが乏しい低所得地域のコミュニティに不均衡に影響を及ぼすことが確認されている。フランスでは、2003年の壊滅的な熱波により推定1万5千人が死亡し、その多くが密集した建物の多いパリ市内であった。公衆衛生研究者たちはその後、都市が包括的な暑さ対策行動計画を採用するよう熱心に呼びかけており、［空所］と主張している。
 
-'世界のファッション産業は、その創造性と経済的影響力で長く称賛されてきたが、淡水生態系への壊滅的な影響についてますます厳しい目が向けられている。消費者は衣料品生産に伴う炭素排出量を徐々に認識するようになっているものの、水系への目に見えにくいが同様に有害な影響はいまだ十分に理解されていない。繊維の染色からマイクロプラスチックの排出に至るまで、ファッションのサプライチェーンは水生環境に緊急の是正を要する代償を課している。
+都市計画者や建築家は現在、上昇する気温に対する都市のレジリエンスを強化するためにさまざまな戦略を展開している。最も有力なアプローチの一つは、都市の樹木被覆を増やすことである。樹木は地表温度を下げる日陰を提供し、蒸発散のプロセスを通じて周囲の空気を冷却する水分を放出する。バルセロナ・グローバルヘルス研究所の画期的な研究では、樹木被覆を拡大することで、ヨーロッパの都市で毎年数百人の暑さ関連の死亡を防げることが判明した。同様に、太陽光を吸収するのではなく大気中に反射する反射性または「クール」な屋根材の採用も、世界中の自治体政府から大きな注目を集めている。
 
-繊維染色プロセスは、衣料品製造において最も水を大量に使用し汚染を引き起こす工程の一つである。世界の産業用水汚染の推定17～20パーセントが、重金属、ホルムアルデヒド、塩素系溶剤を含む有毒化学物質の大量放出を伴う生地の処理・染色作業に起因する。環境規制が緩い、あるいは施行がいい加減な地域では、工場が未処理の排水を日常的に河川や小川に直接排出している。下流のコミュニティへの影響は深刻で、汚染された水源は農業灌漑を損ない、漁業を危険にさらし、何年も何十年も現れない可能性のある慢性的な健康被害に住民をさらす。
+水を利用した冷却戦略は、別のイノベーションの道を示している。韓国のソウルなどの都市は、放置された水路を再活性化させた。最も注目すべきは清渓川復元プロジェクトで、高架道路を5キロメートルの都市河川に置き換えたものである。プロジェクト完了後に実施された調査では、復元された回廊沿いの気温が隣接する通りよりも3～5度低いことが示された。この取り組みは周辺地域の経済発展も促進し、生態学的復元と都市再生が相互に強化し合えることを実証した。
 
-合成繊維の急増は、ポリエステルやナイロンが20世紀半ばに初めて広く普及した際にはほとんど予想されなかった形で問題を悪化させた。合成衣料を1回洗濯するごとに何千もの微小なプラスチック繊維が排水に放出される。有機汚染物質の処理用に設計された従来の処理施設は、これらのマイクロプラスチックのフィルタリングにはほとんど効果がなく、その結果、河川、湖沼、そして最終的には海洋に浸透する。海洋生物学者は、プランクトンから頂点捕食者まで、複数の栄養段階の生物によるマイクロプラスチック粒子の摂取を記録しており、その完全な影響がまだ十分に解明されていない生物蓄積効果の懸念を引き起こしている。
+これらの有望な介入策にもかかわらず、重大な障害が残っている。既存の建物にクールルーフを後付けしたり、グリーンインフラを設置したりするには、多額の初期投資が必要であり、自治体の予算はしばしば逼迫している。さらに、都市緑化の取り組みの恩恵は不均等に分配される可能性があり、環境公平性に関する懸念を引き起こしている。厳格な計画がなければ、植樹キャンペーンは裕福な地域に不均衡な恩恵をもたらし、より涼しい微気候を享受する人々とそうでない人々の間の格差を不注意にも拡大させる可能性がある。ヒートアイランド現象に対処するには、技術的な創意工夫だけでなく、社会正義への確固たる取り組みも必要である。最も脆弱なコミュニティが最後ではなく最初に救済を受けられるようにすることが求められる。');
 
-近年、ファッション産業の水に対する環境負荷を軽減するためのいくつかの取り組みが登場している。一部のメーカーは、水をリサイクルし化学薬品を回収する閉ループ染色システムに投資し、消費量と汚染の両方を大幅に削減している。また、石油化学製品の代替として植物由来または生分解性の染料を採用するメーカーもある。中古衣料の購入やカプセルワードローブの導入を奨励する消費者向けキャンペーンも勢いを増しているが、トレンドと陳腐化の絶え間ないサイクルに基づく産業において、そのような措置が需要を有意に抑制できるかどうか懐疑的な見方もある。
-
-しかし、おそらく最も重大な介入は規制政策の領域にある。繊維廃棄物と化学物質の透明性に関するEUの規制案は、政府がファッションの環境外部性にどう取り組むかにおいて極めて重大な転換を示す可能性がある。化学物質投入の開示を義務づけ、厳格な排水基準を確立することにより、そのような枠組みは、歴史的に脆弱なコミュニティや生態系に外部化されてきたコストをメーカーに内部化させることができる。批判者は、一方的な規制は監視の弱い地域への生産移転を引き起こすだけのリスクがあると反論する。これは環境ガバナンスの以前の試みを悩ませてきた現象である。
-
-前進の道は、国境やセクターの利害を超えた協調的な努力を必要とする。調和された環境基準に関する国際協力と堅牢な検証メカニズムの組み合わせが、体系的変化への最も実現可能な道を提供する。そのような協力的行動がなければ、ファッション産業の世界の水系への攻撃は衰えることなく続き、地球で最も貴重な資源に消えない汚点を残すことになる。');
-
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(76, 26, 1, 'comprehension',
-'What does the passage identify as a major reason why microplastic pollution from synthetic fabrics is difficult to address?',
-'第3段落で、合成衣料の洗濯で放出されるマイクロプラスチック繊維について、「有機汚染物質の処理用に設計された従来の処理施設は、これらのマイクロプラスチックのフィルタリングにはほとんど効果がない」と述べている。選択肢4が「従来の水処理施設がマイクロプラスチックの除去に効果的でない」と正確に反映。選択肢1は「消費者の無関心」で本文の焦点ではない。選択肢2は「合成繊維が安価」で直接の理由として述べられていない。選択肢3は「海洋生物への影響が存在しない」で本文と矛盾。',
-4),
-(77, 26, 2, 'comprehension',
-'According to the passage, what is a potential drawback of unilateral environmental regulation of the fashion industry?',
-'第5段落末で、批判者は「一方的な規制は監視の弱い地域への生産移転を引き起こすだけのリスクがある」と指摘し、これが「環境ガバナンスの以前の試みを悩ませてきた現象」であると述べている。選択肢2が「生産をより規制の緩い地域に移転させるだけ」と正確に対応。選択肢1は「消費者価格の上昇」で本文に言及なし。選択肢3は「デザイナーの創造性を阻害」で本文に根拠なし。選択肢4は「中小企業のみに影響」で本文にそのような限定なし。',
-2),
-(78, 26, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所の前文は、マイクロプラスチックが複数の栄養段階の生物に摂取されており「生物蓄積効果の懸念」を引き起こしていると述べ、「whose full ramifications remain [BLANK]」と続く。マイクロプラスチックの生物蓄積の完全な影響について、現時点では十分に解明されていないという文脈。選択肢1「十分に解明されていない」が最も自然。選択肢2「完全に記録済み」は文脈と矛盾（「懸念を引き起こしている」と整合しない）。選択肢3「統計的に無視できる」は本文の懸念のトーンと矛盾。選択肢4「特定の海域に限定」は本文にそのような限定なし。',
-1);
+(76, 26, 1, 'comprehension', 'What does the passage indicate about the Cheonggyecheon Stream restoration project in Seoul?',
+'第4段落で、ソウルの清渓川復元プロジェクトは高架道路を5キロメートルの都市河川に置き換え、復元された回廊沿いの気温が3～5度低下し、周辺地域の経済発展も促進したと述べられている。生態学的復元と都市再生が相互に強化し合えることを実証した。', 1),
+(77, 26, 2, 'fill_in_blank', 'Which of the following best fills in the blank [BLANK] in the passage?',
+'第2段落では、2003年のフランスの熱波による死者数が言及され、公衆衛生研究者が都市に包括的な暑さ対策計画の採用を「熱心に呼びかけている」とある。空所は彼らの主張の内容。文脈から、既存の都市インフラが極端な暑さに対処するには不十分であり、事前対策的な計画が不可欠であるという趣旨が適切。', 4),
+(78, 26, 3, 'comprehension', 'According to the passage, what is a key concern regarding urban greening initiatives?',
+'最終段落で、都市緑化の恩恵が不均等に分配される可能性があり、厳格な計画がなければ植樹キャンペーンが裕福な地域に不均衡な恩恵をもたらし、格差を拡大させる可能性があると述べられている。', 3);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(76, 1, 'Consumers remain largely indifferent to the environmental impact of their clothing choices'),
-(76, 2, 'Synthetic fabrics are significantly cheaper to produce than natural alternatives'),
-(76, 3, 'Scientific research has not yet confirmed any adverse effects on marine life'),
-(76, 4, 'Conventional water treatment facilities are largely ineffective at filtering out microplastics'),
-(77, 1, 'It would inevitably lead to higher consumer prices for clothing'),
-(77, 2, 'It may simply displace production to regions with weaker environmental oversight'),
-(77, 3, 'It would stifle the creative freedom of fashion designers'),
-(77, 4, 'It disproportionately affects small and medium-sized enterprises'),
-(78, 1, 'insufficiently understood by the scientific community'),
-(78, 2, 'comprehensively documented in peer-reviewed literature'),
-(78, 3, 'statistically negligible according to current data'),
-(78, 4, 'confined to specific oceanic regions');
+(76, 1, 'It lowered temperatures along the restored waterway and stimulated local economic growth.'),
+(76, 2, 'It was primarily designed to address flooding rather than urban heat.'),
+(76, 3, 'It proved that water-based strategies are more effective than tree planting.'),
+(76, 4, 'It was later abandoned because the maintenance costs were exorbitant.'),
+(77, 1, 'heat waves primarily threaten rural populations rather than urban residents'),
+(77, 2, 'individual behavioral changes are more effective than infrastructure modifications'),
+(77, 3, 'the economic costs of heat-action plans far outweigh their potential benefits'),
+(77, 4, 'reactive emergency responses alone are inadequate and proactive urban planning is essential'),
+(78, 1, 'The trees planted in urban areas often fail to survive because of air pollution.'),
+(78, 2, 'Green infrastructure projects tend to reduce property values in surrounding areas.'),
+(78, 3, 'Their benefits may be unevenly distributed, potentially worsening environmental inequality.'),
+(78, 4, 'Municipal governments lack the technical expertise to implement such programs effectively.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 26, id FROM words WHERE word_number IN (55, 123, 136, 137, 154, 167, 239, 246, 354, 359, 393, 451, 482, 549, 575, 584);
+INSERT INTO passage_words (passage_id, word_id) SELECT 26, id FROM words WHERE word_number IN (233, 137, 51, 242, 343, 176, 380, 354, 237, 385, 138, 337, 407);

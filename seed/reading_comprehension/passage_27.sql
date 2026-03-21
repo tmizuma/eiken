@@ -1,62 +1,44 @@
--- passage_27: Carbon Capture and the Illusion of Technological Salvation (環境 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (27, 'The Amazon Rainforest at a Tipping Point', '環境',
+'The Amazon rainforest, spanning approximately 5.5 million square kilometers across nine South American countries, is the largest tropical forest on Earth. Often called the "lungs of the planet," it generates roughly six percent of the world''s oxygen and harbors an estimated ten percent of all known species. Yet this pristine wilderness is under unprecedented threat. According to data from Brazil''s National Institute for Space Research (INPE), deforestation in the Brazilian Amazon reached 13,235 square kilometers in the twelve months ending in July 2021 — the highest figure in fifteen years — before declining somewhat in subsequent years under intensified enforcement efforts.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(27, 'Carbon Capture and the Illusion of Technological Salvation', '環境',
-'As the consequences of anthropogenic climate change become increasingly dire, governments and corporations alike have turned to carbon capture and storage (CCS) technology as a cornerstone of their decarbonization strategies. The premise is deceptively simple: intercept carbon dioxide at the point of emission — or extract it directly from the ambient atmosphere — and sequester it underground in geological formations where it can remain inert for millennia. Proponents tout CCS as an indispensable adjunct to renewable energy deployment, arguing that it offers a pragmatic bridge between the fossil-fuel-dependent present and a carbon-neutral future. Yet a growing chorus of environmental scientists and policy analysts warns that an uncritical reliance on this technology may engender a dangerous complacency.
+The drivers of Amazonian deforestation are multifaceted. Cattle ranching accounts for the largest share, as ranchers clear vast tracts of forest to create pastureland. Soybean cultivation, logging, and mining also play salient roles, often facilitated by clandestine road construction that opens previously inaccessible areas to exploitation. The economic rationale is straightforward: converting forest to agricultural land can be enormously lucrative in the short term. However, this calculus ignores the staggering long-term costs — not only to biodiversity but also to the global climate system.
 
-The technical feasibility of CCS has been demonstrated at a handful of pilot facilities around the world. Norway''s Sleipner project, operational since 1996, has successfully injected roughly one million tonnes of CO2 annually into a saline aquifer beneath the North Sea floor. Similar ventures in Canada, the United States, and Australia have corroborated the basic engineering principles underpinning the technology. However, scaling these operations to a level commensurate with global emission reduction targets presents insurmountable challenges that proponents have been reluctant to acknowledge candidly. Current CCS capacity captures less than one-tenth of one percent of annual global CO2 emissions — a figure so paltry as to render existing facilities little more than demonstration projects in the face of a crisis demanding transformative action.
+Scientists have long warned that the Amazon is approaching a critical tipping point beyond which large portions of the forest could undergo an irreversible transition to degraded savanna. Research led by Carlos Nobre and Thomas Lovejoy, published in the journal Science Advances, suggested that this threshold could be reached when cumulative deforestation exceeds 20 to 25 percent of the original forest cover. As of the early 2020s, roughly 17 percent had been cleared. The implications are momentous: a savannified Amazon would release billions of tons of stored carbon into the atmosphere, [BLANK], and fundamentally alter rainfall patterns across South America.
 
-The economic impediments are equally formidable. Carbon capture technology remains exorbitantly expensive, with costs ranging from sixty to over one hundred and twenty dollars per tonne of CO2 captured, depending on the source concentration and capture methodology. Without substantial government subsidies or a robust carbon pricing mechanism, few private enterprises find it economically feasible to invest in CCS infrastructure. Critics argue that the lavish public expenditure required to subsidize carbon capture would yield far greater returns if redirected toward proven renewable energy technologies — solar, wind, and battery storage — whose costs have plummeted over the past decade and continue to diminish at a remarkable pace.
+The consequences of such a transformation would reverberate far beyond the continent. The Amazon plays a pivotal role in global atmospheric circulation, and its diminishment would disrupt the hydrological cycle that sustains agriculture in regions as distant as Argentina''s Pampas. Indigenous communities, who have been tenacious stewards of the forest for millennia, face the prospect of losing not only their ancestral lands but also their cultural identity. Studies have consistently shown that indigenous territories exhibit significantly lower rates of deforestation than surrounding areas, underscoring the vital role these communities play in forest conservation.
 
-Perhaps most troublingly, opponents contend that the vigorous promotion of CCS serves as a convenient pretext for perpetuating fossil fuel extraction. Oil and gas corporations have emerged as some of the most fervent advocates of carbon capture, a stance that critics view as a calculated strategy to [BLANK]. By framing CCS as a technological panacea, the fossil fuel industry can deflect calls for the rapid phase-out of hydrocarbon production while simultaneously positioning itself as a responsible steward of the energy transition. This narrative, skeptics argue, is tantamount to offering a patient aspirin for a condition that requires surgery.
+International efforts to curb deforestation have yielded mixed results. Programs such as REDD+ (Reducing Emissions from Deforestation and Forest Degradation) seek to provide financial incentives for developing nations to preserve their forests. Norway''s sovereign wealth fund pledged over one billion dollars to Brazil''s Amazon Fund between 2008 and 2019, though disbursements were suspended amid disputes over environmental policy. The European Union''s 2023 regulation banning imports of commodities linked to deforestation represents a more stringent approach, compelling companies to verify that their supply chains do not contribute to forest loss. Whether these measures, combined with domestic enforcement in Amazonian nations, will prove sufficient to avert the tipping point remains an open — and urgent — question.',
 
-The environmental risks associated with long-term CO2 storage further complicate the picture. While geological sequestration is theoretically stable, the possibility of leakage from injection sites — through undetected faults, abandoned wellbores, or caprock degradation — cannot be entirely precluded. A sudden release of concentrated CO2 could prove lethal to nearby populations and ecosystems, and the burden of monitoring storage sites over centuries or even millennia raises vexing questions of intergenerational liability that existing regulatory frameworks are ill-equipped to address.
+'アマゾン熱帯雨林は、南米9カ国にまたがる約550万平方キロメートルに広がる、地球上最大の熱帯林である。しばしば「地球の肺」と呼ばれ、世界の酸素の約6パーセントを生成し、既知の全生物種の推定10パーセントを擁している。しかし、この原始的な大自然は前例のない脅威にさらされている。ブラジル国立宇宙研究所（INPE）のデータによると、2021年7月までの12カ月間にブラジルのアマゾンでの森林破壊面積は13,235平方キロメートルに達し、15年間で最高の数値を記録した。その後、強化された取り締まりの下でやや減少した。
 
-None of this is to suggest that CCS has no legitimate role in the portfolio of climate mitigation strategies. In hard-to-abate industrial sectors such as cement and steel production, where process emissions are inherent to the chemistry of manufacturing, carbon capture may represent the only feasible pathway to decarbonization in the medium term. The peril lies not in the technology itself, but in the pervasive tendency to invoke it as a substitute for the fundamental structural changes — in energy systems, consumption patterns, and economic paradigms — that the climate crisis ultimately demands.',
+アマゾンの森林破壊の要因は多面的である。牧場経営が最大の割合を占め、牧場主が牧草地を作るために広大な森林地帯を伐採している。大豆栽培、伐採、鉱業も顕著な役割を果たしており、しばしばこれまでアクセスできなかった地域を開拓する秘密の道路建設によって促進されている。経済的な理論的根拠は明白で、森林を農地に転換することは短期的には非常に利益が大きい。しかし、この計算は驚異的な長期的コストを無視している — 生物多様性だけでなく、地球の気候システムに対するコストもである。
 
-'人為的気候変動の影響がますます深刻になる中、政府と企業はともに炭素回収・貯留（CCS）技術を脱炭素化戦略の要として注目している。その前提は見かけ上単純である。排出源で二酸化炭素を捕捉するか、あるいは大気から直接抽出し、何千年もの間不活性のまま残りうる地下の地質構造に隔離するというものだ。推進者たちはCCSを再生可能エネルギー展開に不可欠な付属物として褒めちぎり、化石燃料依存の現在とカーボンニュートラルな未来との間の実用的な橋渡しを提供すると主張する。しかし、環境科学者や政策アナリストの声が大きくなりつつあり、この技術への無批判な依存が危険な自己満足を生む可能性があると警告している。
+科学者たちは長い間、アマゾンが臨界転換点に近づいていると警告してきた。その転換点を超えると、森林の大部分が不可逆的に劣化したサバンナへと移行する可能性がある。カルロス・ノブレとトーマス・ラブジョイが率いる研究は、Science Advances誌に発表され、累積的な森林破壊が元の森林被覆の20～25パーセントを超えた時点でこの閾値に達する可能性があると示唆した。2020年代初頭の時点で、約17パーセントが伐採されていた。その影響は極めて重大である：サバンナ化したアマゾンは数十億トンの蓄積された炭素を大気中に放出し、［空所］、南米全体の降雨パターンを根本的に変えることになる。
 
-CCSの技術的実現可能性は、世界中の少数のパイロット施設で実証されてきた。1996年から稼働しているノルウェーのスライプナープロジェクトは、年間約100万トンのCO2を北海の海底下の塩水帯水層に注入することに成功している。カナダ、アメリカ、オーストラリアの同様の事業が、この技術を支える基本的な工学原理を裏づけている。しかし、これらの操業を世界の排出削減目標に見合う規模に拡大することは、推進者たちが率直に認めることを渋ってきた克服しがたい課題を呈している。現在のCCS能力は年間世界CO2排出量の0.1パーセント未満しか回収していない。この数字は、変革的行動を要する危機に直面して、既存施設が実証プロジェクトに過ぎないほどわずかなものである。
+このような変容の結果は、大陸をはるかに超えて波及する。アマゾンは地球規模の大気循環において極めて重要な役割を果たしており、その縮小はアルゼンチンのパンパスほど遠い地域の農業を支える水文循環を混乱させるだろう。何千年にもわたって森林の粘り強い管理者であった先住民コミュニティは、祖先の土地だけでなく文化的アイデンティティをも失う見通しに直面している。研究は一貫して、先住民の領土が周辺地域よりも著しく低い森林破壊率を示すことを明らかにしており、これらのコミュニティが森林保全において果たす重要な役割を浮き彫りにしている。
 
-経済的障壁も同様に手ごわい。炭素回収技術は法外に高価であり続けており、CO2 1トン当たりのコストは発生源の濃度と回収方法に応じて60ドルから120ドル以上に及ぶ。大規模な政府補助金や堅牢な炭素価格メカニズムがなければ、CCSインフラへの投資を経済的に実現可能と判断する民間企業はほとんどない。批判者たちは、炭素回収に補助金を出すために必要な多額の公的支出は、実績のある再生可能エネルギー技術（太陽光、風力、蓄電池）に振り向ければはるかに大きなリターンをもたらすと主張する。これらの技術のコストは過去10年間で急落し、顕著なペースで減少し続けている。
+森林破壊を抑制する国際的な取り組みは、さまざまな結果をもたらしてきた。REDD+（森林破壊・劣化からの排出削減）などのプログラムは、開発途上国に森林を保全するための経済的インセンティブを提供しようとしている。ノルウェーの政府系ファンドは2008年から2019年の間にブラジルのアマゾン基金に10億ドル以上を拠出したが、環境政策をめぐる紛争の中で支出は停止された。EUの2023年規制は、森林破壊に関連する商品の輸入を禁止するもので、より厳格なアプローチを示しており、企業にサプライチェーンが森林喪失に寄与していないことの検証を求めている。これらの措置が、アマゾン諸国の国内の取り締まりと合わせて、転換点を回避するのに十分であるかどうかは、未解決の — そして緊急の — 問題である。');
 
-おそらく最も懸念されるのは、反対派がCCSの積極的な推進が化石燃料採掘の継続のための都合の良い口実として機能すると主張していることだ。石油・ガス企業は炭素回収の最も熱心な支持者の一部として台頭しており、批判者たちはこの姿勢を、炭化水素生産の急速な段階的廃止の要求を回避し、同時にエネルギー転換の責任ある管理者としての立場を確保するための計算された戦略と見ている。CCSを技術的な万能薬として位置づけることで、化石燃料産業は水素系燃料生産の急速な段階的廃止の要求をそらすことができる。この語りは、懐疑論者が主張するところでは、手術を必要とする症状に対して患者にアスピリンを提供するのに等しい。
-
-長期的なCO2貯留に関連する環境リスクもまた、状況をさらに複雑にしている。地質学的隔離は理論上安定しているが、注入サイトからの漏洩の可能性（未検出の断層、廃坑、キャップロックの劣化を通じて）は完全に排除することはできない。濃縮CO2の突然の放出は、近隣の住民や生態系に致命的であることが証明される可能性があり、何世紀あるいは何千年にもわたって貯留サイトを監視する負担は、既存の規制枠組みでは対処しきれない世代間の責任という厄介な問題を提起する。
-
-これは、CCSが気候緩和戦略のポートフォリオにおいて正当な役割を持たないと示唆するものではない。セメントや鉄鋼生産など、製造の化学に固有のプロセス排出がある削減困難な産業セクターでは、炭素回収が中期的に脱炭素化への唯一の実現可能な道筋である可能性がある。危険は技術そのものにあるのではなく、気候危機が最終的に求める根本的な構造的変化（エネルギーシステム、消費パターン、経済パラダイム）の代替としてこの技術を引き合いに出すという蔓延した傾向にある。');
-
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(79, 27, 1, 'comprehension',
-'What does the passage suggest is the main limitation of current carbon capture and storage operations?',
-'第2段落で、CCSの技術的実現可能性は実証されたものの、「現在のCCS能力は年間世界CO2排出量の0.1パーセント未満しか回収していない」と述べ、この数字を「paltry（わずかな）」と形容し、「既存施設は実証プロジェクトに過ぎない」としている。選択肢2が「現在の規模が世界の排出量に比してあまりにも小さい」と正確に反映。選択肢1は「CO2を安全に貯留する技術がない」で本文と矛盾（実証済み）。選択肢3は「再生可能エネルギーとの併用が不可能」で本文にそのような記述なし。選択肢4は「先進国でしか運用できない」で本文の論点と異なる。',
-2),
-(80, 27, 2, 'comprehension',
-'According to the passage, why do critics believe public funds spent on CCS would be better allocated elsewhere?',
-'第3段落で、批判者たちは「炭素回収に補助金を出すために必要な多額の公的支出は、実績のある再生可能エネルギー技術（太陽光、風力、蓄電池）に振り向ければはるかに大きなリターンをもたらす」と主張し、「これらの技術のコストは過去10年間で急落し続けている」と述べている。選択肢3が「再生可能エネルギー技術のコストが急速に低下しておりより大きなリターンを提供する」と正確に言い換えている。選択肢1は「CCSが雇用を創出しない」で本文に言及なし。選択肢2は「太陽光・風力がすでに十分」で本文はそこまで述べていない。選択肢4は「補助金が化石燃料企業に流れる」で本文の該当部分の論点とは異なる。',
-3),
-(81, 27, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は「石油・ガス企業が炭素回収の最も熱心な支持者として台頭しており、批判者たちはこの姿勢を...計算された戦略と見ている」という文脈。直後の文で「CCSを技術的な万能薬として位置づけることで、化石燃料産業は炭化水素生産の急速な段階的廃止の要求をそらすことができる」と説明されている。選択肢4「化石燃料生産の段階的廃止への圧力をそらしながら存続を確保する」が文脈に最も合致。選択肢1「環境保護活動家との関係改善」は部分的だが本質を捉えていない。選択肢2「新エネルギー市場の独占」は本文に根拠なし。選択肢3「政府規制の完全な回避」は本文より極端。',
-4);
+(79, 27, 1, 'comprehension', 'What does the passage say about the role of indigenous communities in the Amazon?',
+'第4段落で、先住民コミュニティは何千年にもわたって森林の粘り強い管理者であり、先住民の領土は周辺地域よりも著しく低い森林破壊率を示すことが一貫して研究で明らかにされていると述べられている。', 2),
+(80, 27, 2, 'fill_in_blank', 'Which of the following best fills in the blank [BLANK] in the passage?',
+'空所を含む文は「サバンナ化したアマゾンは数十億トンの炭素を大気中に放出し、[BLANK]、南米全体の降雨パターンを根本的に変える」という構造。前後の文脈から、気候変動の加速に関する内容が適切。転換点の議論と炭素放出の文脈から、地球温暖化の加速が最も論理的。', 1),
+(81, 27, 3, 'comprehension', 'According to the passage, what approach does the European Union''s 2023 regulation take toward combating deforestation?',
+'最終段落で、EUの2023年規制は森林破壊に関連する商品の輸入を禁止し、企業にサプライチェーンが森林喪失に寄与していないことの検証を求めるものであると説明されている。', 3);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(79, 1, 'The technology to safely store captured CO2 underground has not yet been developed'),
-(79, 2, 'The scale of current operations is vastly insufficient relative to global emissions'),
-(79, 3, 'Carbon capture cannot be used in conjunction with renewable energy sources'),
-(79, 4, 'CCS facilities can only be operated in technologically advanced nations'),
-(80, 1, 'Carbon capture technology does not generate employment opportunities'),
-(80, 2, 'Solar and wind power have already made fossil fuels entirely redundant'),
-(80, 3, 'Renewable energy technologies offer greater returns as their costs continue to decline rapidly'),
-(80, 4, 'Government subsidies for CCS invariably end up benefiting fossil fuel corporations'),
-(81, 1, 'improve their strained relationships with environmental advocacy groups'),
-(81, 2, 'establish a monopoly over emerging clean energy markets'),
-(81, 3, 'completely circumvent government environmental regulations'),
-(81, 4, 'deflect pressure for the phase-out of fossil fuel production while ensuring their continued viability');
+(79, 1, 'They have generally been unable to prevent deforestation on their territories.'),
+(79, 2, 'They have served as effective forest guardians, with their lands showing lower deforestation rates.'),
+(79, 3, 'They have actively participated in REDD+ programs to receive financial compensation.'),
+(79, 4, 'They have increasingly abandoned traditional land management practices in favor of commercial agriculture.'),
+(80, 1, 'thereby accelerating the pace of global warming'),
+(80, 2, 'although this process would unfold over several centuries'),
+(80, 3, 'which could be offset by reforestation efforts elsewhere'),
+(80, 4, 'though some scientists dispute the magnitude of this effect'),
+(81, 1, 'It provides subsidies to companies that source materials from sustainably managed forests.'),
+(81, 2, 'It imposes tariffs on Amazonian nations that fail to meet deforestation reduction targets.'),
+(81, 3, 'It prohibits imports of goods linked to deforestation and requires supply chain verification.'),
+(81, 4, 'It funds research into alternative agricultural methods that do not require forest clearing.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 27, id FROM words WHERE word_number IN (47, 51, 69, 100, 145, 150, 237, 264, 273, 308, 354, 360, 365, 393, 407, 462, 544, 549, 550, 592);
+INSERT INTO passage_words (passage_id, word_id) SELECT 27, id FROM words WHERE word_number IN (17, 43, 169, 1, 168, 359, 36, 546, 354, 550, 556, 65);

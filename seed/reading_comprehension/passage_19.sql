@@ -1,62 +1,45 @@
--- passage_19: The Fall and Legacy of Carthage (歴史 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (19, 'The Cryptocurrency Boom and Its Economic Ramifications', '経済',
+'The meteoric rise of Bitcoin and other cryptocurrencies over the past decade has been one of the most contentious developments in modern finance. What began as an obscure digital experiment in 2008, when the pseudonymous Satoshi Nakamoto published a white paper describing a peer-to-peer electronic cash system, has burgeoned into a trillion-dollar asset class that central bankers and policymakers can no longer afford to dismiss.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(19, 'The Fall and Legacy of Carthage', '歴史',
-'In the annals of ancient history, few narratives are as dramatic as the rise and fall of Carthage, the Phoenician city-state that for centuries rivaled Rome for dominion over the western Mediterranean. Founded in the ninth century BCE on the coast of present-day Tunisia, Carthage grew from a modest trading settlement into a formidable maritime empire whose commercial networks spanned from the Iberian Peninsula to the shores of West Africa. Yet this opulent civilization, which at its zenith commanded one of the most powerful navies in the ancient world, was ultimately reduced to rubble in one of history''s most ruthless acts of military conquest — the destruction ordered by Rome in 146 BCE following the Third Punic War.
+During the cryptocurrency boom of 2021, Bitcoin''s market capitalization briefly exceeded that of many major corporations, and a deluge of retail investors poured money into digital tokens with little understanding of the underlying technology. Many were enticed by stories of overnight millionaires, while seasoned financial analysts warned that the market was fraught with speculative excess. The volatility was staggering: prices would fluctuate by double-digit percentages within a single day, leaving investors in a perpetual state of anxiety.
 
-The animosity between Rome and Carthage had deep roots, stretching back to the First Punic War of 264 BCE, when the two powers first clashed over control of Sicily. The conflict, which lasted more than two decades, ended with a Roman victory that imposed punishing terms on Carthage, including the payment of crippling war reparations. Far from mollifying Roman suspicions, however, Carthage''s subsequent resurgence under the Barcid dynasty — culminating in Hannibal''s legendary crossing of the Alps during the Second Punic War — only intensified Rome''s determination to eliminate its rival permanently. The Roman senator Cato the Elder famously concluded every speech, regardless of its subject, with the declaration that Carthage must be destroyed, a relentless campaign of rhetoric that eventually bore its grim fruition.
+The ramifications of this phenomenon extend far beyond individual portfolios. Governments worldwide have grappled with how to regulate an asset class that was explicitly designed to circumvent traditional financial oversight. In El Salvador, President Nayib Bukele made Bitcoin legal tender in 2021, a momentous decision that drew both accolades and sharp criticism from the International Monetary Fund. China, by contrast, imposed stringent restrictions on cryptocurrency mining and trading, driving a mass exodus of miners to countries like Kazakhstan and the United States.
 
-The Third Punic War itself was less a genuine military contest than a premeditated act of annihilation. By the time Rome initiated hostilities in 149 BCE, Carthage had been so thoroughly weakened by decades of imposed constraints that it posed no credible military threat. The city''s inhabitants, recognizing the futility of diplomatic overtures, resolved to resist with whatever resources remained at their disposal. Ancient sources describe scenes of harrowing desperation: citizens forging weapons from household implements and women cutting their hair to fashion bowstrings. The siege lasted three years before Roman forces breached the city walls and subjected Carthage to systematic destruction. The surviving population was [BLANK], and the city itself was razed so completely that later Roman colonists who built upon the site encountered little trace of its former grandeur.
+Central banks have responded by exploring their own digital currencies. The People''s Bank of China launched a pilot program for the digital yuan, while the European Central Bank began investigating a digital euro. These initiatives reflect a tacit acknowledgment that [BLANK]. However, skeptics argue that central bank digital currencies could bolster state surveillance capabilities rather than genuinely empowering consumers.
 
-The obliteration of Carthage has long been interpreted through the lens of Roman triumphalism, a narrative in which the destruction of a belligerent rival represented the inevitable consolidation of Roman power. Yet modern historians have increasingly sought to complicate this account. Archaeological excavations conducted over the past century have revealed a civilization of remarkable sophistication — one whose maritime prowess, urban planning, and agricultural innovations rivaled those of Rome itself. The meticulous documentation of Carthaginian harbor facilities, for instance, has demonstrated engineering capabilities that astounded researchers and compelled a reassessment of the assumption that Carthage was merely a mercantile power lacking cultural depth.
+The environmental toll of cryptocurrency mining has also garnered significant attention. Bitcoin''s proof-of-work mechanism consumes as much electricity annually as some mid-sized nations, a fact that has drawn fervent criticism from environmentalists. Ethereum''s transition to a proof-of-stake model in 2022, which reduced its energy consumption by approximately 99 percent, demonstrated that more sustainable approaches are feasible. Yet the broader industry remains resistant to change, with many stakeholders dismissing environmental concerns as exorbitant in their demands.
 
-Perhaps the most consequential legacy of Carthage''s destruction lies in what was lost: the near-total erasure of an independent historical perspective. Because the victors controlled the narrative, virtually everything known about Carthage for centuries was filtered through the accounts of Greek and Roman writers, many of whom harbored deep-seated enmity toward the civilization they described. This one-sided historiography long perpetrated distortions that scholars are only now beginning to rectify. Recent efforts to decipher Punic inscriptions and analyze material culture have begun to yield a more nuanced portrait of Carthaginian society — one that challenges the simplistic caricature of a cruel and treacherous people that Roman propaganda so effectively disseminated.
+As regulatory frameworks continue to evolve, the future of cryptocurrency remains uncertain. What is clear is that the technology has irrevocably altered the financial landscape, compelling even its most staunch detractors to engage with the questions it raises about money, sovereignty, and the architecture of global finance.',
 
-The story of Carthage thus serves as a potent reminder of how thoroughly military conquest can erase not merely a civilization''s physical infrastructure but its very voice from the historical record. In an era when the preservation of cultural heritage has become a matter of urgent international concern, the fate of Carthage stands as an admonition against the complacent assumption that the past will preserve itself. The labyrinth of lost knowledge surrounding this ancient civilization continues to challenge historians, demanding that they look beyond the accounts of the victors to recover the stories that power sought to silence.',
+'ビットコインやその他の暗号通貨の急激な台頭は、過去10年間で現代金融における最も論議を呼ぶ発展の一つとなっている。2008年に匿名のサトシ・ナカモトがピアツーピアの電子決済システムを記述した白書を発表した際の、世間にほとんど知られていないデジタル実験として始まったものが、中央銀行や政策立案者がもはや無視できない数兆ドル規模の資産クラスへと急速に発展した。
 
-'古代史の年代記において、カルタゴの興亡ほど劇的な物語はほとんどない。このフェニキアの都市国家は、何世紀にもわたって西地中海の支配権をめぐってローマと競合した。紀元前9世紀に現在のチュニジアの海岸に建設されたカルタゴは、ささやかな交易拠点からイベリア半島から西アフリカの海岸まで商業ネットワークが及ぶ強大な海洋帝国へと成長した。しかし、この豪華な文明は、その頂点において古代世界で最も強力な海軍の一つを指揮していたが、第三次ポエニ戦争後の紀元前146年にローマが命じた歴史上最も冷酷な軍事征服行為の一つによって、最終的に瓦礫と化した。
+2021年の暗号通貨ブーム中、ビットコインの時価総額は多くの大企業のそれを一時的に上回り、基盤技術をほとんど理解していない大量の個人投資家がデジタルトークンに資金を注ぎ込んだ。多くの人々は一夜にして億万長者になった話に誘惑されたが、ベテランの金融アナリストたちは市場が投機的過熱に満ちていると警告した。その変動幅は驚異的で、価格は一日のうちに二桁のパーセンテージで変動し、投資家を絶え間ない不安状態に置いた。
 
-ローマとカルタゴの間の敵意は深い根を持ち、両大国がシチリアの支配権をめぐって最初に衝突した紀元前264年の第一次ポエニ戦争にまで遡る。20年以上続いたこの紛争は、壊滅的な戦争賠償金の支払いを含む懲罰的な条件をカルタゴに課すローマの勝利で終わった。しかし、バルキド王朝の下でのカルタゴのその後の復活（第二次ポエニ戦争中のハンニバルの伝説的なアルプス越えで最高潮に達する）は、ローマの疑念を和らげるどころか、ライバルを恒久的に排除するというローマの決意をさらに強めただけであった。ローマの元老院議員大カトーは、そのテーマに関係なく、すべての演説をカルタゴは滅ぼされなければならないという宣言で締めくくったことで有名であり、この執拗な修辞的キャンペーンはやがてその暗い実現を見た。
+この現象の影響は個人のポートフォリオをはるかに超えて広がっている。世界中の政府は、伝統的な金融監督を回避するために明示的に設計された資産クラスをどのように規制するかに取り組んできた。エルサルバドルでは、ナジブ・ブケレ大統領が2021年にビットコインを法定通貨とする極めて重大な決定を下し、国際通貨基金から称賛と厳しい批判の両方を受けた。対照的に、中国は暗号通貨のマイニングと取引に厳格な制限を課し、カザフスタンやアメリカ合衆国などの国々へのマイナーの大量流出を引き起こした。
 
-第三次ポエニ戦争自体は、本格的な軍事的争いというよりも、計画的な殲滅行為であった。ローマが紀元前149年に敵対行為を開始した時点で、カルタゴは数十年にわたる課された制約によって徹底的に弱体化されており、信頼できる軍事的脅威を構成していなかった。市の住民は外交的な働きかけの無益さを認識し、手元に残ったあらゆる資源で抵抗することを決意した。古代の史料は悲惨な絶望の場面を描写している。市民が家庭用器具から武器を鍛造し、女性が弓弦を作るために髪を切る様子である。包囲戦は3年間続き、その後ローマ軍が城壁を突破してカルタゴを組織的に破壊した。生き残った住民は奴隷にされ、都市自体は非常に完全に破壊されたため、後にその場所に建設したローマの入植者は、かつての壮大さの痕跡をほとんど見つけることができなかった。
+中央銀行は独自のデジタル通貨の検討で対応している。中国人民銀行はデジタル人民元のパイロットプログラムを開始し、欧州中央銀行はデジタルユーロの調査を開始した。これらの取り組みは、暗号通貨が従来の通貨の独占に対する現実的な挑戦を提示しているという暗黙の認識を反映している。しかし、懐疑論者は中央銀行デジタル通貨が消費者を真に力づけるのではなく、国家の監視能力を強化する可能性があると主張している。
 
-カルタゴの抹殺は長らくローマの凱旋主義のレンズを通じて解釈されてきた。好戦的なライバルの破壊がローマの権力の不可避的な統合を表すという物語である。しかし、現代の歴史家はこの説明をますます複雑にしようとしている。過去一世紀にわたって行われた考古学的発掘は、驚くべき洗練の文明を明らかにした。その海洋技術、都市計画、農業革新はローマ自体に匹敵するものであった。例えば、カルタゴの港湾施設の細心の記録は、研究者を仰天させ、カルタゴが文化的深みを欠く単なる商業大国であったという想定の再評価を促した工学的能力を実証した。
+暗号通貨マイニングの環境への負担も大きな注目を集めている。ビットコインのプルーフ・オブ・ワークの仕組みは年間で一部の中規模国家と同等の電力を消費しており、この事実は環境保護主義者から熱烈な批判を招いている。2022年のイーサリアムのプルーフ・オブ・ステークモデルへの移行はエネルギー消費を約99パーセント削減し、より持続可能なアプローチが実現可能であることを示した。しかし、より広い業界は変化に抵抗し続けており、多くの利害関係者は環境への懸念を法外な要求として退けている。
 
-おそらくカルタゴの破壊の最も重大な遺産は、失われたものにある。独立した歴史的視点のほぼ完全な消去である。勝者が物語を支配したため、カルタゴについて何世紀にもわたって知られていたことは、事実上すべてギリシャ・ローマの作家の記述を通じてフィルタリングされており、その多くは彼らが描写した文明に対する深い根深い敵意を抱いていた。この一方的な歴史記述は、学者がようやく修正し始めている歪曲を長く永続させた。ポエニ碑文の解読と物質文化の分析への最近の取り組みは、カルタゴ社会のより繊細な肖像を生み出し始めている。それは、ローマのプロパガンダが非常に効果的に広めた残酷で不誠実な民族という単純化された戯画に異議を唱えるものである。
+規制の枠組みが進化し続ける中、暗号通貨の将来は不確実なままである。明確なのは、この技術が金融の風景を不可逆的に変え、最も忠実な反対派でさえも、お金、主権、そしてグローバル金融のアーキテクチャについて提起される問いに向き合わざるを得なくしたということである。');
 
-したがって、カルタゴの物語は、軍事征服が文明の物理的インフラだけでなく、歴史的記録からのその声そのものをいかに徹底的に消し去ることができるかを強力に思い出させるものである。文化遺産の保存が緊急の国際的関心事となった時代において、カルタゴの運命は、過去が自ずと保存されるという自己満足的な想定に対する戒めとして立っている。この古代文明を取り巻く失われた知識の迷宮は、歴史家に挑戦を続けており、権力が沈黙させようとした物語を回復するために勝者の記録を超えて見ることを要求している。');
-
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(55, 19, 1, 'comprehension',
-'According to the passage, why has the historical understanding of Carthage been distorted for centuries?',
-'第5段落で、「勝者が物語を支配したため、カルタゴについて知られていたことは事実上すべてギリシャ・ローマの作家の記述を通じてフィルタリングされ」、その多くがカルタゴに対する「深い根深い敵意」を抱いていたと述べている。選択肢4が「勝者が物語を支配し、カルタゴに敵意を持つギリシャ・ローマの作家を通じてのみ伝えられた」と正確に反映している。選択肢1は「考古学的証拠が不足」で本文では発掘で証拠が見つかっていると述べている。選択肢2は「カルタゴ人が記録を残さなかった」で本文はポエニ碑文の存在に言及。選択肢3は「中世の歴史家が記録を破壊」で本文に言及なし。',
-4),
-(56, 19, 2, 'comprehension',
-'What does the passage suggest modern archaeological research has revealed about Carthaginian civilization?',
-'第4段落で、考古学的発掘が「驚くべき洗練の文明」を明らかにし、その「海洋技術、都市計画、農業革新はローマ自体に匹敵する」と述べている。港湾施設の工学的能力も研究者を仰天させたとしている。選択肢2が「海洋技術、都市計画、農業革新においてローマに匹敵する洗練された文明であった」と正確に述べている。選択肢1は「ローマよりも軍事的に優れていた」で本文にそのような主張はない。選択肢3は「主に交易で栄えた」で本文はこの見方を否定している。選択肢4は「ローマの影響を受けた」で本文の論旨と異なる。',
-2),
-(57, 19, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落にあり、「生き残った住民は[BLANK]、都市自体は非常に完全に破壊された」という文脈。ローマによるカルタゴの組織的破壊の記述の一部として、住民の運命が述べられる。古代ローマの征服では敗者の奴隷化が一般的であり、文脈上も「sold into slavery」が最も適切。選択肢1「sold into slavery」（奴隷として売られた）が正解。選択肢2は「granted Roman citizenship」で破壊的な征服の文脈と矛盾。選択肢3は「permitted to resettle elsewhere」は殲滅的な行為の文脈と合わない。選択肢4は「executed by order of the Roman Senate」は古代ローマの慣行として不正確。',
-1);
+(55, 19, 1, 'comprehension', 'According to the passage, what was one consequence of China''s restrictions on cryptocurrency?', '第3段落で、中国が暗号通貨のマイニングと取引に厳格な制限を課した結果、「カザフスタンやアメリカ合衆国などの国々へのマイナーの大量流出を引き起こした」（driving a mass exodus of miners to countries like Kazakhstan and the United States）と述べられている。', 2),
+(56, 19, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?', '空所は第4段落にあり、中央銀行がデジタル通貨を検討する理由についての文脈である。前後の文から、暗号通貨が従来の通貨の独占に現実的な挑戦を提示していることを中央銀行が暗黙的に認めている、という内容が適切である。', 3),
+(57, 19, 3, 'comprehension', 'What does the passage suggest about the future of cryptocurrency?', '最終段落で「規制の枠組みが進化し続ける中、暗号通貨の将来は不確実なままである」としつつも、「この技術が金融の風景を不可逆的に変えた」と述べており、将来は不確実だが金融システムへの影響は永続的であることを示唆している。', 4);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(55, 1, 'Insufficient archaeological evidence made it impossible to verify any claims about the civilization'),
-(55, 2, 'The Carthaginians themselves deliberately destroyed their records before the final siege'),
-(55, 3, 'Medieval European historians systematically destroyed Phoenician documents to consolidate Church authority'),
-(55, 4, 'The victors controlled the narrative, and accounts were filtered through hostile Greek and Roman writers'),
-(56, 1, 'Carthage possessed military capabilities that were demonstrably superior to those of Rome'),
-(56, 2, 'It was a remarkably sophisticated civilization whose maritime, urban, and agricultural achievements rivaled Rome''s'),
-(56, 3, 'Carthage was primarily a mercantile power with limited cultural or technological innovation'),
-(56, 4, 'Carthaginian civilization was largely derivative, borrowing most of its innovations from Roman models'),
-(57, 1, 'sold into slavery'),
-(57, 2, 'granted Roman citizenship and resettled across the empire'),
-(57, 3, 'permitted to resettle in neighboring territories under Roman supervision'),
-(57, 4, 'executed by order of the Roman Senate as an example to other rebellious cities');
+(55, 1, 'It led to a complete collapse of the global cryptocurrency market.'),
+(55, 2, 'It caused a large-scale migration of cryptocurrency miners to other countries.'),
+(55, 3, 'It prompted China to develop its own cryptocurrency as a replacement.'),
+(55, 4, 'It resulted in other Asian nations imposing similar bans on cryptocurrency.'),
+(56, 1, 'digital currencies will eventually replace all physical forms of money worldwide'),
+(56, 2, 'cryptocurrency technology is fundamentally flawed and must be redesigned from scratch'),
+(56, 3, 'cryptocurrency poses a real challenge to the traditional monopoly on currency'),
+(56, 4, 'private digital tokens should be incorporated into existing banking systems'),
+(57, 1, 'Cryptocurrency will likely be banned by most governments within the next decade.'),
+(57, 2, 'The environmental problems of cryptocurrency will prevent its further adoption.'),
+(57, 3, 'Central bank digital currencies will completely replace private cryptocurrencies.'),
+(57, 4, 'The future is uncertain, but cryptocurrency has permanently changed the financial landscape.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 19, id FROM words WHERE word_number IN (24, 26, 125, 152, 174, 184, 194, 243, 288, 324, 350, 357, 366, 372, 423, 480, 491, 597);
+INSERT INTO passage_words (passage_id, word_id) SELECT 19, id FROM words WHERE word_number IN (29, 53, 67, 96, 147, 149, 154, 176, 237, 242, 340, 354, 359, 371, 410, 549, 594, 596);

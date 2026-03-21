@@ -1,62 +1,44 @@
--- passage_25: The Paradox of Rewilding (環境 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (25, 'The Silent Crisis of Ocean Acidification', '環境',
+'Since the beginning of the Industrial Revolution, the world''s oceans have absorbed roughly one-third of the carbon dioxide released by human activities. While this absorption has helped alleviate the immediate impacts of climate change by removing greenhouse gases from the atmosphere, it has come at a steep cost: the progressive acidification of seawater. As CO2 dissolves in the ocean, it reacts with water to form carbonic acid, lowering the pH of the seas. Scientists estimate that the ocean''s pH has dropped by approximately 0.1 units since the late eighteenth century — a shift that may seem negligible but actually represents a roughly 30 percent increase in acidity.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(25, 'The Paradox of Rewilding', '環境',
-'In an era when environmental degradation has reached alarming proportions, rewilding — the large-scale restoration of ecosystems to their natural, self-regulating states — has garnered considerable attention as a potential antidote to biodiversity loss. Advocates extol its promise of reversing decades of habitat destruction by reintroducing apex predators and keystone species to landscapes from which they were long ago expelled. Yet beneath this fervent optimism lies a web of ecological, economic, and social complexities that proponents must grapple with if the movement is to achieve fruition.
+The ramifications of this chemical change are far-reaching. Marine organisms that build shells or skeletons from calcium carbonate — including corals, mollusks, and certain species of plankton — find it increasingly difficult to maintain their structures in more acidic water. Laboratory studies have corroborated field observations showing that shell-forming creatures exposed to lower-pH conditions produce thinner, more fragile shells. Coral reefs, which harbor roughly a quarter of all marine species, are particularly susceptible to these changes. When reefs deteriorate, the ecosystems they support can rapidly diminish, setting off cascading effects throughout the food web.
 
-The rationale behind rewilding rests on a compelling ecological premise. When apex predators such as wolves or lynxes are reintroduced to degraded landscapes, they initiate trophic cascades — chain reactions that reverberate through entire food webs. The celebrated reintroduction of wolves to Yellowstone National Park in the mid-1990s remains the most frequently cited example. By curtailing overgrazing elk populations, the wolves enabled riparian vegetation to regenerate, which in turn stabilized riverbanks, reduced erosion, and fostered habitats for fish, songbirds, and beavers. The ramifications extended far beyond what even the most avid ecologists had anticipated, demonstrating that a single species could catalyze the revitalization of an entire ecosystem.
+Beyond its impact on calcifying organisms, ocean acidification affects the behavior and physiology of fish. Research published in journals such as Nature Climate Change has demonstrated that elevated CO2 levels in seawater can impair the ability of certain fish species to detect predators, navigate, and locate suitable habitats. Some studies suggest that the neurological effects stem from disrupted ion regulation in the brain, though scientists have been meticulous in noting that [BLANK]. What remains incontrovertible is that even subtle behavioral shifts can have profound consequences for population dynamics and the broader marine ecosystem.
 
-Critics, however, caution that such success stories may not be readily replicated across disparate geographical and cultural contexts. In densely populated regions of Western Europe, for instance, the reintroduction of large predators brings them into direct conflict with agricultural communities whose livelihoods depend on livestock. Farmers who have already endured grueling economic pressures view the prospect of wolves or bears roaming their pastures with understandable trepidation. Compensation schemes, while ostensibly designed to alleviate such concerns, have frequently proved cumbersome in their administration and paltry in their payouts, leaving affected communities feeling marginalized rather than supported.
+The economic repercussions are equally alarming. The global shellfish industry, valued at tens of billions of dollars annually, faces a precarious future. In the Pacific Northwest of the United States, oyster hatcheries experienced catastrophic larval die-offs in the mid-2000s, an event that scientists later linked to upwelling of acidified deep water. Communities whose livelihoods depend on fisheries and aquaculture now confront a daunting reality: the very chemistry of the ocean is changing faster than many species can adapt.
 
-Furthermore, the very concept of restoring a landscape to its pristine historical state raises profound epistemological questions. Ecosystems are not static entities; they are dynamic systems in perpetual flux, shaped by millennia of climatic shifts, species migrations, and — crucially — human activity. The notion that there exists a definitive baseline to which a landscape should be returned is, many ecologists argue, [BLANK]. Archaeological and palynological evidence increasingly suggests that indigenous peoples actively managed landscapes through controlled burning and selective cultivation long before European colonization, complicating any simplistic narrative of pre-human wilderness.
+Efforts to mitigate ocean acidification ultimately hinge on curtailing carbon dioxide emissions. International agreements such as the Paris Agreement aim to limit global warming, which would indirectly slow the rate of acidification. Meanwhile, localized strategies — including the restoration of seagrass beds and mangrove forests, which naturally absorb CO2 — offer a modicum of respite for vulnerable coastal ecosystems. Scientists and policymakers increasingly recognize that addressing ocean acidification is not merely an environmental imperative but an economic and social one as well, demanding concerted action on a global scale.',
 
-Despite these challenges, a growing cohort of conservation scientists contends that the detrimental consequences of inaction far outweigh the risks associated with rewilding. With species extinction rates now estimated at roughly one thousand times the natural background rate, the imperative to bolster biodiversity through ambitious intervention has never been more urgent. Innovative approaches — such as establishing wildlife corridors that connect fragmented habitats, or deploying surrogate species where original fauna have become defunct — offer pragmatic compromises that acknowledge ecological complexity without succumbing to paralysis.
+'産業革命の始まり以来、世界の海洋は人間の活動によって放出された二酸化炭素のおよそ3分の1を吸収してきた。この吸収は大気中の温室効果ガスを除去することで気候変動の直接的な影響を軽減するのに役立ってきたが、大きな代償を伴っている。それは海水の酸性化の進行である。CO2が海洋に溶解すると、水と反応して炭酸を形成し、海のpHを低下させる。科学者たちは、18世紀後半以降、海洋のpHが約0.1単位低下したと推定している。この変化は取るに足りないように見えるかもしれないが、実際には酸性度が約30パーセント増加したことを意味する。
 
-The trajectory of rewilding will ultimately depend on the capacity of its advocates to forge alliances across traditionally antagonistic constituencies: conservationists, farmers, policymakers, and indigenous communities. Only through concerted dialogue and adaptive management strategies can the movement navigate the labyrinth of competing interests and ecological uncertainties that define contemporary conservation. What is clear is that the dearth of viable alternatives makes abandoning the rewilding agenda a perilous proposition for a planet in ecological crisis.',
+この化学的変化の影響は広範囲に及ぶ。炭酸カルシウムから殻や骨格を構築するサンゴ、軟体動物、特定のプランクトン種などの海洋生物は、より酸性度の高い水中で構造を維持することがますます困難になっている。実験室での研究は、低pH条件にさらされた殻形成生物がより薄く、より脆い殻を生成することを示す現場観察を裏付けている。全海洋生物種の約4分の1を擁するサンゴ礁は、これらの変化に対して特に影響を受けやすい。サンゴ礁が劣化すると、それらが支える生態系は急速に縮小し、食物網全体に連鎖的な影響を引き起こす可能性がある。
 
-'環境劣化が驚くべき規模に達した時代にあって、リワイルディング（生態系を自然で自己調整的な状態に大規模に復元すること）は、生物多様性の損失に対する潜在的な解毒剤として大きな注目を集めている。支持者たちは、頂点捕食者やキーストーン種を、かつて追い出された景観に再導入することで、何十年にもわたる生息地破壊を逆転させるその可能性を絶賛する。しかし、この熱烈な楽観主義の下には、運動が実を結ぶためにその推進者たちが取り組まなければならない生態学的、経済的、社会的複雑さの網が潜んでいる。
+石灰化生物への影響を超えて、海洋酸性化は魚の行動と生理機能にも影響を与える。Nature Climate Changeなどの学術誌に発表された研究は、海水中のCO2レベルの上昇が特定の魚種の捕食者の検知、ナビゲーション、適切な生息地の特定能力を損なう可能性があることを実証している。一部の研究では、神経学的影響が脳内のイオン調節の乱れに起因すると示唆しているが、科学者たちは［空所］と細心の注意を払って指摘している。議論の余地がないのは、わずかな行動の変化でさえ個体群の動態とより広い海洋生態系に深刻な結果をもたらしうるということである。
 
-リワイルディングの根拠は、説得力のある生態学的前提に基づいている。オオカミやオオヤマネコなどの頂点捕食者が劣化した景観に再導入されると、栄養段階のカスケード（食物網全体に反響する連鎖反応）が始まる。1990年代半ばにイエローストーン国立公園にオオカミを再導入した有名な事例は、最も頻繁に引用される例であり続けている。過放牧のエルク個体群を抑制することにより、オオカミは河畔植生の再生を可能にし、それが川岸を安定させ、浸食を減らし、魚類、鳴禽類、ビーバーの生息地を育んだ。その影響は、最も熱心な生態学者でさえ予想していたよりもはるかに広範囲に及び、単一の種が生態系全体の再活性化を触媒できることを実証した。
+経済的な影響も同様に憂慮すべきものである。年間数百億ドル規模のグローバル貝類産業は、不安定な将来に直面している。米国太平洋岸北西部では、2000年代半ばに牡蠣の孵化場で壊滅的な幼生の大量死が発生し、科学者たちは後にこれを酸性化した深層水の湧昇に関連づけた。漁業や養殖に生計を依存するコミュニティは、今や厳しい現実に直面している。海洋のまさにその化学的性質が、多くの種が適応できるよりも速く変化しているのである。
 
-しかし批判者たちは、そのような成功事例が異なる地理的・文化的文脈で容易に再現できるとは限らないと警告する。例えば、人口密度の高い西ヨーロッパでは、大型捕食者の再導入により、家畜に生計を依存する農業コミュニティとの直接的な対立が生じる。すでに厳しい経済的圧力に耐えてきた農家にとって、オオカミやクマが牧草地を歩き回るという見通しは当然の恐怖をもって受け止められる。懸念を軽減するために表向き設計された補償制度は、管理が煩雑で支払額がわずかであることが多く、影響を受けるコミュニティは支援されるどころか周縁化されていると感じている。
+海洋酸性化を緩和する取り組みは、最終的に二酸化炭素排出量の削減にかかっている。パリ協定などの国際協定は地球温暖化を制限することを目指しており、それによって間接的に酸性化の速度を遅らせることになる。一方、海草藻場やマングローブ林の修復など、自然にCO2を吸収する局所的な戦略は、脆弱な沿岸生態系にわずかな休息を提供する。科学者や政策立案者は、海洋酸性化への対処が単なる環境的義務ではなく、経済的・社会的義務でもあり、世界規模での協調的な行動を必要とすることをますます認識している。');
 
-さらに、景観をその原始的な歴史的状態に復元するという概念そのものが、深い認識論的問題を提起する。生態系は静的な存在ではなく、何千年もの気候変動、種の移動、そして決定的に重要なこととして人間の活動によって形作られた、絶えず変化する動的システムである。景観が戻されるべき決定的な基準点が存在するという考えは、多くの生態学者が主張するように、根本的に誤った前提に基づいている。考古学的および花粉学的証拠は、先住民がヨーロッパの植民地化のはるか以前から、制御された焼畑や選択的栽培を通じて景観を積極的に管理していたことをますます示唆しており、人間以前の原野という単純化された物語を複雑にしている。
-
-これらの課題にもかかわらず、保全科学者の増加する一群は、不作為の有害な結果がリワイルディングに関連するリスクをはるかに上回ると主張する。種の絶滅率が現在、自然のバックグラウンド率の約千倍と推定される中、野心的な介入によって生物多様性を強化する緊急性はかつてないほど高まっている。断片化した生息地をつなぐ野生生物回廊の設置や、元の動物相が絶滅した場所での代替種の導入など、革新的なアプローチは、生態学的複雑さを認めつつも麻痺に陥ることなく実用的な妥協を提供する。
-
-リワイルディングの軌道は、最終的にはその支持者たちが伝統的に対立してきた関係者間（保全主義者、農家、政策立案者、先住民コミュニティ）の同盟を築く能力にかかっている。協調的な対話と適応的管理戦略を通じてのみ、この運動は現代の保全を定義する競合する利害と生態学的不確実性の迷宮を進むことができる。明らかなのは、実行可能な代替策の欠如により、生態学的危機にある惑星にとってリワイルディングの議題を放棄することは危険な提案であるということだ。');
-
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(73, 25, 1, 'comprehension',
-'According to the passage, what did the reintroduction of wolves to Yellowstone National Park demonstrate?',
-'第2段落で、オオカミの再導入が栄養段階のカスケードを引き起こし、河畔植生の再生、川岸の安定化、浸食の減少、魚類・鳥類・ビーバーの生息地の創出など広範な効果をもたらしたと述べている。最も熱心な生態学者の予想をも超え「単一の種が生態系全体の再活性化を触媒できること」を実証したとある。選択肢1が「単一の種が生態系全体に広範な連鎖的効果を引き起こしうる」と正確に反映している。選択肢2は「エルクの完全な排除が必要」で本文は抑制であり排除ではない。選択肢3は「すべての国立公園で再現可能」で本文に言及なし。選択肢4は「河畔植生のみ効果がある」で影響はそれ以上に広範。',
-1),
-(74, 25, 2, 'comprehension',
-'What concern does the passage raise about compensation schemes for farmers affected by rewilding?',
-'第3段落で、補償制度は「表向きは懸念を軽減するために設計された」が、「管理が煩雑(cumbersome)で支払額がわずか(paltry)」であり、影響を受けるコミュニティは「支援されるどころか周縁化されている」と感じていると述べている。選択肢3が「管理上の障壁が多く支払いが不十分で、コミュニティが周縁化されたと感じる」と正確に言い換えている。選択肢1は「補償制度は完全に実施されていない」で本文はそこまで述べていない。選択肢2は「農家が参加を拒否」で本文に言及なし。選択肢4は「政府資金の不正利用」で本文に根拠なし。',
-3),
-(75, 25, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は「景観が戻されるべき決定的な基準点が存在するという考えは…である」という文脈で、直前に生態系が動的で常に変化していることが述べられ、直後には先住民が植民地化以前から景観を管理していた証拠が示されている。したがって「決定的な基準点」という概念自体が疑わしいという内容が入る。選択肢2「根本的に誤った前提に基づいている」が文脈に最も合致する。選択肢1「広く受け入れられている」は批判的文脈と矛盾。選択肢3「最近の研究で裏づけられた」も反対の意味。選択肢4「一部の地域でのみ有効」は議論の範囲が狭すぎる。',
-2);
+(73, 25, 1, 'comprehension', 'According to the passage, what happened at oyster hatcheries in the Pacific Northwest of the United States?',
+'第4段落で、2000年代半ばに米国太平洋岸北西部の牡蠣孵化場で壊滅的な幼生の大量死が発生し、科学者たちが後にそれを酸性化した深層水の湧昇に関連づけたと述べられている。', 2),
+(74, 25, 2, 'fill_in_blank', 'Which of the following best fills in the blank [BLANK] in the passage?',
+'空所を含む文では、科学者たちがある点について「細心の注意を払って指摘している」とある。前文では神経学的影響がイオン調節の乱れに起因すると示唆されており、後文では行動変化の影響は議論の余地がないと述べている。文脈から、研究結果をすべての種に一般化するにはさらなるデータが必要であるという趣旨が最も適切。', 3),
+(75, 25, 3, 'comprehension', 'What does the passage suggest about the overall consequences of ocean acidification?',
+'本文全体を通じて、海洋酸性化は貝類やサンゴなどの海洋生物への影響だけでなく、魚の行動変化、経済的損害、コミュニティの生計への脅威など多方面にわたる影響をもたらすことが述べられている。最終段落では環境的義務だけでなく経済的・社会的義務でもあると明記されている。', 4);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(73, 1, 'A single species can trigger extensive cascading effects throughout an entire ecosystem'),
-(73, 2, 'The complete elimination of elk populations is necessary for ecological restoration'),
-(73, 3, 'Rewilding initiatives can be successfully replicated in any national park'),
-(73, 4, 'The benefits of predator reintroduction are limited primarily to riparian vegetation'),
-(74, 1, 'Compensation programs have not been implemented in any rewilding region'),
-(74, 2, 'Farmers have collectively refused to participate in compensation schemes'),
-(74, 3, 'Administrative burdens and inadequate payments have left communities feeling marginalized'),
-(74, 4, 'Government funds allocated for compensation have been misappropriated by officials'),
-(75, 1, 'widely accepted by the international scientific community'),
-(75, 2, 'predicated on a fundamentally flawed assumption'),
-(75, 3, 'supported by recent paleontological research'),
-(75, 4, 'applicable only in certain geographically isolated regions');
+(73, 1, 'They successfully adapted their breeding techniques to more acidic conditions.'),
+(73, 2, 'They suffered massive larval deaths linked to the upwelling of acidified deep water.'),
+(73, 3, 'They relocated their operations to areas with higher pH levels.'),
+(73, 4, 'They received substantial government subsidies to offset their losses.'),
+(74, 1, 'ocean pH levels have already stabilized and will not decline further'),
+(74, 2, 'these behavioral changes are confined exclusively to tropical fish species'),
+(74, 3, 'further research is needed before the findings can be generalized across all species'),
+(74, 4, 'the effects on fish behavior are entirely reversible once CO2 levels decrease'),
+(75, 1, 'Its effects are limited primarily to organisms that build calcium carbonate structures.'),
+(75, 2, 'It poses a serious threat to marine life but has little bearing on human economies.'),
+(75, 3, 'It can be fully reversed through the restoration of seagrass beds and mangrove forests.'),
+(75, 4, 'It poses interconnected environmental, economic, and social challenges that require coordinated global action.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 25, id FROM words WHERE word_number IN (14, 17, 37, 45, 51, 95, 137, 154, 163, 174, 176, 242, 259, 308, 341, 393, 457, 480, 516, 551);
+INSERT INTO passage_words (passage_id, word_id) SELECT 25, id FROM words WHERE word_number IN (95, 69, 154, 167, 26, 202, 84, 574, 239, 393, 335, 33, 550);

@@ -1,58 +1,49 @@
--- passage_2: The Paradox of Standardized Testing in Modern Education (教育 / word_number 1-600)
+-- Passage 2: 教育 - The Montessori Method's Resurgence
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (
+2,
+'The Montessori Method''s Modern Resurgence',
+'教育',
+'When Maria Montessori opened her first Casa dei Bambini in Rome in 1907, few could have anticipated that her pedagogical philosophy would still be garnering accolades more than a century later. Today, there are over 20,000 Montessori schools worldwide, and the method has experienced a notable resurgence in mainstream education, driven in part by neuroscience research that has corroborated many of Montessori''s original intuitions about how children learn.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(2, 'The Paradox of Standardized Testing in Modern Education', '教育',
-'For much of the twentieth century, standardized testing was extolled as the most equitable mechanism for evaluating student achievement across diverse socioeconomic backgrounds. Its proponents argued that uniform examinations provided a robust measure of academic competence, one that could not be easily manipulated by subjective grading practices or institutional biases. Yet as educational research has burgeoned in recent decades, a growing body of evidence has called into question the foundational assumptions upon which standardized testing rests, revealing a paradox at the heart of modern assessment practices.
+At the heart of the Montessori approach is the conviction that children are inherently inquisitive and capable of directing their own learning when placed in carefully prepared environments. Unlike conventional classrooms, where teachers occupy the pinnacle of authority and students passively receive instruction, Montessori classrooms are designed to foster independence. Children select their own activities, work at their own pace, and are encouraged to collaborate across age groups. This latitude—which traditional educators once dismissed as tantamount to educational negligence—has proven remarkably effective at cultivating intrinsic motivation.
 
-The rationale behind standardized testing appears, at first glance, to be compelling. By subjecting all students to identical questions under controlled conditions, these examinations ostensibly eliminate the erratic variations inherent in teacher-assigned grades. Advocates contend that such tests provide pertinent data for policymakers seeking to gauge the effectiveness of schools and allocate resources accordingly. In an era when educational expenditures face relentless scrutiny, the appeal of a quantifiable metric that permits direct comparison across institutions is difficult to dismiss. Furthermore, staunch defenders of standardized assessments maintain that these instruments foster accountability, compelling both educators and students to meet clearly defined benchmarks.
+The scientific underpinnings of the method have become increasingly robust. A landmark study published in the journal Science in 2006 by Angeline Lillard and Nicole Else-Quest compared Montessori students with their peers in conventional schools in Milwaukee, Wisconsin. The researchers found that Montessori children demonstrated superior performance in reading and mathematics, as well as more sophisticated social reasoning and a stronger sense of community. Subsequent studies have replicated these findings, and developmental psychologists now widely acknowledge that [BLANK].
 
-Critics, however, argue that the proliferation of high-stakes testing has engendered a pedagogical culture that is fundamentally detrimental to genuine learning. When school funding, teacher evaluations, and student advancement are all contingent upon test scores, educators face enormous pressure to narrow their curricula to the specific content that examinations are likely to cover. This phenomenon, widely derided as "teaching to the test," effectively stifles the cultivation of critical thinking, creativity, and intellectual curiosity — the very qualities that [BLANK]. The ramifications extend beyond the classroom: students subjected to incessant testing regimes frequently report elevated levels of anxiety and diminished intrinsic motivation, suggesting that the instruments designed to measure learning may inadvertently impede it.
+Critics, however, have raised pertinent concerns. One persistent objection is that Montessori education can be prohibitively expensive, creating an elitist system that benefits affluent families while remaining inaccessible to those in precarious financial circumstances. In the United States, annual tuition at private Montessori schools can exceed thirty thousand dollars, a figure that would astound many parents. Public Montessori programs exist but remain scarce, and advocates have long implored policymakers to expand access. The disparity between the method''s egalitarian ideals and its often exclusive availability represents a fundamental paradox that the movement must confront.
 
-Perhaps the most salient criticism concerns the equity claims that have long bolstered the case for standardized testing. Research has consistently demonstrated that test scores correlate strongly with socioeconomic status, calling into question whether these examinations truly measure academic aptitude or merely reflect disparate access to preparatory resources. Students from affluent backgrounds, who benefit from private tutoring, copious study materials, and environments conducive to sustained concentration, routinely outperform their less privileged counterparts — a pattern that persists even when controlling for innate ability. Far from serving as the great equalizer, critics contend, standardized testing may perpetuate and accentuate the very inequalities it purports to remedy.
+Another contentious issue involves the fidelity of implementation. Because the Montessori name is not trademarked, any school can claim the label without adhering to its core principles. This has led to a proliferation of institutions that bear the Montessori name but operate in ways that would be unrecognizable to the method''s founder. The resulting inconsistency has made it difficult to gauge the true effectiveness of authentic Montessori education, as studies often conflate genuine programs with diluted imitations.
 
-In response to these concerns, a growing number of educational institutions have begun to explore alternative assessment models. Portfolio-based evaluations, which require students to compile and reflect upon a body of work produced over an extended period, offer one such approach. Others have advocated for competency-based frameworks that assess mastery of specific skills rather than performance on a single high-pressure examination. While no consensus has yet emerged regarding the optimal replacement for standardized tests, the momentum behind reform efforts suggests that the era of uncritical reliance on uniform examinations may be drawing to a close. The challenge that remains is to devise assessment systems that are both feasible to implement at scale and genuinely capable of capturing the multifaceted nature of student learning.',
+Despite these challenges, the Montessori method continues to gain momentum. Tech leaders including the founders of Google and Amazon, who were themselves educated in Montessori schools, have championed the method, and a number of Silicon Valley companies now offer Montessori-inspired programs for employees'' children, and a growing body of evidence suggests that the method''s emphasis on self-directed learning aligns well with the skills demanded by the twenty-first-century economy. As education systems worldwide grapple with the question of how best to prepare students for an uncertain future, Montessori''s century-old insights remain strikingly relevant.',
+'1907年にマリア・モンテッソーリがローマで最初の「子どもの家」を開いたとき、彼女の教育哲学が1世紀以上経ってもなお称賛を集め続けるとは、ほとんど誰も予想できなかっただろう。今日、世界中に20,000以上のモンテッソーリ学校があり、この教育法は主流教育において顕著な復活を遂げている。その一因は、子どもがどのように学ぶかについてのモンテッソーリの当初の直感の多くを裏付けた神経科学の研究にある。
 
-'20世紀の大部分において、標準化テストは多様な社会経済的背景を持つ生徒の学力を評価する最も公平な手段として称賛されていた。その支持者たちは、統一試験が学力の確固たる指標を提供し、主観的な採点慣行や制度的偏見によって容易に操作されないと主張した。しかし、近年の教育研究が急速に発展するにつれ、標準化テストの基盤をなす前提に疑問を投げかける証拠が蓄積され、現代の評価実践の核心に潜むパラドックスが明らかになってきた。
+モンテッソーリ・アプローチの核心は、子どもたちは本質的に好奇心が強く、注意深く整えられた環境に置かれれば自らの学習を方向づける能力があるという信念にある。教師が権威の頂点に立ち、生徒が受動的に指導を受ける従来の教室とは異なり、モンテッソーリの教室は自立を育むよう設計されている。子どもたちは自分の活動を選び、自分のペースで取り組み、異年齢のグループ間で協力するよう奨励される。この自由度——かつて伝統的な教育者が教育的怠慢に等しいと退けた——は、内発的動機づけを育てるうえで驚くほど効果的であることが証明されている。
 
-標準化テストの根拠は、一見すると説得力があるように思える。管理された条件下で全生徒に同一の問題を課すことで、これらの試験は教師による成績評価に内在する不規則なばらつきを表面上は排除する。支持者は、こうしたテストが学校の有効性を測定し、それに応じて資源を配分しようとする政策立案者に適切なデータを提供すると主張する。教育支出が絶え間ない精査に直面する時代において、機関間の直接比較を可能にする定量的指標の魅力は無視し難い。さらに、標準化評価の忠実な擁護者は、これらの手段が説明責任を促進し、教育者と生徒の双方に明確に定義された基準を満たすことを強いると主張する。
+この教育法の科学的基盤はますます強固になっている。2006年にScience誌に掲載されたアンジェリン・リラードとニコール・エルス＝クエストによる画期的な研究は、ウィスコンシン州ミルウォーキーでモンテッソーリの生徒と従来の学校の生徒を比較した。研究者たちは、モンテッソーリの子どもたちが読解力と数学において優れた成績を示し、より洗練された社会的推論力とより強いコミュニティ意識を持つことを発見した。その後の研究はこれらの知見を再現しており、発達心理学者は現在、[BLANK]ことを広く認めている。
 
-しかし批判者は、ハイステークステストの急増が、真の学びにとって根本的に有害な教育文化を生み出してきたと論じる。学校の予算、教師の評価、生徒の進級がすべてテストの点数に左右される場合、教育者は試験で出題されそうな特定の内容にカリキュラムを狭めるという大きな圧力に直面する。「テストのための教育」として広く批判されるこの現象は、批判的思考力、創造性、知的好奇心——まさに教育が本来育むべき資質——の育成を事実上阻害する。その影響は教室の外にまで及ぶ。絶え間ないテスト体制にさらされた生徒は、不安感の上昇と内発的動機づけの低下を頻繁に報告しており、学びを測定するために設計された手段がかえって学びを妨げている可能性を示唆している。
+しかし、批評家たちは適切な懸念を提起している。根強い反論の一つは、モンテッソーリ教育が法外に高額になりうるということで、裕福な家庭に利益をもたらす一方で、不安定な経済状況にある家庭には手が届かないエリート主義的な制度を生み出しているという点である。アメリカでは、私立モンテッソーリ学校の年間授業料は3万ドルを超えることがあり、その金額は多くの保護者を驚かせるだろう。公立のモンテッソーリプログラムは存在するが依然として少なく、支持者たちはアクセスの拡大を政策立案者に長く懇願してきた。この教育法の平等主義的な理念と、しばしば排他的な利用可能性との格差は、運動が直面しなければならない根本的な矛盾を表している。
 
-おそらく最も顕著な批判は、長年にわたり標準化テストの根拠を支えてきた公平性の主張に関するものである。研究は一貫して、テストの点数が社会経済的地位と強く相関することを示しており、これらの試験が真に学力を測定しているのか、それとも準備資源への不均等なアクセスを単に反映しているにすぎないのかという疑問を提起している。私的な家庭教師、豊富な学習教材、集中を持続できる環境の恩恵を受ける裕福な家庭の生徒は、恵まれない同世代を日常的に上回る成績を収める——先天的な能力を統制してもなお持続するパターンである。批判者は、偉大な平等化装置として機能するどころか、標準化テストは是正すると称する不平等そのものを固定化し、際立たせている可能性があると主張する。
+もう一つの論争的な問題は、実施の忠実さに関わるものである。モンテッソーリの名前は商標登録されていないため、どの学校もその中核原則に従わずにその名称を名乗ることができる。これにより、モンテッソーリの名前を冠しながらも、創設者には認識できないような方法で運営される教育機関が急増している。その結果生じた不一致により、本物のモンテッソーリ教育の真の有効性を評価することが困難になっている。研究がしばしば本物のプログラムと薄められた模倣を混同しているためである。
 
-これらの懸念に応えて、ますます多くの教育機関が代替的な評価モデルの探索を開始している。ポートフォリオに基づく評価は、生徒が長期間にわたって制作した作品群を編集し振り返ることを求めるもので、そのようなアプローチの一つを提供する。他には、単一の高圧的な試験でのパフォーマンスではなく、特定のスキルの習熟度を評価するコンピテンシーに基づく枠組みを提唱する者もいる。標準化テストの最適な代替物に関する合意はまだ得られていないが、改革の取り組みの勢いは、統一試験への無批判な依存の時代が終わりに近づいている可能性を示唆している。残された課題は、大規模に実施可能であり、かつ生徒の学びの多面的な性質を真に捉えることのできる評価システムを考案することである。');
+これらの課題にもかかわらず、モンテッソーリ教育法は勢いを増し続けている。グーグルやアマゾンの創業者を含むテクノロジー業界のリーダーたちは、自身がモンテッソーリ教育を受けた経験からこの教育法を支持しており、シリコンバレーの多くの企業が従業員の子どものためにモンテッソーリに触発されたプログラムを提供している。そして、自主的な学習を重視するこの教育法が21世紀の経済が求めるスキルとよく合致することを示す証拠が増えている。世界中の教育制度が不確実な未来に向けて生徒をどう最善に準備するかという問いに取り組む中、モンテッソーリの1世紀前の洞察は驚くほど今日性を保っている。'
+);
 
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(4, 2, 1, 'comprehension',
-'According to the passage, what is the primary concern critics raise about high-stakes standardized testing?',
-'第3段落で、批判者はハイステークステストの急増が「真の学びにとって根本的に有害な教育文化を生み出した」と論じている。具体的には、テストの点数に学校予算や教師評価が左右されるため、教育者がカリキュラムを試験内容に狭め、批判的思考力や創造性の育成が阻害されると指摘している。選択肢3が「カリキュラムを狭め、批判的思考力などの重要な能力の育成を妨げる」と正確に要約している。選択肢1は「コストが高すぎる」で本文に言及なし。選択肢2は「教師の主観的偏見を排除できない」で支持者側の論点の裏返しに過ぎない。選択肢4は「生徒間の競争を激化させる」で本文の主旨と異なる。',
-3),
-(5, 2, 2, 'comprehension',
-'What does the passage suggest about the relationship between standardized test scores and socioeconomic status?',
-'第4段落で、研究がテストの点数と社会経済的地位の強い相関を一貫して示していると述べられている。裕福な家庭の生徒は家庭教師や豊富な教材の恩恵を受けて恵まれない生徒を上回り、先天的能力を統制してもこのパターンが持続すると指摘されている。選択肢2が「テストの点数は学力よりも準備資源へのアクセスを反映している可能性がある」と正確に対応している。選択肢1は「相関が弱い」で本文と矛盾。選択肢3は「裕福な生徒だけが恩恵を受ける」で極端すぎる。選択肢4は「社会経済的格差は試験準備で解消できる」で本文はむしろ逆を示唆している。',
-2),
-(6, 2, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落の「批判的思考力、創造性、知的好奇心——まさに[BLANK]という資質」の部分にある。文脈上、テストのための教育が阻害するのは教育が本来育むべき資質である。選択肢4「教育が育むべき最も重要な資質」が文脈に最も合致する。選択肢1「雇用者が最も重視するもの」は本文の教育論から逸れる。選択肢2「標準化テストが正確に測定するもの」は矛盾する。選択肢3「生徒が自然に身につけるもの」は教育的文脈と合わない。',
-4);
+(4, 2, 1, 'comprehension', 'What does the passage identify as a fundamental paradox of the Montessori movement?', '第4段落で、モンテッソーリ教育の平等主義的な理念と、私立校の高額な授業料によるアクセスの制限との間の矛盾が「fundamental paradox」として描かれている。選択肢1がこの内容に一致する。', 1),
+(5, 2, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK] in paragraph 3?', '第3段落では、リラードとエルス＝クエストの2006年の研究がモンテッソーリの生徒の優れた成績を示し、その後の研究もこれを再現したと述べている。文脈から、発達心理学者が広く認めている内容は、モンテッソーリの自主的学習アプローチが子どもの認知的・社会的発達に有益であるということ。選択肢3が最適。', 3),
+(6, 2, 3, 'comprehension', 'According to the passage, why is it difficult to assess the true effectiveness of Montessori education?', '第5段落で、モンテッソーリの名前が商標登録されていないため、中核原則に従わない学校もモンテッソーリを名乗ることができ、研究が本物のプログラムと薄められた模倣を混同しがちであると説明されている。選択肢2が正解。', 2);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(4, 1, 'The financial cost of administering standardized examinations has become prohibitively expensive for most school districts'),
-(4, 2, 'Standardized tests fail to eliminate the subjective biases present in teacher-assigned grades'),
-(4, 3, 'The pressure to improve test scores narrows curricula and undermines the development of critical thinking and creativity'),
-(4, 4, 'High-stakes testing intensifies unhealthy competition among students rather than promoting collaborative learning'),
-(5, 1, 'The correlation between test scores and socioeconomic background is relatively weak and inconsistent across studies'),
-(5, 2, 'Test scores may reflect access to preparatory resources rather than genuine academic aptitude'),
-(5, 3, 'Only students from wealthy families derive any meaningful benefit from standardized testing'),
-(5, 4, 'Socioeconomic disparities in test performance can be effectively eliminated through targeted test preparation programs'),
-(6, 1, 'employers in the modern workforce value most highly'),
-(6, 2, 'standardized examinations are specifically designed to measure accurately'),
-(6, 3, 'students naturally acquire without formal instruction'),
-(6, 4, 'a well-rounded education is ultimately meant to cultivate');
+(4, 1, 'The method promotes egalitarian ideals but is often accessible only to wealthy families.'),
+(4, 2, 'The method emphasizes independence but requires highly structured classroom environments.'),
+(4, 3, 'The method was designed for young children but is now applied mainly to adolescents.'),
+(4, 4, 'The method originated in Italy but has been adopted primarily in English-speaking countries.'),
+(5, 1, 'standardized testing is the most reliable way to measure educational outcomes across different school systems'),
+(5, 2, 'conventional classroom instruction produces better results than self-directed learning in most academic subjects'),
+(5, 3, 'child-directed learning in prepared environments can yield significant cognitive and social benefits'),
+(5, 4, 'Montessori education is effective only when implemented in small, privately funded schools'),
+(6, 1, 'Most Montessori schools refuse to participate in academic research studies.'),
+(6, 2, 'The Montessori name is not trademarked, so schools claiming the label may not follow its core principles.'),
+(6, 3, 'Neuroscience research has produced conflicting results about child-directed learning.'),
+(6, 4, 'Government regulations prevent independent evaluations of private educational institutions.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 2, id FROM words WHERE word_number IN (37, 96, 137, 154, 235, 262, 264, 279, 341, 343, 396, 401, 429, 451, 549, 550, 575, 587, 594, 595);
+INSERT INTO passage_words (passage_id, word_id) SELECT 2, id FROM words WHERE word_number IN (6, 49, 69, 84, 147, 176, 273, 277, 333, 350, 357, 401, 451, 499, 538, 575, 587);

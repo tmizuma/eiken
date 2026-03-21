@@ -1,58 +1,45 @@
--- passage_24: The Erosion of Press Freedom in the Digital Age (政治 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (24, 'The Politics of Climate Change Legislation', '政治',
+'Few policy challenges have proven as politically intractable as climate change. Despite decades of scientific consensus that human activity is driving global warming, legislative efforts to reduce greenhouse gas emissions have repeatedly faltered in the face of entrenched economic interests, partisan divisions, and the inherent difficulty of asking voters to bear short-term costs for long-term benefits. The history of climate legislation reveals a pattern of ambitious proposals, fierce opposition, and hard-won compromises that often fall short of what scientists say is necessary.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(24, 'The Erosion of Press Freedom in the Digital Age', '政治',
-'The relationship between political power and the free press has always been fraught with tension. From the earliest days of the printing press, governments have sought to control the dissemination of information that might threaten their authority, while journalists and publishers have fought to preserve their independence. In democratic societies, a free press is widely regarded as an indispensable prerequisite for informed citizenship and governmental accountability. Yet in recent years, press freedom has come under mounting pressure from an unexpected convergence of forces: authoritarian governments wielding sophisticated digital surveillance tools, the economic collapse of traditional media business models, and a pervasive atmosphere of public distrust toward mainstream journalism.
+The Kyoto Protocol of 1997 represented the first major international attempt to impose binding emissions targets on industrialized nations. The United States, then the world''s largest emitter of greenhouse gases, signed the treaty but never ratified it. The Senate had passed the Byrd-Hagel Resolution by a vote of 95 to 0, signaling adamant opposition to any agreement that did not also require developing nations to limit emissions. Critics lambasted the protocol for exempting countries like China and India, arguing that it would merely shift polluting industries from regulated economies to unregulated ones without achieving a net reduction in global emissions.
 
-The most overt threat to press freedom comes from governments that view independent journalism as a direct challenge to their legitimacy. In dozens of countries around the world, reporters face incarceration, violence, and even assassination for investigating corruption, human rights violations, and abuses of power. What has changed in recent decades, however, is the nature of the tools available to repressive regimes. Digital surveillance technologies allow governments to monitor journalists'' communications with unprecedented precision, identifying confidential sources and intercepting sensitive materials before they can be published. Governments have also learned to exploit legal frameworks — defamation statutes, national security laws, and anti-terrorism legislation — to harass and silence critical voices under a veneer of legal legitimacy. The chilling effect of such tactics extends far beyond the individuals directly targeted, creating a climate of self-censorship that [BLANK].
+The Paris Agreement of 2015 sought to rectify some of these shortcomings by adopting a more flexible framework. Rather than imposing top-down targets, it allowed each nation to set its own "nationally determined contributions" toward reducing emissions. This approach made the agreement more palatable to a broader range of countries — 196 parties negotiated — but it also meant that enforcement mechanisms were virtually nonexistent. The accord relied on peer pressure and periodic reviews to nudge countries toward more ambitious commitments, a strategy that skeptics dismissed as tepid and insufficient.
 
-Equally troubling, if less dramatic, is the economic crisis confronting independent journalism in the digital era. The migration of advertising revenue from print newspapers to online platforms — particularly to technology giants that aggregate content without producing it — has decimated the financial foundations on which investigative journalism traditionally depended. Newsrooms have been forced to curtail their reporting staffs, close foreign bureaus, and reduce investment in the kind of meticulous, long-term investigative work that serves as a check on government power. The resulting dearth of rigorous reporting creates a vacuum that is readily filled by partisan commentary, sensationalist content, and outright disinformation, further eroding the public''s capacity to make informed political judgments.
+In the United States, the passage of the Inflation Reduction Act in August 2022 marked a watershed moment in domestic climate policy. The legislation allocated approximately 370 billion dollars in tax credits, grants, and loans to accelerate the transition to clean energy. It represented the culmination of years of political effort, having survived the demise of several more ambitious predecessors, including the American Clean Energy and Security Act, which passed the House in 2009 but languished in the Senate. Proponents argued that the Inflation Reduction Act would [BLANK], while critics contended that its reliance on market incentives rather than regulatory mandates would prove inadequate to meet the scale of the crisis.
 
-Compounding these pressures is a deliberate campaign by certain political actors to undermine public trust in the press. By relentlessly lambasting mainstream media as biased, dishonest, or beholden to elite interests, populist leaders have cultivated a fervent base of supporters who dismiss credible reporting as fabrication. This strategy has proven remarkably effective in polarizing public discourse: citizens increasingly retreat into ideological enclaves where they consume only information that corroborates their existing beliefs, while regarding alternative perspectives with animosity. The long-term ramifications of this polarization for democratic governance are dire, as the shared factual foundation upon which productive political debate depends continues to crumble.
+The political obstacles to climate legislation are not unique to any single country. In Australia, successive governments have oscillated between embracing and abandoning carbon pricing mechanisms, reflecting the outsized clout of the fossil fuel industry in national politics. In Brazil, President Jair Bolsonaro''s tenure from 2019 to early 2023 saw a dramatic rollback of environmental protections in the Amazon, a policy reversal that drew international condemnation. Even in the European Union, which has generally been at the vanguard of climate action, the implementation of the Green Deal has encountered staunch resistance from agricultural interests and Eastern European member states dependent on coal.
 
-Defenders of press freedom have responded to these challenges through a variety of strategies. Investigative journalism consortia — collaborative networks of reporters spanning multiple countries — have emerged as a potent force, pooling resources and expertise to pursue stories that no single newsroom could tackle alone. Encrypted communication tools have provided journalists with new means of protecting their sources from government surveillance. Philanthropic organizations and reader-supported funding models have offered alternative revenue streams that reduce dependence on advertising. Yet these innovations, while laudable, remain insufficient to reverse the broader structural trends threatening press independence. The preservation of a free press ultimately requires not merely technological ingenuity or creative financing, but a renewed political commitment from citizens and leaders who recognize that democratic governance cannot long endure without the accountability that independent journalism provides.',
+Ultimately, the politics of climate change legislation reflects a deeper tension between the imperatives of science and the realities of democratic governance. Elected officials must balance the fervent demands of environmental advocates against the equally vocal concerns of industries and communities that fear economic disruption. Forging the consensus necessary for transformative policy requires not only political skill but also the ability to foster a shared sense of urgency that transcends partisan loyalties.',
 
-'政治権力と自由な報道の関係は常に緊張に満ちてきた。印刷機の最初期から、政府はその権威を脅かしうる情報の拡散を制御しようとし、一方でジャーナリストや出版者はその独立性を守るために戦ってきた。民主主義社会では、自由な報道は情報に基づく市民意識と政府の説明責任のために不可欠な前提条件として広く見なされている。しかし近年、報道の自由は予想外の力の収束から増大する圧力にさらされている。洗練されたデジタル監視ツールを振るう権威主義的政府、伝統的メディアのビジネスモデルの経済的崩壊、そして主流ジャーナリズムに対する公衆の不信の蔓延する雰囲気である。
+'気候変動ほど政治的に難解であることが証明された政策課題はほとんどない。人間の活動が地球温暖化を引き起こしているという数十年にわたる科学的コンセンサスにもかかわらず、温室効果ガスの排出を削減するための立法努力は、根深い経済的利益、党派的分裂、そして有権者に長期的な利益のために短期的なコストを負担させることに内在する困難さに直面して、繰り返し頓挫してきた。気候変動立法の歴史は、野心的な提案、激しい反対、そして科学者が必要だと述べるものにしばしば及ばない苦労して勝ち取った妥協というパターンを明らかにしている。
 
-報道の自由に対する最も公然たる脅威は、独立したジャーナリズムを自らの正当性への直接的な挑戦と見なす政府から来る。世界中の数十カ国で、記者は汚職、人権侵害、権力の濫用を調査したことで投獄、暴力、さらには暗殺に直面している。しかし近年変わったのは、抑圧的な体制が利用できるツールの性質である。デジタル監視技術は政府がかつてない精度でジャーナリストの通信を監視し、機密情報源を特定し、出版前に機微な資料を傍受することを可能にする。政府はまた、法的枠組み——名誉毀損法、国家安全保障法、反テロ法——を法的正当性の見せかけの下で批判的な声を嫌がらせし沈黙させるために利用することを学んだ。そのような戦術の萎縮効果は直接標的にされた個人をはるかに超えて広がり、ジャーナリズム全体の調査の範囲と大胆さを損なう自己検閲の風土を生み出す。
+1997年の京都議定書は、先進工業国に拘束力のある排出目標を課す最初の主要な国際的試みを代表するものであった。当時世界最大の温室効果ガス排出国であったアメリカは条約に署名したが、批准することはなかった。上院は95対0でバード=ヘーゲル決議を可決し、発展途上国にも排出制限を求めない合意には断固反対であることを示した。批判者たちは中国やインドのような国を免除したことでこの議定書を酷評し、規制された経済から規制されていない経済へ汚染産業を移転させるだけで、世界の排出量の正味の削減は達成できないと主張した。
 
-同様に憂慮すべきだが、より劇的さに欠けるのは、デジタル時代に独立したジャーナリズムが直面している経済的危機である。広告収入の印刷新聞からオンラインプラットフォームへの移行——特にコンテンツを制作せずに集約するテクノロジー大企業への移行——は、調査報道が伝統的に依存してきた財政基盤を壊滅させた。ニュースルームは報道スタッフの削減、海外支局の閉鎖、政府権力に対するチェックとして機能する細心の注意を払った長期的調査報道への投資の削減を余儀なくされた。結果として生じる厳密な報道の欠乏は、党派的な論評、センセーショナルなコンテンツ、あからさまな偽情報によって容易に埋められる真空を生み出し、市民が情報に基づいた政治的判断を下す能力をさらに侵食する。
+2015年のパリ協定は、より柔軟な枠組みを採用することでこれらの欠点の一部を是正しようとした。トップダウンの目標を課すのではなく、各国が排出削減に向けた独自の「国別貢献」を設定することを認めた。このアプローチにより、合意はより幅広い国々に受け入れられるものとなり——196の締約国が交渉に参加した——しかし同時に、執行メカニズムは事実上存在しないことも意味した。協定は各国をより野心的なコミットメントに向けて少しずつ動かすために、仲間からの圧力と定期的なレビューに依存しており、懐疑論者はこの戦略を熱意のない不十分なものとして退けた。
 
-これらの圧力に追い打ちをかけているのは、特定の政治的行為者による報道機関への国民の信頼を意図的に損なうキャンペーンである。主流メディアを偏向的、不誠実、あるいはエリートの利益に従属しているとして容赦なくこき下ろすことで、ポピュリスト指導者は信頼できる報道を作り話として退ける熱心な支持者基盤を育ててきた。この戦略は公論を二極化するのに著しく効果的であることが証明されている。市民は既存の信念を裏づける情報のみを消費するイデオロギー的な飛び地にますます退き、代替的な視点を敵意をもって見なす。この二極化が民主的統治にもたらす長期的な影響は深刻である。生産的な政治的議論が依存する共有された事実の基盤が崩壊し続けているからである。
+アメリカでは、2022年8月のインフレ削減法の成立が国内の気候政策における分水嶺の瞬間となった。この法律はクリーンエネルギーへの移行を加速するために、税額控除、補助金、融資に約3700億ドルを割り当てた。これは長年の政治的努力の集大成であり、2009年に下院を通過したが上院で停滞したアメリカ・クリーンエネルギー安全保障法を含む、いくつかのより野心的な前身法案の消滅を乗り越えてきた。支持者はインフレ削減法が市場ベースのインセンティブを通じてクリーンエネルギーへの民間投資を大幅に加速させると主張した一方、批判者は規制的義務ではなく市場インセンティブへの依存が危機の規模に対して不十分であると反論した。
 
-報道の自由の擁護者はさまざまな戦略を通じてこれらの課題に対応してきた。調査報道コンソーシアム——複数の国にまたがる記者の共同ネットワーク——は強力な力として台頭し、単一のニュースルームでは単独で取り組めない記事を追求するためにリソースと専門知識を結集している。暗号化通信ツールはジャーナリストに政府の監視から情報源を保護する新たな手段を提供した。慈善団体や読者支援型の資金モデルは広告への依存を減らす代替的な収入源を提供した。しかしこれらのイノベーションは称賛に値するものの、報道の独立性を脅かすより広範な構造的傾向を逆転させるには不十分なままである。自由な報道の保全は、最終的には単なる技術的創意工夫や創造的な資金調達ではなく、独立したジャーナリズムが提供する説明責任なしには民主的統治が長く存続できないことを認識する市民と指導者からの新たな政治的コミットメントを必要とする。');
+気候変動立法に対する政治的障害はどの一国に特有のものではない。オーストラリアでは、歴代の政府が炭素価格メカニズムの採用と放棄の間を揺れ動いており、国政における化石燃料産業の過大な影響力を反映している。ブラジルでは、2019年から2023年初頭のジャイル・ボルソナーロ大統領の在任期間にアマゾンの環境保護の劇的な後退が見られ、この政策転換は国際的な非難を招いた。気候変動対策の先頭に立ってきた欧州連合でさえ、グリーンディールの実施は農業利益と石炭に依存する東ヨーロッパ加盟国からの忠実な抵抗に直面している。
 
--- passage_questions テーブル (3問)
+最終的に、気候変動立法の政治は、科学の要請と民主的統治の現実との間のより深い緊張を反映している。選出された公職者は、環境擁護者の熱心な要求と、経済的混乱を恐れる産業やコミュニティの同様に声高な懸念とのバランスを取らなければならない。変革的な政策に必要なコンセンサスを築くには、政治的手腕だけでなく、党派的忠誠を超えた共有された緊急性の感覚を育む能力も必要である。');
+
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(70, 24, 1, 'comprehension',
-'According to the passage, how has the digital era changed the nature of threats to press freedom?',
-'第2段落で、近年変わったのは「抑圧的な体制が利用できるツールの性質」であると述べられている。デジタル監視技術により、政府がかつてない精度でジャーナリストの通信を監視し、機密情報源を特定し、出版前に機微な資料を傍受できるようになった。また法的枠組みを利用して批判的声を沈黙させることも述べられている。選択肢3が「デジタル監視により政府がかつてない精度でジャーナリストを追跡し、法的枠組みを武器として使える」と正確に反映。選択肢1は「脅威が減少した」で逆。選択肢2は「物理的暴力のみが脅威」で一面的。選択肢4は「国際機関が保護を強化した」で本文にない。',
-3),
-(71, 24, 2, 'comprehension',
-'What strategy does the passage describe populist leaders as using to undermine press credibility?',
-'第4段落で、ポピュリスト指導者が「主流メディアを偏向的、不誠実、あるいはエリートの利益に従属していると容赦なくこき下ろす（relentlessly lambasting）」ことで「信頼できる報道を作り話として退ける熱心な支持者基盤を育てた」と述べられている。選択肢2が「継続的にメディアを偏向的で不誠実とこき下ろし、信頼できる報道を退ける支持者を育てる」と正確に反映。選択肢1は「メディアの買収」で本文にない。選択肢3は「代替メディアの禁止」で本文にない。選択肢4は「報道を検閲する法律の制定」でこの段落の論点ではない。',
-2),
-(72, 24, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第2段落の末尾にあり、政府の監視・法的嫌がらせの「chilling effect（萎縮効果）」が「直接標的にされた個人をはるかに超えて広がり、[BLANK]する自己検閲の風土を生み出す」という文脈。萎縮効果としての自己検閲が影響するのはジャーナリズム全体の調査活動の範囲と大胆さである。選択肢4「undermines the scope and boldness of journalism as a whole」が最も適切。選択肢1は「improves the quality of reporting」で萎縮効果と矛盾。選択肢2は「benefits only state-owned media outlets」で限定的すぎ。選択肢3は「primarily affects foreign correspondents」で本文のより広い影響と不一致。',
-4);
+(70, 24, 1, 'comprehension', 'According to the passage, why did the United States Senate oppose the Kyoto Protocol?', '第2段落で、上院が「発展途上国にも排出制限を求めない合意には断固反対である」（adamant opposition to any agreement that did not also require developing nations to limit emissions）ことを示すバード=ヘーゲル決議を95対0で可決したと述べられている。', 1),
+(71, 24, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?', '空所は第4段落にあり、インフレ削減法の支持者の主張についての文脈である。法案がクリーンエネルギーへの税額控除や補助金を割り当てたことから、支持者は市場インセンティブを通じてクリーンエネルギーへの民間投資を加速させると主張したことが適切である。後半の「規制的義務ではなく市場インセンティブへの依存」という批判者の反論とも対応する。', 2),
+(72, 24, 3, 'comprehension', 'What point does the passage make about the political obstacles to climate legislation globally?', '第5段落で、オーストラリア、ブラジル、EUの事例を挙げ、気候変動立法への政治的障害が「どの一国に特有のものではない」と述べている。各国がそれぞれ固有の政治的利害により気候変動立法に苦戦していることが示されている。', 4);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(70, 1, 'The digital era has significantly reduced the threats that journalists face worldwide'),
-(70, 2, 'Physical violence remains the only meaningful threat to journalists in the modern era'),
-(70, 3, 'Digital surveillance enables governments to track journalists with unprecedented precision, and legal frameworks are weaponized to silence critics'),
-(70, 4, 'International organizations have successfully strengthened protections for journalists through digital platforms'),
-(71, 1, 'Buying controlling stakes in major media corporations to influence their editorial direction'),
-(71, 2, 'Persistently denouncing mainstream media as biased and dishonest, cultivating supporters who dismiss credible reporting'),
-(71, 3, 'Banning alternative media outlets that might compete with state-controlled information sources'),
-(71, 4, 'Enacting legislation that directly censors news reports before they are published'),
-(72, 1, 'improves the quality of reporting by encouraging greater caution'),
-(72, 2, 'benefits only state-owned media outlets at the expense of private ones'),
-(72, 3, 'primarily affects foreign correspondents working in conflict zones'),
-(72, 4, 'undermines the scope and boldness of journalism as a whole');
+(70, 1, 'The protocol did not require developing nations like China and India to limit their emissions.'),
+(70, 2, 'The protocol imposed excessively harsh penalties on nations that failed to meet their targets.'),
+(70, 3, 'The protocol was negotiated without any input from American policymakers or scientists.'),
+(70, 4, 'The protocol required the United States to provide financial aid to developing nations.'),
+(71, 1, 'eliminate all fossil fuel production in the United States within the next decade'),
+(71, 2, 'significantly accelerate private investment in clean energy through market-based incentives'),
+(71, 3, 'impose strict regulatory limits on carbon emissions from all major industries'),
+(71, 4, 'create millions of government jobs in the renewable energy sector'),
+(72, 1, 'Only authoritarian governments have successfully implemented meaningful climate policies.'),
+(72, 2, 'The European Union has been entirely unsuccessful in advancing climate legislation.'),
+(72, 3, 'Developing nations face far greater obstacles to climate legislation than industrialized ones.'),
+(72, 4, 'Every major nation faces significant domestic political resistance to climate action.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 24, id FROM words WHERE word_number IN (26, 51, 69, 88, 97, 152, 154, 167, 239, 258, 283, 314, 407, 516, 537, 566, 592, 596);
+INSERT INTO passage_words (passage_id, word_id) SELECT 24, id FROM words WHERE word_number IN (51, 55, 79, 88, 96, 132, 139, 155, 156, 270, 363, 428, 543, 551, 588);

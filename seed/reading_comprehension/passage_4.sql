@@ -1,58 +1,49 @@
--- passage_4: The Crisis of Early Childhood Education in Developing Nations (教育 / word_number 1-600)
+-- Passage 4: 科学 - CRISPR Gene Editing
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (
+4,
+'CRISPR and the Ethics of Human Gene Editing',
+'科学',
+'In 2012, Jennifer Doudna of the University of California, Berkeley, and Emmanuelle Charpentier, then at Umeå University in Sweden, published a landmark paper demonstrating that a bacterial immune system called CRISPR-Cas9 could be repurposed as a precise tool for editing DNA. The discovery, which earned them the Nobel Prize in Chemistry in 2020, has since been hailed as one of the most momentous scientific breakthroughs of the twenty-first century. Yet as the technology has burgeoned from a laboratory curiosity into a tool with profound medical applications, it has also ignited a fierce ethical debate that shows no signs of abating.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(4, 'The Crisis of Early Childhood Education in Developing Nations', '教育',
-'Despite decades of international advocacy and substantial financial investment, early childhood education in many developing nations remains in a deplorable state. The gap between policy rhetoric and ground-level reality is stark: while governments routinely pledge to expand access to preschool programs, the resources allocated to these initiatives are often so meager that they scarcely warrant the designation of educational provision. This persistent failure to translate ambitious commitments into tangible outcomes has prompted scholars and practitioners alike to delve more deeply into the structural impediments that continue to thwart progress.
+The therapeutic potential of CRISPR is staggering. Researchers have already used the technology to develop treatments for sickle cell disease, a hereditary condition that affects millions of people worldwide. In December 2023, the United States Food and Drug Administration approved Casgevy, a CRISPR-based therapy developed by Vertex Pharmaceuticals and CRISPR Therapeutics, making it the first gene-editing treatment to receive regulatory approval in the country. Clinical trials have shown that the therapy can effectively alleviate the excruciating pain crises that characterize the disease, offering patients a reprieve from a condition that has long defied conventional treatment.
 
-The most conspicuous obstacle is financial. In countries where national budgets are already stretched thin by competing demands — healthcare, infrastructure, debt servicing — early childhood education is frequently relegated to the lowest tier of fiscal priorities. Policymakers, confronted with the arduous task of distributing scarce resources, tend to favor investments whose returns are more immediately visible, such as primary school construction or textbook procurement. The benefits of quality early education, by contrast, are cumulative and often take years to manifest, making them politically inconspicuous and easy to defer. This short-sighted approach persists despite incontrovertible evidence that every dollar invested in early childhood programs yields substantial long-term dividends in reduced crime rates, improved health outcomes, and enhanced economic productivity.
+Beyond sickle cell disease, CRISPR holds promise for addressing a litany of genetic disorders, including cystic fibrosis, Huntington''s disease, and certain forms of hereditary blindness. Scientists are also exploring its potential in oncology, where the technology could be used to engineer immune cells that are more adept at identifying and destroying cancer. The breadth of potential applications has led some commentators to extol CRISPR as the dawn of a new era in medicine—one in which [BLANK].
 
-Compounding the financial challenge is a severe dearth of qualified educators. In many developing contexts, preschool teachers receive negligible training and compensation so paltry that the profession fails to attract or retain talented individuals. Those who do enter the field often find themselves working in overcrowded, ill-equipped facilities where meaningful pedagogical engagement is virtually impossible. The predicament is further exacerbated by cultural attitudes that dismiss early childhood education as mere childcare rather than a critical developmental phase, thereby undermining efforts to professionalize the workforce and instill rigorous standards. Without concerted action to elevate both the status and the competence of early childhood educators, even the most well-intentioned policy reforms are likely to flounder.
+However, the technology''s most contentious application remains germline editing, which involves making changes to DNA that can be passed on to future generations. In November 2018, Chinese biophysicist He Jiankui stunned the scientific community by announcing that he had used CRISPR to edit the genomes of twin girls to make them resistant to HIV. The revelation provoked widespread consternation among scientists, ethicists, and policymakers alike. The experiment was widely condemned as reckless and premature, and He was subsequently sentenced to three years in prison by a Chinese court. The incident laid bare the precarious state of international governance surrounding gene editing and galvanized calls for more stringent regulatory frameworks.
 
-The consequences of this neglect are neither abstract nor distant. Children who are deprived of stimulating educational experiences during the formative years between ages three and six [BLANK], falling behind their more fortunate peers in cognitive, linguistic, and socioemotional development. Research has consistently demonstrated that these early disparities tend to widen rather than narrow over time, creating a trajectory of cumulative disadvantage that becomes increasingly difficult to reverse. For children in the most impoverished communities, the absence of quality early education effectively forecloses opportunities before they have even begun, perpetuating cycles of poverty that span generations.
+The ethical concerns are manifold. Critics warn that germline editing could exacerbate social inequality by creating a divide between those who can afford genetic enhancements and those who cannot—a scenario reminiscent of the dystopian fears depicted in films such as Gattaca. There are also legitimate scientific concerns: off-target effects, in which CRISPR inadvertently edits unintended sections of the genome, remain a persistent challenge. While researchers have made substantial progress in improving the precision of the technology, the prospect of introducing irreversible changes into the human gene pool demands an extraordinary degree of caution.
 
-Yet amid these sobering realities, there are grounds for cautious optimism. A resurgence of interest in community-based early education models has shown that meaningful progress is feasible even in resource-constrained environments. Programs that recruit and train local women as preschool facilitators, leveraging existing social networks and cultural knowledge, have demonstrated remarkable efficacy in several Sub-Saharan African and South Asian contexts. These initiatives, while modest in scale, offer a pragmatic alternative to the top-down institutional approaches that have so often proven untenable in developing settings. The momentum behind such grassroots efforts suggests that the crisis of early childhood education, though formidable, is not insurmountable — provided that governments, international organizations, and local communities forge the collaborative partnerships necessary to sustain and scale these promising innovations.',
+Proponents of germline editing counter that an outright prohibition would be both impractical and ethically dubious, as it would deny future generations the potential benefits of eliminating devastating hereditary diseases. They advocate instead for a robust international regulatory framework that permits carefully controlled research while precluding reckless experimentation. The debate, far from being resolved, continues to permeate the highest echelons of science and policy, reminding us that the power to rewrite the code of life carries with it an immense burden of responsibility.',
+'2012年、カリフォルニア大学バークレー校のジェニファー・ダウドナと当時スウェーデンのウメオ大学に所属していたエマニュエル・シャルパンティエは、CRISPR-Cas9と呼ばれる細菌の免疫システムがDNAを正確に編集するツールとして転用できることを示す画期的な論文を発表した。2020年にノーベル化学賞をもたらしたこの発見は、21世紀で最も重大な科学的ブレークスルーの一つとして称えられてきた。しかし、この技術が研究室での好奇心から深遠な医療応用を持つツールへと急速に発展するにつれ、衰える気配のない激しい倫理的議論も引き起こしてきた。
 
-'数十年にわたる国際的な提唱と多大な財政投資にもかかわらず、多くの途上国における幼児教育はひどい状態にとどまっている。政策上の修辞と現場の現実との乖離は明白である。政府は定期的に就学前プログラムへのアクセス拡大を誓約するが、これらの取り組みに配分される資源はしばしば非常に乏しく、教育的提供という名称に値するかどうかも怪しい。野心的な公約を具体的な成果に変換するというこの持続的な失敗は、進歩を阻み続ける構造的障壁をより深く掘り下げることを学者と実務者の双方に促してきた。
+CRISPRの治療的可能性は驚異的である。研究者たちはすでに、世界中で数百万人が罹患する遺伝性疾患である鎌状赤血球症の治療法の開発にこの技術を使用している。2023年12月、米国食品医薬品局は、Vertex PharmaceuticalsとCRISPR Therapeuticsが開発したCRISPRベースの治療法Casgevyを承認し、同国で規制当局の承認を受けた最初の遺伝子編集治療となった。臨床試験では、この治療法がこの疾患の特徴である激しい痛みの発作を効果的に軽減できることが示されており、従来の治療に長く抵抗してきた病状からの一時的な猶予を患者に提供している。
 
-最も目立つ障壁は財政的なものである。国家予算がすでに医療、インフラ、債務返済といった競合する需要によって逼迫している国々では、幼児教育は財政的優先順位の最下層に追いやられることが多い。乏しい資源を分配するという困難な課題に直面する政策立案者は、小学校建設や教科書調達など、リターンがより即座に目に見える投資を好む傾向がある。対照的に、質の高い幼児教育の利益は累積的であり、顕在化するまでに何年もかかることが多く、政治的に目立たず先送りしやすい。この近視眼的なアプローチは、幼児期プログラムへの1ドルの投資が犯罪率の低下、健康成果の改善、経済生産性の向上という形で長期的に実質的な配当をもたらすという議論の余地のない証拠にもかかわらず持続している。
+鎌状赤血球症を超えて、CRISPRは嚢胞性線維症、ハンチントン病、特定の形態の遺伝性失明を含む延々と続く遺伝性疾患に対処する可能性を秘めている。科学者たちはまた、がんを識別し破壊するのにより熟練した免疫細胞を工学的に作り出すことができる腫瘍学での可能性も探っている。潜在的な応用の幅広さから、一部の論評者はCRISPRを医療の新時代の幕開けとして絶賛している——その時代とは[BLANK]。
 
-財政的課題に追い打ちをかけるのが、資格を持った教育者の深刻な不足である。多くの途上国の文脈では、就学前教育の教師はほとんど訓練を受けず、報酬もわずかで、この職業は優秀な人材を引きつけたり留めたりすることができない。現場に入る者も、意味のある教育的関与が事実上不可能な、過密で設備の不十分な施設で働いていることに気づく。この窮境は、幼児教育を重要な発達段階ではなく単なる保育として軽視する文化的態度によってさらに悪化し、それが労働力の専門化と厳格な基準の浸透への努力を損なっている。幼児教育者の地位と能力の双方を高めるための協調的な行動がなければ、最も善意に満ちた政策改革でさえ四苦八苦する可能性が高い。
+しかし、この技術の最も論争を呼ぶ応用は依然として生殖系列編集であり、これは将来の世代に受け継がれるDNAの変更を行うものである。2018年11月、中国の生物物理学者・賀建奎は、双子の女児のゲノムをCRISPRで編集してHIVに耐性を持たせたと発表し、科学界を驚愕させた。この暴露は科学者、倫理学者、政策立案者の間に広範な仰天を引き起こした。この実験は無謀で時期尚早として広く非難され、賀はその後中国の裁判所により懲役3年の判決を受けた。この事件は遺伝子編集を取り巻く国際的ガバナンスの不安定な状態を露呈し、より厳格な規制枠組みを求める声を活性化させた。
 
-この怠慢の帰結は抽象的でも遠い将来のものでもない。3歳から6歳までの形成期に刺激的な教育経験を奪われた子どもたちは回復が困難な遅れを被り、認知、言語、社会情動的発達においてより恵まれた同世代に後れを取る。研究は一貫して、これらの初期の格差は時間の経過とともに縮まるのではなくむしろ拡大する傾向があることを示しており、逆転がますます困難になる累積的不利益の軌跡を生み出す。最も困窮したコミュニティの子どもたちにとって、質の高い幼児教育の欠如は機会が始まる前に事実上閉ざし、世代を超えた貧困の連鎖を固定化する。
+倫理的懸念は多岐にわたる。批評家たちは、生殖系列編集が遺伝的強化を受ける余裕のある者とそうでない者の間に分断を生み出すことで社会的不平等を悪化させる可能性があると警告している——ガタカなどの映画に描かれたディストピア的な恐れを想起させるシナリオである。正当な科学的懸念もある。CRISPRが意図しないゲノムの部分を不注意に編集してしまうオフターゲット効果は、依然として根強い課題である。研究者たちは技術の精度向上に大きな進歩を遂げてきたが、人間の遺伝子プールに不可逆的な変更を導入する見通しは、非常に高い程度の注意を要求する。
 
-しかし、これらの厳しい現実の中にも、慎重な楽観の根拠がある。コミュニティに基盤を置く幼児教育モデルへの関心の復活は、資源が制約された環境でも意味のある進歩が実現可能であることを示している。地元の女性を就学前教育のファシリテーターとして募集し訓練するプログラムは、既存の社会的ネットワークと文化的知識を活用し、サハラ以南のアフリカと南アジアのいくつかの文脈で顕著な有効性を実証している。これらの取り組みは規模としては控えめだが、途上国の環境では非常にしばしば支持できないことが証明されてきたトップダウンの制度的アプローチに対する実用的な代替案を提供する。このような草の根の取り組みの勢いは、幼児教育の危機が手ごわいものではあるものの、政府、国際機関、地域コミュニティがこれらの有望な革新を維持し拡大するために必要な協働的パートナーシップを構築すれば、乗り越えられないものではないことを示唆している。');
+生殖系列編集の支持者は、全面的な禁止は非現実的であり倫理的にも疑わしいと反論する。壊滅的な遺伝性疾患の排除という潜在的利益を将来の世代に否定することになるからである。彼らは代わりに、慎重に管理された研究を許可しつつ無謀な実験を排除する堅固な国際的規制枠組みを提唱している。議論は解決からは程遠く、科学と政策の最高位の階層に浸透し続けており、生命の設計図を書き換える力にはそれに伴う計り知れない責任の重荷が伴うことを私たちに思い起こさせている。'
+);
 
--- passage_questions テーブル (3問)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(10, 4, 1, 'comprehension',
-'According to the passage, why do policymakers in developing nations tend to deprioritize early childhood education?',
-'第2段落で、政策立案者が「リターンがより即座に目に見える投資を好む傾向がある」と述べられている。幼児教育の利益は「累積的で顕在化に何年もかかる」ため「政治的に目立たず先送りしやすい」と説明されている。選択肢4が「利益が遅延して現れるため政治的に目立たない」と正確に対応している。選択肢1は「効果がないと信じている」で本文と矛盾（証拠はむしろ有効性を示す）。選択肢2は「国際機関が反対している」で本文にそのような言及なし。選択肢3は「初等教育の方が法的に義務づけられている」で本文の論点と異なる。',
-4),
-(11, 4, 2, 'comprehension',
-'What does the passage suggest about community-based early education models?',
-'第5段落で、コミュニティに基盤を置く幼児教育モデルへの関心が復活し、「資源が制約された環境でも意味のある進歩が実現可能」であることが示されている。地元の女性を訓練するプログラムが「既存の社会的ネットワークと文化的知識を活用」し、サハラ以南アフリカと南アジアで「顕著な有効性を実証」していると述べられている。選択肢2が「既存の地域資源を活用する実用的な代替案」と正確に要約している。選択肢1は「トップダウンのアプローチより常に優れている」で本文はそこまで断言していない。選択肢3は「大規模に拡大済み」で本文は規模が控えめと述べている。選択肢4は「裕福な国でのみ成功」で本文と矛盾。',
-2),
-(12, 4, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第4段落にあり、「3歳から6歳までの形成期に刺激的な教育経験を奪われた子どもたちは[BLANK]、認知・言語・社会情動的発達において恵まれた同世代に後れを取る」という文脈。続く文で格差は拡大し逆転が困難になると述べられていることから、回復困難な遅れを被るという趣旨の表現が入る。選択肢3が「回復が極めて困難な発達上の遅れを被る」で最も適切。選択肢1は「即座に識字能力を失う」で極端すぎる。選択肢2は「健康問題を発症する」で教育の文脈と合わない。選択肢4は「学校に通う意欲を失う」で本文の論点（認知発達の遅れ）と異なる。',
-3);
+(10, 4, 1, 'comprehension', 'According to the passage, why was He Jiankui''s experiment widely condemned?', '第4段落で、賀建奎の実験は「reckless and premature」（無謀で時期尚早）として広く非難されたと述べられている。生殖系列編集の安全性と倫理的課題が十分に解決されていない段階で人間のゲノムを編集したことが問題とされた。選択肢3が正解。', 3),
+(11, 4, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK] in paragraph 3?', '第3段落では、CRISPRの幅広い応用可能性が述べられ、一部の論評者がCRISPRを「医療の新時代の幕開け」として絶賛していると言及されている。空所は「one in which」に続く内容で、遺伝性疾患が根本的に治療される時代を描写する選択肢1が文脈に最も合う。', 1),
+(12, 4, 3, 'comprehension', 'What position do proponents of germline editing take, according to the passage?', '第6段落で、支持者は全面的な禁止は非現実的で倫理的にも疑わしいと述べ、慎重に管理された研究を許可しつつ無謀な実験を排除する国際的規制枠組みを提唱していると説明されている。選択肢4がこの立場を正確に反映している。', 4);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(10, 1, 'They genuinely believe that early childhood programs produce no measurable educational benefits'),
-(10, 2, 'International development organizations actively discourage investment in preschool education'),
-(10, 3, 'Legal frameworks in most developing countries mandate that primary education receive all available funding'),
-(10, 4, 'The benefits of early education are cumulative and slow to materialize, making them politically easy to defer'),
-(11, 1, 'They have been conclusively proven to be superior to all forms of institutional early childhood education'),
-(11, 2, 'They offer a pragmatic alternative that leverages local social networks and cultural knowledge in resource-limited settings'),
-(11, 3, 'They have already been successfully scaled to serve millions of children across the developing world'),
-(11, 4, 'They are effective only in wealthier developing nations that can provide adequate governmental support'),
-(12, 1, 'immediately lose any literacy and numeracy skills they may have previously acquired'),
-(12, 2, 'develop chronic health problems that further compound their educational disadvantages'),
-(12, 3, 'suffer developmental setbacks that prove exceedingly difficult to reverse'),
-(12, 4, 'lose all motivation to attend school once they reach the age of formal enrollment');
+(10, 1, 'He failed to obtain approval from the Nobel Prize committee before conducting the research.'),
+(10, 2, 'The technique he used was a different gene-editing method, not CRISPR-Cas9.'),
+(10, 3, 'It was considered reckless and premature given the unresolved safety and ethical issues of germline editing.'),
+(10, 4, 'He published the results before they had been reviewed by the United States FDA.'),
+(11, 1, 'genetic diseases that have plagued humanity for millennia can be corrected at their source'),
+(11, 2, 'pharmaceutical companies will no longer need to develop traditional drug therapies'),
+(11, 3, 'all forms of cancer will be completely eradicated within the next decade'),
+(11, 4, 'human evolution will be entirely guided by commercial biotechnology firms'),
+(12, 1, 'Germline editing should be banned entirely until all risks are eliminated.'),
+(12, 2, 'Only private companies, not governments, should regulate gene-editing research.'),
+(12, 3, 'Germline editing should be available without restrictions to accelerate medical progress.'),
+(12, 4, 'A robust international framework should allow controlled research while preventing reckless experimentation.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 4, id FROM words WHERE word_number IN (145, 156, 177, 202, 233, 241, 254, 256, 264, 308, 338, 350, 380, 385, 393, 420, 458, 516, 551, 557, 575, 595);
+INSERT INTO passage_words (passage_id, word_id) SELECT 4, id FROM words WHERE word_number IN (13, 37, 68, 84, 95, 104, 147, 166, 175, 195, 246, 267, 354, 359, 365, 433, 487, 594);

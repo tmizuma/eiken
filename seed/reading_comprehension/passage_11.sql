@@ -1,54 +1,56 @@
--- passage_11: The Vanishing Languages of the World (文化 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (11, 'The Globalization of Korean Popular Culture', '文化',
+'The Globalization of Korean Popular Culture
 
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(11, 'The Vanishing Languages of the World', '文化',
-'Linguists estimate that of the roughly seven thousand languages currently spoken on Earth, nearly half will have become defunct by the end of this century. Every two weeks, on average, a language dies — its last fluent speaker passing away without having bequeathed the intricate system of sounds, grammar, and meaning to a new generation. This ongoing linguistic extinction represents not merely an academic curiosity but a profound cultural catastrophe, one whose ramifications extend far beyond the communities directly affected.
+When the South Korean film Parasite won the Academy Award for Best Picture in February 2020, its director Bong Joon-ho — who had earlier remarked at the Golden Globe Awards that audiences should overcome "the one-inch-tall barrier of subtitles" — cemented the Korean Wave''s place in global cinema. The accolade was momentous — the first non-English-language film to claim the top prize in the ceremony''s 92-year history — but it did not emerge from a vacuum. It was the culmination of a decades-long cultural phenomenon known as Hallyu, or the Korean Wave, which had been steadily garnering global audiences since the late 1990s.
 
-Each language encapsulates a unique worldview — a distinctive way of categorizing experience, perceiving time, and articulating relationships between humans and the natural environment. The Hopi language of the American Southwest, for instance, employs a fundamentally different conceptualization of time than European languages, treating it not as a linear progression but as a cyclical phenomenon. Similarly, the Guugu Yimithirr language of northern Australia eschews egocentric spatial references entirely, requiring speakers to orient themselves using cardinal directions rather than relative terms like "left" and "right." When such languages vanish, these alternative cognitive frameworks are irrevocably lost, diminishing the intellectual heritage of humanity as a whole.
+The origins of Hallyu are typically traced to the 1997 Asian financial crisis. As South Korea''s economy teetered on the brink of collapse, the government made a strategic decision to invest heavily in cultural industries as a means of economic recovery. The Ministry of Culture established dedicated funding mechanisms and relaxed regulations that had previously curtailed creative output. This was not mere patronage; it was an explicit industrial policy, one that treated cultural production as a viable export sector. The rationale was pragmatic: cultural goods, once created, could be disseminated globally at relatively low marginal cost, and successful cultural exports would enhance the nation''s international prestige and attract tourism.
 
-The causes of language death are multifaceted but overwhelmingly rooted in the dynamics of power and prestige. Colonial histories have left an indelible mark on global linguistic diversity, as imperial administrations systematically suppressed indigenous languages through policies of forced assimilation — mandating education exclusively in the colonizer''s tongue, rebuking children who spoke their native languages in school, and stigmatizing minority language use as a marker of backwardness. In the contemporary era, globalization has accelerated this process. The economic clout of languages like English and Mandarin creates powerful incentives for speakers of minority languages to abandon their mother tongues in favor of idioms perceived as gateways to lucrative employment and social advancement.
+The strategy bore fruit with remarkable speed. Korean television dramas, or K-dramas, found fervent audiences first in China and Southeast Asia, then in the Middle East and Latin America. The music industry followed, with K-pop acts such as BTS and BLACKPINK achieving unprecedented global reach. What distinguished Korean cultural exports was not merely their production quality — though that was consistently high — but their capacity to [BLANK]. K-pop, for instance, deliberately incorporated elements of hip-hop, Latin pop, and electronic dance music, creating a hybrid aesthetic that felt simultaneously familiar and novel to diverse audiences.
 
-Efforts to revitalize endangered languages have garnered both admiration and skepticism. The most celebrated success story is that of Hebrew, which was resurrected from a largely ceremonial role to become the fervent vernacular of a modern nation-state. More recently, initiatives to revive Welsh, Maori, and Basque have achieved measurable gains in speaker numbers and institutional recognition. These programs typically involve a concerted strategy encompassing mother-tongue education, media production in the target language, and legislation mandating its use in official contexts. Yet critics caution that such efforts, however laudable, cannot be replicated universally. Many endangered languages lack [BLANK], making comprehensive revitalization efforts logistically and financially daunting.
+The role of digital platforms in amplifying the Korean Wave cannot be overstated. While earlier waves of cultural globalization — Hollywood cinema, British rock music — relied on traditional distribution networks, Hallyu was among the first cultural movements to exploit the full potential of social media. Fan communities on platforms such as Twitter and YouTube did not merely consume content; they actively disseminated it, creating subtitles, producing reaction videos, and organizing streaming campaigns. This grassroots propagation blurred the line between consumers and promoters, generating a self-sustaining ecosystem that no conventional marketing campaign could replicate.
 
-The debate over language preservation also raises contentious philosophical questions. Some scholars argue that allowing languages to die naturally is an inevitable consequence of human mobility and cultural evolution, and that nostalgic attempts to preserve them artificially constitute an imposition on communities that have pragmatically chosen to adopt more widely spoken languages. Others counter that this framing is disingenuous, as the "choice" to abandon a heritage language is rarely made freely but is instead compelled by systemic disadvantages and pervasive social pressure. What remains beyond dispute is that each language lost represents the extinction of an irreplaceable repository of human knowledge — ecological wisdom encoded in botanical vocabularies, historical narratives preserved in oral traditions, and philosophical insights embedded in grammatical structures that no translation can fully replicate.',
+Yet the Korean Wave has also provoked backlash. In China, concerns about cultural encroachment led to periodic restrictions on Korean entertainment imports. In South Korea itself, critics have bemoaned the grueling working conditions endured by K-pop trainees, many of whom begin their regimens as teenagers and face relentless pressure to conform to exacting physical and behavioral standards. The industry''s gleaming surface, these critics argue, conceals a precarious reality for the individuals who sustain it. Reports of mental health crises among performers have lent urgency to calls for reform.
 
-'言語学者の推定によると、現在地球上で話されている約7000の言語のうち、ほぼ半数が今世紀末までに消滅するとされている。平均して2週間に1つの言語が死を迎える——最後の流暢な話者が、音声、文法、意味の複雑な体系を新しい世代に遺すことなく亡くなるのである。この進行中の言語絶滅は、単なる学術的な関心事ではなく、直接影響を受けるコミュニティをはるかに超えた影響を持つ深刻な文化的大災害を表している。
+The trajectory of Hallyu thus offers a compelling case study in the possibilities and perils of state-backed cultural globalization. It demonstrates that cultural influence can be deliberately fostered through policy and investment, but it also reveals the tensions that arise when artistic expression is harnessed as an instrument of national strategy. The question confronting South Korea now is whether the Korean Wave can evolve beyond its current model — one that has relied heavily on tightly controlled production systems — and embrace a more sustainable approach that safeguards the well-being of the creators upon whose talents its global appeal ultimately rests.',
 
-各言語は独自の世界観——経験を分類し、時間を知覚し、人間と自然環境の関係を明確にする独特の方法——を要約している。例えば、アメリカ南西部のホピ語は、ヨーロッパ言語とは根本的に異なる時間の概念化を採用しており、時間を直線的な進行としてではなく、循環的な現象として扱っている。同様に、オーストラリア北部のグーグ・イミシル語は自己中心的な空間参照を完全に避け、話者に「左」や「右」のような相対的な用語ではなく基本方位を使って自らの方向を定めることを求める。そのような言語が消滅すると、これらの代替的な認知的枠組みは取り返しがつかないほど失われ、人類全体の知的遺産を減少させる。
+'韓国大衆文化のグローバル化
 
-言語の死の原因は多面的であるが、圧倒的に権力と威信の力学に根ざしている。植民地の歴史は世界の言語的多様性に消えない痕跡を残してきた。帝国の行政機関は、植民者の言語でのみの教育を義務づけ、学校で母語を話す子供を叱責し、少数言語の使用を後進性の印として汚名を着せるという強制同化政策を通じて、組織的に先住民言語を抑圧した。現代において、グローバリゼーションはこのプロセスを加速させている。英語や中国語のような言語の経済的影響力は、少数言語の話者が収入の多い雇用や社会的昇進への入口と認識される言語を支持して母語を放棄する強力なインセンティブを生み出している。
+2020年2月に韓国映画『パラサイト 半地下の家族』がアカデミー賞作品賞を受賞した際、ポン・ジュノ監督——先のゴールデングローブ賞で観客は「字幕という1インチの壁」を乗り越えるべきだと述べていた——は韓流の世界映画における地位を確固たるものにした。この栄誉は極めて重大なものであった。92年の歴史を持つ授賞式で非英語映画として初めて最高賞を獲得したのである。しかしそれは真空から生まれたものではなかった。それは「韓流」として知られる数十年にわたる文化現象の到達点であり、1990年代後半から着実に世界の観客を獲得してきたものであった。
 
-絶滅危惧言語を再活性化する取り組みは称賛と懐疑の両方を集めている。最も称えられる成功事例はヘブライ語であり、主に儀式的な役割から復活し、近代国民国家の熱心な日常語となった。より最近では、ウェールズ語、マオリ語、バスク語を復興させる取り組みが、話者数と制度的認知において測定可能な成果を達成している。これらのプログラムは通常、母語教育、対象言語でのメディア制作、および公的文脈での使用を義務づける法律を包含する協調的な戦略を含む。しかし批判者は、そのような努力がいかに賞賛に値するものであっても、普遍的に再現することはできないと警告する。多くの絶滅危惧言語は包括的な文字体系、十分な記録された資料、および復興を支援する制度的インフラを欠いており、包括的な再活性化の取り組みを物流的にも財政的にも困難なものにしている。
+韓流の起源は通常、1997年のアジア通貨危機にさかのぼる。韓国経済が崩壊の瀬戸際に立たされる中、政府は経済回復の手段として文化産業に大規模な投資を行うという戦略的決定を下した。文化省は専用の資金メカニズムを設立し、それまで創造的な成果を制限していた規制を緩和した。これは単なる後援ではなく、文化生産を実行可能な輸出部門として扱う明示的な産業政策であった。その根拠は実利的であった。文化財は一度作れば比較的低い限界費用でグローバルに普及でき、成功した文化輸出は国家の国際的威信を高め、観光を呼び込むからである。
 
-言語保存に関する議論は、物議を醸す哲学的問題も提起する。一部の学者は、言語が自然に死ぬことは人間の移動性と文化的進化の不可避的な結果であり、それを人為的に保存しようとする懐古的な試みは、より広く話されている言語を実利的に採用することを選んだコミュニティへの押しつけになると論じる。他の学者は、この枠組みは不誠実であると反論する。遺産言語を放棄する「選択」は自由になされることはほとんどなく、体系的な不利益と広範な社会的圧力によって強いられるものであるからだ。議論の余地がないのは、失われた各言語が人間の知識のかけがえのない貯蔵庫の絶滅を表すということである——植物学的語彙に符号化された生態学的知恵、口承伝統に保存された歴史的物語、そして翻訳では完全に再現できない文法構造に埋め込まれた哲学的洞察である。');
+その戦略は驚くべき速さで成果を上げた。韓国のテレビドラマ、いわゆるK-ドラマは、まず中国と東南アジアで、次いで中東とラテンアメリカで熱心な視聴者を獲得した。音楽産業もこれに続き、BTSやBLACKPINKなどのK-popアーティストが前例のないグローバルなリーチを達成した。韓国の文化輸出を際立たせたのは、制作品質の高さだけではなく——もっともそれは一貫して高水準であったが——[BLANK]する能力であった。例えばK-popは、ヒップホップ、ラテンポップ、エレクトロニック・ダンス・ミュージックの要素を意図的に取り入れ、多様な聴衆にとって同時に親しみやすくも新しく感じられるハイブリッドな美学を創り出した。
+
+韓流の増幅におけるデジタルプラットフォームの役割はいくら強調しても足りない。文化のグローバル化のそれ以前の波——ハリウッド映画、英国ロック音楽——が従来の流通ネットワークに依存していたのに対し、韓流はソーシャルメディアの潜在力を最大限に活用した最初の文化運動の一つであった。TwitterやYouTubeなどのプラットフォーム上のファンコミュニティは単にコンテンツを消費するだけでなく、字幕を作成し、リアクション動画を制作し、ストリーミングキャンペーンを組織して、積極的にそれを広めた。この草の根的な普及は消費者と宣伝者の境界を曖昧にし、いかなる従来のマーケティングキャンペーンでも複製できない自律的なエコシステムを生み出した。
+
+しかし韓流は反発も引き起こしてきた。中国では、文化的侵食への懸念から韓国のエンターテインメント輸入に定期的な制限が課された。韓国内でも、批評家はK-popの練習生が耐える過酷な労働条件を嘆いてきた。彼らの多くは十代で訓練を始め、厳格な身体的・行動的基準に従うよう絶え間ないプレッシャーにさらされている。業界の輝かしい表面は、それを支える個人にとっての不安定な現実を隠していると批評家は主張する。パフォーマーの精神的健康危機に関する報道は、改革を求める声に切迫性を与えてきた。
+
+韓流の軌跡はしたがって、国家支援による文化のグローバル化の可能性と危険性に関する説得力ある事例研究を提供している。それは文化的影響力が政策と投資を通じて意図的に育成できることを示す一方、芸術表現が国家戦略の道具として活用される際に生じる緊張も明らかにしている。現在韓国が直面している問いは、韓流が現行のモデル——厳密に管理された制作システムに大きく依存してきたモデル——を超えて進化し、そのグローバルな魅力が究極的に依拠する創造者たちの幸福を守るより持続可能なアプローチを受け入れることができるかどうかである。');
 
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(31, 11, 1, 'comprehension',
-'According to the passage, why does the death of a language represent more than an academic concern?',
-'第1段落と第2段落で、各言語は独自の世界観を体現しており、言語が消滅するとその代替的な認知的枠組みが取り返しのつかない形で失われると説明されている。ホピ語やグーグ・イミシル語の例が、言語固有の独特な思考方法を示している。選択肢2が「各言語が独自の認知的枠組みと世界観を体現しており、それらは取り返しがつかない形で失われる」と正確に反映している。選択肢1は「経済的影響が大きい」で本文の主な論点ではない。選択肢3は「言語学者の職が失われる」で本文に言及なし。選択肢4は「国際コミュニケーションを妨げる」で本文の趣旨と異なる。',
-2),
-(32, 11, 2, 'comprehension',
-'What does the passage identify as the primary drivers of language extinction?',
-'第3段落で、言語の死の原因は「圧倒的に権力と威信の力学に根ざしている」と明示されている。植民地時代の強制同化政策と現代のグローバリゼーションによる経済的インセンティブが具体例として挙げられている。選択肢3が「植民地の遺産とグローバリゼーションに由来する権力と威信の力学」と正確に反映している。選択肢1は「自然淘汰のプロセス」で本文はこれを批判者の見方として紹介。選択肢2は「テクノロジーの発達」で本文に直接の言及なし。選択肢4は「言語自体の構造的欠陥」で本文にそのような記述なし。',
-3),
-(33, 11, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第4段落にあり、「多くの絶滅危惧言語は[BLANK]を欠いており、包括的な再活性化の取り組みを困難にしている」という文脈。ヘブライ語やウェールズ語の成功例の後で、普遍的な再現が難しい理由として、再活性化に必要な基盤が欠けていることが述べられている。選択肢1が「包括的な文字体系、十分な記録資料、および復興を支援する制度的インフラ」と再活性化の前提条件を適切に列挙している。選択肢2は「話者の意欲」で本文の論点と異なる。選択肢3は「政府の禁止令を克服する能力」で現代の文脈では的外れ。選択肢4は「国際的な認知」で再活性化の実際的障害と異なる。',
-1);
+(31, 11, 1, 'comprehension', 'According to the passage, what motivated the South Korean government to invest in cultural industries after the 1997 financial crisis?',
+'第2段落で、政府が「経済回復の手段として（as a means of economic recovery）」文化産業に投資したと述べられ、文化財はグローバルに低コストで普及でき、「国家の国際的威信を高め、観光を呼び込む」とある。選択肢1がこれに合致する。', 1),
+
+(32, 11, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK] in the passage?',
+'空所の後の文で、K-popが「ヒップホップ、ラテンポップ、EDMの要素を意図的に取り入れ」て「親しみやすくも新しく感じられるハイブリッドな美学を創り出した」と具体例が挙げられている。したがって、多様な文化的伝統の要素を融合して広い訴求力を持つコンテンツを作る能力が適切。', 4),
+
+(33, 11, 3, 'comprehension', 'What concern does the passage raise about the K-pop industry specifically?',
+'第5段落で、K-pop練習生の「過酷な労働条件（grueling working conditions）」、十代からの訓練、厳格な基準への絶え間ないプレッシャー、そしてパフォーマーの精神的健康危機が述べられている。選択肢3がこれに一致する。', 3);
 
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(31, 1, 'The economic consequences of language loss affect global trade and commerce significantly'),
-(31, 2, 'Each language embodies unique cognitive frameworks and worldviews that are irreversibly lost when it disappears'),
-(31, 3, 'The decline in languages threatens the professional livelihood of linguists and translators'),
-(31, 4, 'Language diversity is essential for maintaining effective international communication channels'),
-(32, 1, 'The natural process of linguistic evolution in which weaker languages are gradually replaced'),
-(32, 2, 'Advances in communication technology that render minority languages obsolete'),
-(32, 3, 'Dynamics of power and prestige rooted in colonial legacies and contemporary globalization'),
-(32, 4, 'Inherent structural deficiencies in minority languages that make them inadequate for modern use'),
-(33, 1, 'a comprehensive writing system, sufficient documented materials, and institutional infrastructure to support revival'),
-(33, 2, 'enough motivated speakers willing to dedicate time and resources to language learning'),
-(33, 3, 'the political leverage needed to overcome government prohibitions on minority language use'),
-(33, 4, 'international recognition and formal classification by major linguistic organizations');
+(31, 1, 'It viewed cultural exports as a practical means of economic recovery and enhancing international prestige.'),
+(31, 2, 'It wanted to counter the growing influence of Japanese popular culture in Asia.'),
+(31, 3, 'It sought to preserve traditional Korean arts that were at risk of disappearing.'),
+(31, 4, 'It aimed to provide employment for artists who had lost jobs during the financial crisis.'),
 
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 11, id FROM words WHERE word_number IN (1, 45, 48, 55, 51, 111, 147, 154, 176, 198, 269, 393, 466, 550, 574, 576);
+(32, 1, 'appeal exclusively to young audiences through social media marketing strategies'),
+(32, 2, 'maintain a distinctly Korean identity that set them apart from Western entertainment'),
+(32, 3, 'undercut competitors by offering content at significantly lower prices'),
+(32, 4, 'synthesize elements from diverse cultural traditions into broadly appealing content'),
+
+(33, 1, 'The industry has failed to produce commercially successful acts since the early 2010s.'),
+(33, 2, 'Korean musicians have been accused of plagiarizing Western artists on multiple occasions.'),
+(33, 3, 'Trainees endure harsh working conditions and face severe pressure that can harm their mental health.'),
+(33, 4, 'The government has imposed excessive creative restrictions on K-pop producers.');
+
+INSERT INTO passage_words (passage_id, word_id) SELECT 11, id FROM words WHERE word_number IN (49, 51, 84, 97, 139, 163, 168, 176, 239, 359, 376, 444, 538, 551, 581);

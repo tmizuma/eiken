@@ -1,58 +1,56 @@
--- passage_7: The Enigma of Dark Matter in Modern Cosmology (科学 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (7, 'The Illusion of Multitasking', '心理',
+'The Illusion of Multitasking
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(7, 'The Enigma of Dark Matter in Modern Cosmology', '科学',
-'Among the most elusive puzzles confronting contemporary physics is the nature of dark matter — a hypothetical substance that, despite constituting an estimated twenty-seven percent of the universe''s total mass-energy content, has never been directly observed. Its existence was first conjectured in the 1930s by the Swiss astronomer Fritz Zwicky, who noted that the visible matter in galaxy clusters was insufficient to account for the gravitational forces holding them together. In the decades since, copious observational evidence has corroborated Zwicky''s initial inference, yet the fundamental question of what dark matter actually is remains stubbornly unresolved, tormenting physicists and cosmologists alike.
+In an era defined by constant connectivity, multitasking has become a salient feature of modern work culture. Employees toggle between emails, video calls, and project management tools, often under the assumption that handling multiple tasks simultaneously is a feat of productivity. However, a growing body of research in cognitive psychology suggests that what most people call multitasking is, in reality, rapid task-switching — and it comes at a significant cognitive cost.
 
-The most compelling evidence for dark matter comes from the study of galactic rotation curves. According to Newtonian mechanics, stars orbiting at the periphery of a galaxy should move more slowly than those closer to the center, much as distant planets in our solar system orbit the sun at reduced velocities. Observations, however, have consistently revealed that peripheral stars rotate at speeds that cannot be reconciled with the gravitational pull of visible matter alone. This discrepancy, replicated across hundreds of galaxies, suggests the presence of a vast, invisible halo of matter that augments the gravitational field — a phenomenon whose implications are nothing short of momentous for our understanding of cosmic architecture. Additional corroboration has emerged from studies of gravitational lensing, where the bending of light around massive objects exceeds what visible matter could produce, and from analyses of the cosmic microwave background radiation, which bears the imprint of dark matter''s gravitational influence in the early universe.
+The concept was explored extensively by the late Stanford University communication professor Clifford Nass, whose research in 2009 examined how heavy media multitaskers performed on attention tests. His findings were counterintuitive: those who considered themselves adept at juggling multiple streams of information actually performed worse on tasks requiring focused attention. They were more susceptible to irrelevant stimuli and struggled to filter out distractions. Far from being a prowess to cultivate, habitual multitasking appeared to erode the very cognitive faculties it purported to exercise.
 
-Despite this wealth of indirect evidence, efforts to detect dark matter particles directly have proven an exercise in sustained frustration. The leading theoretical candidate, the Weakly Interacting Massive Particle, or WIMP, has been the subject of meticulous experimental searches conducted in deep underground laboratories shielded from cosmic radiation. These experiments, designed to register the exceedingly rare collisions between WIMPs and ordinary atomic nuclei, have yielded null results despite decades of increasingly sensitive instrumentation. The persistent failure to detect WIMPs has prompted some physicists to explore alternative candidates, including axions — hypothetical ultralight particles originally postulated to resolve a separate theoretical puzzle in quantum chromodynamics — and sterile neutrinos, which [BLANK].
+Subsequent studies at the University of Michigan and the University of London corroborated these findings. Researchers found that when people switch between tasks, the prefrontal cortex must reconfigure itself — a process that incurs a measurable delay known as a "switch cost." These costs may seem negligible in isolation, but they accrue over a typical workday, diminishing both speed and accuracy. One study estimated that employees who frequently switch tasks lose up to 40 percent of their productive time to these transition penalties.
 
-The absence of direct detection has also emboldened proponents of modified gravity theories, who contend that dark matter may be nothing more than a figment of our incomplete understanding of gravitational physics. The most prominent of these alternatives, Modified Newtonian Dynamics, or MOND, proposes that Newton''s laws of gravitation require amendment at extremely low accelerations — precisely the regime relevant to galactic rotation curves. While MOND has demonstrated a remarkable knack for predicting the rotational velocities of individual galaxies without invoking invisible matter, it has conspicuously faltered when applied to larger cosmological scales, particularly in explaining the dynamics of galaxy clusters and the structure of the cosmic microwave background. This inability to provide a comprehensive account of gravitational phenomena across all scales has prevented MOND from garnering mainstream acceptance, though its advocates remain tenacious in refining the theory.
+The ramifications extend beyond mere efficiency. Psychologists have linked chronic multitasking to elevated stress hormones, particularly cortisol. When individuals are inundated with competing demands, the brain''s threat-detection system becomes hyperactive, [BLANK]. This sustained physiological arousal can be detrimental to both mental health and decision-making quality, as the brain prioritizes reactive responses over deliberate analysis.
 
-The stakes of this investigation extend far beyond academic curiosity. Resolving the dark matter question would have profound repercussions for particle physics, potentially revealing entirely new fundamental forces or particles that lie beyond the current Standard Model. It would also illuminate the large-scale structure and ultimate fate of the universe itself. Whether the answer emerges from the next generation of underground detectors, from observations at the frontiers of space-based astronomy, or from a radical theoretical reconceptualization that renders the very concept of dark matter obsolete, the quest to decipher the composition of the invisible universe remains one of the most daunting — and exhilarating — undertakings in the history of science.',
+Despite this robust evidence, the allure of multitasking persists, bolstered by workplace cultures that equate busyness with value. Some organizations have begun to push back, however. Companies such as Basecamp have implemented policies that curtail unnecessary meetings and encourage deep-work blocks — uninterrupted periods dedicated to a single task. These initiatives draw on the work of psychologist Mihaly Csikszentmihalyi, whose research on "flow states" demonstrated that peak performance and satisfaction arise when individuals are fully engrossed in a challenging activity.
 
-'現代物理学が直面する最も捉えどころのない謎の中に、ダークマターの本質がある——宇宙の総質量エネルギー含有量の推定27パーセントを構成しながらも、直接観測されたことのない仮説上の物質である。その存在は1930年代にスイスの天文学者フリッツ・ツヴィッキーによって初めて推測された。彼は銀河団の可視物質がそれらを結びつけている重力を説明するには不十分であることに気づいた。その後の数十年間で、ツヴィッキーの最初の推論を裏づける豊富な観測証拠が蓄積されたが、ダークマターが実際に何であるかという根本的な問いは頑固に未解決のまま残り、物理学者と宇宙論者を等しく苦しめている。
+The implications for education are equally compelling. Cognitive scientists advocate for teaching students metacognitive strategies — techniques that foster awareness of one''s own attention patterns and help them eschew the temptation to divide their focus. By instilling these habits early, educators may help the next generation navigate a world of perpetual distraction without succumbing to its cognitive toll.',
 
-ダークマターに関する最も説得力のある証拠は、銀河回転曲線の研究から得られる。ニュートン力学によれば、銀河の周辺部を周回する恒星は中心部に近い恒星よりも遅く動くはずであり、ちょうど太陽系の遠方の惑星が太陽をより低速で周回するのと同様である。しかし観測は一貫して、周辺部の恒星が可視物質の重力だけでは調和させ得ない速度で回転していることを明らかにしてきた。数百の銀河で再現されるこの不一致は、重力場を増大させる広大で不可視の物質のハローの存在を示唆しており——宇宙の構造に対する我々の理解にとって極めて重大な含意を持つ現象である。重力レンズ効果の研究——大質量天体の周りで光が可視物質が生み出し得る以上に屈折する現象——や宇宙マイクロ波背景放射の分析——初期宇宙におけるダークマターの重力的影響の痕跡を帯びている——からも追加的な裏づけが得られている。
+'マルチタスクの幻想
 
-この豊富な間接的証拠にもかかわらず、ダークマター粒子を直接検出する取り組みは持続的な挫折の連続であることが証明されている。主要な理論的候補である弱い相互作用をする重い粒子、すなわちWIMPは、宇宙放射線から遮蔽された地下深くの研究施設で実施される細心の注意を払った実験的探索の対象となってきた。WIMPと通常の原子核との極めて稀な衝突を記録するよう設計されたこれらの実験は、数十年にわたる感度の向上にもかかわらず帰無結果をもたらしてきた。WIMPの検出の持続的な失敗は、一部の物理学者に代替候補の探究を促してきた。これにはアクシオン——量子色力学における別の理論的問題を解決するために元来想定された仮説上の超軽量粒子——や滅菌ニュートリノ——通常の物質と重力以外では相互作用しない——が含まれる。
+常時接続が当たり前となった時代において、マルチタスクは現代の労働文化の顕著な特徴となっている。従業員はメール、ビデオ通話、プロジェクト管理ツールの間を行き来し、複数のタスクを同時にこなすことが生産性の偉業であるという前提のもとで働いていることが多い。しかし、認知心理学における研究の蓄積は、多くの人がマルチタスクと呼んでいるものが、実際には素早いタスク切り替えであり、かなりの認知的コストを伴うことを示唆している。
 
-直接検出の不在はまた、修正重力理論の支持者をも勇気づけている。彼らはダークマターが重力物理学の不完全な理解の産物にすぎない可能性があると主張する。これらの代替理論の中で最も著名な修正ニュートン力学、すなわちMONDは、ニュートンの重力法則が極めて低い加速度において修正を必要とすると提案する——まさに銀河回転曲線に関連する領域である。MONDは不可視の物質を持ち出すことなく個々の銀河の回転速度を予測する顕著なこつを実証してきたが、より大きな宇宙論的スケール——特に銀河団の力学や宇宙マイクロ波背景の構造の説明——に適用されると著しく行き詰まっている。すべてのスケールにわたる重力現象の包括的な説明を提供できないことがMONDの主流の受容を妨げてきたが、その提唱者たちは理論の精緻化に粘り強く取り組み続けている。
+この概念は、スタンフォード大学のコミュニケーション学の故クリフォード・ナス教授によって広範に研究された。2009年の彼の研究は、メディアのヘビーマルチタスカーが注意力テストでどのような成績を収めるかを調べたものである。その結果は直感に反するものだった。複数の情報の流れを巧みにさばけると自負する人々は、集中的な注意力を必要とするタスクにおいて、実際にはより低い成績を示した。彼らは無関係な刺激に影響を受けやすく、注意散漫をフィルタリングすることに苦戦した。習慣的なマルチタスクは、培うべき能力どころか、まさにそれが鍛えると称する認知機能を侵食しているように見えた。
 
-この調査の利害は学術的好奇心をはるかに超えて広がる。ダークマター問題の解決は素粒子物理学に深い影響を与え、現在の標準模型を超えたまったく新しい基本的な力や粒子を明らかにする可能性がある。それはまた宇宙そのものの大規模構造と最終的な運命を照らし出すであろう。答えが次世代の地下検出器から、宇宙ベースの天文学の最前線での観測から、あるいはダークマターという概念そのものを時代遅れにする根本的な理論的再概念化から生じるにせよ、不可視の宇宙の組成を解読する探求は、科学の歴史における最も手ごわく——そして胸躍る——事業の一つであり続ける。');
+ミシガン大学やロンドン大学でのその後の研究がこれらの知見を裏付けた。研究者たちは、タスクを切り替える際に前頭前皮質が再構成されなければならず、「切り替えコスト」と呼ばれる測定可能な遅延が生じることを発見した。これらのコストは単独では取るに足りないように見えるかもしれないが、典型的な一日の業務を通じて蓄積され、速度と正確性の両方を低下させる。ある研究では、頻繁にタスクを切り替える従業員は、これらの移行ペナルティによって生産的な時間の最大40パーセントを失っていると推定された。
 
--- passage_questions テーブル (3問)
+影響は単なる効率性にとどまらない。心理学者は、慢性的なマルチタスクをストレスホルモン、特にコルチゾールの上昇と関連づけている。個人が競合する要求で圧倒されると、脳の脅威検知システムが過活動状態になり、[BLANK]。この持続的な生理的覚醒は、精神的健康と意思決定の質の両方に有害となりうる。なぜなら、脳は熟慮に基づく分析よりも反射的な反応を優先するからである。
+
+この堅固な証拠にもかかわらず、忙しさと価値を同一視する職場文化に支えられ、マルチタスクの魅力は根強く残っている。しかし、反発し始めた組織もある。Basecampのような企業は、不必要な会議を削減し、ディープワークブロック――一つのタスクに専念する中断のない時間帯――を奨励する方針を導入した。これらの取り組みは、心理学者ミハイ・チクセントミハイの研究に基づいている。彼の「フロー状態」に関する研究は、最高のパフォーマンスと満足感は、個人が困難な活動に完全に没頭しているときに生まれることを実証した。
+
+教育への示唆も同様に説得力がある。認知科学者は、学生にメタ認知戦略――自分自身の注意パターンへの気づきを育み、注意を分散させる誘惑を避ける手助けとなる技法――を教えることを提唱している。これらの習慣を早期に植え付けることで、教育者は次の世代が絶え間ない注意散漫の世界を、その認知的負荷に屈することなく乗り越える手助けができるかもしれない。');
+
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(19, 7, 1, 'comprehension',
-'According to the passage, what is the primary observational evidence that suggests the existence of dark matter?',
-'第2段落で、ダークマターの「最も説得力のある証拠」は銀河回転曲線の研究から得られると明示されている。銀河周辺部の恒星が可視物質の重力だけでは説明できない速度で回転しており、この不一致が「不可視の物質のハローの存在を示唆」していると述べられている。選択肢4が「銀河周辺部の恒星が可視物質だけでは説明できない速度で回転している」と正確に対応している。選択肢1は「直接検出」で本文はまだ成功していない。選択肢2は「ダークマターが光を放出する」で本文と矛盾。選択肢3は「宇宙の膨張速度」で本文の主論点ではない。',
-4),
-(20, 7, 2, 'comprehension',
-'What limitation of Modified Newtonian Dynamics (MOND) does the passage identify?',
-'第4段落で、MONDは個々の銀河の回転速度予測では顕著な能力を示すが、「より大きな宇宙論的スケール——特に銀河団の力学や宇宙マイクロ波背景の構造の説明——に適用されると著しく行き詰まっている」と述べられている。選択肢1が「個別の銀河では機能するが銀河団や宇宙マイクロ波背景を説明できない」と正確に反映している。選択肢2は「数学的に複雑すぎる」で本文にそのような言及なし。選択肢3は「小規模でのみ有効」で逆（個別銀河レベルで有効）。選択肢4は「実験的に反証された」で本文はそこまで述べていない。',
-1),
-(21, 7, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落にあり、WIMPの代替候補としてアクシオンとともに挙げられた「滅菌ニュートリノ、which [BLANK]」という文脈。滅菌ニュートリノの物理学的特徴——通常の物質と重力以外では相互作用しない——を説明する関係節が入る。選択肢3が「重力を介してのみ通常の物質と相互作用する」で最も適切。選択肢1は「標準的実験で容易に検出できる」で「直接検出の失敗」という文脈と矛盾。選択肢2は「可視光を放出する」でダークマターの定義と矛盾。選択肢4は「すでに加速器実験で確認された」で本文の「未解決」という趣旨と矛盾。',
-3);
+(19, 7, 1, 'comprehension', 'According to the passage, what did Clifford Nass''s research reveal about heavy media multitaskers?',
+'第2段落で、ナス教授の研究結果が述べられている。複数の情報をうまくさばけると自負する人々は、集中的な注意力を必要とするタスクで実際にはより低い成績を示し、無関係な刺激に影響を受けやすかったとある。これは選択肢2の内容と一致する。', 2),
 
--- question_choices テーブル (各問4択)
+(20, 7, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK] in the passage?',
+'空所の前文では、競合する要求で脳の脅威検知システムが過活動状態になることが述べられ、後文では持続的な生理的覚醒が精神的健康と意思決定の質に有害であると続く。脅威検知システムが過活動になった結果として、実際の危険がなくても警戒状態を維持する、という内容が文脈に最も適合する。', 3),
+
+(21, 7, 3, 'comprehension', 'What does the passage suggest about strategies to address the problems of multitasking?',
+'第5段落ではBasecampのような企業がディープワークブロックを導入していること、第6段落ではメタ認知戦略を教えることが提唱されていることが述べられている。これらは職場と教育の両方で一つのタスクへの集中を促進する取り組みであり、選択肢4の内容と合致する。', 4);
+
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(19, 1, 'Dark matter particles have been directly detected in deep underground laboratory experiments'),
-(19, 2, 'Dark matter emits faint radiation that can be observed with specialized telescopes'),
-(19, 3, 'The accelerating expansion rate of the universe can only be explained by dark matter'),
-(19, 4, 'Stars at the edges of galaxies rotate at speeds inconsistent with the gravitational pull of visible matter alone'),
-(20, 1, 'It successfully explains individual galactic rotation curves but fails to account for galaxy cluster dynamics and cosmic microwave background structure'),
-(20, 2, 'Its mathematical framework is so complex that it cannot be practically applied to any real-world astronomical observations'),
-(20, 3, 'It is effective only at subatomic scales and provides no predictions for macroscopic gravitational phenomena'),
-(20, 4, 'Laboratory experiments have conclusively disproven its fundamental predictions about gravitational behavior'),
-(21, 1, 'can be readily detected using standard particle physics experimental apparatus'),
-(21, 2, 'emit faint but measurable quantities of visible light under laboratory conditions'),
-(21, 3, 'interact with ordinary matter only through gravity, making them extraordinarily difficult to detect'),
-(21, 4, 'have already been confirmed through accelerator experiments at major research facilities');
+(19, 1, 'They exhibited superior memory recall when processing multiple information sources.'),
+(19, 2, 'They performed worse on focused-attention tasks despite believing themselves skilled at multitasking.'),
+(19, 3, 'They showed higher cortisol levels but maintained consistent task performance.'),
+(19, 4, 'They were more efficient than single-taskers when given sufficient training.'),
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 7, id FROM words WHERE word_number IN (26, 35, 36, 69, 115, 120, 126, 167, 176, 221, 234, 359, 428, 429, 514, 574, 595, 597);
+(20, 1, 'enabling individuals to process competing information more efficiently'),
+(20, 2, 'gradually adapting to the increased cognitive load over time'),
+(20, 3, 'maintaining a state of heightened alertness even in the absence of genuine danger'),
+(20, 4, 'shutting down non-essential cognitive functions to conserve energy'),
+
+(21, 1, 'Technology companies should develop software that automates task-switching to reduce cognitive burden.'),
+(21, 2, 'Governments should regulate the number of hours employees spend on digital devices.'),
+(21, 3, 'Employees should be trained in multitasking techniques to improve their switch-cost efficiency.'),
+(21, 4, 'Both workplaces and educational institutions should promote sustained focus on single tasks.');
+
+INSERT INTO passage_words (passage_id, word_id) SELECT 7, id FROM words WHERE word_number IN (8, 13, 43, 137, 154, 160, 239, 265, 269, 288, 335, 343, 432, 550, 588);

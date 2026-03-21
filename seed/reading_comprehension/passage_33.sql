@@ -1,58 +1,54 @@
--- passage_33: The Crisis of Leadership in Modern Organizations (組織論 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (33, 'The Science of Decision-Making Under Pressure', 'フリー',
+'In 1983, the Soviet Union''s early-warning satellite system detected what appeared to be five incoming American intercontinental ballistic missiles. Lieutenant Colonel Stanislav Petrov, the duty officer at a secret command center near Moscow, faced a decision of staggering consequence: should he report the alert to his superiors, potentially triggering a retaliatory nuclear strike, or trust his instinct that the alarm was erroneous? Petrov chose the latter, reasoning that an actual American first strike would involve hundreds of missiles, not merely five. His judgment proved correct—the alert had been caused by sunlight reflecting off high-altitude clouds—and his composure under extreme duress arguably averted a catastrophe of unimaginable proportions. The incident, which remained clandestine for years, has since become a compelling case study in the psychology of decision-making under pressure.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(33, 'The Crisis of Leadership in Modern Organizations', 'フリー',
-'In an era when corporations, governments, and educational institutions face unprecedented complexity, a growing chorus of scholars and practitioners has begun to question whether the individuals occupying the upper echelons of modern organizations are truly equipped for the challenges before them. The issue is not merely one of competence in a narrow technical sense but rather a deeper failure to cultivate leaders of genuine caliber — those capable of inspiring collective purpose, navigating moral ambiguity, and sustaining institutional health over the long term. While organizations routinely bestow impressive titles and generous compensation upon their senior executives, the gap between positional authority and authentic leadership has arguably never been wider.
+Researchers in cognitive psychology have long sought to elucidate the mechanisms by which humans make critical decisions when time is scarce and stakes are high. The pioneering work of Daniel Kahneman and Amos Tversky, which garnered Kahneman the Nobel Prize in Economics in 2002, demonstrated that human cognition relies on two distinct systems. System 1 operates rapidly and intuitively, drawing on heuristics—mental shortcuts—that are generally effective but susceptible to systematic biases. System 2, by contrast, engages in slower, more deliberate analytical reasoning. Under pressure, individuals tend to default to System 1, which can yield astute snap judgments in familiar contexts but may also lead to flagrant errors when circumstances are novel or ambiguous.
 
-One central dimension of this crisis concerns the way aspiring leaders are developed. Many corporate training programs, critics contend, amount to little more than exercises in pedantic box-checking: participants absorb standardized frameworks, memorize fashionable terminology, and emerge with credentials that signal expertise but do not necessarily reflect it. The retention of theoretical knowledge, while not unimportant, is a poor substitute for the cultivation of judgment, empathy, and ethical reasoning. Moreover, a penchant for quantitative metrics in leadership evaluation has led organizations to prize easily measurable outputs — quarterly earnings, productivity indices, customer satisfaction scores — while neglecting the subtler, less quantifiable dimensions of effective leadership, such as the ability to build trust, mediate conflict, and foster a culture of psychological safety.
+One of the most salient findings in this field is that stress does not uniformly impair decision-making; rather, its effects are contingent upon the nature of the task and the individual''s level of expertise. Gary Klein, a psychologist who has studied firefighters, military commanders, and emergency physicians, developed a framework known as Recognition-Primed Decision Making. Klein found that seasoned professionals confronting high-pressure situations rarely engage in the kind of systematic comparison of options that classical decision theory prescribes. Instead, they [BLANK], drawing on a vast repertoire of past experiences to identify patterns and generate workable solutions almost instantaneously. This capacity, which Klein termed "intuitive expertise," is the product of years of deliberate practice and exposure to demanding scenarios.
 
-The consequences of mediocre leadership are seldom confined to the executive suite. When those at the top lack the vision or integrity to lead effectively, morale throughout the organization tends to deteriorate. Employees who perceive their leaders as self-serving or incompetent become disengaged, and the resulting erosion of institutional commitment can cause performance to fluctuate wildly from one quarter to the next. In extreme cases, toxic leaders may actively indoctrinate their subordinates with values that prioritize short-term personal gain over long-term organizational welfare, thereby imbuing the entire corporate culture with a corrosive ethos of [BLANK]. Research in organizational psychology has consistently demonstrated that the single most influential factor in employee engagement and retention is the quality of the immediate supervisor — a finding that underscores the enormous cost of tolerating inadequate leadership at any level.
+The implications of this research extend well beyond academic psychology. In aviation, the recognition that pilot error under stress is a pervasive cause of accidents led to the development of Crew Resource Management training, which instills standardized communication protocols and emphasizes the importance of cross-checking decisions with fellow crew members. Similarly, in medicine, simulation-based training programs now expose surgeons and emergency room physicians to realistic high-stress scenarios, enabling them to build the experiential repertoire that underpins effective intuitive judgment. These interventions have demonstrably reduced error rates and bolstered patient safety.
 
-A related pathology is the bigotry of orthodoxy that pervades many institutional hierarchies. Rather than welcoming diverse perspectives and encouraging constructive dissent, organizations frequently reward conformity and punish those who challenge prevailing assumptions. This intellectual rigidity stifles innovation and leaves institutions poorly prepared to adapt when external conditions shift. Leaders who indulge in the vanity of believing that their past successes guarantee future relevance are particularly susceptible to this trap. History is replete with examples of once-dominant corporations that collapsed not because they lacked talented employees but because their leadership refused to entertain ideas that contradicted established doctrine.
+Yet the research also reveals a more sobering dimension. Cognitive biases—such as confirmation bias, where decision-makers selectively attend to information that corroborates their initial hypothesis, and anchoring bias, where an early piece of data exerts a disproportionate influence on subsequent judgments—can prove especially detrimental under pressure, when the cognitive resources available for careful deliberation are diminished. The 1986 Challenger disaster offers a stark illustration: engineers at Morton Thiokol warned that the O-ring seals on the shuttle''s solid rocket boosters might fail in cold temperatures, but NASA managers, anchored to a schedule and under mounting pressure to launch, overrode their concerns. The consequences were catastrophic.
 
-What, then, might a more effective approach to leadership development look like? Some researchers advocate for programs that combine rigorous intellectual training with sustained mentorship, real-world problem-solving, and systematic reflection on ethical dilemmas. Others emphasize the importance of selecting leaders on the basis of character and relational skill rather than technical expertise alone. Still others have issued what amounts to an ultimatum to organizational boards: either invest seriously in developing leaders who can juggle competing demands — the needs of shareholders, employees, communities, and the environment — or accept the inevitability of institutional decline. The zeal with which a few pioneering organizations have embraced these reforms offers grounds for cautious optimism, but the broader landscape remains one in which superficial credentialism continues to trump substantive excellence.',
+Understanding how pressure shapes decision-making is not merely an intellectual exercise; it is a matter of considerable practical import. From boardrooms to battlefields, from operating theaters to air traffic control towers, the ability to make sound judgments under duress can spell the difference between triumph and debacle. As Kahneman himself has noted, the goal is not to eliminate intuitive thinking—an impossible and undesirable feat—but rather to cultivate awareness of its limitations, so that we might deploy the more rigorous tools of analytical reasoning precisely when they are most needed.',
 
-'企業、政府、教育機関が前例のない複雑さに直面する時代にあって、現代組織の上層階層を占める人物が目の前の課題に対して真に備えているのかどうかを疑問視する学者や実務家の声が高まっている。問題は狭い技術的意味での能力だけではなく、真の力量を備えたリーダー――集団的目的を鼓舞し、道徳的曖昧さを乗り越え、長期にわたって組織の健全性を維持できるリーダー――を育成することへのより深い失敗にある。組織は日常的に上級幹部に印象的な肩書きと潤沢な報酬を授けているが、地位に基づく権威と真正のリーダーシップの間の格差はかつてないほど広がっていると言える。
+'1983年、ソビエト連邦の早期警戒衛星システムが、アメリカの大陸間弾道ミサイル5発の飛来と思われるものを検知した。モスクワ近郊の秘密指令センターの当直将校であったスタニスラフ・ペトロフ中佐は、驚愕すべき結果を伴う決断に直面した。上官に警報を報告して報復核攻撃を誘発する可能性をとるべきか、それとも警報が誤りであるという直感を信じるべきか。ペトロフは後者を選択し、実際のアメリカの先制攻撃であれば5発ではなく数百発のミサイルが関与するはずだと推論した。彼の判断は正しかった——警報は高高度の雲に反射した太陽光によって引き起こされたものであった——そして極度の重圧下での彼の冷静さは、間違いなく想像を絶する規模の大惨事を回避した。数年間秘密のままであったこの事件は、以来、プレッシャー下の意思決定の心理学における説得力ある事例研究となっている。
 
-この危機の中心的な側面の一つは、志望するリーダーの育成方法に関わっている。多くの企業研修プログラムは、批判者が主張するには、学者ぶった形式的なチェック作業の域を出ない。参加者は標準化されたフレームワークを吸収し、流行の用語を暗記し、専門性を示すが必ずしもそれを反映しない資格を持って出てくる。理論的知識の記憶・保持はまったく重要でないわけではないが、判断力、共感、倫理的推論の涵養には到底代わりえない。さらに、リーダーシップ評価における定量的指標への強い好みが、組織に容易に測定可能な成果――四半期収益、生産性指数、顧客満足度スコア――を重視させる一方、信頼の構築、紛争の調停、心理的安全性の文化の醸成といった、効果的リーダーシップのより繊細で数値化しにくい側面を軽視させてきた。
+認知心理学の研究者たちは、時間が乏しく利害が大きい状況で人間がどのように重要な決定を下すかのメカニズムを解明しようと長年努めてきた。ダニエル・カーネマンとエイモス・トヴェルスキーの先駆的研究は、カーネマンに2002年のノーベル経済学賞をもたらしたが、人間の認知が二つの異なるシステムに依存していることを実証した。システム1は迅速かつ直感的に作動し、ヒューリスティクス——思考の近道——を利用する。これらは一般的に効果的だが、体系的なバイアスの影響を受けやすい。対照的に、システム2はより遅く、より意図的な分析的推論に従事する。プレッシャー下では、個人はシステム1にデフォルトする傾向があり、慣れた状況では鋭敏な瞬時の判断を生み出すことができるが、状況が新奇であったり曖昧であったりする場合には目に余る誤りにつながることもある。
 
-平凡なリーダーシップの結果は、経営陣の中だけにとどまることはめったにない。トップに立つ者がビジョンや誠実さを欠いて効果的にリードできない場合、組織全体の士気は悪化する傾向にある。リーダーを利己的または無能と認識する従業員はやる気を失い、組織へのコミットメントの侵食によって業績が四半期ごとに大きく変動することになりうる。極端な場合、有害なリーダーは部下に対して、長期的な組織の福利よりも短期的な個人的利益を優先する価値観を積極的に吹き込み、それによって企業文化全体に腐食性のある利己主義と競争的な不信の精神を植え付けることがある。組織心理学の研究は一貫して、従業員のエンゲージメントと定着に最も影響力のある単一の要因は直属の上司の質であることを示しており、この知見はあらゆるレベルで不十分なリーダーシップを容認することの莫大なコストを浮き彫りにしている。
+この分野で最も顕著な発見の一つは、ストレスが一様に意思決定を損なうわけではなく、むしろその影響は課題の性質と個人の専門性のレベルに依存するということである。消防士、軍の指揮官、救急医を研究してきた心理学者ゲイリー・クラインは、「認知主導型意思決定」として知られる枠組みを開発した。クラインは、高圧的な状況に直面する熟練した専門家が、古典的な意思決定理論が処方するような体系的な選択肢の比較にはほとんど関与しないことを発見した。代わりに、彼らは最初の実行可能な行動方針を迅速に認識し、過去の経験の膨大なレパートリーを活用してパターンを特定し、ほぼ瞬時に実行可能な解決策を生成する。クラインが「直感的専門性」と名付けたこの能力は、何年にもわたる意図的な練習と厳しいシナリオへの露出の産物である。
 
-関連する病理は、多くの組織階層に蔓延する正統性の偏狭さである。多様な視点を歓迎し建設的な異議を奨励するのではなく、組織はしばしば同調を報い、既存の前提に異議を唱える者を罰する。この知的硬直性はイノベーションを窒息させ、外部条件が変化したときに適応する準備が不十分な組織を残す。過去の成功が将来の妥当性を保証するという虚栄心にふけるリーダーは、この罠に特に陥りやすい。歴史には、有能な従業員がいなかったからではなく、リーダーシップが確立された教義に矛盾するアイデアを受け入れることを拒否したために崩壊した、かつて支配的だった企業の例が満ちている。
+この研究の示唆は学術心理学をはるかに超えて広がっている。航空分野では、ストレス下でのパイロットの判断ミスが事故の広範な原因であるという認識から、クルー・リソース・マネジメント訓練が開発された。これは標準化されたコミュニケーション・プロトコルを教え込み、仲間の乗組員と決定を相互確認することの重要性を強調する。同様に、医療分野では、シミュレーションベースの訓練プログラムが外科医や救急医にリアルな高ストレスシナリオを体験させ、効果的な直感的判断を支える経験的レパートリーを構築することを可能にしている。これらの介入はエラー率を目に見えて減少させ、患者の安全性を強化している。
 
-では、より効果的なリーダーシップ開発のアプローチはどのようなものだろうか。厳格な知的訓練と持続的なメンタリング、現実世界の問題解決、倫理的ジレンマに対する体系的な省察を組み合わせたプログラムを提唱する研究者もいる。技術的専門性だけでなく人格と対人スキルに基づいてリーダーを選ぶことの重要性を強調する研究者もいる。さらに他の研究者は、組織の取締役会に対して事実上の最後通告を突きつけている。株主、従業員、地域社会、環境の要求を巧みにやり繰りできるリーダーの育成に真剣に投資するか、さもなければ組織衰退の不可避性を受け入れるかである。少数の先駆的組織がこれらの改革を受け入れた熱意は慎重な楽観主義の根拠を提供するが、より広い状況は依然として、表面的な資格主義が実質的な卓越性に勝り続けるものである。');
+しかし、この研究はより冷静にさせられる側面も明らかにしている。認知バイアス——例えば確証バイアス（意思決定者が最初の仮説を裏付ける情報に選択的に注意を向けること）やアンカリングバイアス（初期のデータが後続の判断に不釣り合いな影響を及ぼすこと）——は、慎重な熟考に利用できる認知資源が減少するプレッシャー下では特に有害となりうる。1986年のチャレンジャー号事故は明確な例を提供している。モートン・サイオコル社のエンジニアたちは、シャトルの固体ロケットブースターのOリングシールが低温で故障する可能性があると警告したが、NASAの管理者たちはスケジュールに固執し、打ち上げへの圧力が高まる中で彼らの懸念を覆した。結果は壊滅的であった。
 
--- passage_questions テーブル (3問)
+プレッシャーが意思決定をどう形作るかを理解することは、単なる知的訓練ではなく、かなりの実際的重要性を持つ問題である。会議室から戦場まで、手術室から航空管制塔まで、重圧下で健全な判断を下す能力は、勝利と大失敗の違いを決定しうる。カーネマン自身が指摘しているように、目標は直感的思考を排除すること——不可能かつ望ましくない偉業——ではなく、むしろその限界への認識を培い、分析的推論のより厳密なツールをまさに最も必要とされる時に展開できるようにすることである。');
+
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
 (97, 33, 1, 'comprehension',
-'According to the passage, what is a major shortcoming of many corporate leadership training programs?',
-'第2段落で、多くの企業研修プログラムは「学者ぶった形式的なチェック作業の域を出ない」と批判され、参加者は「標準化されたフレームワークを吸収し、流行の用語を暗記し、専門性を示すが必ずしもそれを反映しない資格を持って出てくる」と述べられている。さらに「理論的知識の記憶・保持は、判断力、共感、倫理的推論の涵養には到底代わりえない」とある。選択肢3「測定可能な資格の取得に重点を置き、判断力や倫理的推論といった本質的なリーダーシップの資質を犠牲にしている」が最も正確。選択肢1は「技術的スキルを完全に無視」で本文はそこまで述べていない。選択肢2は「プログラムの費用が高い」で本文に言及なし。選択肢4は「長すぎて非効率」で本文の論点と異なる。',
-3),
-(98, 33, 2, 'comprehension',
-'What does the passage suggest is the primary reason some once-dominant corporations have collapsed?',
-'第4段落末尾で「歴史には、有能な従業員がいなかったからではなく、リーダーシップが確立された教義に矛盾するアイデアを受け入れることを拒否したために崩壊した、かつて支配的だった企業の例が満ちている」と明確に述べている。選択肢2「リーダーが確立された教義に矛盾する新しいアイデアを受け入れることを拒否した」が正解。選択肢1は「有能な従業員の不足」で本文はこれを明確に否定。選択肢3は「市場環境の急変」で本文の焦点はリーダーシップの内的硬直性。選択肢4は「過度な技術投資」で本文に言及なし。',
-2),
-(99, 33, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所を含む文は「有害なリーダーは部下に対して短期的な個人的利益を優先する価値観を吹き込み、それによって企業文化全体に腐食性のある[BLANK]の精神を植え付ける」という構造。直前で「短期的な個人的利益を長期的な組織福利より優先する価値観」が述べられ、「corrosive ethos of」に続く語句が必要。文脈から、利己的で他者を信頼しない文化を表す表現が適切。選択肢4「self-interest and competitive distrust（利己主義と競争的な不信）」が最も自然に文脈に合う。選択肢1は「intellectual curiosity（知的好奇心）」で否定的文脈に合わない。選択肢2は「cautious pragmatism（慎重な実用主義）」で腐食性とは言えない。選択肢3は「collaborative innovation（協調的革新）」で文脈と完全に矛盾。',
-4);
+ 'What does the passage indicate about the Petrov incident of 1983?',
+ '第1段落に、ペトロフが誤警報を受けた際にシステムの報告ではなく自身の判断を信じ、報復核攻撃を誘発しなかったことが述べられている。また「which remained clandestine for years」とあり、この事件は長年秘密のままであったことも述べられている。選択肢2がこれらの内容に合致する。',
+ 2),
+(98, 33, 2, 'fill_in_blank',
+ 'Which of the following best fits in the blank [BLANK]?',
+ '空所の前文で、熟練した専門家が古典的な意思決定理論が処方するような体系的な選択肢の比較にはほとんど関与しないと述べられている。空所の後では「drawing on a vast repertoire of past experiences to identify patterns and generate workable solutions almost instantaneously」と続いている。したがって、空所には最初の実行可能な行動方針を迅速に認識するという内容が入る。選択肢1が最も適切である。',
+ 1),
+(99, 33, 3, 'comprehension',
+ 'According to the passage, what lesson does the Challenger disaster illustrate about decision-making?',
+ '第5段落で、チャレンジャー号事故の例を挙げ、NASAの管理者がスケジュールに固執し（アンカリングバイアス）、エンジニアの警告を覆したことが述べられている。これは認知バイアスがプレッシャー下で特に有害となることを示す例として挙げられている。選択肢4がこの内容に合致する。',
+ 4);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(97, 1, 'They completely ignore the teaching of technical skills needed for executive positions'),
-(97, 2, 'They cost too much relative to the measurable improvements they produce in leadership quality'),
-(97, 3, 'They emphasize the acquisition of measurable credentials at the expense of essential leadership qualities such as judgment and ethical reasoning'),
-(97, 4, 'They are too lengthy and inefficient, preventing participants from applying knowledge in real time'),
-(98, 1, 'A shortage of talented and competent employees at all levels of the organization'),
-(98, 2, 'Their leadership''s refusal to entertain new ideas that contradicted established doctrine'),
-(98, 3, 'Sudden and unpredictable changes in market conditions that no amount of preparation could have addressed'),
-(98, 4, 'Excessive investment in technology at the expense of human capital development'),
-(99, 1, 'intellectual curiosity and open inquiry'),
-(99, 2, 'cautious pragmatism and risk aversion'),
-(99, 3, 'collaborative innovation and shared purpose'),
-(99, 4, 'self-interest and competitive distrust');
+(97, 1, 'Petrov reported the alert to his superiors, who then decided not to retaliate.'),
+(97, 2, 'Petrov''s decision to trust his judgment over the system''s alert likely prevented a nuclear war.'),
+(97, 3, 'The incident was immediately made public to promote nuclear disarmament negotiations.'),
+(97, 4, 'Petrov was formally recognized by the Soviet government for his actions shortly afterward.'),
+(98, 1, 'rapidly recognize the first viable course of action'),
+(98, 2, 'consult with colleagues before making any commitment'),
+(98, 3, 'rely on written protocols and checklists to guide their responses'),
+(98, 4, 'deliberately slow down their thought processes to avoid cognitive biases'),
+(99, 1, 'Experienced professionals should always override the concerns of technical experts.'),
+(99, 2, 'Simulation-based training would have prevented the engineers from making errors.'),
+(99, 3, 'System 2 thinking is inherently superior to System 1 thinking in all high-pressure situations.'),
+(99, 4, 'Cognitive biases can become especially harmful when decision-makers are under pressure.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 33, id FROM words WHERE word_number IN (80, 119, 144, 200, 230, 267, 293, 301, 332, 353, 387, 443, 456, 489, 504, 527, 600);
+INSERT INTO passage_words (passage_id, word_id) SELECT 33, id FROM words WHERE word_number IN (148, 169, 232, 493, 43, 335, 137, 90, 426, 128, 8, 56, 338, 242, 69, 407, 93, 176, 546, 547, 288, 557, 508, 320, 514, 59, 108, 151, 164, 185, 231, 246, 538, 556, 202, 97, 120, 343, 28, 489, 550);

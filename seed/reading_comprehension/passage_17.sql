@@ -1,62 +1,55 @@
--- passage_17: The Forgotten Archive — Rediscovering Medieval Islamic Science (歴史 / word_number 1-600)
+-- Passage 17: History - The Irish Great Famine
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (17, 'The Irish Great Famine: Catastrophe, Emigration, and Lasting Legacy', '歴史',
+'Between 1845 and 1852, Ireland experienced one of the most devastating famines in modern European history. The immediate cause was the arrival of Phytophthora infestans, a water mold that ravaged potato crops across the island. For the Irish peasantry, who had become overwhelmingly dependent on the potato as their primary source of sustenance, the blight was nothing short of catastrophic. Over the course of seven years, approximately one million people perished from starvation and related diseases, while another million fled the country—an exodus that would fundamentally alter the demographic and cultural trajectory of both Ireland and the nations that received its emigrants.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(17, 'The Forgotten Archive — Rediscovering Medieval Islamic Science', '歴史',
-'For centuries, the intellectual achievements of the medieval Islamic world were relegated to footnotes in Western histories of science, dismissed as mere conduits through which Greek knowledge passed before reaching Renaissance Europe. This characterization, however, represents a fundamental distortion of the historical record. Scholars working in the great libraries and observatories of Baghdad, Cairo, Córdoba, and Samarkand did not merely preserve ancient texts; they interrogated, refined, and in many cases fundamentally transformed the knowledge they inherited, producing original contributions that would later prove indispensable to the development of modern science.
+The roots of the catastrophe, however, extended far deeper than a single crop disease. By the early nineteenth century, British colonial policies had created a precarious agricultural system in Ireland. The majority of arable land was controlled by English and Anglo-Irish landlords who leased small plots to tenant farmers at exorbitant rents. These tenants, lacking the resources to diversify their crops, relied almost exclusively on the potato—a nutritious and high-yielding crop that could sustain a family on a modest parcel of land. When the blight struck, this monoculture proved to be their undoing. The British government''s response, shaped by the prevailing laissez-faire economic orthodoxy, was widely condemned as woefully inadequate. Sir Charles Trevelyan, the Treasury official overseeing relief efforts, infamously characterized the famine as a divinely ordained mechanism to address what he considered Irish overpopulation—a view that many historians regard as emblematic of the callous indifference that [BLANK].
 
-The House of Wisdom in Baghdad, established during the Abbasid Caliphate in the eighth century, epitomized the fervent commitment to intellectual inquiry that characterized the Islamic Golden Age. Supported by caliphal patronage, scholars drawn from across the vast Islamic territories — and beyond — undertook the meticulous translation of Greek, Persian, and Indian texts into Arabic. Yet translation was merely the inception of a far more ambitious project. Figures such as al-Khwarizmi, whose work on algebra bequeathed to the world both a new mathematical discipline and the very word "algorithm," and Ibn al-Haytham, whose investigations into optics employed empirical methods that prefigured the modern scientific approach, exemplified the original and rigorous thinking that flourished in these institutions. Their feats of intellectual innovation were not peripheral curiosities but foundational contributions that would permeate Western scientific thought for centuries.
+The famine unleashed a wave of emigration that transformed the Irish diaspora into one of the largest and most influential in the world. Between 1845 and 1855, approximately 1.5 million Irish men and women crossed the Atlantic, many enduring harrowing conditions aboard overcrowded vessels known as "coffin ships," where mortality rates sometimes exceeded twenty percent. Those who survived the voyage faced hostility and bigotry in their adopted countries. In the United States, Irish immigrants were frequently ostracized by nativist movements and subjected to blatant discrimination in employment and housing.
 
-Despite the magnitude of these achievements, their recognition in Western scholarship was long impeded by a combination of cultural prejudice and linguistic barriers. Many of the seminal Arabic texts remained untranslated into European languages until remarkably late, and those that were translated often circulated without proper attribution. The prevailing narrative — one that traced the lineage of modern science exclusively from ancient Greece through Renaissance Europe — was so deeply entrenched that challenging it invited rebuke from established academic authorities. Scholars who attempted to highlight the Islamic contribution were frequently accused of exaggeration or, worse, of pursuing a politically motivated agenda rather than [BLANK].
+Despite these adversities, Irish communities in America demonstrated remarkable tenacity. Within a generation, Irish Americans had established robust networks of mutual aid, including Catholic parishes, labor unions, and political organizations. Their growing political clout was epitomized by the rise of Tammany Hall in New York City, where Irish-born politicians wielded considerable influence over municipal governance. By the early twentieth century, Irish Americans had ascended to prominent positions in law, business, and public life—a resurgence that culminated in John F. Kennedy''s election as the first Irish Catholic president in 1960.
 
-The resurgence of interest in Islamic scientific heritage over the past several decades owes much to a new generation of historians who have delved into previously neglected archives. Working with copious manuscript collections in Istanbul, Tehran, and other repositories, these researchers have corroborated the claims of earlier scholars while uncovering evidence of achievements that had remained entirely unknown. Studies of astronomical tables produced in Samarkand, for instance, have revealed levels of observational precision that astounded modern researchers and compelled a reassessment of the timeline of scientific progress. Similarly, analysis of surgical instruments described in the texts of al-Zahrawi has demonstrated that techniques long attributed to European innovation had, in fact, been practiced in Islamic hospitals centuries earlier.
+The legacy of the Great Famine remains a deeply poignant chapter in Irish collective memory. In Ireland itself, the population never recovered to its pre-famine level of approximately eight million; today, the Republic of Ireland has roughly five million inhabitants. The famine also engendered a lasting animosity toward British rule that fueled the Irish independence movement and continues to shape Anglo-Irish relations. Memorials to the famine, from the haunting sculptures along Dublin''s River Liffey to monuments in cities across the United States, Canada, and Australia, serve as somber reminders of how political indifference and systemic inequality can transform a natural disaster into a human catastrophe of staggering proportions.',
 
-The implications of this scholarly reassessment extend well beyond academic historiography. In an era when cultural and religious tensions frequently distort public discourse, a more accurate understanding of the Islamic contribution to global intellectual heritage can serve as a potent corrective to simplistic narratives of civilizational conflict. Recognizing the collaborative nature of scientific progress — the reality that breakthroughs have always depended on the cross-pollination of ideas across cultural and linguistic boundaries — offers a perspective that is not merely historically accurate but urgently relevant to contemporary debates about cultural identity and intellectual exchange.
+'1845年から1852年にかけて、アイルランドは近代ヨーロッパ史上最も壊滅的な飢饉の一つを経験した。直接的な原因は、島全体のジャガイモ作物を荒廃させた卵菌フィトフトラ・インフェスタンスの到来であった。主な栄養源としてジャガイモに圧倒的に依存していたアイルランドの農民にとって、この疫病はまさに壊滅的であった。7年間にわたって、約100万人が飢餓と関連疾病で命を落とし、さらに100万人が国外に逃れた。この大量流出はアイルランドと移民を受け入れた国々の両方の人口学的・文化的軌跡を根本的に変えることになる。
 
-The task of fully recovering and integrating this heritage into mainstream narratives of scientific history remains daunting, fraught with challenges of access, translation, and institutional resistance. Yet the work continues, driven by the conviction that a comprehensive account of human intellectual achievement cannot afford to consign to obscurity the contributions of any civilization, however inconvenient such recognition may prove for established historiographical traditions.',
+しかし、この大惨事の根源は単一の作物病よりもはるかに深いところにあった。19世紀初頭までに、英国の植民地政策はアイルランドに不安定な農業システムを生み出していた。耕作可能な土地の大部分はイングランド人やアングロ・アイルランド人の地主によって管理され、彼らは法外な地代で小作農に小さな区画を貸し出していた。作物を多様化する資源を持たないこれらの小作農は、ジャガイモにほぼ完全に依存していた。それは栄養価が高く収穫量の多い作物で、控えめな大きさの土地で家族を養うことができた。疫病が襲った時、この単一栽培が彼らの破滅となった。当時支配的だった自由放任の経済的正統派に形作られた英国政府の対応は、痛ましいほど不十分だと広く非難された。救済活動を監督する大蔵省の役人チャールズ・トレヴェリアン卿は、飢饉をアイルランドの過剰人口と彼が見なしたものに対処するための神の定めた仕組みだと悪名高くも特徴づけた。多くの歴史家が〔空所〕冷淡な無関心を象徴するものと見なす見解である。
 
-'何世紀にもわたり、中世イスラム世界の知的業績は、西洋の科学史の脚注に追いやられ、ギリシャの知識がルネサンス期のヨーロッパに到達するまでの単なる伝達手段として片付けられてきた。しかし、この特徴づけは歴史的記録の根本的な歪曲を表している。バグダッド、カイロ、コルドバ、サマルカンドの偉大な図書館や天文台で働いた学者たちは、古代のテキストを単に保存しただけではなく、受け継いだ知識を精査し、洗練し、多くの場合根本的に変容させ、後に近代科学の発展に不可欠であることが証明される独自の貢献を生み出した。
+飢饉はアイルランドのディアスポラを世界で最大かつ最も影響力のあるものの一つに変えた移民の波を解き放った。1845年から1855年の間に、約150万人のアイルランドの男女が大西洋を渡った。多くは「棺桶船」として知られる過密した船で悲惨な状況に耐えた。そこでは死亡率が時に20パーセントを超えた。航海を生き延びた者は、移住先の国で敵意と偏見に直面した。米国では、アイルランド移民はしばしばネイティビスト運動によって排斥され、雇用と住居における露骨な差別にさらされた。
 
-8世紀にアッバース朝カリフ制の下で設立されたバグダッドの「知恵の館」は、イスラム黄金時代を特徴づけた知的探求への熱心な献身を典型的に示していた。カリフの庇護に支えられ、広大なイスラム圏域の各地から（そしてそれを超えて）集まった学者たちは、ギリシャ語、ペルシャ語、インド語のテキストをアラビア語に細心の注意を払って翻訳する作業に着手した。しかし翻訳は、はるかに野心的なプロジェクトの始まりに過ぎなかった。代数に関する研究で世界に新しい数学分野と「アルゴリズム」という言葉そのものを遺したアル＝フワーリズミーや、光学の研究で近代科学的アプローチを先取りする経験的方法を用いたイブン・アル＝ハイサムなどの人物は、これらの機関で栄えた独創的で厳密な思考を例示した。彼らの知的革新の偉業は、周辺的な珍奇ではなく、何世紀にもわたって西洋の科学思想に浸透する基礎的な貢献であった。
+これらの逆境にもかかわらず、アメリカのアイルランド人コミュニティは注目に値する粘り強さを示した。一世代のうちに、アイルランド系アメリカ人はカトリック教区、労働組合、政治組織を含む強固な相互扶助のネットワークを確立していた。彼らの高まる政治的影響力は、ニューヨーク市のタマニー・ホールの台頭に典型的に表されていた。そこではアイルランド生まれの政治家が市政に対してかなりの影響力を行使していた。20世紀初頭までに、アイルランド系アメリカ人は法律、ビジネス、公的生活において著名な地位に上り詰めていた。この復活は1960年のジョン・F・ケネディのアイルランド系カトリックとしての初の大統領選出で最高潮に達した。
 
-これらの業績の大きさにもかかわらず、西洋の学問におけるその認知は、文化的偏見と言語的障壁の組み合わせによって長く妨げられてきた。多くの重要なアラビア語テキストは驚くほど遅くまでヨーロッパの言語に翻訳されず、翻訳されたものもしばしば適切な帰属なしに流通した。近代科学の系譜を古代ギリシャからルネサンス期のヨーロッパを通じてのみ辿る支配的な物語は、非常に深く根付いており、それに異議を唱えることは確立された学術権威からの非難を招いた。イスラムの貢献を強調しようとした学者は、誇張の、あるいはさらに悪いことに、客観的な学問的探求ではなく政治的動機に基づく議題を追求しているとしばしば非難された。
+大飢饉の遺産はアイルランドの集合的記憶の中で深く心に訴えかける一章として残っている。アイルランド自体では、人口は飢饉前の約800万人のレベルに回復することはなかった。今日、アイルランド共和国の住民は約500万人である。飢饉はまた英国支配に対する永続的な敵意を生み出し、アイルランド独立運動の原動力となり、英愛関係を形作り続けている。ダブリンのリフィー川沿いの心に残る彫刻から米国、カナダ、オーストラリアの都市の記念碑まで、飢饉の記念碑は、政治的無関心と体系的不平等がいかにして自然災害を驚異的な規模の人的大惨事に変えうるかを思い起こさせる陰鬱な存在として立っている。');
 
-過去数十年にわたるイスラム科学遺産への関心の復活は、これまで見落とされてきたアーカイブを掘り下げた新世代の歴史家の功績に多くを負っている。イスタンブール、テヘラン、その他の保管所にある大量の写本コレクションを用いて、これらの研究者は以前の学者の主張を裏付けると同時に、まったく知られていなかった業績の証拠を発掘した。例えば、サマルカンドで作成された天文表の研究は、近代の研究者を仰天させ、科学的進歩のタイムラインの再評価を促した観測精度のレベルを明らかにした。同様に、アル＝ザフラウィーのテキストに記述された外科器具の分析は、長くヨーロッパの革新に帰せられてきた技術が、実際にはイスラムの病院で何世紀も前に実践されていたことを実証した。
-
-この学術的再評価の示唆は、学術的歴史記述をはるかに超えて及ぶ。文化的・宗教的緊張がしばしば公共の言説を歪める時代において、世界の知的遺産へのイスラムの貢献をより正確に理解することは、文明の衝突という単純化された物語に対する強力な是正手段となりうる。科学的進歩の協力的な性質（ブレークスルーが常に文化的・言語的境界を越えた考えの交差受粉に依存してきたという現実）を認識することは、歴史的に正確であるだけでなく、文化的アイデンティティと知的交流に関する現代の議論に緊急に関連する視点を提供する。
-
-この遺産を完全に回復し、科学史の主流の物語に統合する作業は、アクセス、翻訳、制度的抵抗の課題に満ちた困難なものであり続けている。しかし、人類の知的業績の包括的な説明が、既存の歴史記述の伝統にとってそのような認識がいかに不都合であっても、いかなる文明の貢献をも無名に追いやる余裕はないという信念に駆動されて、その作業は続いている。');
-
--- passage_questions テーブル (3問)
+-- Questions for passage 17 (question ids: 49, 50, 51)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(49, 17, 1, 'comprehension',
-'According to the passage, what role did scholars at the House of Wisdom play beyond translating ancient texts?',
-'第2段落で、翻訳は「はるかに野心的なプロジェクトの始まりに過ぎなかった」と述べ、アル＝フワーリズミーやイブン・アル＝ハイサムの例を挙げて、これらの学者が独創的で厳密な思考を展開し、「基礎的な貢献」を生み出したと説明している。選択肢4が「受け継いだ知識を変容させ、後の科学的発展の基礎となる独自の貢献を生み出した」と正確に反映している。選択肢1は「ギリシャ語テキストの保存に専念」で本文はそれ以上だと主張。選択肢2は「軍事技術の開発」で本文に言及なし。選択肢3は「ヨーロッパの学者への教育」で本文の論点と異なる。',
-4),
-(50, 17, 2, 'comprehension',
-'What does the passage suggest about the recent rediscovery of Islamic scientific achievements?',
-'第4段落で、新世代の歴史家が「これまで見落とされてきたアーカイブを掘り下げ」、以前の学者の主張を「裏付けると同時に、まったく知られていなかった業績の証拠を発掘した」と述べている。サマルカンドの天文表やアル＝ザフラウィーの外科器具の具体例が挙げられている。選択肢2が「新世代の歴史家が未調査のアーカイブから以前知られていなかった業績の証拠を発見した」と正確に述べている。選択肢1は「すべての主要な貢献がすでに記録されていた」で本文と矛盾。選択肢3は「イスラム圏の大学が主導」で本文にそのような記述なし。選択肢4は「政治的目的で利用されている」で本文の論旨と異なる。',
-2),
-(51, 17, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落にあり、「イスラムの貢献を強調しようとした学者は、誇張の、あるいは政治的動機に基づく議題を追求していると非難された。rather than [BLANK]」という文脈。政治的動機に基づく議題と対比されるのは客観的な学問的探求である。選択肢1「engaging in objective scholarly inquiry」（客観的な学問的探求に従事する）が最も適切。選択肢2は「promoting intercultural dialogue」で学術的文脈として不十分。選択肢3は「preserving endangered manuscripts」は具体的すぎて文脈に合わない。選択肢4は「challenging Western scientific superiority」は対比としてむしろ政治的動機に近い。',
-1);
+(49, 17, 1, 'comprehension', 'According to the passage, what made the Irish peasantry particularly vulnerable to the potato blight?',
+'第2段落で、英国の植民地政策により「These tenants, lacking the resources to diversify their crops, relied almost exclusively on the potato（これらの小作農は作物を多様化する資源を持たず、ジャガイモにほぼ完全に依存していた）」と説明し、「When the blight struck, this monoculture proved to be their undoing（疫病が襲った時、この単一栽培が彼らの破滅となった）」と述べている。選択肢3が該当する。', 3),
+(50, 17, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?',
+'空所は「a view that many historians regard as emblematic of the callous indifference that [BLANK]」の中にある。前文ではトレヴェリアンが飢饉を神の意志だとする発言が紹介されており、この「冷淡な無関心」が何を特徴づけているかが問われている。文脈から、英国政府の飢饉への対応全体を特徴づける無関心であるべき。選択肢4が最適。', 4),
+(51, 17, 3, 'comprehension', 'What does the passage suggest about the long-term impact of the famine on Ireland''s population?',
+'第5段落で「In Ireland itself, the population never recovered to its pre-famine level of approximately eight million; today, the Republic of Ireland has roughly five million inhabitants（アイルランド自体では、人口は飢饉前の約800万人のレベルに回復することはなかった。今日、アイルランド共和国の住民は約500万人である）」と述べている。選択肢1が該当する。', 1);
 
--- question_choices テーブル (各問4択)
+-- Choices for question 49
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(49, 1, 'They focused exclusively on preserving Greek philosophical texts for future European scholars'),
-(49, 2, 'They primarily developed military technologies that strengthened the Abbasid Caliphate'),
-(49, 3, 'They served as teachers who directly educated visiting European scholars in Arabic science'),
-(49, 4, 'They transformed inherited knowledge and produced original contributions foundational to modern science'),
-(50, 1, 'All major Islamic contributions to science had already been thoroughly documented by earlier Western scholars'),
-(50, 2, 'A new generation of historians has uncovered evidence of previously unknown achievements in neglected archives'),
-(50, 3, 'Universities in the Islamic world have taken the lead in funding research into their own scientific heritage'),
-(50, 4, 'The rediscovery has been primarily driven by political rather than scholarly motivations'),
-(51, 1, 'engaging in objective scholarly inquiry'),
-(51, 2, 'promoting intercultural dialogue between Eastern and Western institutions'),
-(51, 3, 'preserving endangered manuscripts for future generations of researchers'),
-(51, 4, 'challenging the notion of Western scientific superiority');
+(49, 1, 'They had refused to adopt modern farming techniques despite advice from British authorities.'),
+(49, 2, 'They had voluntarily concentrated their landholdings into large monoculture estates.'),
+(49, 3, 'Colonial land policies left them with no means to grow a variety of crops.'),
+(49, 4, 'They had previously experienced similar blights and failed to prepare for another.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 17, id FROM words WHERE word_number IN (8, 26, 48, 51, 62, 69, 198, 241, 246, 349, 350, 351, 357, 429, 560, 574, 579, 596);
+-- Choices for question 50
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(50, 1, 'Irish tenant farmers displayed toward their English landlords'),
+(50, 2, 'European nations showed toward colonial territories in general'),
+(50, 3, 'the Catholic Church exhibited during the relief efforts'),
+(50, 4, 'characterized the British government''s response to the crisis');
+
+-- Choices for question 51
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(51, 1, 'The country''s population has never returned to its pre-famine level.'),
+(51, 2, 'Ireland''s population recovered fully by the early twentieth century.'),
+(51, 3, 'The famine had no lasting demographic effect because of subsequent immigration.'),
+(51, 4, 'Population decline was limited to rural areas while cities grew rapidly.');
+
+-- Word associations for passage 17
+-- Words used: exodus(67), precarious(84), exorbitant(237), harrowing(491), bigotry(119), ostracize(41), blatantly(18), tenacious(36), clout(55), epitomize(62), resurgence(350), culminate(139), poignant(134), animosity(152), engender(264), somber(252)
+INSERT INTO passage_words (passage_id, word_id) SELECT 17, id FROM words WHERE word_number IN (67, 84, 237, 491, 119, 41, 18, 36, 55, 62, 350, 139, 134, 152, 264, 252);

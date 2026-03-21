@@ -1,62 +1,59 @@
--- passage_15: The Crisis of Local Journalism (メディア / word_number 1-600)
+-- Passage 15: Media - Algorithmic Content Curation and Filter Bubbles
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (15, 'Algorithmic Content Curation and the Filter Bubble Problem', 'メディア',
+'In 2011, internet activist Eli Pariser coined the term "filter bubble" to describe a phenomenon that has since become one of the most contentious issues in media studies. Pariser argued that the algorithms powering platforms such as Google, Facebook, and YouTube were creating personalized information ecosystems in which users were increasingly exposed only to content that reinforced their existing beliefs. More than a decade later, the debate over whether algorithmic curation has polarized public discourse or merely reflected pre-existing divisions remains far from settled.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(15, 'The Crisis of Local Journalism', 'メディア',
-'Across much of the developed world, local newspapers — once the backbone of community information ecosystems — are in a state of precipitous decline. In the United States alone, more than two thousand local papers have ceased publication since 2004, leaving vast swaths of the country as so-called "news deserts" where residents have little or no access to professional reporting on municipal governance, school board decisions, or local court proceedings. The demise of these outlets represents far more than a commercial setback for the media industry; it constitutes a threat to the democratic accountability that depends on vigilant local journalism.
+The mechanics of algorithmic content curation are relatively straightforward. When a user interacts with a platform—clicking on articles, watching videos, or engaging with posts—the system records these behaviors and uses machine learning models to predict what content will maximize engagement. The rationale is commercial: platforms that keep users scrolling generate more advertising revenue. Yet the repercussions of this engagement-driven model are profound. A 2021 internal study at Facebook, later divulged by whistleblower Frances Haugen, found that the platform''s recommendation algorithm consistently amplified divisive and emotionally charged content because such material generated higher rates of interaction.
 
-The financial pressures that have driven this exodus of local newsrooms are well documented. The migration of advertising revenue to digital platforms has decimated the business model that sustained print journalism for over a century. Classified advertising, once a lucrative source of income for regional papers, has been almost entirely absorbed by online marketplaces. Meanwhile, subscription revenue has dwindled as readers, accustomed to accessing news content without charge on social media, have grown increasingly reluctant to pay for local coverage. The result is a vicious cycle: diminished resources lead to reduced reporting capacity, which in turn erodes the perceived value of the publication, further accelerating subscriber loss.
+The implications for democratic discourse are deeply troubling. When citizens inhabit distinct information environments, the shared factual foundation upon which productive debate depends begins to erode. Research published in the Proceedings of the National Academy of Sciences in 2018 found that exposure to opposing political views on Twitter did not moderate attitudes but instead made participants more entrenched in their original positions. This finding challenges the once-prevalent assumption that greater access to diverse perspectives would naturally foster mutual understanding. Instead, it suggests that [BLANK], particularly when that exposure occurs within platforms designed to maximize emotional engagement rather than informed deliberation.
 
-The consequences of this decline extend into domains that casual observers might not immediately anticipate. Research has demonstrated that municipalities lacking robust local news coverage experience higher rates of government corruption, as the absence of journalistic scrutiny removes a critical deterrent against malfeasance. Studies have also linked the disappearance of local newspapers to decreased voter turnout in municipal elections, suggesting that when citizens are deprived of accessible information about local candidates and issues, their propensity to participate in the democratic process diminishes accordingly. Perhaps most alarmingly, the void left by defunct local outlets is increasingly filled by partisan websites that masquerade as legitimate news organizations while [BLANK].
+Efforts to mitigate the filter bubble effect have taken various forms. Some technology companies have experimented with "bridging" algorithms that deliberately surface content from across the political spectrum. Taiwan''s digital democracy platform, Polis, has garnered praise for its approach to fostering consensus by identifying areas of common ground among ideologically disparate groups. Meanwhile, media literacy campaigns in Finland—widely regarded as among the most effective in the world—have sought to instill critical thinking skills that enable citizens to recognize and resist algorithmic manipulation.
 
-Several models have emerged in response to this crisis, each attempting to forge a sustainable path forward for local journalism. Philanthropic foundations have begun directing substantial funding toward nonprofit newsrooms, seeking to insulate essential reporting from the vagaries of the advertising market. Some communities have experimented with publicly funded journalism initiatives, though these efforts remain contentious owing to concerns about editorial independence. A growing number of entrepreneurs, meanwhile, have launched digital-first local news ventures that leverage lean operational structures and targeted digital advertising to achieve modest profitability.
+Yet these interventions face formidable obstacles. The business models of major platforms are predicated on engagement maximization, making any shift toward more balanced content curation tantamount to accepting reduced revenue. Furthermore, regulatory approaches remain fragmented. The European Union''s Digital Services Act, which took full effect in 2024, requires large platforms to be more transparent about their algorithmic systems, but critics argue that transparency alone is insufficient without stringent enforcement mechanisms that compel meaningful changes in how algorithms operate.
 
-Yet skeptics question whether any of these approaches can adequately replicate the comprehensive coverage that traditional local newspapers once provided. Nonprofit models, while admirable in their commitment to public service, often lack the resources to sustain the breadth of beat reporting — covering courts, zoning boards, and school districts simultaneously — that characterized robust local papers. Publicly funded alternatives face perennial questions about political interference, and even their staunchest advocates acknowledge that such models require careful institutional safeguards to maintain credibility. Digital startups, for their part, frequently concentrate on niche audiences rather than serving the broad informational needs of an entire community.
+The filter bubble problem ultimately reflects a deeper tension between the commercial imperatives of the technology industry and the informational needs of democratic societies. Resolving this tension will require concerted action from policymakers, technology companies, and citizens alike. Without such collaboration, the pervasive influence of algorithmic curation risks further fragmenting the public sphere at a time when cohesive civic discourse is more essential than ever.',
 
-The revitalization of local journalism will likely require not a single solution but a mosaic of complementary approaches, bolstered by public policy that recognizes local news as essential civic infrastructure. Without sustained investment and imaginative experimentation, the news deserts that already afflict hundreds of communities will continue to expand, with consequences that extend far beyond the media landscape into the foundations of democratic life itself.',
+'2011年、インターネット活動家のイーライ・パリサーは「フィルターバブル」という用語を作り出し、以来メディア研究で最も物議を醸す問題の一つとなった現象を描写した。パリサーは、Google、Facebook、YouTubeなどのプラットフォームを動かすアルゴリズムが、ユーザーが既存の信念を補強するコンテンツにのみますます接するような、パーソナライズされた情報エコシステムを作り出していると主張した。10年以上が経った今も、アルゴリズムによるキュレーションが公の言論を分極化したのか、それとも既存の分断を単に反映しただけなのかについての議論は決着にはほど遠い。
 
-'先進国の多くで、地域の新聞は（かつて地域の情報エコシステムの屋台骨であったが）急激な衰退状態にある。米国だけでも、2004年以来2000以上の地方紙が廃刊となり、住民が市政、教育委員会の決定、地方裁判所の訴訟に関する専門的な報道にほとんどアクセスできない、いわゆる「ニュース砂漠」が国土の広大な範囲に広がっている。これらのメディアの消滅は、メディア産業にとっての商業的な後退以上のものであり、警戒心を持った地域ジャーナリズムに依存する民主的な説明責任に対する脅威を構成する。
+アルゴリズムによるコンテンツキュレーションの仕組みは比較的単純である。ユーザーがプラットフォームとやり取りする際——記事をクリックしたり、動画を視聴したり、投稿に関与したりする際——システムはこれらの行動を記録し、機械学習モデルを使用してエンゲージメントを最大化するコンテンツを予測する。その根拠は商業的なものである。ユーザーをスクロールさせ続けるプラットフォームはより多くの広告収入を生む。しかし、このエンゲージメント駆動型モデルの影響は深刻である。2021年にFacebook内部で行われ、後に内部告発者のフランシス・ホーゲンによって暴露された調査は、プラットフォームのレコメンドアルゴリズムが分裂的で感情的に訴えるコンテンツを一貫して増幅していたことを発見した。そのような素材がより高い率のインタラクションを生み出したからである。
 
-地域のニュースルームの大量流出を引き起こした財政的圧力は十分に記録されている。広告収入のデジタルプラットフォームへの移行は、一世紀以上にわたって活字ジャーナリズムを支えてきたビジネスモデルを壊滅させた。かつて地方紙にとって利益の大きい収入源であった案内広告は、ほぼ完全にオンラインマーケットプレイスに吸収された。一方、ソーシャルメディアで無料でニュースコンテンツにアクセスすることに慣れた読者が、地方の報道に対してますます支払いを渋るようになり、購読収入は徐々に減少した。結果は悪循環である。リソースの減少は報道能力の低下につながり、それが出版物の認知価値を損ない、さらに購読者の流出を加速させる。
+民主的言論への影響は深く憂慮すべきものである。市民が異なる情報環境に住む時、生産的な議論が依拠する共有された事実的基盤が侵食され始める。2018年に米国科学アカデミー紀要に発表された研究は、Twitterで対立する政治的見解に接することは態度を穏健化させず、むしろ参加者を元の立場により一層固執させたことを発見した。この発見は、多様な視点へのより多くのアクセスが自然に相互理解を育むだろうというかつて広く行き渡っていた仮定に異議を唱える。むしろ、それは〔空所〕ことを示唆している。特にその接触が、情報に基づいた熟議よりも感情的なエンゲージメントを最大化するように設計されたプラットフォーム内で生じる場合にはなおさらである。
 
-この衰退の結果は、一般の観察者がすぐには予想しないかもしれない領域にまで及ぶ。研究は、堅固な地域ニュース報道を欠く自治体がより高い政府腐敗率を経験することを示している。ジャーナリズムの監視の不在が不正行為に対する重要な抑止力を取り除くためである。研究はまた、地方紙の消滅を地方選挙の投票率低下と結びつけており、市民が地方の候補者や問題に関する利用しやすい情報を奪われた場合、民主的プロセスに参加する傾向がそれに応じて減少することを示唆している。おそらく最も警戒すべきことに、廃刊した地方メディアが残した空白は、正当なニュース組織を装いながら党派的なウェブサイトによってますます埋められている。
+フィルターバブル効果を軽減するための取り組みはさまざまな形をとってきた。一部のテクノロジー企業は、政治的スペクトラム全体からコンテンツを意図的に表示する「橋渡し」アルゴリズムを実験してきた。台湾のデジタル民主主義プラットフォーム「Polis」は、イデオロギー的に異なるグループ間の共通点を特定することで合意を促進するアプローチで称賛を集めてきた。一方、世界で最も効果的とされるフィンランドのメディアリテラシーキャンペーンは、市民がアルゴリズムの操作を認識し抵抗できるようにする批判的思考スキルを植え付けることを目指してきた。
 
-この危機に対応して、いくつかのモデルが登場しており、それぞれが地域ジャーナリズムのための持続可能な道を切り開こうとしている。慈善財団は非営利ニュースルームに対する多額の資金提供を開始し、広告市場の気まぐれから不可欠な報道を守ろうとしている。一部のコミュニティは公的資金によるジャーナリズムの取り組みを実験してきたが、これらの取り組みは編集の独立性に関する懸念のために論議を呼んでいる。一方、デジタルファーストの地域ニュース事業を立ち上げ、無駄のない運営構造とターゲットを絞ったデジタル広告を活用して控えめな収益性を達成する起業家が増えている。
+しかし、これらの介入は手ごわい障害に直面している。主要プラットフォームのビジネスモデルはエンゲージメントの最大化を前提としており、よりバランスの取れたコンテンツキュレーションへの転換は収益の減少を受け入れることと同然となる。さらに、規制アプローチは断片化したままである。2024年に完全施行された欧州連合のデジタルサービス法は、大規模プラットフォームにアルゴリズムシステムについてより透明性を持つことを要求しているが、批評家たちは、アルゴリズムの運用方法に意味のある変更を強いる厳格な執行メカニズムなしには透明性だけでは不十分だと主張している。
 
-しかし、懐疑論者は、これらのアプローチのいずれかが、かつて伝統的な地方紙が提供した包括的な報道を十分に再現できるかどうかを疑問視している。非営利モデルは、公共サービスへの献身において称賛に値するが、堅固な地方紙を特徴づけていた広範な担当記者報道（裁判所、区域委員会、学区を同時にカバーすること）を維持するリソースが不足していることが多い。公的資金による代替手段は政治的干渉に関する永続的な疑問に直面しており、最も忠実な支持者でさえ、そのようなモデルには信頼性を維持するための慎重な制度的保護が必要であることを認めている。デジタルスタートアップは、コミュニティ全体の幅広い情報ニーズに応えるのではなく、ニッチな視聴者に集中することが多い。
+フィルターバブル問題は究極的には、テクノロジー産業の商業的命令と民主主義社会の情報ニーズとの間のより深い緊張を反映している。この緊張を解決するには、政策立案者、テクノロジー企業、市民による協調的な行動が必要となる。そのような協力なしには、アルゴリズムキュレーションの行き渡った影響が、結束力のある市民的言論がかつてないほど不可欠な時に公共圏をさらに断片化するリスクがある。');
 
-地域ジャーナリズムの再活性化には、単一の解決策ではなく、地方ニュースを不可欠な市民インフラとして認識する公共政策に支えられた、補完的なアプローチのモザイクが必要となるであろう。持続的な投資と創造的な実験なしには、すでに何百ものコミュニティを苦しめているニュース砂漠は拡大し続け、その影響はメディアの景観を超えて民主的生活の基盤にまで及ぶだろう。');
-
--- passage_questions テーブル (3問)
+-- Questions for passage 15 (question ids: 43, 44, 45)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(43, 15, 1, 'comprehension',
-'According to the passage, what has research shown about communities that lack local news coverage?',
-'第3段落で、地域ニュース報道を欠く自治体は「政府腐敗率が高くなる」ことが研究で示されていると述べ、さらに「地方選挙の投票率低下」との関連も指摘されている。選択肢1が「政府の腐敗率が高く、地方選挙の投票率が低い」と正確に反映している。選択肢2は「犯罪率上昇」で本文に言及なし。選択肢3は「住民がソーシャルメディアから情報を得るようになる」で研究結果の説明としては不正確。選択肢4は「地域経済が衰退する」で本文の論点と異なる。',
-1),
-(44, 15, 2, 'comprehension',
-'What does the passage suggest is the main limitation of nonprofit newsroom models?',
-'第5段落で、非営利モデルは「公共サービスへの献身において称賛に値するが、堅固な地方紙を特徴づけていた広範な担当記者報道を維持するリソースが不足していることが多い」と明示されている。選択肢4が「裁判所、学区などを同時にカバーする包括的な担当記者報道を維持するリソースが不足」と正確にパラフレーズしている。選択肢1は「編集の独立性が損なわれる」で公的資金モデルの問題であり非営利モデルの主要な限界ではない。選択肢2は「読者を惹きつけられない」で本文にそのような記述はない。選択肢3は「デジタル技術に適応できない」で本文と無関係。',
-4),
-(45, 15, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落の最後の文にあり、「廃刊した地方メディアが残した空白は、正当なニュース組織を装いながら[BLANK]する党派的なウェブサイトによって埋められている」という文脈。「masquerade as legitimate news organizations while」に続く内容は、正当なニュース組織を装うことと対比される実際の行動を示す。選択肢3「advancing narrowly partisan agendas」（狭い党派的な議題を推進する）が最も適切。選択肢1は「providing superior local coverage」で論旨と矛盾。選択肢2は「operating under strict editorial standards」で装う必要がなくなる。選択肢4は「generating revenue through subscription fees」で党派性の問題との関連が薄い。',
-3);
+(43, 15, 1, 'comprehension', 'What did the internal study at Facebook reveal, according to the passage?',
+'第2段落で「A 2021 internal study at Facebook, later divulged by whistleblower Frances Haugen, found that the platform''s recommendation algorithm consistently amplified divisive and emotionally charged content because such material generated higher rates of interaction（Facebookの内部調査は、プラットフォームのレコメンドアルゴリズムが分裂的で感情的に訴えるコンテンツを一貫して増幅していたことを発見した）」と述べられている。選択肢2が該当する。', 2),
+(44, 15, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?',
+'空所の直前で、Twitterの研究が「対立する政治的見解への接触は態度を穏健化させず、むしろ参加者を元の立場により一層固執させた」ことを示したと述べている。空所の後には「特にその接触が感情的なエンゲージメントを最大化するように設計されたプラットフォーム内で生じる場合」とある。したがって、空所には「対立する見解への接触が分極化をかえって深める可能性がある」という趣旨の内容が入る。選択肢4が最適。', 4),
+(45, 15, 3, 'comprehension', 'What does the passage identify as a major barrier to reforming algorithmic content curation?',
+'第5段落で「The business models of major platforms are predicated on engagement maximization, making any shift toward more balanced content curation tantamount to accepting reduced revenue（主要プラットフォームのビジネスモデルはエンゲージメントの最大化を前提としており、よりバランスの取れたコンテンツキュレーションへの転換は収益の減少を受け入れることと同然となる）」と述べられている。選択肢1が該当する。', 1);
 
--- question_choices テーブル (各問4択)
+-- Choices for question 43
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(43, 1, 'They experience higher rates of government corruption and lower voter turnout in local elections'),
-(43, 2, 'They suffer from increased crime rates due to the absence of investigative journalism'),
-(43, 3, 'They see residents turning primarily to social media for reliable local information'),
-(43, 4, 'They undergo significant economic decline as businesses lose advertising outlets'),
-(44, 1, 'Their editorial independence is inevitably compromised by the interests of philanthropic donors'),
-(44, 2, 'They are unable to attract a sufficient readership to justify their continued operation'),
-(44, 3, 'They cannot adapt their reporting methods to digital platforms and modern audiences'),
-(44, 4, 'They often lack the resources to sustain comprehensive beat reporting across multiple areas simultaneously'),
-(45, 1, 'providing superior coverage of local affairs than the newspapers they replaced'),
-(45, 2, 'operating under the same strict editorial standards as established news organizations'),
-(45, 3, 'advancing narrowly partisan agendas'),
-(45, 4, 'generating revenue primarily through subscription fees and reader donations');
+(43, 1, 'The platform''s algorithm was specifically designed to suppress political content.'),
+(43, 2, 'The recommendation system tended to amplify divisive content because it drove higher engagement.'),
+(43, 3, 'Users actively sought out emotionally charged content regardless of algorithmic recommendations.'),
+(43, 4, 'The algorithm was equally likely to promote content from all points on the political spectrum.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 15, id FROM words WHERE word_number IN (1, 28, 45, 65, 67, 96, 147, 181, 337, 354, 397, 473, 543, 551, 242, 556);
+-- Choices for question 44
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(44, 1, 'most users prefer consuming content that challenges their existing political views'),
+(44, 2, 'algorithmic curation has no measurable effect on political attitudes'),
+(44, 3, 'traditional media are better equipped than social platforms to present balanced perspectives'),
+(44, 4, 'exposure to opposing viewpoints can actually deepen polarization rather than reduce it');
+
+-- Choices for question 45
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(45, 1, 'The financial incentives of major platforms are fundamentally tied to maximizing user engagement.'),
+(45, 2, 'Users have shown no interest in consuming content from diverse political perspectives.'),
+(45, 3, 'Governments lack the technical expertise needed to understand algorithmic systems.'),
+(45, 4, 'Media literacy programs have been proven to be entirely ineffective.');
+
+-- Word associations for passage 15
+-- Words used: contentious(147), divulge(64), repercussion(167), rationale(168), polarize(314), instill(338), disparate(341), tantamount(273), stringent(354), pervasive(407), concerted(393), cohesive(567), garner(176), entrench(560), accentuate(262), encroach(581)
+INSERT INTO passage_words (passage_id, word_id) SELECT 15, id FROM words WHERE word_number IN (147, 64, 167, 168, 314, 338, 341, 273, 354, 407, 393, 567, 176, 560, 262, 581);

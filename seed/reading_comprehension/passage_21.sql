@@ -1,58 +1,45 @@
--- passage_21: The Paradox of Global Supply Chains (経済 / word_number 1-600)
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (21, 'The Economics of Remote Work: A Permanent Shift?', '経済',
+'Before the COVID-19 pandemic, remote work was a perk enjoyed by a relatively small fraction of the global workforce. Major technology companies like Google and Facebook had invested heavily in opulent corporate campuses designed to keep employees on-site, and many executives viewed working from home with undisguised disdain. The prevailing wisdom held that innovation required in-person collaboration, and that allowing employees too much latitude in choosing where to work would inevitably lead to diminished productivity.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(21, 'The Paradox of Global Supply Chains', '経済',
-'For much of the late twentieth century, the prevailing orthodoxy in international economics held that the globalization of supply chains was an unambiguous good. By dispersing manufacturing processes across multiple countries, corporations could exploit comparative advantages in labor costs, raw materials, and technical expertise, thereby reducing production expenses and delivering cheaper goods to consumers worldwide. This rationale underpinned a decades-long trend toward ever-greater integration of global trade networks. Yet a series of disruptions in the early twenty-first century has exposed the fragility of these intricate systems and compelled businesses and governments alike to reassess the risks inherent in far-flung supply chains.
+The pandemic forced a sudden and dramatic reversal of this orthodoxy. By April 2020, an estimated forty-two percent of the American labor force was working from home full-time, according to Stanford University economist Nicholas Bloom. What many managers had feared would be a debacle turned out to be a largely successful experiment. Studies by Bloom and his colleagues corroborated what remote workers themselves had been saying for years: for many knowledge-based tasks, productivity either remained stable or actually improved when employees worked outside the traditional office.
 
-The vulnerabilities of globalized production became starkly apparent during the onset of the COVID-19 pandemic in 2020. As factory shutdowns cascaded across Asia, European and North American manufacturers discovered that critical components — from semiconductor chips to pharmaceutical ingredients — were suddenly unavailable. Companies that had pursued relentless cost optimization by relying on single-source suppliers found themselves in a dire predicament, unable to pivot quickly enough to alternative providers. The resulting shortages sent prices soaring and laid bare the precarious nature of just-in-time inventory systems that had been extolled by management consultants for decades.
+The economic ramifications of this shift have been profound. Commercial real estate markets in major cities — New York, San Francisco, London — have faced a resurgence of vacancies not seen since the financial crisis of 2008. Office occupancy rates in many American cities remain well below pre-pandemic levels. Some landlords, unable to find tenants, have opted to convert office towers into residential housing, a trend that could help alleviate chronic housing shortages in urban centers.
 
-In the aftermath of these disruptions, a vigorous debate has emerged over the merits of reshoring — the practice of relocating manufacturing operations back to a company''s home country or to nearby allied nations. Advocates of reshoring argue that the short-term cost savings of offshore production are outweighed by the long-term risks of supply chain fragility. They contend that proximity to end markets reduces transportation costs, shortens delivery times, and provides a robust buffer against geopolitical shocks. Moreover, reshoring can revitalize domestic manufacturing sectors that have languished for years, creating employment opportunities in communities that bore the brunt of deindustrialization.
+For workers, the shift has brought both benefits and complications. Many have seized the opportunity to relocate from expensive metropolitan areas to more affordable regions, a phenomenon that economists call "geographic arbitrage." This exodus from high-cost cities has bolstered local economies in smaller towns and rural areas, while simultaneously eroding the tax base of the cities that workers have left behind. The implications for municipal finances are sobering: cities that depend on commuter spending for a substantial portion of their revenue now face a precarious fiscal future.
 
-Skeptics, however, warn that the clamor for reshoring oversimplifies a complex economic calculus. Relocating production facilities requires enormous capital investment, and the higher labor costs in developed nations would inevitably be passed on to consumers in the form of elevated prices. Critics also note that complete self-sufficiency in manufacturing is neither feasible nor desirable in a world of [BLANK]. The interdependence that characterizes modern supply chains, they argue, also generates significant benefits: it fosters technology transfer between nations, encourages specialization, and creates mutual economic stakes that can serve as a deterrent against geopolitical conflict.
+Yet the remote work revolution has not been universally beneficial. [BLANK]. Low-wage service workers — janitors, food vendors, transit operators — who depended on the daily influx of office workers have seen their livelihoods deteriorate. The disparity between those who can work remotely and those who cannot has accentuated existing economic inequalities, creating what some researchers describe as a two-tier labor market.
 
-A more pragmatic approach, many analysts suggest, lies in diversification rather than wholesale retreat from global trade. Instead of concentrating production in a single low-cost country, companies can spread their sourcing across multiple regions, thereby mitigating the havoc that any single disruption might wreak. Governments can bolster this strategy by forging trade agreements with a broader array of partners and investing in domestic stockpiles of essential goods. The goal, in essence, is not to dismantle the global supply chain but to make it more resilient — a daunting undertaking, to be sure, but one that the sporadic crises of recent years have rendered unavoidable.',
+The debate over the optimal work arrangement continues to evolve. Many companies have settled on hybrid models, requiring employees to come into the office two or three days per week. Whether this compromise proves durable or merely represents a transitional phase remains to be seen. What the pandemic has made incontrovertible, however, is that the relationship between physical space and productive work is far more malleable than most business leaders had previously believed.',
 
-'20世紀後半の大部分において、国際経済学の支配的な正統派は、サプライチェーンのグローバル化が明白な善であるとしていた。製造プロセスを複数の国に分散させることで、企業は労働コスト、原材料、技術的専門知識における比較優位を活用し、生産コストを削減して世界中の消費者により安い商品を届けることができた。この根拠は、グローバル貿易ネットワークのさらなる統合に向けた数十年にわたる傾向を支えていた。しかし、21世紀初頭の一連の混乱がこれらの複雑なシステムの脆弱性を露呈させ、企業も政府も広範に分散したサプライチェーンに内在するリスクの再評価を余儀なくされた。
+'COVID-19パンデミック以前、リモートワークは世界の労働力のうち比較的少数の人々が享受する特典であった。GoogleやFacebookなどの大手テクノロジー企業は、従業員をオンサイトに留めるために設計された豪華な企業キャンパスに多額の投資をしており、多くの経営幹部は在宅勤務を隠すことなく軽蔑の目で見ていた。イノベーションには対面での協業が必要であり、従業員に勤務場所の選択においてあまり多くの裁量を与えれば、必然的に生産性の低下につながるというのが一般的な通念であった。
 
-グローバル化された生産の脆弱性は、2020年のCOVID-19パンデミックの発生時に明確に明らかになった。アジア全域で工場閉鎖が連鎖すると、ヨーロッパおよび北米の製造業者は、半導体チップから医薬品原料に至る重要な部品が突然入手不可能になったことを知った。単一の供給業者に依存して容赦ないコスト最適化を追求していた企業は、代替の供給業者に十分迅速に方向転換できず、深刻な窮地に陥った。結果として生じた不足は価格を急騰させ、数十年にわたり経営コンサルタントが絶賛してきたジャストインタイム在庫システムの不安定な本質をあらわにした。
+パンデミックは、この正統派的考え方の突然かつ劇的な転換を強いた。スタンフォード大学の経済学者ニコラス・ブルームによると、2020年4月までにアメリカの労働力の推定42パーセントがフルタイムで在宅勤務をしていた。多くの管理職が大失敗になると恐れていたことは、概ね成功した実験であることが判明した。ブルームとその同僚たちによる研究は、リモートワーカー自身が何年も前から言っていたことを裏づけた：多くの知識ベースの仕事において、従業員が従来のオフィス外で働く場合、生産性は安定しているか、実際に向上した。
 
-これらの混乱の余波の中で、リショアリング——製造事業を企業の母国または近隣の同盟国に移転する慣行——の是非をめぐる活発な議論が浮上した。リショアリングの支持者は、オフショア生産の短期的なコスト削減はサプライチェーンの脆弱性という長期的なリスクに相殺されると主張する。彼らは、最終市場への近接性が輸送コストを削減し、納期を短縮し、地政学的ショックに対する堅固な緩衝を提供すると論じる。さらに、リショアリングは長年停滞してきた国内製造業を再活性化し、脱工業化の矛先を担ったコミュニティに雇用機会を創出することができる。
+この変化の経済的影響は甚大である。ニューヨーク、サンフランシスコ、ロンドンなどの主要都市の商業用不動産市場は、2008年の金融危機以来見られなかった空室率の復活に直面している。多くのアメリカの都市のオフィス稼働率は、パンデミック前の水準をはるかに下回ったままである。テナントを見つけられない一部の家主は、オフィスタワーを住宅に転用することを選択しており、この傾向は都市部の慢性的な住宅不足を緩和する可能性がある。
 
-しかし懐疑論者は、リショアリングへの叫びが複雑な経済計算を単純化しすぎていると警告する。生産施設の移転には莫大な資本投資が必要であり、先進国のより高い労働コストは必然的に価格上昇という形で消費者に転嫁される。批判者はまた、相互依存的な専門化の世界において、製造業の完全な自給自足は実現可能でも望ましくもないと指摘する。現代のサプライチェーンを特徴づける相互依存は重大な利点も生み出すと彼らは主張する。それは国家間の技術移転を促進し、専門化を奨励し、地政学的紛争に対する抑止力として機能し得る相互の経済的利害関係を生み出す。
+労働者にとって、この変化は利益と複雑さの両方をもたらした。多くの人々が、高額な都市圏からより手頃な地域へ移転する機会を捉えており、経済学者はこの現象を「地理的裁定取引」と呼んでいる。高コスト都市からのこの大量流出は、小さな町や農村部の地域経済を活性化させた一方で、労働者が去った都市の税基盤を同時に侵食している。地方自治体の財政への影響は深刻である：収入のかなりの部分を通勤者の支出に依存している都市は、今や不安定な財政的将来に直面している。
 
-より実利的なアプローチは、多くのアナリストが示唆するように、グローバル貿易からの全面的な撤退ではなく多角化にある。単一の低コスト国に生産を集中させる代わりに、企業は調達を複数の地域に分散させ、単一の混乱がもたらしうる大損害を軽減することができる。政府はより広範なパートナーとの貿易協定を構築し、必需品の国内備蓄に投資することでこの戦略を強化できる。本質的に、目標はグローバルサプライチェーンを解体することではなく、それをより回復力のあるものにすることである——確かに手強い取り組みだが、近年の散発的な危機が避けられないものにした取り組みである。');
+しかし、リモートワーク革命は普遍的に有益ではなかった。清掃員、飲食業者、交通機関の運転手など、毎日のオフィスワーカーの流入に頼っていた低賃金サービス労働者は、生活が悪化するのを目の当たりにした。リモートで働ける人とそうでない人との間の格差は、既存の経済的不平等を際立たせ、一部の研究者が二層の労働市場と表現するものを生み出した。
 
--- passage_questions テーブル (3問)
+最適な勤務形態についての議論は進化し続けている。多くの企業は、従業員に週2〜3日の出社を求めるハイブリッドモデルに落ち着いている。この妥協が永続的なものとなるのか、単なる過渡期を表すに過ぎないのかは、まだわからない。しかし、パンデミックが議論の余地のないものとした点は、物理的な空間と生産的な仕事との関係が、ほとんどのビジネスリーダーが以前信じていたよりもはるかに柔軟であるということだ。');
+
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(61, 21, 1, 'comprehension',
-'What does the passage identify as a major consequence of the COVID-19 pandemic for global supply chains?',
-'第2段落で、パンデミック中にアジアの工場閉鎖が連鎖し、半導体チップや医薬品原料などの重要部品が突然入手不可能になったと述べられている。単一供給業者に依存していた企業は「dire predicament（深刻な窮地）」に陥り、ジャストインタイム在庫システムの「precarious nature（不安定な本質）」が露呈した。選択肢1が「単一供給業者への依存の脆弱性を露呈した」と正確に要約。選択肢2は「貿易量が増加」で逆。選択肢3は「サプライチェーンの強靭さが証明された」で逆。選択肢4は「即座にリショアリングが起きた」で本文はリショアリングを「議論」として紹介している。',
-1),
-(62, 21, 2, 'comprehension',
-'According to the passage, what argument do skeptics of reshoring make?',
-'第4段落で、懐疑論者はリショアリングが複雑な経済計算を単純化しすぎていると主張し、生産施設の移転に莫大な資本投資が必要であること、先進国のより高い労働コストが消費者に転嫁されること、そして現代のサプライチェーンの相互依存が技術移転の促進や地政学的紛争の抑止力など重大な利点も生むと論じている。選択肢4が「グローバルな相互依存は技術移転や紛争抑止など重大な利点を生む」と正確に述べている。選択肢1は「リショアリングは常に成功する」で懐疑論者の立場と逆。選択肢2は「パンデミックの影響は誇張されている」で本文にそのような主張なし。選択肢3は「低コスト国にのみ利益がある」で本文にない。',
-4),
-(63, 21, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第4段落にあり、「製造業の完全な自給自足は[BLANK]の世界においてfeasibleでもdesirableでもない」という文脈。この段落では、現代サプライチェーンの相互依存が技術移転や専門化を促進し、相互の経済的利害を生むと述べている。自給自足が不可能な理由として、世界が相互依存的な専門化で成り立っていることが最も適切。選択肢2「interdependent specialization」が文脈に合致。選択肢1「unlimited resources」は現実と逆。選択肢3「diminishing trade volumes」は本文の主張と矛盾。選択肢4「identical production capabilities」は専門化の概念と逆。',
-2);
+(61, 21, 1, 'comprehension', 'What did research by Nicholas Bloom and his colleagues demonstrate about remote work?', '第2段落で、「ブルームとその同僚たちによる研究は、リモートワーカー自身が何年も前から言っていたことを裏づけた：多くの知識ベースの仕事において、従業員が従来のオフィス外で働く場合、生産性は安定しているか、実際に向上した」と述べられている。', 3),
+(62, 21, 2, 'comprehension', 'According to the passage, what has been one negative consequence of the shift to remote work for cities?', '第4段落で、高コスト都市からの大量流出が「労働者が去った都市の税基盤を同時に侵食している」（simultaneously eroding the tax base of the cities that workers have left behind）と述べられている。', 1),
+(63, 21, 3, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?', '空所は第5段落の冒頭にあり、「リモートワーク革命は普遍的に有益ではなかった」の直後に位置する。続く文で低賃金サービス労働者の困難が具体的に述べられていることから、空所にはリモートワークがもたらした格差や不利益を導入する内容が入る。リモートワークの恩恵が主にホワイトカラーの専門職に限られているという内容が最適である。', 2);
 
--- question_choices テーブル (各問4択)
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(61, 1, 'It revealed the vulnerability of relying on single-source suppliers for critical components'),
-(61, 2, 'It led to an immediate and permanent increase in global trade volumes'),
-(61, 3, 'It demonstrated that just-in-time inventory systems were fundamentally resilient'),
-(61, 4, 'It caused most multinational corporations to immediately reshore their operations'),
-(62, 1, 'Reshoring has always proven successful whenever it has been attempted'),
-(62, 2, 'The impact of the pandemic on supply chains has been greatly exaggerated'),
-(62, 3, 'Globalized production benefits only low-cost manufacturing nations'),
-(62, 4, 'Global interdependence generates significant benefits including technology transfer and conflict deterrence'),
-(63, 1, 'unlimited resources'),
-(63, 2, 'interdependent specialization'),
-(63, 3, 'diminishing trade volumes'),
-(63, 4, 'identical production capabilities');
+(61, 1, 'Remote work led to a significant decline in productivity across all industries.'),
+(61, 2, 'Most employees preferred returning to the office after the initial lockdowns ended.'),
+(61, 3, 'For many knowledge-based tasks, productivity remained stable or improved with remote work.'),
+(61, 4, 'Remote work was only effective for employees in the technology sector.'),
+(62, 1, 'The departure of remote workers has eroded the tax base that cities depend on.'),
+(62, 2, 'Real estate developers have abandoned plans to build new housing in cities.'),
+(62, 3, 'Public transportation systems have expanded too rapidly to be financially sustainable.'),
+(62, 4, 'Small businesses in cities have received fewer government subsidies than rural companies.'),
+(63, 1, 'Companies have discovered that remote work actually increases operational costs significantly'),
+(63, 2, 'Its benefits have largely accrued to white-collar professionals who can perform their jobs from anywhere'),
+(63, 3, 'Most governments have introduced legislation requiring companies to offer remote work options'),
+(63, 4, 'The technology required for effective remote work remains prohibitively expensive for most firms');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 21, id FROM words WHERE word_number IN (32, 37, 84, 103, 156, 165, 168, 177, 181, 242, 337, 343, 347, 371, 551, 554, 557, 574, 576, 593);
+INSERT INTO passage_words (passage_id, word_id) SELECT 21, id FROM words WHERE word_number IN (12, 67, 69, 128, 133, 143, 202, 242, 262, 268, 340, 350, 372, 432, 550, 581);

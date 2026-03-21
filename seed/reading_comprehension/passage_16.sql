@@ -1,62 +1,55 @@
--- passage_16: The Paradox of Press Freedom in the Digital Age (メディア / word_number 1-600)
+-- Passage 16: History - The Silk Road and Cultural Exchange
+INSERT INTO passages (id, title, topic, content, content_ja) VALUES (16, 'The Silk Road: Commerce, Culture, and the Transmission of Ideas', '歴史',
+'The network of trade routes collectively known as the Silk Road stretched approximately 6,400 kilometers from the ancient Chinese capital of Chang''an—modern-day Xi''an—westward through Central Asia to the Mediterranean coast. Although the German geographer Ferdinand von Richthofen coined the term "Seidenstraße" in 1877, the routes themselves had been in use for more than two millennia, facilitating not only the exchange of commodities but also the dissemination of religious beliefs, scientific knowledge, and artistic traditions across vast distances. Far from being a single road, the Silk Road was a labyrinth of interconnected pathways that traversed some of the most treacherous terrain on Earth, from the Taklamakan Desert to the mountain passes of the Pamir and Hindu Kush ranges.
 
--- passages テーブル
-INSERT INTO passages (id, title, topic, content, content_ja) VALUES
-(16, 'The Paradox of Press Freedom in the Digital Age', 'メディア',
-'The principle that a free press serves as an indispensable pillar of democratic society has been a cornerstone of liberal political thought for centuries. From the pamphleteers of the Enlightenment to the investigative journalists who exposed political scandals in the twentieth century, the notion that unfettered access to information empowers citizens to hold their governments accountable has enjoyed broad consensus. Yet the digital revolution has introduced a profound paradox: the very technologies that have democratized the production and dissemination of information have simultaneously created new vulnerabilities that threaten to undermine the foundations of press freedom itself.
+The commercial significance of the Silk Road is well documented. Chinese silk, prized for its exquisite texture and luster, was the commodity that gave the route its name, but the goods transported along these corridors were remarkably diverse. Spices from India, glassware from Rome, jade from Khotan, and horses from the Ferghana Valley all flowed through the network''s bustling hubs, which included Samarkand, Bukhara, and Kashgar. Merchants rarely completed the entire journey themselves; instead, goods passed through successive intermediaries, with each transaction augmenting the final price considerably.
 
-The most conspicuous manifestation of this paradox is the tension between the unprecedented abundance of information and the erosion of public trust in media institutions. Surveys conducted across multiple nations consistently reveal that confidence in mainstream journalism has reached historic lows. This decline cannot be attributed solely to the shortcomings of news organizations themselves; it is, in significant measure, the product of deliberate campaigns to denigrate the credibility of the press. Authoritarian leaders and populist movements have proven adept at exploiting social media to disseminate derogatory narratives about journalists, framing critical reporting as politically motivated fabrication rather than legitimate oversight. The barrage of such attacks has proven remarkably effective at eroding the tacit social compact that once accorded the press a measure of institutional respect.
+Yet it was the transmission of ideas and beliefs that constituted the Silk Road''s most momentous legacy. Buddhism, which originated in northeastern India in the fifth century BCE, spread to China primarily along these trade routes, carried by monks and missionaries who established monasteries at oasis towns along the way. The Mogao Caves near Dunhuang, a UNESCO World Heritage site containing nearly 500 decorated grottoes dating from the fourth to the fourteenth century, stand as a testament to this cultural propagation. Similarly, Islam expanded eastward along the Silk Road from the seventh century onward, [BLANK] that would fundamentally reshape the religious and cultural landscape of Central Asia.
 
-The economic dimension of this crisis further exacerbates the vulnerability of press freedom. As advertising revenue has migrated to technology platforms, news organizations have been forced to curtail their operations, reducing the number of correspondents stationed in foreign capitals and investigative teams assigned to long-term projects. This contraction of reporting capacity has tangible consequences for accountability journalism. Stories that require months of meticulous research and substantial financial investment — exposing corporate malfeasance, documenting human rights abuses, or scrutinizing opaque government procurement processes — are precisely the kind of journalism most likely to be eliminated when budgets are slashed. The resulting dearth of rigorous investigative reporting [BLANK].
+The Silk Road also served as a conduit for scientific and technological innovation. Papermaking, invented in China during the Han Dynasty, gradually made its way westward, reaching the Islamic world by the eighth century and Europe by the twelfth. The precursor to modern algebra traveled in the opposite direction, as the mathematical treatises of Persian scholars such as al-Khwarizmi were transmitted eventually to Europe. These exchanges were not always deliberate; the capture of Chinese papermakers by Arab forces at the Battle of Talas in 751 CE is often cited as a pivotal, if inadvertent, moment in the global spread of paper technology.
 
-Compounding these challenges is the murky legal landscape governing digital expression. While traditional press freedoms were codified in constitutional and statutory frameworks developed over centuries, the regulation of online speech remains a contentious and rapidly evolving domain. Governments around the world have enacted or proposed legislation ostensibly aimed at combating misinformation, but critics warn that such laws are frequently crafted in terms sufficiently vague to permit their deployment against legitimate journalism. The chilling effect of such legislation — the tendency of journalists to self-censor in anticipation of legal repercussions — represents a subtle but potent threat to editorial independence.
+The decline of the Silk Road''s overland routes began in the fifteenth century, as maritime trade routes pioneered by Portuguese and Spanish explorers offered faster and more lucrative alternatives. The Ottoman Empire''s consolidation of control over key segments of the land routes further impeded overland commerce. By the seventeenth century, the once-thriving caravan trade had largely succumbed to the dominance of sea-based commerce. Nevertheless, the Silk Road''s enduring legacy as a catalyst for cross-cultural exchange continues to resonate. China''s Belt and Road Initiative, launched in 2013, explicitly invokes the historical memory of these ancient trade networks to frame its contemporary vision of transcontinental connectivity.',
 
-Some observers argue that the solution lies in forging new international norms that protect digital press freedoms with the same vigor that existing frameworks safeguard print and broadcast media. Others contend that technology companies themselves must be compelled to assume greater responsibility for the information ecosystems they have created, including providing financial support for the journalism that generates the content upon which their platforms depend. A growing coalition of press freedom organizations, meanwhile, has called for the establishment of independent oversight bodies empowered to adjudicate disputes between governments and media organizations without recourse to politicized judicial processes.
+'総称してシルクロードとして知られる交易路のネットワークは、古代中国の首都長安——現在の西安——から西に中央アジアを経て地中海沿岸まで約6,400キロメートルに及んだ。ドイツの地理学者フェルディナント・フォン・リヒトホーフェンが1877年に「Seidenstraße（絹の道）」という用語を作り出したが、ルート自体は2000年以上使用されており、商品の交換だけでなく、宗教的信仰、科学的知識、芸術的伝統の広大な距離を越えた普及を促進していた。シルクロードは単一の道路では決してなく、タクラマカン砂漠からパミール高原やヒンドゥークシュ山脈の峠まで、地球上で最も危険な地形のいくつかを横断する相互接続された道の迷路であった。
 
-What is beyond dispute is that the challenge of preserving press freedom in the digital age demands urgent and sustained attention. The stakes extend far beyond the interests of journalists and media companies; they encompass the right of every citizen to access reliable information, a prerequisite for meaningful democratic participation. Failure to address these threats will not merely diminish the quality of public discourse — it will impoverish the very foundation upon which informed self-governance rests.',
+シルクロードの商業的重要性は十分に記録されている。その精巧な質感と光沢で珍重された中国の絹がこのルートに名前を与えた商品であったが、これらの回廊に沿って輸送された商品は驚くほど多様であった。インドの香辛料、ローマのガラス製品、ホータンの翡翠、フェルガナ渓谷の馬のすべてが、サマルカンド、ブハラ、カシュガルを含むネットワークの活気あるハブを通って流れた。商人が旅全体を自ら完了することはまれであった。代わりに、商品は連続する仲介者を通過し、各取引が最終価格をかなり増加させた。
 
-'自由な報道が民主主義社会の不可欠な柱として機能するという原則は、何世紀にもわたってリベラルな政治思想の礎石であった。啓蒙主義のパンフレット作者から20世紀に政治スキャンダルを暴露した調査報道記者まで、情報への自由なアクセスが市民に政府の責任を追及する力を与えるという概念は、幅広い合意を得てきた。しかし、デジタル革命は深い逆説をもたらした。情報の生産と普及を民主化したまさにその技術が、同時に報道の自由そのものの基盤を脅かす新たな脆弱性を生み出したのである。
+しかし、シルクロードの最も極めて重大な遺産を構成したのは、思想と信仰の伝達であった。紀元前5世紀にインド北東部で生まれた仏教は、主にこれらの交易路に沿って中国に広まった。途中のオアシス都市に僧院を設立した僧侶や宣教師によって運ばれた。ユネスコ世界遺産であり、4世紀から14世紀にかけての約500の装飾された石窟を含む敦煌近くの莫高窟は、この文化的伝播の証として立っている。同様に、イスラム教は7世紀以降シルクロードに沿って東方に拡大し、〔空所〕中央アジアの宗教的・文化的景観を根本的に再形成することになる。
 
-この逆説の最も顕著な表れは、前例のない情報の豊富さとメディア機関への公衆の信頼の浸食との間の緊張関係である。複数の国にわたって実施された調査は一貫して、主流のジャーナリズムへの信頼が歴史的な低水準に達していることを明らかにしている。この低下は、ニュース組織自体の欠点のみに帰することはできない。それはかなりの程度、報道の信頼性を中傷する意図的なキャンペーンの産物である。権威主義的な指導者やポピュリスト運動は、ジャーナリストに関する軽蔑的な物語を広めるためにソーシャルメディアを利用することに巧みであることを証明してきた。批判的な報道を正当な監視ではなく政治的動機による捏造と位置づけるのである。そうした攻撃の集中砲火は、かつて報道機関に一定の制度的敬意を与えていた暗黙の社会的合意を侵食することに著しく効果的であることが証明された。
+シルクロードはまた、科学的・技術的革新の導管としても機能した。漢王朝時代の中国で発明された製紙法は徐々に西方に伝わり、8世紀にはイスラム世界に、12世紀にはヨーロッパに到達した。現代の代数学の前駆は反対方向に旅をした。アル＝フワーリズミーなどのペルシャの学者の数学的論文が最終的にヨーロッパに伝えられたからである。これらの交流は必ずしも意図的なものではなかった。751年のタラス河畔の戦いでアラブ軍が中国の紙職人を捕らえたことは、不注意ではあるが、紙技術の世界的普及における極めて重要な瞬間としてしばしば引用される。
 
-この危機の経済的側面は、報道の自由の脆弱性をさらに悪化させている。広告収入がテクノロジープラットフォームに移行するにつれて、ニュース組織は事業を削減せざるを得なくなり、外国の首都に駐在する特派員や長期プロジェクトに配属された調査チームの数を減らしている。この報道能力の縮小は、説明責任ジャーナリズムに具体的な影響をもたらす。数か月の細心の研究と多大な財政投資を必要とする記事（企業の不正行為の暴露、人権侵害の記録、不透明な政府調達プロセスの精査）は、予算が削減された際に最も排除されやすいまさにその種類のジャーナリズムである。厳格な調査報道の欠如の結果は深刻である。
+シルクロードの陸路の衰退は15世紀に始まった。ポルトガルやスペインの探検家が開拓した海上交易路がより速くより収益性の高い代替手段を提供したためである。オスマン帝国が陸路の重要な区間の支配を強化したことも陸上交易をさらに妨げた。17世紀までに、かつて繁栄していたキャラバン貿易は海上交易の優位にほぼ屈していた。それにもかかわらず、異文化交流の触媒としてのシルクロードの永続的な遺産は今も響き続けている。2013年に立ち上げられた中国の一帯一路構想は、大陸を横断する接続性という現代のビジョンを枠組みづけるために、これらの古代の交易ネットワークの歴史的記憶を明示的に呼び起こしている。');
 
-これらの課題を悪化させているのは、デジタル上の表現を規律する不透明な法的状況である。伝統的な報道の自由は何世紀にもわたって発展した憲法および法律の枠組みに成文化されてきたが、オンラインでの言論の規制は論議を呼ぶ急速に進化する領域のままである。世界中の政府が偽情報との闘いを表向きの目的とした法律を制定または提案しているが、批判者はそのような法律が正当なジャーナリズムに対する展開を許容するほど十分に曖昧な用語で作られることが多いと警告する。そのような法律の萎縮効果（法的な影響を予期してジャーナリストが自己検閲する傾向）は、編集の独立性に対する微妙だが強力な脅威を表している。
-
-一部の観察者は、既存の枠組みが活字・放送メディアを保護するのと同じ力で、デジタル上の報道の自由を保護する新しい国際規範を構築することに解決策があると主張する。他の人々は、テクノロジー企業自身が、プラットフォームが依存するコンテンツを生み出すジャーナリズムに対する財政的支援を含め、自らが作り出した情報エコシステムに対するより大きな責任を引き受けることを強いられるべきだと主張する。一方、報道の自由を守る組織の拡大する連合は、政治化された司法プロセスに頼ることなく、政府とメディア組織間の紛争を裁定する権限を持つ独立した監視機関の設立を求めている。
-
-議論の余地がないのは、デジタル時代における報道の自由の保持という課題が、緊急かつ持続的な関心を必要としているということである。利害は、ジャーナリストやメディア企業の利益をはるかに超えて及ぶ。それは、有意義な民主的参加の前提条件である、信頼できる情報にアクセスするすべての市民の権利を包含する。これらの脅威に対処しなければ、公共の言説の質が低下するだけでなく、情報に基づいた自治が拠り所とするまさにその基盤を貧しくすることになる。');
-
--- passage_questions テーブル (3問)
+-- Questions for passage 16 (question ids: 46, 47, 48)
 INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
-(46, 16, 1, 'comprehension',
-'According to the passage, how have authoritarian leaders exploited digital media to undermine press freedom?',
-'第2段落で、権威主義的な指導者やポピュリスト運動がソーシャルメディアを利用してジャーナリストに関する軽蔑的な物語を広め、批判的な報道を政治的動機による捏造と位置づけることで報道機関への制度的敬意を与えていた暗黙の社会的合意を侵食してきたと述べている。選択肢2が「ジャーナリストに関する軽蔑的な物語をソーシャルメディアで拡散し、批判的報道を捏造と位置づけた」と正確に反映している。選択肢1は「ジャーナリストを直接検閲」で本文の主旨と異なる。選択肢3は「独自のニュースネットワークを設立」で本文に言及なし。選択肢4は「法律でソーシャルメディアへのアクセスを制限」で本文の論点と異なる。',
-2),
-(47, 16, 2, 'comprehension',
-'What concern does the passage raise about legislation aimed at combating misinformation?',
-'第4段落で、偽情報対策を表向きの目的とした法律について、批判者は「正当なジャーナリズムに対する展開を許容するほど十分に曖昧な用語で作られることが多い」と警告し、その萎縮効果（ジャーナリストの自己検閲の傾向）が編集の独立性への脅威であると述べている。選択肢3が「曖昧な表現が正当なジャーナリズムに適用され、自己検閲を引き起こす可能性」と正確に述べている。選択肢1は「偽情報を完全に排除できない」で本文の懸念の方向性が異なる。選択肢2は「ソーシャルメディア企業に過剰な負担を課す」で本文にそのような記述はない。選択肢4は「国際的な合意が得られない」で本文と無関係。',
-3),
-(48, 16, 3, 'fill_in_blank',
-'Choose the best option to fill in the blank [BLANK] in the passage.',
-'空所は第3段落の最後にあり、「厳格な調査報道の欠如の結果として[BLANK]」という文脈。前文では予算削減により調査報道が排除されやすいと述べている。説明責任ジャーナリズムの能力が損なわれることの結果が入る。選択肢1「creates an environment in which powerful institutions can operate with diminished scrutiny」（強力な機関が監視の低下した環境で活動できる状況を生む）が最も論理的。選択肢2「has little measurable impact on public awareness」は論旨と矛盾。選択肢3「primarily affects entertainment journalism」は本文の議論範囲外。選択肢4「encourages citizens to conduct their own investigations」は楽観的すぎて文脈に合わない。',
-1);
+(46, 16, 1, 'comprehension', 'What does the passage suggest about the commercial operations of the Silk Road?',
+'第2段落で「Merchants rarely completed the entire journey themselves; instead, goods passed through successive intermediaries, with each transaction augmenting the final price considerably（商人が旅全体を自ら完了することはまれであった。代わりに、商品は連続する仲介者を通過し、各取引が最終価格をかなり増加させた）」と述べている。選択肢3がこれに該当する。', 3),
+(47, 16, 2, 'fill_in_blank', 'Which of the following best fits in the blank [BLANK]?',
+'空所の前には「Islam expanded eastward along the Silk Road from the seventh century onward」とあり、後には「that would fundamentally reshape the religious and cultural landscape of Central Asia」と続く。空所には、イスラム教が東方に広がる過程で何が起きたかを示す句が入る必要がある。イスラム教が貿易と宗教的な接触を通じて影響力のネットワークを確立したという内容が文脈に合う。選択肢1が最適。', 1),
+(48, 16, 3, 'comprehension', 'According to the passage, what role did the Battle of Talas in 751 CE play in the history of technology?',
+'第4段落で「the capture of Chinese papermakers by Arab forces at the Battle of Talas in 751 CE is often cited as a pivotal, if inadvertent, moment in the global spread of paper technology（751年のタラス河畔の戦いでアラブ軍が中国の紙職人を捕らえたことは、不注意ではあるが、紙技術の世界的普及における極めて重要な瞬間としてしばしば引用される）」と述べている。選択肢2が該当する。', 2);
 
--- question_choices テーブル (各問4択)
+-- Choices for question 46
 INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
-(46, 1, 'They have directly censored journalists by restricting their access to government press conferences'),
-(46, 2, 'They have used social media to disseminate derogatory narratives that frame critical reporting as fabrication'),
-(46, 3, 'They have established their own state-controlled news networks to replace independent media'),
-(46, 4, 'They have enacted legislation restricting citizens'' access to social media platforms'),
-(47, 1, 'Such legislation cannot effectively eliminate misinformation due to the volume of online content'),
-(47, 2, 'It places an excessive financial burden on social media companies required to monitor content'),
-(47, 3, 'Its vague language may be used against legitimate journalism, causing a chilling effect of self-censorship'),
-(47, 4, 'It has failed to gain international consensus due to differing national standards of press freedom'),
-(48, 1, 'creates an environment in which powerful institutions can operate with diminished scrutiny'),
-(48, 2, 'has little measurable impact on public awareness of important issues'),
-(48, 3, 'primarily affects the quality of entertainment journalism rather than hard news'),
-(48, 4, 'encourages citizens to conduct their own independent investigations into government misconduct');
+(46, 1, 'Individual merchants typically traveled the entire length of the route to maximize profits.'),
+(46, 2, 'The Chinese government directly controlled all commercial activity along the trade routes.'),
+(46, 3, 'Goods were transferred through a chain of intermediaries rather than carried by a single trader.'),
+(46, 4, 'Silk was the only commodity that was profitable enough to justify the long journey.');
 
--- passage_words テーブル (使用した単語のマッピング)
-INSERT INTO passage_words (passage_id, word_id)
-SELECT 16, id FROM words WHERE word_number IN (13, 26, 97, 118, 147, 180, 233, 239, 330, 410, 451, 510, 516, 551, 566);
+-- Choices for question 47
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(47, 1, 'establishing networks of influence through trade and religious contact'),
+(47, 2, 'displacing Buddhism as the dominant religion throughout East Asia'),
+(47, 3, 'relying exclusively on military conquest rather than commercial exchange'),
+(47, 4, 'encountering resistance that prevented it from spreading beyond Persia');
+
+-- Choices for question 48
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(48, 1, 'It marked the deliberate transfer of papermaking knowledge from China to the Arab world.'),
+(48, 2, 'It unintentionally contributed to the westward spread of Chinese papermaking technology.'),
+(48, 3, 'It led to the destruction of Chinese papermaking techniques in Central Asia.'),
+(48, 4, 'It demonstrated that military conflicts always impede technological exchange.');
+
+-- Word associations for passage 16
+-- Words used: disseminate(97), labyrinth(480), traverse(484), treacherous(366), exquisite(106), augment(120), momentous(359), propagation(444), precursor(164), inadvertently(138), succumb(141), catalyst(53), invoke(47), lucrative(1), hub(569), impediment(385)
+INSERT INTO passage_words (passage_id, word_id) SELECT 16, id FROM words WHERE word_number IN (97, 480, 484, 366, 106, 120, 359, 444, 164, 138, 141, 53, 47, 1, 569, 385);
