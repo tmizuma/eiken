@@ -58,6 +58,7 @@ CREATE TABLE passages (
     topic TEXT NOT NULL DEFAULT '',                -- トピック (政治/科学/心理/文化 等)
     content TEXT NOT NULL,                         -- 英文本文 (500~800 words)
     content_ja TEXT NOT NULL,                      -- 英文の日本語訳
+    done INTEGER NOT NULL DEFAULT 0,              -- 完了フラグ (0: 未, 1: 済)
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 

@@ -1,9 +1,9 @@
 "use client";
 
-import { use, useState, useEffect, Fragment } from "react";
+import { use, useState, useEffect } from "react";
 import { createPortal } from "react-dom";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { renderContent } from "@/lib/render-content";
 
 type Question = {
   id: number;
@@ -13,66 +13,13 @@ type Question = {
   choices: { choice_number: number; choice_text: string }[];
 };
 
-type WordMapping = {
-  id: number;
-  word: string;
-};
-
 type PassageData = {
   id: number;
   title: string;
   content: string;
   questions: Question[];
-  words: WordMapping[];
+  words: { id: number; word: string }[];
 };
-
-function renderContent(content: string, words: WordMapping[]) {
-  const blankReplaced = content.replace(
-    /\[BLANK\]/g,
-    "\u00A0______\u00A0"
-  );
-
-  if (words.length === 0) {
-    return blankReplaced.split("\n").map((line, i) => (
-      <Fragment key={i}>
-        {i > 0 && <br />}
-        {line}
-      </Fragment>
-    ));
-  }
-
-  const sorted = [...words].sort((a, b) => b.word.length - a.word.length);
-  const pattern = new RegExp(
-    `\\b(${sorted.map((w) => w.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`,
-    "gi"
-  );
-
-  const parts = blankReplaced.split(pattern);
-
-  return parts.map((part, i) => {
-    const matched = sorted.find(
-      (w) => w.word.toLowerCase() === part.toLowerCase()
-    );
-    if (matched) {
-      return (
-        <Link
-          key={i}
-          href={`/words/${matched.id}`}
-          target="_blank"
-          className="text-blue-600 underline"
-        >
-          {part}
-        </Link>
-      );
-    }
-    return part.split("\n").map((line, j) => (
-      <Fragment key={`${i}-${j}`}>
-        {j > 0 && <br />}
-        {line}
-      </Fragment>
-    ));
-  });
-}
 
 export default function PassageQuizPage({
   params,

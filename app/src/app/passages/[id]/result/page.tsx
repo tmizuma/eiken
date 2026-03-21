@@ -1,6 +1,8 @@
-import { Fragment } from "react";
 import Link from "next/link";
 import { getDb } from "@/lib/db";
+import { renderContent } from "@/lib/render-content";
+import { stemmer } from "stemmer";
+import { DoneButton } from "./done-button";
 
 type Question = {
   id: number;
@@ -23,49 +25,6 @@ type WordMapping = {
   meaning: string;
 };
 
-function renderContentWithLinks(content: string, words: WordMapping[]) {
-  if (words.length === 0) {
-    return content.split("\n").map((line, i) => (
-      <Fragment key={i}>
-        {i > 0 && <br />}
-        {line}
-      </Fragment>
-    ));
-  }
-
-  const sorted = [...words].sort((a, b) => b.word.length - a.word.length);
-  const pattern = new RegExp(
-    `\\b(${sorted.map((w) => w.word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})\\b`,
-    "gi"
-  );
-
-  const parts = content.split(pattern);
-
-  return parts.map((part, i) => {
-    const matched = sorted.find(
-      (w) => w.word.toLowerCase() === part.toLowerCase()
-    );
-    if (matched) {
-      return (
-        <Link
-          key={i}
-          href={`/words/${matched.id}`}
-          target="_blank"
-          className="text-blue-600 underline"
-        >
-          {part}
-        </Link>
-      );
-    }
-    return part.split("\n").map((line, j) => (
-      <Fragment key={`${i}-${j}`}>
-        {j > 0 && <br />}
-        {line}
-      </Fragment>
-    ));
-  });
-}
-
 export default async function ResultPage({
   params,
   searchParams,
@@ -80,9 +39,9 @@ export default async function ResultPage({
   const db = getDb();
 
   const passage = db
-    .prepare("SELECT id, title, content, content_ja FROM passages WHERE id = ?")
+    .prepare("SELECT id, title, content, content_ja, done FROM passages WHERE id = ?")
     .get(passageId) as
-    | { id: number; title: string; content: string; content_ja: string }
+    | { id: number; title: string; content: string; content_ja: string; done: number }
     | undefined;
 
   if (!passage) {
@@ -109,11 +68,15 @@ export default async function ResultPage({
           .all(...questionIds) as Choice[])
       : [];
 
-  const words = db
-    .prepare(
-      "SELECT w.id, w.word, w.meaning FROM passage_words pw JOIN words w ON pw.word_id = w.id WHERE pw.passage_id = ?"
-    )
-    .all(passageId) as WordMapping[];
+  const allWords = db
+    .prepare("SELECT id, word, meaning FROM words")
+    .all() as WordMapping[];
+
+  // 本文中に出現する単語をstemmerで検出
+  const contentTokens = new Set(
+    (passage.content.match(/\b[a-zA-Z]+\b/g) || []).map((t) => stemmer(t.toLowerCase()))
+  );
+  const matchedWords = allWords.filter((w) => contentTokens.has(stemmer(w.word.toLowerCase())));
 
   const userAnswers: Record<number, number> = {};
   for (const q of questions) {
@@ -137,7 +100,7 @@ export default async function ResultPage({
         <section className="mb-8">
           <h2 className="text-lg font-bold text-gray-900 mb-3">英文</h2>
           <div className="text-gray-800 leading-relaxed whitespace-pre-wrap">
-            {renderContentWithLinks(passage.content, words)}
+            {renderContent(passage.content, allWords)}
           </div>
         </section>
 
@@ -190,29 +153,34 @@ export default async function ResultPage({
           </div>
         </section>
 
-        {words.length > 0 && (
+        {matchedWords.length > 0 && (
           <section className="mb-8">
             <h2 className="text-lg font-bold text-gray-900 mb-3">
-              この長文で使用されている単語一覧
+              この長文で使用されている単語一覧 ({matchedWords.length} 語)
             </h2>
-            <div className="flex flex-wrap gap-2">
-              {words.map((w) => (
-                <Link
-                  key={w.id}
-                  href={`/words/${w.id}`}
-                  target="_blank"
-                  className="text-blue-600 underline text-sm"
-                >
-                  {w.word} ({w.meaning})
-                </Link>
+            <ul className="list-disc list-inside space-y-1">
+              {matchedWords.map((w) => (
+                <li key={w.id} className="text-sm">
+                  <Link
+                    href={`/words/${w.id}`}
+                    target="_blank"
+                    className="text-blue-600 hover:underline"
+                  >
+                    {w.word}
+                  </Link>
+                  <span className="text-gray-500 ml-2">{w.meaning}</span>
+                </li>
               ))}
-            </div>
+            </ul>
           </section>
         )}
 
-        <Link href="/passages" className="text-blue-600 hover:underline">
-          一覧に戻る
-        </Link>
+        <div className="flex items-center gap-4">
+          <DoneButton passageId={passage.id} initialDone={passage.done} />
+          <Link href="/passages" className="text-blue-600 hover:underline">
+            一覧に戻る
+          </Link>
+        </div>
       </div>
     </div>
   );

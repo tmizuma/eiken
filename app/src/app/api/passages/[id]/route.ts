@@ -41,10 +41,8 @@ export async function GET(
       : [];
 
   const words = db
-    .prepare(
-      "SELECT w.id, w.word FROM passage_words pw JOIN words w ON pw.word_id = w.id WHERE pw.passage_id = ?"
-    )
-    .all(passage.id) as { id: number; word: string }[];
+    .prepare("SELECT id, word FROM words")
+    .all() as { id: number; word: string }[];
 
   const result = {
     id: passage.id,

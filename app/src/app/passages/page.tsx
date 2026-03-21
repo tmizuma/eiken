@@ -1,7 +1,8 @@
-import Link from "next/link";
-import { getDb } from "@/lib/db";
+"use client";
 
-const PER_PAGE = 50;
+import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
+import { useState, useEffect, useCallback, Suspense } from "react";
 
 const TOPIC_COLORS: Record<string, string> = {
   "政治": "bg-red-100 text-red-700 border-red-200",
@@ -31,69 +32,61 @@ const TOPIC_ACTIVE: Record<string, string> = {
   "フリー": "bg-slate-600 text-white",
 };
 
-function buildHref(page: number, topic?: string) {
-  const params = new URLSearchParams();
-  if (page > 1) params.set("page", String(page));
-  if (topic) params.set("topic", topic);
-  const qs = params.toString();
-  return qs ? `/passages?${qs}` : "/passages";
+type Passage = {
+  id: number;
+  title: string;
+  topic: string;
+  done: number;
+  created_at: string;
+  word_count: number;
+};
+
+export default function PassagesPage() {
+  return (
+    <Suspense fallback={<div className="max-w-3xl mx-auto px-4 py-8 text-gray-500">読み込み中...</div>}>
+      <PassagesContent />
+    </Suspense>
+  );
 }
 
-export default async function PassagesPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
-}) {
-  const { page: pageParam, topic: topicParam } = await searchParams;
-  const currentPage = Math.max(1, parseInt(String(pageParam ?? "1"), 10) || 1);
-  const selectedTopic = typeof topicParam === "string" ? topicParam : "";
-  const offset = (currentPage - 1) * PER_PAGE;
+function PassagesContent() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const page = Math.max(1, Number(searchParams.get("page")) || 1);
+  const selectedTopic = searchParams.get("topic") || "";
+  const doneFilter = searchParams.get("done") || "";
 
-  const db = getDb();
+  const [passages, setPassages] = useState<Passage[]>([]);
+  const [totalCount, setTotalCount] = useState(0);
+  const [topicCounts, setTopicCounts] = useState<{ topic: string; cnt: number }[]>([]);
 
-  // 全トピック一覧と件数を取得
-  const topicCounts = db
-    .prepare(
-      "SELECT topic, COUNT(*) as cnt FROM passages WHERE topic != '' GROUP BY topic ORDER BY topic"
-    )
-    .all() as { topic: string; cnt: number }[];
+  const PER_PAGE = 50;
 
-  // フィルタ適用
-  const where = selectedTopic ? "WHERE topic = ?" : "";
-  const queryParams: (string | number)[] = selectedTopic ? [selectedTopic] : [];
+  const fetchData = useCallback(async () => {
+    const params = new URLSearchParams();
+    params.set("page", String(page));
+    if (selectedTopic) params.set("topic", selectedTopic);
+    if (doneFilter) params.set("done", doneFilter);
+    const res = await fetch(`/api/passages-list?${params}`);
+    const data = await res.json();
+    setPassages(data.passages);
+    setTotalCount(data.totalCount);
+    setTopicCounts(data.topicCounts);
+  }, [page, selectedTopic, doneFilter]);
 
-  const totalCount = (
-    db
-      .prepare(`SELECT COUNT(*) as count FROM passages ${where}`)
-      .get(...queryParams) as { count: number }
-  ).count;
+  useEffect(() => {
+    fetchData();
+  }, [fetchData]);
 
-  const passages = db
-    .prepare(
-      `SELECT id, title, topic, created_at, LENGTH(content) - LENGTH(REPLACE(content, ' ', '')) + 1 as word_count FROM passages ${where} ORDER BY id DESC LIMIT ? OFFSET ?`
-    )
-    .all(...queryParams, PER_PAGE + 1, offset) as {
-    id: number;
-    title: string;
-    topic: string;
-    created_at: string;
-    word_count: number;
-  }[];
+  const totalPages = Math.max(1, Math.ceil(totalCount / PER_PAGE));
 
-  const hasNext = passages.length > PER_PAGE;
-  const items = hasNext ? passages.slice(0, PER_PAGE) : passages;
-
-  const questionCounts = new Map<number, number>();
-  if (items.length > 0) {
-    const ids = items.map((p) => p.id);
-    const rows = db
-      .prepare(
-        `SELECT passage_id, COUNT(*) as cnt FROM passage_questions WHERE passage_id IN (${ids.map(() => "?").join(",")}) GROUP BY passage_id`
-      )
-      .all(...ids) as { passage_id: number; cnt: number }[];
-    for (const r of rows) {
-      questionCounts.set(r.passage_id, r.cnt);
-    }
+  function navigate(p: number, topic?: string, done?: string) {
+    const params = new URLSearchParams();
+    if (p > 1) params.set("page", String(p));
+    if (topic) params.set("topic", topic);
+    if (done) params.set("done", done);
+    const qs = params.toString();
+    router.push(qs ? `/passages?${qs}` : "/passages");
   }
 
   return (
@@ -103,9 +96,10 @@ export default async function PassagesPage({
         <span className="text-sm text-gray-500">{totalCount} 問</span>
       </div>
 
-      <div className="flex flex-wrap gap-2 mb-6">
-        <Link
-          href="/passages"
+      {/* トピックフィルタ */}
+      <div className="flex flex-wrap gap-2 mb-3">
+        <button
+          onClick={() => navigate(1, undefined, doneFilter || undefined)}
           className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
             !selectedTopic
               ? "bg-gray-800 text-white border-gray-800"
@@ -113,11 +107,17 @@ export default async function PassagesPage({
           }`}
         >
           すべて
-        </Link>
+        </button>
         {topicCounts.map((tc) => (
-          <Link
+          <button
             key={tc.topic}
-            href={buildHref(1, tc.topic === selectedTopic ? undefined : tc.topic)}
+            onClick={() =>
+              navigate(
+                1,
+                tc.topic === selectedTopic ? undefined : tc.topic,
+                doneFilter || undefined
+              )
+            }
             className={`px-3 py-1 rounded-full text-xs font-medium border transition-colors ${
               tc.topic === selectedTopic
                 ? TOPIC_ACTIVE[tc.topic] || "bg-gray-800 text-white"
@@ -125,23 +125,57 @@ export default async function PassagesPage({
             }`}
           >
             {tc.topic} ({tc.cnt})
-          </Link>
+          </button>
         ))}
       </div>
 
-      {items.length === 0 ? (
+      {/* DONE フィルタ */}
+      <div className="flex gap-2 mb-6">
+        {[
+          { label: "全て", value: "" },
+          { label: "未完了", value: "0" },
+          { label: "DONE", value: "1" },
+        ].map((opt) => (
+          <button
+            key={opt.value}
+            onClick={() => navigate(1, selectedTopic || undefined, opt.value || undefined)}
+            className={`px-3 py-1 rounded text-xs font-medium border transition-colors ${
+              doneFilter === opt.value
+                ? "bg-gray-800 text-white border-gray-800"
+                : "bg-white text-gray-600 border-gray-300 hover:bg-gray-100"
+            }`}
+          >
+            {opt.label}
+          </button>
+        ))}
+      </div>
+
+      {passages.length === 0 ? (
         <p className="text-gray-500">データがありません。</p>
       ) : (
         <div className="space-y-3">
-          {items.map((p) => (
+          {passages.map((p) => (
             <Link
               key={p.id}
               href={`/passages/${p.id}`}
-              className="block border border-gray-200 rounded-lg p-4 hover:border-blue-400 hover:shadow-sm transition-all"
+              className={`block border rounded-lg p-4 transition-all ${
+                p.done
+                  ? "border-gray-200 bg-gray-50 opacity-60"
+                  : "border-gray-200 hover:border-blue-400 hover:shadow-sm"
+              }`}
             >
-              <div className="flex items-start justify-between gap-3">
+              <div className="flex items-start gap-3">
+                {p.done === 1 && (
+                  <span className="mt-0.5 shrink-0 w-5 h-5 rounded bg-green-500 text-white flex items-center justify-center text-xs">
+                    v
+                  </span>
+                )}
                 <div className="flex-1 min-w-0">
-                  <h2 className="font-medium text-gray-900 mb-2 truncate">
+                  <h2
+                    className={`font-medium mb-2 truncate ${
+                      p.done ? "text-gray-500 line-through" : "text-gray-900"
+                    }`}
+                  >
                     {p.title}
                   </h2>
                   <div className="flex items-center gap-3 text-xs text-gray-500">
@@ -155,13 +189,9 @@ export default async function PassagesPage({
                       </span>
                     )}
                     <span>{p.word_count} words</span>
-                    <span>{questionCounts.get(p.id) || 0} 問</span>
-                    {p.created_at && (
-                      <span>{p.created_at.slice(0, 10)}</span>
-                    )}
+                    {p.created_at && <span>{p.created_at.slice(0, 10)}</span>}
                   </div>
                 </div>
-                <span className="text-gray-400 text-sm shrink-0">&rarr;</span>
               </div>
             </Link>
           ))}
@@ -169,23 +199,23 @@ export default async function PassagesPage({
       )}
 
       <div className="flex justify-between mt-8">
-        {currentPage > 1 ? (
-          <Link
-            href={buildHref(currentPage - 1, selectedTopic || undefined)}
+        {page > 1 ? (
+          <button
+            onClick={() => navigate(page - 1, selectedTopic || undefined, doneFilter || undefined)}
             className="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-gray-100"
           >
             前のページ
-          </Link>
+          </button>
         ) : (
           <span />
         )}
-        {hasNext ? (
-          <Link
-            href={buildHref(currentPage + 1, selectedTopic || undefined)}
+        {page < totalPages ? (
+          <button
+            onClick={() => navigate(page + 1, selectedTopic || undefined, doneFilter || undefined)}
             className="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-gray-100"
           >
             次のページ
-          </Link>
+          </button>
         ) : (
           <span />
         )}

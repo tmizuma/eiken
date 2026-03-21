@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getDb } from "@/lib/db";
+import { stemmer } from "stemmer";
 import { LearnButton } from "./learn-button";
 
 interface Word {
@@ -55,11 +56,15 @@ export default async function WordDetailPage({
     )
     .all(word.id) as RelatedWord[];
 
-  const passages = db
-    .prepare(
-      "SELECT p.id, p.title, p.topic FROM passage_words pw JOIN passages p ON p.id = pw.passage_id WHERE pw.word_id = ? ORDER BY p.id"
-    )
-    .all(word.id) as RelatedPassage[];
+  const wordStem = stemmer(word.word.toLowerCase());
+  const allPassages = db
+    .prepare("SELECT id, title, topic, content FROM passages ORDER BY id")
+    .all() as (RelatedPassage & { content: string })[];
+
+  const passages = allPassages.filter((p) => {
+    const tokens = p.content.match(/\b[a-zA-Z]+\b/g) || [];
+    return tokens.some((t) => stemmer(t.toLowerCase()) === wordStem);
+  });
 
   return (
     <main className="max-w-2xl mx-auto px-4 py-8">
