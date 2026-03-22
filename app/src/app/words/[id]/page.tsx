@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import { getDb } from "@/lib/db";
 import { stemmer } from "stemmer";
 import { LearnButton } from "./learn-button";
+import { BookmarkButton } from "./bookmark-button";
 
 interface Word {
   id: number;
@@ -16,6 +17,7 @@ interface Word {
   example2_en: string;
   example2_ja: string;
   learned: number;
+  bookmarked: number;
 }
 
 interface RelatedWord {
@@ -82,7 +84,10 @@ export default async function WordDetailPage({
             No.{word.word_number}
           </p>
         </div>
-        <LearnButton wordId={word.id} initialLearned={word.learned} />
+        <div className="flex gap-2">
+          <BookmarkButton wordId={word.id} initialBookmarked={word.bookmarked} />
+          <LearnButton wordId={word.id} initialLearned={word.learned} />
+        </div>
       </div>
 
       <p className="text-lg mb-1">{word.meaning}</p>

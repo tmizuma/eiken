@@ -12,6 +12,7 @@ type Word = {
   word: string;
   meaning: string;
   learned: number;
+  bookmarked: number;
   passage_count: number;
 };
 
@@ -29,10 +30,12 @@ function WordsContent() {
   const page = Math.max(1, Number(searchParams.get("page")) || 1);
   const query = searchParams.get("q") || "";
   const hideLearnedParam = searchParams.get("hide_learned") === "1";
+  const bookmarkedParam = searchParams.get("bookmarked") === "1";
 
   const [words, setWords] = useState<Word[]>([]);
   const [totalCount, setTotalCount] = useState(0);
   const [hideLearned, setHideLearned] = useState(hideLearnedParam);
+  const [bookmarkedOnly, setBookmarkedOnly] = useState(bookmarkedParam);
   const [searchInput, setSearchInput] = useState(query);
 
   const fetchWords = useCallback(async () => {
@@ -40,11 +43,12 @@ function WordsContent() {
     params.set("page", String(page));
     if (query) params.set("q", query);
     if (hideLearned) params.set("hide_learned", "1");
+    if (bookmarkedOnly) params.set("bookmarked", "1");
     const res = await fetch(`/api/words?${params}`);
     const data = await res.json();
     setWords(data.words);
     setTotalCount(data.totalCount);
-  }, [page, query, hideLearned]);
+  }, [page, query, hideLearned, bookmarkedOnly]);
 
   useEffect(() => {
     fetchWords();
@@ -53,11 +57,12 @@ function WordsContent() {
   const totalPages = Math.max(1, Math.ceil(totalCount / PER_PAGE));
   const offset = (page - 1) * PER_PAGE;
 
-  function navigate(p: number, q: string, hl: boolean) {
+  function navigate(p: number, q: string, hl: boolean, bm: boolean = bookmarkedOnly) {
     const params = new URLSearchParams();
     if (p > 1) params.set("page", String(p));
     if (q) params.set("q", q);
     if (hl) params.set("hide_learned", "1");
+    if (bm) params.set("bookmarked", "1");
     const qs = params.toString();
     router.push(qs ? `/words?${qs}` : "/words");
   }
@@ -70,7 +75,13 @@ function WordsContent() {
   function toggleHideLearned() {
     const next = !hideLearned;
     setHideLearned(next);
-    navigate(1, query, next);
+    navigate(1, query, next, bookmarkedOnly);
+  }
+
+  function toggleBookmarkedOnly() {
+    const next = !bookmarkedOnly;
+    setBookmarkedOnly(next);
+    navigate(1, query, hideLearned, next);
   }
 
   async function toggleLearn(wordId: number) {
@@ -78,6 +89,14 @@ function WordsContent() {
     const data = await res.json();
     setWords((prev) =>
       prev.map((w) => (w.id === wordId ? { ...w, learned: data.learned } : w))
+    );
+  }
+
+  async function toggleBookmark(wordId: number) {
+    const res = await fetch(`/api/words/${wordId}/bookmark`, { method: "POST" });
+    const data = await res.json();
+    setWords((prev) =>
+      prev.map((w) => (w.id === wordId ? { ...w, bookmarked: data.bookmarked } : w))
     );
   }
 
@@ -103,15 +122,26 @@ function WordsContent() {
         </div>
       </form>
 
-      <label className="flex items-center gap-2 mb-6 text-sm text-gray-700 cursor-pointer">
-        <input
-          type="checkbox"
-          checked={hideLearned}
-          onChange={toggleHideLearned}
-          className="rounded"
-        />
-        覚えた単語を非表示
-      </label>
+      <div className="flex gap-6 mb-6">
+        <label className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={hideLearned}
+            onChange={toggleHideLearned}
+            className="rounded"
+          />
+          覚えた単語を非表示
+        </label>
+        <label className="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={bookmarkedOnly}
+            onChange={toggleBookmarkedOnly}
+            className="rounded"
+          />
+          ブックマークのみ
+        </label>
+      </div>
 
       {words.length === 0 ? (
         <p className="text-gray-500">該当する単語がありません。</p>
@@ -124,6 +154,7 @@ function WordsContent() {
                 <th className="py-2 pr-4">英単語</th>
                 <th className="py-2 pr-4">意味</th>
                 <th className="py-2 pr-4 w-16">長文</th>
+                <th className="py-2 w-10"></th>
                 <th className="py-2 w-20"></th>
               </tr>
             </thead>
@@ -154,6 +185,18 @@ function WordsContent() {
                         {w.passage_count}
                       </Link>
                     )}
+                  </td>
+                  <td className="py-2">
+                    <button
+                      onClick={() => toggleBookmark(w.id)}
+                      className={`text-base ${
+                        w.bookmarked
+                          ? "text-yellow-500"
+                          : "text-gray-300 hover:text-yellow-400"
+                      }`}
+                    >
+                      {w.bookmarked ? "\u2605" : "\u2606"}
+                    </button>
                   </td>
                   <td className="py-2">
                     <button

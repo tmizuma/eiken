@@ -20,6 +20,7 @@ CREATE TABLE words (
     example2_en TEXT NOT NULL,                     -- 例文2 (英語)
     example2_ja TEXT NOT NULL,                     -- 例文2 (日本語訳)
     learned INTEGER NOT NULL DEFAULT 0,            -- 覚えたフラグ (0: 未, 1: 済)
+    bookmarked INTEGER NOT NULL DEFAULT 0,          -- ブックマークフラグ (0: 未, 1: 済)
     created_at TEXT NOT NULL DEFAULT (datetime('now'))
 );
 
@@ -108,6 +109,7 @@ CREATE TABLE passage_words (
 CREATE INDEX idx_words_word ON words(word);
 CREATE INDEX idx_words_meaning ON words(meaning);
 CREATE INDEX idx_words_learned ON words(learned);
+CREATE INDEX idx_words_bookmarked ON words(bookmarked);
 CREATE INDEX idx_word_synonyms_word_id ON word_synonyms(word_id);
 CREATE INDEX idx_word_synonyms_synonym_word_id ON word_synonyms(synonym_word_id);
 CREATE INDEX idx_word_antonyms_word_id ON word_antonyms(word_id);

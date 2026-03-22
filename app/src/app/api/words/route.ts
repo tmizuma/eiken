@@ -7,6 +7,7 @@ export async function GET(request: Request) {
   const page = Math.max(1, Number(url.searchParams.get("page")) || 1);
   const query = url.searchParams.get("q") || "";
   const hideLearned = url.searchParams.get("hide_learned") === "1";
+  const bookmarkedOnly = url.searchParams.get("bookmarked") === "1";
   const offset = (page - 1) * PER_PAGE;
 
   const db = getDb();
@@ -21,6 +22,9 @@ export async function GET(request: Request) {
   if (hideLearned) {
     conditions.push("learned = 0");
   }
+  if (bookmarkedOnly) {
+    conditions.push("bookmarked = 1");
+  }
 
   const where = conditions.length > 0 ? `WHERE ${conditions.join(" AND ")}` : "";
 
@@ -30,7 +34,7 @@ export async function GET(request: Request) {
 
   const words = db
     .prepare(
-      `SELECT id, word_number, word, meaning, learned FROM words ${where} ORDER BY word_number LIMIT ? OFFSET ?`
+      `SELECT id, word_number, word, meaning, learned, bookmarked FROM words ${where} ORDER BY word_number LIMIT ? OFFSET ?`
     )
     .all(...params, PER_PAGE, offset) as {
     id: number;
@@ -38,6 +42,7 @@ export async function GET(request: Request) {
     word: string;
     meaning: string;
     learned: number;
+    bookmarked: number;
   }[];
 
   // 各単語の長文数を取得
