@@ -14,11 +14,3 @@ up:
 
 push:
 	git add -A && git commit -m "Update" && git push
-
-db-reset:
-	rm -f db/master.db
-	mkdir -p db
-	sqlite3 db/master.db < schema.sql
-	for f in seed/words/*.sql; do sqlite3 db/master.db < "$$f"; done
-	for f in seed/relations/*.sql; do sqlite3 db/master.db < "$$f"; done
-	for f in seed/reading_comprehension/*.sql; do sqlite3 db/master.db < "$$f"; done
