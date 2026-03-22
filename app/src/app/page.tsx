@@ -27,6 +27,15 @@ export default function Home() {
           <h2 className="text-xl font-semibold mb-2">長文問題</h2>
           <p className="text-gray-600">{passageCount.count} 問</p>
         </Link>
+        <a
+          href="http://localhost:3001"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block p-6 border border-gray-200 rounded-lg hover:border-blue-400 transition-colors"
+        >
+          <h2 className="text-xl font-semibold mb-2">英単語復習リスト</h2>
+          <p className="text-gray-600">学習ログの記録・復習管理</p>
+        </a>
       </div>
     </div>
   );

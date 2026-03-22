@@ -1,0 +1,14 @@
+{
+  "name": "word-memory",
+  "version": "1.0.0",
+  "description": "ローカル英単語復習リストアプリ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "dates:forward": "node scripts/shift-dates.js forward",
+    "dates:backward": "node scripts/shift-dates.js backward"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  }
+}
