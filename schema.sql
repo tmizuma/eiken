@@ -104,6 +104,58 @@ CREATE TABLE passage_words (
 );
 
 -- ============================================
+-- 語彙クイズ関連テーブル
+-- ============================================
+
+-- 語彙クイズセット（10問1セット）
+CREATE TABLE vocab_quizzes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    quiz_number INTEGER NOT NULL UNIQUE,        -- セット番号 (1, 2, 3, ...)
+    word_range TEXT NOT NULL DEFAULT '',         -- 単語範囲 (例: "1~600")
+    created_at TEXT NOT NULL DEFAULT (datetime('now'))
+);
+
+-- 語彙クイズの各問題（1セットにつき10問）
+CREATE TABLE vocab_questions (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    quiz_id INTEGER NOT NULL,
+    question_number INTEGER NOT NULL,            -- 問題番号 (1-10)
+    sentence TEXT NOT NULL,                      -- 空所を含む短文
+    explanation TEXT NOT NULL,                   -- 解説文
+    correct_choice INTEGER NOT NULL,             -- 正解の選択肢番号 (1-4)
+    correct_word_id INTEGER,                     -- 正解単語の words.id
+    bookmarked INTEGER NOT NULL DEFAULT 0,      -- ブックマークフラグ
+    FOREIGN KEY (quiz_id) REFERENCES vocab_quizzes(id) ON DELETE CASCADE,
+    FOREIGN KEY (correct_word_id) REFERENCES words(id),
+    UNIQUE(quiz_id, question_number),
+    CHECK(question_number BETWEEN 1 AND 10),
+    CHECK(correct_choice BETWEEN 1 AND 4)
+);
+
+-- 語彙クイズの選択肢（1問につき4択）
+CREATE TABLE vocab_question_choices (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    question_id INTEGER NOT NULL,
+    choice_number INTEGER NOT NULL,              -- 選択肢番号 (1-4)
+    choice_word TEXT NOT NULL,                   -- 選択肢の単語
+    choice_meaning TEXT NOT NULL,                -- 選択肢の単語の日本語意味
+    FOREIGN KEY (question_id) REFERENCES vocab_questions(id) ON DELETE CASCADE,
+    UNIQUE(question_id, choice_number),
+    CHECK(choice_number BETWEEN 1 AND 4)
+);
+
+-- 使用済み単語管理（同じ単語が複数クイズの正解にならないよう管理）
+CREATE TABLE vocab_used_words (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    word_id INTEGER NOT NULL UNIQUE,             -- 1単語は1回だけ正解として使用
+    quiz_id INTEGER NOT NULL,
+    question_id INTEGER NOT NULL,
+    FOREIGN KEY (word_id) REFERENCES words(id) ON DELETE CASCADE,
+    FOREIGN KEY (quiz_id) REFERENCES vocab_quizzes(id) ON DELETE CASCADE,
+    FOREIGN KEY (question_id) REFERENCES vocab_questions(id) ON DELETE CASCADE
+);
+
+-- ============================================
 -- インデックス
 -- ============================================
 
@@ -119,3 +171,7 @@ CREATE INDEX idx_passage_questions_passage_id ON passage_questions(passage_id);
 CREATE INDEX idx_question_choices_question_id ON question_choices(question_id);
 CREATE INDEX idx_passage_words_passage_id ON passage_words(passage_id);
 CREATE INDEX idx_passage_words_word_id ON passage_words(word_id);
+CREATE INDEX idx_vocab_questions_quiz_id ON vocab_questions(quiz_id);
+CREATE INDEX idx_vocab_question_choices_question_id ON vocab_question_choices(question_id);
+CREATE INDEX idx_vocab_used_words_word_id ON vocab_used_words(word_id);
+CREATE INDEX idx_vocab_questions_bookmarked ON vocab_questions(bookmarked);

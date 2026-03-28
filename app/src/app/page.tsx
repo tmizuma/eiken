@@ -6,6 +6,7 @@ export default function Home() {
   const wordCount = db.prepare("SELECT COUNT(*) as count FROM words").get() as { count: number };
   const learnedCount = db.prepare("SELECT COUNT(*) as count FROM words WHERE learned = 1").get() as { count: number };
   const passageCount = db.prepare("SELECT COUNT(*) as count FROM passages").get() as { count: number };
+  const vocabQuizCount = db.prepare("SELECT COUNT(*) as count FROM vocab_quizzes").get() as { count: number };
 
   return (
     <div className="space-y-8">
@@ -26,6 +27,13 @@ export default function Home() {
         >
           <h2 className="text-xl font-semibold mb-2">長文問題</h2>
           <p className="text-gray-600">{passageCount.count} 問</p>
+        </Link>
+        <Link
+          href="/vocab"
+          className="block p-6 border border-gray-200 rounded-lg hover:border-blue-400 transition-colors"
+        >
+          <h2 className="text-xl font-semibold mb-2">語彙問題</h2>
+          <p className="text-gray-600">{vocabQuizCount.count} セット</p>
         </Link>
         <a
           href="http://localhost:3001"

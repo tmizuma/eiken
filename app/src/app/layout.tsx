@@ -40,6 +40,9 @@ export default function RootLayout({
             <Link href="/passages" className="text-blue-600 hover:underline">
               長文問題
             </Link>
+            <Link href="/vocab" className="text-blue-600 hover:underline">
+              語彙問題
+            </Link>
             <div id="header-timer" className="ml-auto" />
           </nav>
         </header>
