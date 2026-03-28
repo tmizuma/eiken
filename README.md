@@ -42,6 +42,19 @@ http://localhost:3000
 | フリー | トピック自由。未使用単語を優先 |
 | おまかせ | ランダム |
 
+## 長文の質問・解説
+
+```
+/passage-tutor パッセージ番号 or URL
+```
+
+例: `/passage-tutor 30` または `/passage-tutor http://localhost:3000/passages/30`
+
+パッセージを読み込んだ後、自由に質問できます:
+- 「第2段落の "Despite the ostensible..." の文構造を教えて」
+- 「問2でなぜ選択肢3が正解？」
+- 「この段落を要約して」
+
 ## 技術スタック
 
 Next.js (App Router) / SQLite (better-sqlite3) / Tailwind CSS

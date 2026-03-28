@@ -31,12 +31,13 @@ export async function GET(request: Request) {
 
   const passages = db
     .prepare(
-      `SELECT id, title, topic, done, created_at, LENGTH(content) - LENGTH(REPLACE(content, ' ', '')) + 1 as word_count FROM passages ${where} ORDER BY id DESC LIMIT ? OFFSET ?`
+      `SELECT id, title, topic, word_range, done, created_at, LENGTH(content) - LENGTH(REPLACE(content, ' ', '')) + 1 as word_count FROM passages ${where} ORDER BY id DESC LIMIT ? OFFSET ?`
     )
     .all(...params, PER_PAGE, offset) as {
     id: number;
     title: string;
     topic: string;
+    word_range: string;
     done: number;
     created_at: string;
     word_count: number;

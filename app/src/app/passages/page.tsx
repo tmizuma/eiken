@@ -36,6 +36,7 @@ type Passage = {
   id: number;
   title: string;
   topic: string;
+  word_range: string;
   done: number;
   created_at: string;
   word_count: number;
@@ -190,6 +191,7 @@ function PassagesContent() {
                     )}
                     <span>{p.word_count} words</span>
                     {p.created_at && <span>{p.created_at.slice(0, 10)}</span>}
+                    {p.word_range && <span>単語 {p.word_range}</span>}
                   </div>
                 </div>
               </div>
