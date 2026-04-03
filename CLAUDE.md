@@ -23,6 +23,7 @@ make up           # 両アプリ同時起動 (app:3000 + word-memory:3001)
 make dev          # app のみ起動
 make word-memory  # word-memory のみ起動
 make build        # app ビルド
+make build-amplify # Amplify Hosting用の静的エクスポートビルド
 make db-reset     # DB を schema.sql + seed から再構築
 ```
 
@@ -49,5 +50,15 @@ make db-reset     # DB を schema.sql + seed から再構築
 
 - **単語一覧・詳細**: 2000語の閲覧、検索、覚えた/ブックマーク管理
 - **長文問題**: 英文読解 + 3問のクイズ (内容理解2問 + 空所補充1問)
+- **語彙問題**: 4択の語彙クイズ、ブックマーク機能付き
 - **ステマー連携**: stemmer で単語の変形を検出し、長文中の該当単語をハイライト
 - **英単語復習リスト**: 学習ログの記録、間隔反復 (1/3/7/14/30日) による復習管理
+
+## デプロイ (Amplify Hosting)
+
+- **静的エクスポート**: `STATIC_EXPORT=true` で `output: 'export'` が有効化され、全ページが静的HTMLとして生成される
+- **ビルド時のAPI除外**: 静的エクスポート時は `api/` ディレクトリを一時退避してビルド (API routes は static export 非対応のため)
+- **DB接続**: `DB_READONLY=true` で読み取り専用モード、`DB_PATH` でDBパス指定可能
+- **設定ファイル**: `amplify.yml` (ビルド設定)、成果物は `app/out/`
+- **ページ構成**: Server Component (DB直接アクセス) + Client Component (UI/interactivity) の分割パターン
+- **ローカルとの両立**: ローカル dev は従来通り SSR + API routes で動作
