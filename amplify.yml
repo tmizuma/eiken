@@ -3,9 +3,11 @@ frontend:
   phases:
     preBuild:
       commands:
+        # この cd app は以降の全フェーズで維持される
         - cd app && npm ci
     build:
       commands:
+        # preBuild で cd app 済みなので、既に app/ 内にいる
         - DB_READONLY=true npm run build
         - |
           STANDALONE_APP_DIR=$(find .next/standalone -name "server.js" -not -path "*/node_modules/*" -exec dirname {} \;)
@@ -15,9 +17,10 @@ frontend:
           cp -r .next/static "$STANDALONE_APP_DIR/.next/static"
           test -d public && cp -r public "$STANDALONE_APP_DIR/public" || true
   artifacts:
-    baseDirectory: .next/standalone
+    # baseDirectory はリポジトリルート基準
+    baseDirectory: app/.next/standalone
     files:
       - "**/*"
   cache:
     paths:
-      - node_modules/**/*
+      - app/node_modules/**/*
