@@ -3,22 +3,18 @@ frontend:
   phases:
     preBuild:
       commands:
-        # この cd app は以降の全フェーズで維持される
         - cd app && npm ci
     build:
       commands:
-        # preBuild で cd app 済みなので、既に app/ 内にいる
         - DB_READONLY=true npm run build
+        # standalone内にDBをコピー (Amplifyが standalone をデプロイに使う)
         - |
           STANDALONE_APP_DIR=$(find .next/standalone -name "server.js" -not -path "*/node_modules/*" -exec dirname {} \;)
           STANDALONE_ROOT=$(cd "$STANDALONE_APP_DIR/.." && pwd)
           mkdir -p "$STANDALONE_ROOT/db"
           cp ../db/master.db "$STANDALONE_ROOT/db/master.db"
-          cp -r .next/static "$STANDALONE_APP_DIR/.next/static"
-          test -d public && cp -r public "$STANDALONE_APP_DIR/public" || true
   artifacts:
-    # baseDirectory はリポジトリルート基準
-    baseDirectory: app/.next/standalone
+    baseDirectory: app/.next
     files:
       - "**/*"
   cache:
