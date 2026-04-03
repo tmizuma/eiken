@@ -1,0 +1,24 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - cd app && npm ci
+    build:
+      commands:
+        - cd app && DB_READONLY=true npm run build
+        # standalone内のserver.jsの位置を基準にファイルを配置
+        - |
+          STANDALONE_APP_DIR=$(find app/.next/standalone -name "server.js" -not -path "*/node_modules/*" -exec dirname {} \;)
+          STANDALONE_ROOT=$(cd "$STANDALONE_APP_DIR/.." && pwd)
+          mkdir -p "$STANDALONE_ROOT/db"
+          cp db/master.db "$STANDALONE_ROOT/db/master.db"
+          cp -r app/.next/static "$STANDALONE_APP_DIR/.next/static"
+          test -d app/public && cp -r app/public "$STANDALONE_APP_DIR/public" || true
+  artifacts:
+    baseDirectory: app/.next/standalone
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - app/node_modules/**/*
