@@ -6,15 +6,12 @@ frontend:
         - cd app && npm ci
     build:
       commands:
-        - DB_READONLY=true npm run build
-        # standalone内にDBをコピー (Amplifyが standalone をデプロイに使う)
-        - |
-          STANDALONE_APP_DIR=$(find .next/standalone -name "server.js" -not -path "*/node_modules/*" -exec dirname {} \;)
-          STANDALONE_ROOT=$(cd "$STANDALONE_APP_DIR/.." && pwd)
-          mkdir -p "$STANDALONE_ROOT/db"
-          cp ../db/master.db "$STANDALONE_ROOT/db/master.db"
+        # 静的エクスポート時はAPI routeを除外
+        - mv src/app/api src/app/_api_disabled
+        - STATIC_EXPORT=true npm run build
+        - mv src/app/_api_disabled src/app/api
   artifacts:
-    baseDirectory: app/.next
+    baseDirectory: app/out
     files:
       - "**/*"
   cache:

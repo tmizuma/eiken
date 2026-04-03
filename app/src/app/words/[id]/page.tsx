@@ -32,6 +32,12 @@ interface RelatedPassage {
   topic: string;
 }
 
+export async function generateStaticParams() {
+  const db = getDb();
+  const rows = db.prepare("SELECT id FROM words").all() as { id: number }[];
+  return rows.map((r) => ({ id: String(r.id) }));
+}
+
 export default async function WordDetailPage({
   params,
 }: {
