@@ -6,9 +6,8 @@ frontend:
         - cd app && npm ci
     build:
       commands:
-        - cd app && DB_READONLY=true npm run build
+        - DB_READONLY=true npm run build
         - |
-          cd app
           STANDALONE_APP_DIR=$(find .next/standalone -name "server.js" -not -path "*/node_modules/*" -exec dirname {} \;)
           STANDALONE_ROOT=$(cd "$STANDALONE_APP_DIR/.." && pwd)
           mkdir -p "$STANDALONE_ROOT/db"
@@ -16,9 +15,9 @@ frontend:
           cp -r .next/static "$STANDALONE_APP_DIR/.next/static"
           test -d public && cp -r public "$STANDALONE_APP_DIR/public" || true
   artifacts:
-    baseDirectory: app/.next/standalone
+    baseDirectory: .next/standalone
     files:
       - "**/*"
   cache:
     paths:
-      - app/node_modules/**/*
+      - node_modules/**/*
