@@ -1,9 +1,9 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
-import { renderContent } from "@/lib/render-content";
+import { renderContent, getSelectedTokenIndices } from "@/lib/render-content";
 
 type Question = {
   id: number;
@@ -27,6 +27,15 @@ export function PassageQuizContent({ data }: { data: PassageData }) {
   const [quizOpen, setQuizOpen] = useState(true);
   const [elapsed, setElapsed] = useState(0);
   const [timerEl, setTimerEl] = useState<HTMLElement | null>(null);
+  const passageRef = useRef<HTMLDivElement>(null);
+  const undoStack = useRef<Set<number>[]>([]);
+  const [highlights, setHighlights] = useState<Set<number>>(() => {
+    if (typeof window !== "undefined") {
+      const saved = sessionStorage.getItem(`highlights-${data.id}`);
+      return saved ? new Set(JSON.parse(saved)) : new Set();
+    }
+    return new Set();
+  });
 
   useEffect(() => {
     setTimerEl(document.getElementById("header-timer"));
@@ -36,6 +45,48 @@ export function PassageQuizContent({ data }: { data: PassageData }) {
     const timer = setInterval(() => setElapsed((s) => s + 1), 1000);
     return () => clearInterval(timer);
   }, []);
+
+  const saveHighlights = useCallback((next: Set<number>) => {
+    sessionStorage.setItem(`highlights-${data.id}`, JSON.stringify([...next]));
+  }, [data.id]);
+
+  // Ctrl+Z / Cmd+Z でアンドゥ
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "z") {
+        e.preventDefault();
+        const prev = undoStack.current.pop();
+        if (prev !== undefined) {
+          setHighlights(prev);
+          saveHighlights(prev);
+        }
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [saveHighlights]);
+
+  function removeHighlightGroup(indices: number[]) {
+    setHighlights((prev) => {
+      undoStack.current.push(new Set(prev));
+      const next = new Set(prev);
+      for (const idx of indices) next.delete(idx);
+      saveHighlights(next);
+      return next;
+    });
+  }
+
+  function handleMouseUp() {
+    const indices = getSelectedTokenIndices(passageRef.current);
+    if (indices.length === 0) return;
+    setHighlights((prev) => {
+      undoStack.current.push(new Set(prev));
+      const next = new Set(prev);
+      for (const idx of indices) next.add(idx);
+      saveHighlights(next);
+      return next;
+    });
+  }
 
   const allAnswered = data.questions.every((q) => answers[q.question_number] !== undefined);
 
@@ -53,8 +104,12 @@ export function PassageQuizContent({ data }: { data: PassageData }) {
 
         <div className="flex flex-col lg:flex-row gap-8">
           <div className={quizOpen ? "lg:w-1/2" : "w-full"}>
-            <div className="prose prose-sm max-w-none text-gray-800 leading-relaxed">
-              {renderContent(data.content, data.words)}
+            <div
+              ref={passageRef}
+              onMouseUp={handleMouseUp}
+              className="prose prose-sm max-w-none text-gray-800 leading-relaxed"
+            >
+              {renderContent(data.content, data.words, { highlights, onRemoveGroup: removeHighlightGroup })}
             </div>
             <p className="mt-4 text-xs text-gray-400 text-right">
               ({data.content.split(/\s+/).filter(Boolean).length} words)

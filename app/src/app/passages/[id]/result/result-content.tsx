@@ -2,8 +2,8 @@
 
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { Suspense } from "react";
-import { renderContent } from "@/lib/render-content";
+import { Suspense, useState, useEffect, useRef, useCallback } from "react";
+import { renderContent, getSelectedTokenIndices } from "@/lib/render-content";
 import { DoneButton } from "./done-button";
 
 type Question = {
@@ -37,6 +37,56 @@ export function ResultContent({ data }: { data: PassageResultData }) {
 
 function ResultInner({ data }: { data: PassageResultData }) {
   const searchParams = useSearchParams();
+  const passageRef = useRef<HTMLDivElement>(null);
+  const undoStack = useRef<Set<number>[]>([]);
+  const [highlights, setHighlights] = useState<Set<number>>(new Set());
+
+  useEffect(() => {
+    const saved = sessionStorage.getItem(`highlights-${data.id}`);
+    if (saved) setHighlights(new Set(JSON.parse(saved)));
+  }, [data.id]);
+
+  const saveHighlights = useCallback((next: Set<number>) => {
+    sessionStorage.setItem(`highlights-${data.id}`, JSON.stringify([...next]));
+  }, [data.id]);
+
+  // Ctrl+Z / Cmd+Z でアンドゥ
+  useEffect(() => {
+    function handleKeyDown(e: KeyboardEvent) {
+      if ((e.ctrlKey || e.metaKey) && e.key === "z") {
+        e.preventDefault();
+        const prev = undoStack.current.pop();
+        if (prev !== undefined) {
+          setHighlights(prev);
+          saveHighlights(prev);
+        }
+      }
+    }
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [saveHighlights]);
+
+  function removeHighlightGroup(indices: number[]) {
+    setHighlights((prev) => {
+      undoStack.current.push(new Set(prev));
+      const next = new Set(prev);
+      for (const idx of indices) next.delete(idx);
+      saveHighlights(next);
+      return next;
+    });
+  }
+
+  function handleMouseUp() {
+    const indices = getSelectedTokenIndices(passageRef.current);
+    if (indices.length === 0) return;
+    setHighlights((prev) => {
+      undoStack.current.push(new Set(prev));
+      const next = new Set(prev);
+      for (const idx of indices) next.add(idx);
+      saveHighlights(next);
+      return next;
+    });
+  }
 
   const userAnswers: Record<number, number> = {};
   for (const q of data.questions) {
@@ -59,8 +109,12 @@ function ResultInner({ data }: { data: PassageResultData }) {
 
         <section className="mb-8">
           <h2 className="text-lg font-bold text-gray-900 mb-3">英文</h2>
-          <div className="text-gray-800 leading-relaxed whitespace-pre-wrap">
-            {renderContent(data.content, data.allWords)}
+          <div
+            ref={passageRef}
+            onMouseUp={handleMouseUp}
+            className="text-gray-800 leading-relaxed whitespace-pre-wrap"
+          >
+            {renderContent(data.content, data.allWords, { highlights, onRemoveGroup: removeHighlightGroup })}
           </div>
         </section>
 
