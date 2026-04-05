@@ -1,0 +1,54 @@
+INSERT INTO passages (id, title, topic, word_range, content, content_ja) VALUES (63, 'The Streaming Wars and the Transformation of Global Entertainment', 'メディア', '1~700',
+'When Netflix began its transition from a DVD-by-mail service to a streaming platform in 2007, few industry observers could have pondered the full magnitude of the disruption that was brewing. Within a decade, the company had amassed more than two hundred million subscribers worldwide and had fundamentally altered the terrain on which the entertainment industry competed. Legacy studios that had once savored their dominance—Disney, Warner Bros., Paramount, NBCUniversal—found themselves compelled to launch their own streaming services in a frantic bid to recoup audiences and advertising revenue that were plummeting away from traditional television. The resulting conflict, widely dubbed the "streaming wars," has reshaped not only how content is distributed but also what kind of content gets produced, who produces it, and on whose terms the cultural narratives of the twenty-first century are being written.
+
+The economics of the streaming model represent the antithesis of the scarcity-based paradigm that governed twentieth-century broadcasting. Where television networks once allotted limited prime-time slots to programs that had survived arduous pilot seasons and committee reviews, streaming platforms can release entire seasons simultaneously, bypassing traditional gatekeepers and dangling an almost limitless catalog before consumers. This glut of content—sometimes referred to as "peak TV," a term coined by the FX Networks executive John Landgraf in 2015—has had paradoxical effects. On the one hand, it has created unprecedented opportunities for diverse voices: shows produced in South Korea, Spain, India, and Nigeria have found global audiences that would have been inconceivable under the old broadcast regime. On the other hand, the sheer volume of material has made it increasingly arduous for any single production to capture sustained public attention, and many high-quality series languish in algorithmic obscurity, their potential negated by the very abundance that surrounds them.
+
+The financial toll of the streaming wars has been staggering. By 2022, the major platforms were collectively spending more than fifty billion dollars annually on content production, a figure that prompted analysts to wager that the model was unsustainable in its current form. Netflix, the sector''s most eminent player, saw its stock price plummet by more than seventy percent between November 2021 and May 2022 after reporting its first subscriber loss in over a decade. The company''s subsequent pivot toward an advertisement-supported tier and a crackdown on password sharing reflected a broader industry reckoning: the initial premise that subscribers would tolerate perpetual price increases in exchange for an ever-expanding library was proving to be a misnomer. Consumers, it transpired, were not willing to indulge in an unlimited number of monthly subscriptions, and the phenomenon of "subscription fatigue" began to afflict every major platform.
+
+The geopolitical dimensions of the streaming wars deserve scrutiny as well. As American platforms have expanded into foreign markets, they have encountered regulatory frameworks reminiscent of protectionist trade policies. The European Union''s Audiovisual Media Services Directive, for example, includes stipulations requiring that at least thirty percent of content on streaming platforms operating within the bloc be of European origin. France has gone further, imposing levies that compel platforms to invest a fixed percentage of their French revenue into local production. These provisions are not merely bureaucratic hassles; they reflect a genuine and turbulent debate about cultural sovereignty in an era of digital globalization. Critics of the regulations argue that they stunt creative freedom and [BLANK], while proponents counter that without such measures, the relentless economic power of Silicon Valley would depreciate local storytelling traditions into irrelevance.
+
+The consolidation that has followed the initial phase of the streaming wars suggests that the industry is veering toward an oligopolistic equilibrium. Smaller services have been disbanded or absorbed—CNN+ survived barely a month before being liquidated in 2022—and even mid-tier platforms like Paramount+ and Peacock have struggled to achieve profitability. The interim victors appear to be those with the deepest content libraries and the greatest capacity to capitalize on synergies across film, television, theme parks, and merchandise: Disney and Netflix, above all. Yet the terrain remains volatile, and the entry of technology giants such as Apple and Amazon—companies for which streaming is merely one fixture in a vast commercial constellation—has introduced new variables that even the most eminent analysts find difficult to forecast.
+
+In retrospect, the streaming wars may come to typify a broader pattern in the history of media disruption: an initial period of exuberant expansion, followed by a painful contraction, and ultimately a new equilibrium that bears little resemblance to what came before. What remains to be seen is whether the survivors of this consolidation will hone a model that serves both shareholders and the global public, or whether the pursuit of scale will produce a cultural landscape that is vast in quantity but impoverished in the diversity and depth that audiences deserve.',
+
+'2007年にNetflixがDVD郵送サービスからストリーミングプラットフォームへの移行を開始した時、業界の観察者たちのうち、醸成されつつあった混乱の全容を熟考できた者はほとんどいなかった。10年以内に同社は世界中で2億人以上の加入者を集め、エンターテインメント産業が競争する地形を根本的に変えた。かつてその支配を味わっていたレガシースタジオ——ディズニー、ワーナー・ブラザース、パラマウント、NBCユニバーサル——は、従来のテレビから急落している視聴者と広告収入を取り戻すべく、必死の入札で独自のストリーミングサービスを立ち上げることを余儀なくされた。広く「ストリーミング戦争」と呼ばれるこの対立は、コンテンツの配信方法だけでなく、どのようなコンテンツが制作されるか、誰がそれを制作するか、そして21世紀の文化的物語が誰の条件で書かれているかをも再形成した。
+
+ストリーミングモデルの経済学は、20世紀の放送を支配していた希少性ベースのパラダイムの対極を表している。テレビネットワークがかつて、厳しいパイロットシーズンと委員会審査を生き延びた番組に限られたプライムタイム枠を割り当てていたのに対し、ストリーミングプラットフォームはシーズン全体を同時にリリースでき、従来のゲートキーパーを迂回して、消費者の前にほぼ無限のカタログをぶら下げることができる。このコンテンツの供給過剰——2015年にFXネットワークスの幹部ジョン・ランドグラフが作った用語「ピークTV」と呼ばれることもある——は、逆説的な効果をもたらした。一方では、多様な声に前例のない機会を創出した。韓国、スペイン、インド、ナイジェリアで制作された番組が、旧来の放送体制下では考えられなかったグローバルな視聴者を獲得した。他方では、素材の膨大な量により、いかなる単一の制作物も持続的な公衆の注目を集めることがますます困難になり、多くの高品質シリーズがアルゴリズムの無名の中で埋もれ、その潜在力は周囲の豊富さそのものによって否定されている。
+
+ストリーミング戦争の財政的犠牲は驚異的であった。2022年までに、主要プラットフォームは合計で年間500億ドル以上をコンテンツ制作に費やしており、この数字はアナリストたちにこのモデルが現在の形では持続不可能であると賭けさせた。この部門で最も著名なプレーヤーであるNetflixは、10年以上ぶりの加入者減少を報告した後、2021年11月から2022年5月にかけて株価が70パーセント以上急落した。同社のその後の広告支援型ティアへの方向転換とパスワード共有への取り締まりは、より広範な業界の見直しを反映していた。加入者が絶えず拡大するライブラリと引き換えに永続的な値上げに耐えるという当初の前提は、誤称であることが判明しつつあった。消費者は無制限の月額サブスクリプションにふけることを望んでいないことが明らかになり、「サブスクリプション疲れ」の現象がすべての主要プラットフォームを苦しめ始めた。
+
+ストリーミング戦争の地政学的側面も精査に値する。アメリカのプラットフォームが海外市場に拡大するにつれ、保護主義的な貿易政策を彷彿とさせる規制枠組みに遭遇した。例えば、欧州連合の視聴覚メディアサービス指令には、域内で運営されるストリーミングプラットフォームのコンテンツの少なくとも30パーセントが欧州産であることを要求する規定が含まれている。フランスはさらに踏み込み、プラットフォームにフランスでの収益の一定割合をローカル制作に投資することを強制する課徴金を課している。これらの規定は単なる官僚的な面倒ではない。それらはデジタルグローバル化の時代における文化主権についての真摯で激動の議論を反映している。規制の批判者たちは、それが創造的自由を阻害し、グローバルな視聴者が自分自身の好みに基づいて自由にコンテンツを選択する能力を損なうと主張する一方で、支持者たちはそのような措置なしにはシリコンバレーの容赦ない経済力がローカルなストーリーテリングの伝統を無意味なレベルにまで価値を下げるだろうと反論する。
+
+ストリーミング戦争の初期段階に続いた統合は、業界が寡占的な均衡に向かっていることを示唆している。小規模なサービスは解散または吸収され——CNN+は2022年に清算される前にわずか1か月しか存続しなかった——パラマウント+やピーコックのような中堅プラットフォームでさえ収益性の達成に苦戦してきた。暫定的な勝者は、最も深いコンテンツライブラリと、映画、テレビ、テーマパーク、商品販売にわたるシナジーを活用する最大の能力を持つ者——とりわけディズニーとNetflix——であるように見える。しかし地形は依然として不安定であり、AppleやAmazonのようなテクノロジー大手——ストリーミングが広大な商業的星座における一つの固定具に過ぎない企業——の参入は、最も著名なアナリストでさえ予測が困難な新たな変数を導入した。
+
+振り返ってみると、ストリーミング戦争はメディア破壊の歴史におけるより広範なパターンを象徴するようになるかもしれない。すなわち、熱狂的な拡大の初期段階、痛みを伴う収縮、そして最終的にはそれ以前のものとほとんど似ていない新たな均衡である。この統合の生存者たちが株主とグローバルな公衆の双方に役立つモデルを磨くか、あるいは規模の追求が量は膨大でも視聴者が値する多様性と深さにおいては貧しい文化的景観を生み出すかは、まだ見届けるべきことである。');
+
+INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
+(187, 63, 1, 'comprehension',
+ 'What paradoxical effects has the abundance of streaming content produced, according to the passage?',
+ '第2段落で、コンテンツの供給過剰が一方では多様な声に前例のない機会を創出し（韓国、スペイン等の番組がグローバルな視聴者を獲得）、他方では素材の膨大な量により単一の制作物が持続的な注目を集めることが困難になり、多くの高品質シリーズがアルゴリズムの無名の中で埋もれていると述べられている。選択肢4がこの内容に合致する。',
+ 4),
+(188, 63, 2, 'comprehension',
+ 'What does the passage indicate about European regulatory responses to American streaming platforms?',
+ '第4段落で、EUの視聴覚メディアサービス指令がストリーミングプラットフォームのコンテンツの少なくとも30%が欧州産であることを要求し、フランスはさらに踏み込んで課徴金を課していること、これらがデジタルグローバル化時代の文化主権についての議論を反映していると述べられている。選択肢2がこの内容に合致する。',
+ 2),
+(189, 63, 3, 'fill_in_blank',
+ 'Choose the best option to fill in the blank [BLANK] in the passage.',
+ '空所は第4段落にあり、規制の批判者たちの主張の一部として入る。文脈から、規制が創造的自由を阻害するという批判と並列で、グローバルな視聴者が自由にコンテンツを選択する能力を損なうという内容が最も適切。選択肢3が正解。',
+ 3);
+
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(187, 1, 'It has driven production costs down dramatically, enabling independent filmmakers to compete on equal footing with major studios.'),
+(187, 2, 'It has led to a complete homogenization of global entertainment, with local content being entirely replaced by American productions.'),
+(187, 3, 'It has caused audiences to abandon streaming platforms in favor of returning to traditional broadcast television.'),
+(187, 4, 'It has opened unprecedented opportunities for diverse international voices while simultaneously making it harder for individual productions to capture sustained public attention.'),
+(188, 1, 'European regulators have unanimously welcomed American streaming platforms as a means of promoting cultural exchange and economic integration.'),
+(188, 2, 'The EU and individual member states have imposed content quotas and investment requirements to protect local production, reflecting concerns about cultural sovereignty in the digital age.'),
+(188, 3, 'European regulations have focused exclusively on taxing streaming platforms'' profits rather than influencing the type of content they offer.'),
+(188, 4, 'European countries have formed a unified streaming platform to compete directly with American services, rendering regulatory measures unnecessary.'),
+(189, 1, 'erode the financial viability of streaming platforms by imposing excessive compliance costs'),
+(189, 2, 'discourage international co-productions that might otherwise enrich both local and global content libraries'),
+(189, 3, 'undermine the ability of global audiences to choose content freely based on their own preferences'),
+(189, 4, 'force platforms to prioritize quantity over quality in their European content offerings');
+
+INSERT INTO passage_words (passage_id, word_id) SELECT 63, id FROM words WHERE word_number IN (636, 632, 631, 217, 610, 616, 613, 669, 622, 608, 532, 220, 548, 520, 478, 619, 628, 476, 527, 615, 649, 661, 339, 621, 680, 675, 617, 648, 251, 173, 667, 668, 652, 503, 656, 625, 215);
