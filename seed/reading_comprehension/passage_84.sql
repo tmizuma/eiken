@@ -1,0 +1,50 @@
+INSERT INTO passages (id, title, topic, word_range, content, content_ja) VALUES (84, 'The Reinvention of Public Festivals in the Modern Era', '文化', '1~1000',
+'For millennia, public festivals have served as the connective tissue of communal life, marking seasonal transitions, honoring deities, and reinforcing the social bonds that hold societies together. From the somber Día de los Muertos processions in Mexico to the boisterous Carnival celebrations that permeate cities across Brazil, festivals have traditionally functioned as moments of collective respite—intervals in which the mundane rhythms of daily existence give way to spectacle, ritual, and revelry. Yet in the twenty-first century, the very nature of the public festival is undergoing a profound transformation, one driven by the converging forces of urbanization, digital technology, and an increasingly globalized economy. What was once an organic expression of local identity is, in many cases, being revamped into a carefully curated product designed to entice tourists and generate revenue.
+
+The metamorphosis of Edinburgh''s Fringe Festival offers a compelling case study. When it was inaugurated in 1947, the Fringe was a modest, impromptu affair—eight theater companies that had not been invited to the official Edinburgh International Festival simply showed up and performed in whatever venues they could procure. This spirit of artistic defiance epitomized the festival''s original rationale: to democratize the performing arts by providing a platform for voices that mainstream institutions had ostracized. By the 2020s, however, the Fringe had swelled into the world''s largest arts festival, hosting over 3,500 shows across more than 300 venues, and generating an estimated 400 million pounds for the Scottish economy. Critics argue that this exponential growth has come at a cost. Rents in Edinburgh now skyrocket during August, displacing residents and rendering participation prohibitively expensive for the independent artists the festival was created to champion. The festival''s original egalitarian ethos, they contend, has been subverted by commercial imperatives that relegate artistic merit to a secondary consideration.
+
+Similar dynamics have transpired across the globe. Japan''s Awa Odori festival in Tokushima, one of the country''s most venerable summer traditions dating back over four centuries, has become embroiled in disputes over municipal control and corporate sponsorship. In 2018, the city government''s attempt to impose stringent safety regulations on the festival''s climactic dance parade provoked a backlash from traditionalist dance troupes, who viewed the measures as a pretext for consolidating bureaucratic clout over an event that had historically been governed by grassroots community organizations. The ensuing turmoil—marked by rival parades, legal challenges, and acrimonious public exchanges—laid bare the tensions inherent in attempting to reconcile a tradition''s communal origins with the demands of modern urban governance and risk management.
+
+The digital revolution has introduced yet another layer of complexity. Social media platforms have proven remarkably adroit at amplifying festival culture, transforming local events into global spectacles that can garner millions of views overnight. The Holi festival of colors, rooted in Hindu religious tradition, has spawned countless derivative events worldwide—from Color Run races to electronic music festivals that appropriate the visual aesthetic of colored powder while eschewing any connection to the festival''s spiritual roots. For staunch adherents of tradition, such appropriation constitutes a flagrant affront; for others, it represents the natural and inevitable [BLANK]. The ubiquitous smartphone has also altered the phenomenology of festival participation itself: attendees increasingly experience events through their screens, prioritizing the curation of shareable content over immersive engagement with the festivities.
+
+Nevertheless, it would be erroneous to conclude that commercialization and digitization have irreparably hollowed out the cultural substance of public festivals. In many communities, the influx of external interest has served as a catalyst for introspection and renewal. Indigenous peoples in Australia, for example, have leveraged festivals such as the Garma Festival in Arnhem Land not merely as tourist attractions but as pivotal platforms for cultural education, political advocacy, and intergenerational knowledge transfer. The festival fosters dialogue between Aboriginal elders and younger generations, helping to fortify traditions that might otherwise dwindle in the face of urbanization and assimilation pressures. Such examples suggest that the future of the public festival lies not in nostalgic attempts to restore some idyllic past but in the capacity of communities to harness the tools of modernity—technology, marketing, legal frameworks—in service of cultural continuity rather than its erosion.',
+
+'何千年もの間、公共の祭りは共同体生活の結合組織として機能し、季節の移行を示し、神々を讃え、社会を結びつける社会的絆を強化してきた。メキシコの荘厳な死者の日の行列からブラジル全土の都市に浸透する騒々しいカーニバルの祝典まで、祭りは伝統的に集団的休息の瞬間——日常の平凡なリズムが見世物、儀式、歓楽に道を譲る間隔——として機能してきた。しかし21世紀において、公共の祭りの本質そのものが深遠な変容を遂げている。それは都市化、デジタル技術、そしてますますグローバル化する経済という収束する力によって推進されている。かつては地域のアイデンティティの有機的な表現であったものが、多くの場合、観光客を誘い込み収益を生み出すために設計された慎重にキュレーションされた製品へと刷新されている。
+
+エディンバラ・フリンジ・フェスティバルの変容は説得力のある事例研究を提供する。1947年に開始されたとき、フリンジは控えめで即興的な催し事だった——公式のエディンバラ国際フェスティバルに招待されなかった8つの劇団が単に現れ、調達できるあらゆる会場で公演した。この芸術的反抗の精神は、祭りの元来の根拠を典型的に表していた：主流の機関が排斥してきた声にプラットフォームを提供することで舞台芸術を民主化すること。しかし2020年代までにフリンジは世界最大の芸術祭に膨れ上がり、300以上の会場で3,500以上のショーを開催し、スコットランド経済に推定4億ポンドをもたらしていた。批評家たちはこの指数関数的な成長には代償が伴ったと主張する。エディンバラの家賃は8月になると急騰し、住民を追い出し、祭りが擁護するために作られた独立系アーティストの参加を法外に高価にしている。祭りの元来の平等主義的精神は、芸術的価値を二次的な考慮事項に格下げする商業的要請によって覆されたと彼らは主張する。
+
+同様のダイナミクスが世界中で生じてきた。徳島県の阿波おどり祭りは、4世紀以上の歴史を持つ日本で最も由緒ある夏の伝統の一つであるが、自治体の管理と企業スポンサーシップをめぐる論争に巻き込まれている。2018年、市政府が祭りのクライマックスである踊りパレードに厳格な安全規制を課そうとした試みは、伝統主義者の踊り連からの反発を引き起こした。彼らはその措置を、歴史的に草の根のコミュニティ組織によって統治されてきたイベントに対する官僚的影響力を強化するための口実と見なした。その後の混乱——対抗パレード、法的異議申し立て、とげとげしい公的やり取りに彩られた——は、伝統の共同体的起源と現代の都市統治およびリスク管理の要求を調和させようとすることに内在する緊張を露呈させた。
+
+デジタル革命はさらに別の複雑さの層をもたらした。ソーシャルメディアプラットフォームは祭り文化を増幅させることに驚くほど巧みであることが証明され、地域のイベントを一夜にして数百万回の視聴を獲得できるグローバルな見世物に変えた。ヒンドゥー教の宗教的伝統に根ざしたホーリー祭は、カラーランレースから色粉の視覚的美学を流用しながら祭りの精神的な根とのつながりを避ける電子音楽フェスティバルまで、世界中で無数の派生イベントを生み出した。伝統の忠実な支持者にとって、このような流用は目に余る侮辱を構成する。他の人々にとっては、それは文化的慣行が新たな文脈で採用される際の自然で不可避な進化を表している。どこにでもあるスマートフォンは祭り参加の現象学自体も変えた：参加者はますますスクリーンを通してイベントを体験し、祝祭への没入的な関わりよりも共有可能なコンテンツのキュレーションを優先するようになっている。
+
+それにもかかわらず、商業化とデジタル化が公共の祭りの文化的実質を修復不能に空洞化させたと結論づけるのは誤りであろう。多くのコミュニティでは、外部からの関心の流入が内省と刷新の触媒として機能してきた。例えばオーストラリアの先住民は、アーネムランドのガルマ・フェスティバルなどの祭りを単なる観光名所としてではなく、文化教育、政治的アドボカシー、世代間の知識移転のための極めて重要なプラットフォームとして活用してきた。この祭りはアボリジニの長老と若い世代の間の対話を促進し、都市化と同化の圧力に直面して衰退する可能性のある伝統を強化するのに役立っている。このような例は、公共の祭りの将来が牧歌的な過去を回復するノスタルジックな試みにではなく、文化の継続性のために——その浸食のためではなく——モダニティのツール（テクノロジー、マーケティング、法的枠組み）を活用するコミュニティの能力にあることを示唆している。');
+
+INSERT INTO passage_questions (id, passage_id, question_number, question_type, question_text, explanation, correct_choice) VALUES
+(250, 84, 1, 'comprehension',
+ 'What point does the passage make about Edinburgh''s Fringe Festival and its evolution over time?',
+ '第2段落で、フリンジ・フェスティバルが元来は主流に排斥されたアーティストのための民主的なプラットフォームだったが、巨大化に伴い商業的要請が芸術的価値を二次的なものにし、独立系アーティストの参加を困難にしたと述べられている。選択肢4が正解。',
+ 4),
+(251, 84, 2, 'comprehension',
+ 'According to the passage, what role have festivals played for indigenous communities in Australia?',
+ '第5段落で、オーストラリアの先住民がガルマ・フェスティバルを文化教育、政治的アドボカシー、世代間の知識移転のプラットフォームとして活用し、伝統の強化に役立てていると述べられている。選択肢3が正解。',
+ 3),
+(252, 84, 3, 'fill_in_blank',
+ 'Choose the best option to fill in the blank [BLANK] in the passage.',
+ '空所は第4段落にあり、ホーリー祭の派生イベントについて、伝統の支持者はそれを侮辱と見なすが、他の人々にとっては「自然で不可避な____」であるという文脈。文化的慣行が新たな文脈で採用される際の進化という内容が最適。選択肢2が正解。',
+ 2);
+
+INSERT INTO question_choices (question_id, choice_number, choice_text) VALUES
+(250, 1, 'The festival has maintained its original egalitarian character by implementing strict caps on the number of participating companies and ticket prices.'),
+(250, 2, 'Scottish authorities have successfully balanced commercial growth with artistic integrity by subsidizing independent performers through festival revenues.'),
+(250, 3, 'The Fringe has inspired dozens of replica festivals in other European cities, each of which has managed to avoid the commercialization that plagued the original.'),
+(250, 4, 'Its transformation from a grassroots artistic rebellion into a massive commercial enterprise has raised concerns that commercial pressures now overshadow the original mission of democratizing the arts.'),
+(251, 1, 'Indigenous communities have used festivals primarily as a means of generating tourism revenue to fund the construction of cultural museums and heritage centers.'),
+(251, 2, 'Festivals have enabled indigenous groups to secure formal government recognition of their land rights through high-profile public demonstrations.'),
+(251, 3, 'Festivals have served as platforms for cultural education, political advocacy, and intergenerational knowledge transfer, helping to strengthen traditions facing modern pressures.'),
+(251, 4, 'Indigenous leaders have used festivals to negotiate exclusive broadcasting rights with international media companies, ensuring global visibility for their cultural practices.'),
+(252, 1, 'dilution of religious meaning that ultimately renders the original tradition unrecognizable to its practitioners'),
+(252, 2, 'evolution of cultural practices as they are adopted and reinterpreted in new contexts'),
+(252, 3, 'consequence of inadequate copyright protections for traditional cultural expressions in international law'),
+(252, 4, 'strategy employed by corporations to monetize cultural symbols without acknowledging their historical origins');
+
+INSERT INTO passage_words (passage_id, word_id) SELECT 84, id FROM words WHERE word_number IN (252, 452, 246, 33, 140, 969, 370, 29, 62, 168, 41, 237, 241, 476, 885, 354, 55, 244, 27, 193, 176, 269, 96, 598, 90, 72, 577, 232, 170, 53, 603, 65, 105, 998, 871);
