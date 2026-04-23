@@ -71,6 +71,11 @@ function parseMarkdown(text) {
     .replace(/(<li>.*<\/li>)/s, "<ul>$1</ul>")
     .replace(/\n/g, "<br>");
 
+  // ブロック要素の前後に紛れ込んだ <br> を除去（リスト項目間・見出し周辺の過剰な空行対策）
+  text = text
+    .replace(/<br>\s*<(ul|li|h[1-3]|pre)/g, "<$1")
+    .replace(/<\/(ul|li|h[1-3]|pre)>\s*<br>/g, "</$1>");
+
   // コードブロックを復元
   codeBlocks.forEach((block, i) => {
     text = text.replace(`__CODE_BLOCK_${i}__`, block);
@@ -363,7 +368,9 @@ function layout(title, content, opts = {}) {
       color: oklch(0.85 0.02 260);
       font-size: 13px; line-height: 1.5;
     }
-    .log-content ul { margin: 0; padding-left: 20px; }
+    .log-content ul { margin: 8px 0; padding-left: 22px; }
+    .log-content li { margin: 2px 0; line-height: 1.6; }
+    .log-content br + br { display: none; }
 
     .star {
       width: 28px; height: 28px; border-radius: 50%;
