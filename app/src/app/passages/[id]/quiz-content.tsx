@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useCallback } from "react";
 import { createPortal } from "react-dom";
 import { useRouter } from "next/navigation";
 import { renderContent, getSelectedTokenIndices } from "@/lib/render-content";
+import { topicId } from "@/lib/topics";
 
 type Question = {
   id: number;
@@ -17,6 +18,8 @@ type PassageData = {
   id: number;
   title: string;
   content: string;
+  topic: string;
+  word_range: string;
   questions: Question[];
   words: { id: number; word: string }[];
 };
@@ -46,11 +49,16 @@ export function PassageQuizContent({ data }: { data: PassageData }) {
     return () => clearInterval(timer);
   }, []);
 
-  const saveHighlights = useCallback((next: Set<number>) => {
-    sessionStorage.setItem(`highlights-${data.id}`, JSON.stringify([...next]));
-  }, [data.id]);
+  const saveHighlights = useCallback(
+    (next: Set<number>) => {
+      sessionStorage.setItem(
+        `highlights-${data.id}`,
+        JSON.stringify([...next])
+      );
+    },
+    [data.id]
+  );
 
-  // Ctrl+Z / Cmd+Z でアンドゥ
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
       if ((e.ctrlKey || e.metaKey) && e.key === "z") {
@@ -88,7 +96,12 @@ export function PassageQuizContent({ data }: { data: PassageData }) {
     });
   }
 
-  const allAnswered = data.questions.every((q) => answers[q.question_number] !== undefined);
+  const allAnswered = data.questions.every(
+    (q) => answers[q.question_number] !== undefined
+  );
+  const answeredCount = data.questions.filter(
+    (q) => answers[q.question_number] !== undefined
+  ).length;
 
   function handleSubmit() {
     const qs = data.questions
@@ -97,90 +110,131 @@ export function PassageQuizContent({ data }: { data: PassageData }) {
     router.push(`/passages/${data.id}/result?${qs}`);
   }
 
+  const wordCount = data.content.split(/\s+/).filter(Boolean).length;
+
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-7xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold text-gray-900 mb-6">{data.title}</h1>
-
-        <div className="flex flex-col lg:flex-row gap-8">
-          <div className={quizOpen ? "lg:w-1/2" : "w-full"}>
-            <div
-              ref={passageRef}
-              onMouseUp={handleMouseUp}
-              className="prose prose-sm max-w-none text-gray-800 leading-relaxed"
-            >
-              {renderContent(data.content, data.words, { highlights, onRemoveGroup: removeHighlightGroup })}
-            </div>
-            <p className="mt-4 text-xs text-gray-400 text-right">
-              ({data.content.split(/\s+/).filter(Boolean).length} words)
-            </p>
-          </div>
-
-          <div className={quizOpen ? "lg:w-1/2" : "lg:w-auto"}>
-            <button
-              onClick={() => setQuizOpen(!quizOpen)}
-              className={`mb-4 text-sm font-medium border rounded px-3 py-1 hover:bg-gray-50 ${
-                quizOpen
-                  ? "text-gray-700 border-gray-300"
-                  : "text-blue-600 border-blue-300 bg-blue-50"
-              }`}
-            >
-              {quizOpen ? "クイズを閉じる" : "クイズを開く"}
-            </button>
-
-            {quizOpen && (
-              <div className="space-y-6">
-                {data.questions.map((q) => (
-                  <div key={q.question_number} className="border border-gray-200 rounded p-4">
-                    <p className="font-medium text-gray-900 mb-3">
-                      Q{q.question_number}. {q.question_text}
-                    </p>
-                    <div className="space-y-2">
-                      {q.choices.map((c) => (
-                        <label
-                          key={c.choice_number}
-                          className="flex items-center gap-2 cursor-pointer text-gray-700"
-                        >
-                          <input
-                            type="radio"
-                            name={`q${q.question_number}`}
-                            checked={answers[q.question_number] === c.choice_number}
-                            onChange={() =>
-                              setAnswers((prev) => ({
-                                ...prev,
-                                [q.question_number]: c.choice_number,
-                              }))
-                            }
-                          />
-                          {c.choice_number}. {c.choice_text}
-                        </label>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-
-                <button
-                  onClick={handleSubmit}
-                  disabled={!allAnswered}
-                  className={`w-full py-2 rounded font-medium text-white ${
-                    allAnswered
-                      ? "bg-blue-600 hover:bg-blue-700"
-                      : "bg-gray-300 cursor-not-allowed"
-                  }`}
-                >
-                  回答する
-                </button>
-              </div>
-            )}
-          </div>
+    <div className="quiz-layout">
+      <div className="quiz-reading">
+        <div className="passage-head">
+          {data.topic && (
+            <span className="topic" data-t={topicId(data.topic)}>
+              {data.topic}
+            </span>
+          )}
+          {data.word_range && (
+            <span className="pc-meta" style={{ marginLeft: 8 }}>
+              単語 {data.word_range}
+            </span>
+          )}
+        </div>
+        <h1 className="passage-title">{data.title}</h1>
+        <div ref={passageRef} onMouseUp={handleMouseUp} className="prose">
+          {renderContent(data.content, data.words, {
+            highlights,
+            onRemoveGroup: removeHighlightGroup,
+          })}
+        </div>
+        <div
+          style={{
+            textAlign: "right",
+            color: "var(--ink-4)",
+            fontFamily: "var(--f-mono)",
+            fontSize: 12,
+            marginTop: 24,
+          }}
+        >
+          ({wordCount} words)
         </div>
       </div>
+
+      <aside className={`quiz-side ${quizOpen ? "open" : "closed"}`}>
+        <div className="quiz-side-head">
+          <div>
+            <div className="eyebrow">
+              QUIZ · {data.questions.length} QUESTIONS
+            </div>
+            <h2
+              style={{
+                fontFamily: "var(--f-serif)",
+                fontSize: 20,
+                margin: "6px 0 0",
+                fontWeight: 500,
+              }}
+            >
+              読解設問
+            </h2>
+          </div>
+          <button
+            className="btn ghost"
+            onClick={() => setQuizOpen((v) => !v)}
+          >
+            {quizOpen ? "閉じる" : "開く"}
+          </button>
+        </div>
+
+        {quizOpen && (
+          <>
+            {data.questions.map((q) => (
+              <div key={q.question_number} className="q-card">
+                <div className="q-num">Q{q.question_number}</div>
+                <div className="q-text">{q.question_text}</div>
+                <div className="q-choices">
+                  {q.choices.map((c) => {
+                    const on =
+                      answers[q.question_number] === c.choice_number;
+                    return (
+                      <label
+                        key={c.choice_number}
+                        className={`q-choice ${on ? "on" : ""}`}
+                      >
+                        <input
+                          type="radio"
+                          name={`q${q.question_number}`}
+                          checked={on}
+                          onChange={() =>
+                            setAnswers((prev) => ({
+                              ...prev,
+                              [q.question_number]: c.choice_number,
+                            }))
+                          }
+                        />
+                        <span className="q-num-small">{c.choice_number}</span>
+                        <span className="q-choice-text">{c.choice_text}</span>
+                      </label>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
+            <button
+              className="btn accent q-submit"
+              disabled={!allAnswered}
+              onClick={handleSubmit}
+            >
+              回答する
+            </button>
+            {!allAnswered && (
+              <div
+                style={{
+                  color: "var(--ink-4)",
+                  fontSize: 12,
+                  textAlign: "center",
+                  marginTop: 8,
+                }}
+              >
+                {answeredCount}/{data.questions.length} 回答済み
+              </div>
+            )}
+          </>
+        )}
+      </aside>
+
       {timerEl &&
         createPortal(
-          <span className="text-lg font-mono font-bold text-blue-600 tabular-nums">
+          <>
             {String(Math.floor(elapsed / 60)).padStart(2, "0")}:
             {String(elapsed % 60).padStart(2, "0")}
-          </span>,
+          </>,
           timerEl
         )}
     </div>

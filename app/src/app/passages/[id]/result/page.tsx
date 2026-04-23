@@ -40,15 +40,24 @@ export default async function ResultPage({
   const db = getDb();
 
   const passage = db
-    .prepare("SELECT id, title, content, content_ja, done FROM passages WHERE id = ?")
+    .prepare(
+      "SELECT id, title, content, content_ja, done, topic FROM passages WHERE id = ?"
+    )
     .get(passageId) as
-    | { id: number; title: string; content: string; content_ja: string; done: number }
+    | {
+        id: number;
+        title: string;
+        content: string;
+        content_ja: string;
+        done: number;
+        topic: string;
+      }
     | undefined;
 
   if (!passage) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
-        <p className="text-gray-500">データが見つかりません。</p>
+      <div className="empty">
+        <p>データが見つかりません。</p>
       </div>
     );
   }
@@ -84,6 +93,7 @@ export default async function ResultPage({
     content: passage.content,
     content_ja: passage.content_ja,
     done: passage.done,
+    topic: passage.topic,
     questions: questions.map((q) => ({
       ...q,
       choices: choices.filter((c) => c.question_id === q.id),

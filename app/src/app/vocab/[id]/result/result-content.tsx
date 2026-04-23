@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
 import { QuestionBookmarkButton } from "./bookmark-button";
+import { IconBack } from "@/lib/icons";
 
 type Choice = {
   question_id: number;
@@ -30,7 +31,7 @@ type VocabResultData = {
 
 export function VocabResultContent({ data }: { data: VocabResultData }) {
   return (
-    <Suspense fallback={<div className="min-h-screen bg-white flex items-center justify-center"><p className="text-gray-500">読み込み中...</p></div>}>
+    <Suspense fallback={<div className="empty">読み込み中…</div>}>
       <VocabResultInner data={data} />
     </Suspense>
   );
@@ -48,90 +49,94 @@ function VocabResultInner({ data }: { data: VocabResultData }) {
   const correctCount = data.questions.filter(
     (q) => userAnswers[q.question_number] === q.correct_choice
   ).length;
+  const rate = correctCount / data.questions.length;
+
+  const bigColor =
+    rate >= 0.8 ? "var(--ok)" : rate >= 0.5 ? "var(--ink)" : "var(--bad)";
 
   return (
-    <div className="min-h-screen bg-white">
-      <div className="max-w-2xl mx-auto px-4 py-8">
-        <h1 className="text-2xl font-bold text-gray-900 mb-2">
-          セット {data.quiz.quiz_number} - 結果
-        </h1>
-        {data.quiz.word_range && (
-          <p className="text-sm text-gray-500 mb-6">単語 {data.quiz.word_range}</p>
-        )}
+    <>
+      <Link href="/vocab" className="back-link">
+        <span className="ico">
+          <IconBack />
+        </span>{" "}
+        語彙問題一覧に戻る
+      </Link>
 
-        {/* 正解数 */}
-        <div className="text-center py-8 mb-8 border border-gray-200 rounded-lg">
-          <p className="text-5xl font-bold mb-2">
-            <span className={correctCount >= data.questions.length / 2 ? "text-green-600" : "text-red-600"}>
-              {correctCount}
-            </span>
-            <span className="text-gray-400 text-3xl"> / {data.questions.length}</span>
-          </p>
-          <p className="text-gray-500">正解</p>
+      <div className="vr-score-section">
+        <div className="eyebrow" style={{ marginBottom: 8 }}>
+          SET {String(data.quiz.quiz_number).padStart(2, "0")}
+          {data.quiz.word_range ? ` · 単語 ${data.quiz.word_range}` : ""}
         </div>
-
-        {/* 全問振り返り */}
-        <section className="mb-8">
-          <h2 className="text-lg font-bold text-gray-900 mb-4">振り返り</h2>
-          <div className="space-y-6">
-            {data.questions.map((q) => {
-              const userAnswer = userAnswers[q.question_number];
-              const isCorrect = userAnswer === q.correct_choice;
-
-              return (
-                <div key={q.question_number} className="border border-gray-200 rounded-lg p-4">
-                  <div className="flex items-center justify-between mb-3">
-                    <div className="flex items-center gap-2">
-                      <span
-                        className={`inline-flex items-center justify-center w-6 h-6 rounded-full text-xs font-bold text-white ${
-                          isCorrect ? "bg-green-500" : "bg-red-500"
-                        }`}
-                      >
-                        {isCorrect ? "O" : "X"}
-                      </span>
-                      <span className="font-medium text-gray-900">Q{q.question_number}</span>
-                    </div>
-                    <QuestionBookmarkButton questionId={q.id} initialBookmarked={q.bookmarked} />
-                  </div>
-
-                  <p className="text-gray-800 mb-3">{q.sentence}</p>
-
-                  <div className="space-y-1 mb-3">
-                    {q.choices.map((c) => {
-                      let style = "text-gray-700";
-                      if (c.choice_number === q.correct_choice) {
-                        style = "text-green-700 font-semibold";
-                      } else if (c.choice_number === userAnswer && !isCorrect) {
-                        style = "text-red-600";
-                      }
-                      return (
-                        <p key={c.choice_number} className={style}>
-                          {c.choice_number}. {c.choice_word}
-                          <span className="text-gray-500 ml-2 text-sm">{c.choice_meaning}</span>
-                          {c.choice_number === q.correct_choice && (
-                            <span className="ml-2 text-green-600 text-sm">[正解]</span>
-                          )}
-                          {c.choice_number === userAnswer && c.choice_number !== q.correct_choice && (
-                            <span className="ml-2 text-red-500 text-sm">[あなたの回答]</span>
-                          )}
-                        </p>
-                      );
-                    })}
-                  </div>
-
-                  <p className="text-sm text-gray-600">{q.explanation}</p>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-
-        <div className="flex items-center gap-4">
-          <Link href="/vocab" className="text-blue-600 hover:underline">
-            一覧に戻る
-          </Link>
+        <h1 className="vr-title">結果</h1>
+        <div className="vr-big">
+          <span className="vr-correct" style={{ color: bigColor }}>
+            {correctCount}
+          </span>
+          <span className="vr-divider">/</span>
+          <span className="vr-total">{data.questions.length}</span>
         </div>
+        <div className="vr-label">正解 ({Math.round(rate * 100)}%)</div>
       </div>
-    </div>
+
+      <div className="word-section">
+        <span className="eyebrow">振り返り</span>
+        {data.questions.map((q) => {
+          const userAnswer = userAnswers[q.question_number];
+          const isCorrect = userAnswer === q.correct_choice;
+          return (
+            <div key={q.question_number} className="expl-card">
+              <div className="expl-head">
+                <span className={`q-mark ${isCorrect ? "ok" : "bad"}`}>
+                  {isCorrect ? "O" : "X"}
+                </span>
+                <span className="q-label">Q{q.question_number}</span>
+                <div style={{ marginLeft: "auto" }}>
+                  <QuestionBookmarkButton
+                    questionId={q.id}
+                    initialBookmarked={q.bookmarked}
+                  />
+                </div>
+              </div>
+              <div className="vr-stem">{q.sentence}</div>
+              <div className="expl-choices">
+                {q.choices.map((c) => {
+                  const isCorrectChoice =
+                    q.correct_choice === c.choice_number;
+                  const isUser = userAnswer === c.choice_number;
+                  let cls = "expl-choice";
+                  if (isCorrectChoice) cls += " correct";
+                  else if (isUser) cls += " user-wrong";
+                  else cls += " neutral";
+                  return (
+                    <div key={c.choice_number} className={cls}>
+                      <span className="ec-num">{c.choice_number}</span>
+                      <span className="ec-text">
+                        <strong>{c.choice_word}</strong> — {c.choice_meaning}
+                      </span>
+                      {isCorrectChoice && (
+                        <span className="ec-tag">[正解]</span>
+                      )}
+                      {isUser && !isCorrectChoice && (
+                        <span className="ec-tag bad">[あなたの回答]</span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+              {q.explanation && (
+                <div className="expl-text">{q.explanation}</div>
+              )}
+            </div>
+          );
+        })}
+      </div>
+
+      <div className="result-footer">
+        <Link href="/vocab" className="btn primary">
+          一覧に戻る
+        </Link>
+      </div>
+    </>
   );
 }

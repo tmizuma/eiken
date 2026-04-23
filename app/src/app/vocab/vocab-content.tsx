@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
 import { useMemo, Suspense } from "react";
+import { IconArrowL, IconArrowR, IconStarFill } from "@/lib/icons";
 
 type Quiz = {
   id: number;
@@ -13,13 +14,13 @@ type Quiz = {
 
 export function VocabContent({ allQuizzes }: { allQuizzes: Quiz[] }) {
   return (
-    <Suspense fallback={<div className="max-w-3xl mx-auto px-4 py-8 text-gray-500">読み込み中...</div>}>
+    <Suspense fallback={<div className="empty">読み込み中…</div>}>
       <VocabInner allQuizzes={allQuizzes} />
     </Suspense>
   );
 }
 
-const PER_PAGE = 50;
+const PER_PAGE = 40;
 
 function VocabInner({ allQuizzes }: { allQuizzes: Quiz[] }) {
   const searchParams = useSearchParams();
@@ -29,7 +30,10 @@ function VocabInner({ allQuizzes }: { allQuizzes: Quiz[] }) {
   const totalCount = allQuizzes.length;
   const totalPages = Math.max(1, Math.ceil(totalCount / PER_PAGE));
   const offset = (page - 1) * PER_PAGE;
-  const quizzes = useMemo(() => allQuizzes.slice(offset, offset + PER_PAGE), [allQuizzes, offset]);
+  const quizzes = useMemo(
+    () => allQuizzes.slice(offset, offset + PER_PAGE),
+    [allQuizzes, offset]
+  );
 
   function navigate(p: number) {
     const params = new URLSearchParams();
@@ -39,69 +43,101 @@ function VocabInner({ allQuizzes }: { allQuizzes: Quiz[] }) {
   }
 
   return (
-    <div className="max-w-3xl mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-4">
-        <h1 className="text-2xl font-bold text-gray-900">語彙問題一覧</h1>
-        <span className="text-sm text-gray-500">{totalCount} セット</span>
+    <>
+      <div className="page-head">
+        <div>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>
+            QUIZ
+          </div>
+          <h1 className="page-title sm">語彙問題一覧</h1>
+        </div>
+        <div className="page-head-meta">{totalCount} セット</div>
       </div>
 
-      {/* ブックマーク問題へのリンク */}
-      <div className="mb-6">
-        <Link
-          href="/vocab/bookmarked"
-          className="inline-flex items-center gap-2 px-4 py-2 border border-yellow-300 bg-yellow-50 text-yellow-700 rounded-lg text-sm font-medium hover:bg-yellow-100 transition-colors"
+      <Link href="/vocab/bookmarked" className="bm-banner">
+        <span
+          style={{
+            color: "var(--bookmark)",
+            display: "inline-flex",
+            width: 16,
+            height: 16,
+          }}
         >
-          <span>★</span>
-          ブックマーク済みの問題を見る
-        </Link>
-      </div>
+          <IconStarFill />
+        </span>
+        <span>ブックマーク済みの問題を見る</span>
+        <span
+          style={{
+            marginLeft: "auto",
+            color: "var(--ink-3)",
+            fontSize: 13,
+            display: "inline-flex",
+            alignItems: "center",
+            gap: 8,
+          }}
+        >
+          <span className="ico">
+            <IconArrowR />
+          </span>
+        </span>
+      </Link>
 
       {quizzes.length === 0 ? (
-        <p className="text-gray-500">データがありません。</p>
+        <div className="empty">
+          <p>データがありません。</p>
+        </div>
       ) : (
-        <div className="space-y-3">
+        <div className="vocab-grid">
           {quizzes.map((q) => (
-            <Link
-              key={q.id}
-              href={`/vocab/${q.id}`}
-              className="block border rounded-lg p-4 transition-all border-gray-200 hover:border-blue-400 hover:shadow-sm"
-            >
-              <div className="flex-1 min-w-0">
-                <h2 className="font-medium text-gray-900 mb-1">
-                  セット {q.quiz_number}
-                </h2>
-                <div className="flex items-center gap-3 text-xs text-gray-500">
-                  {q.word_range && <span>単語 {q.word_range}</span>}
-                  {q.created_at && <span>{q.created_at.slice(0, 10)}</span>}
-                </div>
+            <Link key={q.id} href={`/vocab/${q.id}`} className="card hov vocab-card">
+              <div className="vc-num">
+                {String(q.quiz_number).padStart(2, "0")}
               </div>
+              <div className="vc-body">
+                <div className="vc-title">セット {q.quiz_number}</div>
+                {q.word_range && (
+                  <div className="vc-range">単語 {q.word_range}</div>
+                )}
+                {q.created_at && (
+                  <div className="vc-created">{q.created_at.slice(0, 10)}</div>
+                )}
+              </div>
+              <span className="ico">
+                <IconArrowR />
+              </span>
             </Link>
           ))}
         </div>
       )}
 
-      <div className="flex justify-between mt-8">
-        {page > 1 ? (
+      <div className="pager">
+        <div>
+          全 {totalCount.toLocaleString()}セット中 {offset + 1}–
+          {Math.min(offset + PER_PAGE, totalCount)}
+        </div>
+        <div className="pager-btns">
           <button
+            className="btn ghost"
+            disabled={page <= 1}
             onClick={() => navigate(page - 1)}
-            className="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-gray-100"
           >
+            <span className="ico">
+              <IconArrowL />
+            </span>{" "}
             前のページ
           </button>
-        ) : (
-          <span />
-        )}
-        {page < totalPages ? (
           <button
+            className="btn ghost"
+            disabled={page >= totalPages}
             onClick={() => navigate(page + 1)}
-            className="px-3 py-1 border border-gray-300 rounded text-sm hover:bg-gray-100"
           >
-            次のページ
+            次のページ{" "}
+            <span className="ico">
+              <IconArrowR />
+            </span>
           </button>
-        ) : (
-          <span />
-        )}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

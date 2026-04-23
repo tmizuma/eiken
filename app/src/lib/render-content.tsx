@@ -109,7 +109,7 @@ export function renderContent(
       const matched = stemMap.get(stem);
       const isHighlighted = highlightOpts?.highlights.has(i);
 
-      const hlClass = isHighlighted ? "bg-yellow-200" : "";
+      const hlClass = isHighlighted ? "hl" : "";
 
       const handleClick = isHighlighted && highlightOpts
         ? (e: React.MouseEvent) => {
@@ -127,7 +127,7 @@ export function renderContent(
             <Link
               href={`/words/${matched.id}`}
               target="_blank"
-              className="text-blue-600 underline"
+              style={{ color: "var(--accent)", textDecoration: "underline", textUnderlineOffset: 3 }}
               onClick={isHighlighted ? (e) => e.preventDefault() : undefined}
             >
               {token}
@@ -149,7 +149,7 @@ export function renderContent(
     return token.split("\n").map((line, j) => (
       <Fragment key={`${i}-${j}`}>
         {j > 0 && <br />}
-        {isFilled && j === 0 ? <span className="bg-yellow-200">{line}</span> : line}
+        {isFilled && j === 0 ? <span className="hl">{line}</span> : line}
       </Fragment>
     ));
   });

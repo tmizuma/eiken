@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { IconBack, IconStarFill } from "@/lib/icons";
 
 type Choice = {
   question_id: number;
@@ -24,109 +25,140 @@ type BookmarkedQuestion = {
   choices: Choice[];
 };
 
-function renderSentence(sentence: string, correctWord?: string) {
-  if (correctWord) {
-    return sentence.replace(/\(\s*\)/, correctWord);
-  }
-  return sentence;
+function renderStem(sentence: string, blankWord?: string) {
+  const parts = sentence.split(/(\(\s*\))/);
+  return parts.map((part, i) =>
+    /^\(\s*\)$/.test(part) ? (
+      <span key={i} className="blank">
+        {blankWord || "    "}
+      </span>
+    ) : (
+      <span key={i}>{part}</span>
+    )
+  );
 }
 
-export function BookmarkedContent({ allQuestions }: { allQuestions: BookmarkedQuestion[] }) {
+export function BookmarkedContent({
+  allQuestions,
+}: {
+  allQuestions: BookmarkedQuestion[];
+}) {
   const [questions, setQuestions] = useState(allQuestions);
-  const [showAnswer, setShowAnswer] = useState<Record<number, boolean>>({});
+  const [openMap, setOpenMap] = useState<Record<number, boolean>>({});
 
   const totalCount = questions.length;
 
   async function toggleBookmark(questionId: number) {
-    await fetch(`/api/vocab-questions/${questionId}/bookmark`, { method: "POST" });
+    await fetch(`/api/vocab-questions/${questionId}/bookmark`, {
+      method: "POST",
+    });
     setQuestions((prev) => prev.filter((q) => q.id !== questionId));
   }
 
-  function toggleAnswer(questionId: number) {
-    setShowAnswer((prev) => ({ ...prev, [questionId]: !prev[questionId] }));
+  function toggle(id: number) {
+    setOpenMap((prev) => ({ ...prev, [id]: !prev[id] }));
   }
 
   return (
-    <div className="max-w-2xl mx-auto px-4 py-8">
-      <div className="flex items-center justify-between mb-6">
-        <h1 className="text-2xl font-bold text-gray-900">ブックマーク済みの問題</h1>
-        <span className="text-sm text-gray-500">{totalCount} 問</span>
+    <>
+      <div className="page-head">
+        <div>
+          <div className="eyebrow" style={{ marginBottom: 8 }}>
+            QUIZ · BOOKMARKS
+          </div>
+          <h1 className="page-title sm">ブックマーク済みの問題</h1>
+        </div>
+        <div className="page-head-meta">{totalCount} 問</div>
       </div>
 
-      {questions.length === 0 ? (
-        <div className="text-center py-12">
-          <p className="text-gray-500 mb-4">ブックマークされた問題はありません。</p>
-          <Link href="/vocab" className="text-blue-600 hover:underline">
+      {totalCount === 0 ? (
+        <div className="empty">
+          <p>ブックマークされた問題はありません。</p>
+          <Link href="/vocab" className="btn ghost">
             語彙問題一覧に戻る
           </Link>
         </div>
       ) : (
-        <div className="space-y-4">
+        <div className="bm-list">
           {questions.map((q) => {
-            const correctChoice = q.choices.find((c) => c.choice_number === q.correct_choice);
-            const isRevealed = showAnswer[q.id];
-
+            const isOpen = !!openMap[q.id];
+            const correct = q.choices.find(
+              (c) => c.choice_number === q.correct_choice
+            );
             return (
-              <div key={q.id} className="border border-gray-200 rounded-lg p-4">
-                <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs text-gray-400">
-                    セット {q.quiz_number} - Q{q.question_number} (単語 {q.word_range})
-                  </span>
+              <div key={q.id} className="card bm-item">
+                <div className="bm-head">
+                  <div className="bm-ref">
+                    <span className="bm-set">セット {q.quiz_number}</span>
+                    <span className="bm-sep">·</span>
+                    <span className="bm-q">Q{q.question_number}</span>
+                    {q.word_range && (
+                      <>
+                        <span className="bm-sep">·</span>
+                        <span className="bm-range">単語 {q.word_range}</span>
+                      </>
+                    )}
+                  </div>
                   <button
+                    className="btn ghost bm-remove"
                     onClick={() => toggleBookmark(q.id)}
-                    className="px-2 py-0.5 rounded text-xs font-medium border bg-yellow-100 text-yellow-700 border-yellow-300 hover:bg-yellow-200 transition-colors"
                   >
-                    ★ 解除
+                    <span
+                      style={{
+                        color: "var(--bookmark)",
+                        width: 14,
+                        height: 14,
+                        display: "inline-flex",
+                      }}
+                    >
+                      <IconStarFill />
+                    </span>
+                    解除
                   </button>
                 </div>
-
-                <p className="text-gray-800 mb-3">
-                  {isRevealed
-                    ? renderSentence(q.sentence, correctChoice?.choice_word)
-                    : q.sentence}
-                </p>
-
-                {!isRevealed ? (
+                <div className="bm-stem">
+                  {renderStem(q.sentence, isOpen ? correct?.choice_word : undefined)}
+                </div>
+                {!isOpen ? (
                   <>
-                    <div className="space-y-1 mb-3">
+                    <div className="bm-choices">
                       {q.choices.map((c) => (
-                        <p key={c.choice_number} className="text-sm text-gray-700">
-                          {c.choice_number}. {c.choice_word}
-                        </p>
+                        <div key={c.choice_number} className="bm-choice">
+                          <span className="ec-num">{c.choice_number}</span>
+                          <span>{c.choice_word}</span>
+                        </div>
                       ))}
                     </div>
-                    <button
-                      onClick={() => toggleAnswer(q.id)}
-                      className="text-sm text-blue-600 hover:underline"
-                    >
-                      答えを見る
+                    <button className="link-btn" onClick={() => toggle(q.id)}>
+                      答えを見る →
                     </button>
                   </>
                 ) : (
                   <>
-                    <div className="space-y-1 mb-3">
+                    <div className="bm-choices">
                       {q.choices.map((c) => (
-                        <p
+                        <div
                           key={c.choice_number}
-                          className={
-                            c.choice_number === q.correct_choice
-                              ? "text-sm text-green-700 font-semibold"
-                              : "text-sm text-gray-700"
-                          }
+                          className={`bm-choice ${
+                            q.correct_choice === c.choice_number ? "correct" : ""
+                          }`}
                         >
-                          {c.choice_number}. {c.choice_word}
-                          <span className="text-gray-500 ml-2">{c.choice_meaning}</span>
-                          {c.choice_number === q.correct_choice && (
-                            <span className="ml-2 text-green-600">[正解]</span>
+                          <span className="ec-num">{c.choice_number}</span>
+                          <span>
+                            <strong>{c.choice_word}</strong> — {c.choice_meaning}
+                          </span>
+                          {q.correct_choice === c.choice_number && (
+                            <span className="ec-tag">[正解]</span>
                           )}
-                        </p>
+                        </div>
                       ))}
                     </div>
-                    <p className="text-sm text-gray-600 mb-2">{q.explanation}</p>
-                    <button
-                      onClick={() => toggleAnswer(q.id)}
-                      className="text-sm text-blue-600 hover:underline"
-                    >
+                    {q.explanation && (
+                      <div className="expl-text" style={{ marginTop: 10 }}>
+                        {q.explanation}
+                      </div>
+                    )}
+                    <button className="link-btn" onClick={() => toggle(q.id)}>
                       答えを隠す
                     </button>
                   </>
@@ -137,11 +169,14 @@ export function BookmarkedContent({ allQuestions }: { allQuestions: BookmarkedQu
         </div>
       )}
 
-      <div className="mt-8">
-        <Link href="/vocab" className="text-blue-600 hover:underline">
+      <div style={{ marginTop: 32 }}>
+        <Link href="/vocab" className="back-link">
+          <span className="ico">
+            <IconBack />
+          </span>{" "}
           語彙問題一覧に戻る
         </Link>
       </div>
-    </div>
+    </>
   );
 }

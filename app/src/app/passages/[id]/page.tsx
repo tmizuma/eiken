@@ -29,13 +29,23 @@ export default async function PassageQuizPage({
   const db = getDb();
 
   const passage = db
-    .prepare("SELECT id, title, content FROM passages WHERE id = ?")
-    .get(Number(id)) as { id: number; title: string; content: string } | undefined;
+    .prepare(
+      "SELECT id, title, content, topic, word_range FROM passages WHERE id = ?"
+    )
+    .get(Number(id)) as
+    | {
+        id: number;
+        title: string;
+        content: string;
+        topic: string;
+        word_range: string;
+      }
+    | undefined;
 
   if (!passage) {
     return (
-      <div className="min-h-screen bg-white flex items-center justify-center">
-        <p className="text-gray-500">データが見つかりません。</p>
+      <div className="empty">
+        <p>データが見つかりません。</p>
       </div>
     );
   }
@@ -64,6 +74,8 @@ export default async function PassageQuizPage({
     id: passage.id,
     title: passage.title,
     content: passage.content,
+    topic: passage.topic,
+    word_range: passage.word_range,
     questions: questions.map((q) => ({
       ...q,
       choices: choices.filter((c) => c.question_id === q.id),

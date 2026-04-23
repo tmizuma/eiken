@@ -1,17 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+import { Header } from "@/components/header";
+import { MainShell } from "@/components/main-shell";
 
 export const metadata: Metadata = {
   title: "Eiken Grade 1 Reading Practice",
@@ -24,31 +15,30 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="ja"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col bg-white text-gray-900">
-        <header className="border-b border-gray-200 bg-white">
-          <nav className="mx-auto max-w-7xl px-4 py-3 flex items-center gap-6">
-            <Link href="/" className="font-bold text-lg">
-              Eiken 1
-            </Link>
-            <Link href="/words" className="text-blue-600 hover:underline">
-              単語一覧
-            </Link>
-            <Link href="/passages" className="text-blue-600 hover:underline">
-              長文問題
-            </Link>
-            <Link href="/vocab" className="text-blue-600 hover:underline">
-              語彙問題
-            </Link>
-            <div id="header-timer" className="ml-auto" />
-          </nav>
-        </header>
-        <main className="flex-1 mx-auto max-w-7xl w-full px-4 py-6">
-          {children}
-        </main>
+    <html lang="ja" data-theme="light" suppressHydrationWarning>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500&family=JetBrains+Mono:wght@400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        <Script id="eiken-theme-init" strategy="beforeInteractive">
+          {`(function(){try{var t=localStorage.getItem('eiken-theme')||'light';var a=localStorage.getItem('eiken-accent')||'plum';var M={indigo:255,moss:145,ember:30,plum:320,slate:240};document.documentElement.setAttribute('data-theme',t);document.documentElement.style.setProperty('--accent-h',String(M[a]||320));}catch(e){}})();`}
+        </Script>
+        <div className="app">
+          <Header />
+          <MainShell>{children}</MainShell>
+          <footer className="foot">
+            EIKEN 1 · READING PRACTICE · CALM READING DESIGN
+          </footer>
+        </div>
       </body>
     </html>
   );
