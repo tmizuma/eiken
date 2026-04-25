@@ -7,22 +7,25 @@
 ```
 ├── app/              # Next.js アプリ (App Router) - localhost:3000
 ├── word-memory/      # 英単語復習リスト (Node.js) - localhost:3001
+├── transcript-memory/ # 会議トランスクリプト管理 (Node.js) - localhost:3002
 ├── db/               # SQLite データベース (master.db)
 ├── schema.sql        # DB スキーマ定義
 ├── seed/             # シードデータ (SQL)
 │   ├── words/        # 単語データ (2000語)
 │   ├── relations/    # 類義語・反語データ
-│   └── reading_comprehension/  # 長文・設問データ
+│   ├── reading_comprehension/  # 長文・設問データ
+│   └── vocab_quiz/   # 4択語彙クイズデータ
 └── Makefile          # up, dev, build, db-reset コマンド
 ```
 
 ## よく使うコマンド
 
 ```bash
-make up           # 両アプリ同時起動 (app:3000 + word-memory:3001)
-make dev          # app のみ起動
-make word-memory  # word-memory のみ起動
-make build        # app ビルド
+make up                # 全アプリ同時起動 (app:3000 + word-memory:3001 + transcript-memory:3002)
+make dev               # app のみ起動
+make word-memory       # word-memory のみ起動
+make transcript-memory # transcript-memory のみ起動
+make build             # app ビルド
 make build-amplify # Amplify Hosting用の静的エクスポートビルド
 make db-reset     # DB を schema.sql + seed から再構築
 ```
@@ -39,12 +42,19 @@ make db-reset     # DB を schema.sql + seed から再構築
 - Node.js + better-sqlite3、フレームワーク不使用 (生 HTTP サーバー)
 - 詳細は `word-memory/CLAUDE.md` を参照
 
+### transcript-memory (localhost:3002)
+- 英語ミーティングのトランスクリプトを登録・閲覧・編集
+- 登録時は `sanitized=0` で raw のまま保存。`/transcript-sanitizer` スキルで文脈特定・話者特定・誤転写修正を行いタイトル・日付を自動生成する
+- Node.js + better-sqlite3、フレームワーク不使用
+- 詳細は `transcript-memory/CLAUDE.md` を参照
+
 ## データベース
 
 - **app**: SQLite (`db/master.db`)、`better-sqlite3` で接続
 - **word-memory**: SQLite (`word-memory/app.db`)、独立した DB
+- **transcript-memory**: SQLite (`transcript-memory/app.db`)、独立した DB
 - スキーマ変更時は `schema.sql` を更新し、既存 DB には `ALTER TABLE` で適用する
-- テーブル (app): `words`, `word_synonyms`, `word_antonyms`, `passages`, `passage_questions`, `question_choices`, `passage_words`
+- テーブル (app): `words`, `word_synonyms`, `word_antonyms`, `passages`, `passage_questions`, `question_choices`, `passage_words`, `vocab_quizzes`, `vocab_questions`, `vocab_question_choices`, `vocab_used_words`
 
 ## 主な機能
 

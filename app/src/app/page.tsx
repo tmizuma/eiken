@@ -66,6 +66,16 @@ export default function Home() {
       href: "http://localhost:3001",
       external: true,
     },
+    {
+      key: "transcript",
+      eyebrow: "MEETING",
+      title: "会議トランスクリプト",
+      sub: "文字起こしのサニタイズとフラッシュカード",
+      stat: "別タブ",
+      meta: "transcript-memory",
+      href: "http://localhost:3002",
+      external: true,
+    },
   ];
 
   return (

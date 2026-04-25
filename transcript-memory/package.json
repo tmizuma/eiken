@@ -1,0 +1,12 @@
+{
+  "name": "transcript-memory",
+  "version": "1.0.0",
+  "description": "英語ミーティングのトランスクリプト管理・サニタイズアプリ",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.0.0"
+  }
+}

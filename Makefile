@@ -1,4 +1,4 @@
-.PHONY: dev build db-reset up word-memory push
+.PHONY: dev build db-reset up word-memory transcript-memory sanitize translate process push
 
 dev:
 	cd app && npm run dev
@@ -9,8 +9,19 @@ build:
 word-memory:
 	cd word-memory && node server.js
 
+transcript-memory:
+	cd transcript-memory && node server.js
+
 up:
-	cd app && npm run dev & cd word-memory && node server.js & wait
+	cd app && npm run dev & cd word-memory && node server.js & cd transcript-memory && node server.js & wait
+
+sanitize:
+	claude -p --dangerously-skip-permissions "/transcript-sanitizer $(ID)"
+
+translate:
+	claude -p --dangerously-skip-permissions "/sentence-translator $(ID)"
+
+process: sanitize translate
 
 build-amplify:
 	mv app/src/app/api app/src/app/_api_disabled
